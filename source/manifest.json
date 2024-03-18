@@ -1,0 +1,32 @@
+{
+  "name": "Zkpeace",
+  "short_name": "kp",
+  "theme_color": "#f3f3f3",
+  "background_color": "#f3f3f3",
+  "display": "fullscreen",
+  "Scope": "/blog-cn/",
+  "start_url": "/blog-cn/",
+  "icons": [
+    {
+      "src": "img/pwa/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "img/pwa/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/pwa/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "img/pwa/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}
