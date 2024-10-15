@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>KP</title>
+    <link>https://zkpeace.com/blog-cn/</link>
+    
+    <atom:link href="https://zkpeace.com/blog-cn/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>The Universe of KP</description>
+    <pubDate>Tue, 15 Oct 2024 12:24:59 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>个站播客重新开张了</title>
+      <link>https://zkpeace.com/blog-cn/posts/40063/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/40063/</guid>
+      <pubDate>Tue, 15 Oct 2024 20:10:15 GMT</pubDate>
+      
+      <description>大家还好吗？久违了，本站开始续更了,  简短的说下: 首先，让我解释一下这么久没更新的原因。首先，我入职了一家自动驾驶公司，最近工作量大的想哭，下班后我只想放松,  完全不想搞别的。另外，去年博客遭到莫名其妙的攻击, 技术有限也懒得处理, 一直搁置了。不过最近特别想找个写东西,记东西的地方,  当然还是自己搭的站子最舒服, 于是又回了.回来后，我有几件事想做。首先，我要重新掌控我的个人数据，以博文为单位进行管理, 把一些生活中数据都组织起来。其次，我想记录一些琐事日常，闲言闲语，也当做其他社交网络的备份。再次，除了自动驾驶，我还想研究XR和AI两个技术方向，我觉得这两个方向有很大的潜力。最后，我想重构我的播客，打造一个个人展示平台。就这样 ...</description>
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/">记事</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E7%AC%94%E8%AE%B0/">笔记</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/40063/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>上海蜗居小屋改造方案</title>
+      <link>https://zkpeace.com/blog-cn/posts/14275/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/14275/</guid>
+      <pubDate>Thu, 29 Dec 2022 21:24:54 GMT</pubDate>
+      
+      <description>来上还工作小半年了,刚来那会比较着急,想着先找个短期的便宜的小房子住着,然后慢慢找合适的地方,过几个月再搬过去,于是在自如上选了这个不到10平,远离市区的小房子,没想到在这个地方一待就快一年了,现在马上要搬走了,稍微记录一下.</description>
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/">记事</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%A3%85%E4%BF%AE/">装修</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/14275/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>周末城市:苏州闲逛日记</title>
+      <link>https://zkpeace.com/blog-cn/posts/35119/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/35119/</guid>
+      <pubDate>Sun, 04 Dec 2022 10:55:36 GMT</pubDate>
+      
+      <description>周末城市栏目开播了! 博主如果周末有空会随机去到另一个城市睡觉,记录一下琐事,美景美食. 第一站去了苏州.</description>
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E6%97%85%E8%A1%8C/">旅行</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E5%91%A8%E6%9C%AB%E5%9F%8E%E5%B8%82/">周末城市</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/35119/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>此图(Graph)分类非彼图(Image)分类</title>
+      <link>https://zkpeace.com/blog-cn/posts/16005/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/16005/</guid>
+      <pubDate>Fri, 28 Oct 2022 03:47:23 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/blog-cn/assets/css/APlayer.min.css&quot;&gt;&lt;script</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/">项目</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/%E8%AE%A4%E7%9F%A5%E6%9C%BA%E5%99%A8/">认知机器</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E9%A1%B9%E7%9B%AE/">项目</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%AE%BA%E6%96%87/">论文</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E5%9B%BE%E8%AE%BA/">图论</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E5%9B%BE%E5%88%86%E7%B1%BB/">图分类</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/16005/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>最近写C++的一些想法</title>
+      <link>https://zkpeace.com/blog-cn/posts/17494/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/17494/</guid>
+      <pubDate>Sat, 28 May 2022 13:08:45 GMT</pubDate>
+      
+      <description>最近一直在写C++, 以前没在工程中那么仔细的研究过C++的代码, 读书的时候也是Python写的比较多, 突然写起来感觉自己真的菜的一B,赶紧的读一读&lt;Google 开源项目风格指南&gt;找补找补,现在读完了,收获还是挺多的, 就来聊一聊. 博客的是原创总结性的文章,学习笔记都放在了[黑鲸知识库](notion://www.notion.so/wikiwhale/3633a659e2a1478eaf6c8904c86de401)中的[C++](https://www.notion.so/wikiwhale/b7114d3e3b134ad99d9dc46dfdb11644?v=512f34ecdf4d459fb8175cfca0f5e92c)目录里了,有兴趣的同学可以去看看.</description>
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/C/">C++</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/C/">C++</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/17494/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>最近半年购入的物件</title>
+      <link>https://zkpeace.com/blog-cn/posts/8155/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/8155/</guid>
+      <pubDate>Sat, 21 May 2022 16:33:22 GMT</pubDate>
+      
+      <description>买都买了,就来夸一夸骂一骂吧,不是产品经理,只考虑自己的需求. 更多测评请前往THINGS</description>
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%B4%AD%E7%89%A9/">购物</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%B5%8B%E8%AF%84/">测评</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/">购物</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%95%B0%E7%A0%81/">数码</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/8155/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>关于离不开咖啡这件事</title>
+      <link>https://zkpeace.com/blog-cn/posts/40641/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/40641/</guid>
+      <pubDate>Mon, 09 May 2022 16:33:22 GMT</pubDate>
+      
+      <description>白天经常感觉很疲惫, 导致做事情效率低下, 经常借助茶和咖啡缓解, 好奇其中道理, 做了些粗浅的调查,在此记录一下. 需要注意的是以下信息来自网络, 不保证其准确性.</description>
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%B4%AD%E7%89%A9/">购物</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%B5%8B%E8%AF%84/">测评</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/">购物</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/40641/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>洗发水沐浴露选购经验分享</title>
+      <link>https://zkpeace.com/blog-cn/posts/15482/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/15482/</guid>
+      <pubDate>Wed, 04 May 2022 06:23:09 GMT</pubDate>
+      
+      <description>以前都是洗发水和沐浴露这些产品都是蒙头吓买，最近准备收集下相关信息，为以后选购做参考</description>
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%B4%AD%E7%89%A9/">购物</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%B5%8B%E8%AF%84/">测评</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/">购物</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/15482/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>这不是阿西莫夫给我看的基地</title>
+      <link>https://zkpeace.com/blog-cn/posts/14800/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/14800/</guid>
+      <pubDate>Sun, 01 May 2022 14:44:11 GMT</pubDate>
+      
+      <description>基地系列（英语：The Foundation Series）是一部经典科幻小说系列，创作时间横跨美国作家艾萨克·阿西莫夫49个写作年头，一共10册（包括别人续写3册），彼此间剧情独立，却又紧密关联。“基地系列”通常也将处在同一架空宇宙的“机器人系列”和“银河帝国系列”包括进来，总计起来整个“大基地系列”作品共有14册长篇，和数不清的短篇小说，另外6册由其他作家在他死后续写。“基地系列”备受赞誉，1966年得过雨果奖“史上最佳科幻小说系列”。</description>
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E5%BD%B1%E8%AF%84/">影评</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E5%BD%B1%E8%AF%84/">影评</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E7%94%B5%E5%BD%B1/">电影</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E7%A7%91%E5%B9%BB/">科幻</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/14800/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>最近在看“上海神话”</title>
+      <link>https://zkpeace.com/blog-cn/posts/34388/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/34388/</guid>
+      <pubDate>Sun, 17 Apr 2022 03:58:21 GMT</pubDate>
+      
+      <description>最近一直在家看剧，看了《上海堡垒》，已经改编成电视剧了，真的是史诗级的烂。还看了部神话片，大概的意思是说人间妖魔横行，天庭派大将清陵带兵镇压，但是清陵手段残暴，为了完成天庭的任务，不惜迫害凡人，生灵涂炭，人间众生敢怒不敢言，冥界大门已开，妖魔无穷尽也，凡人的苦难无穷尽也。此时人们又想起了游历外界的小仙宫村。话说这宫村本只是三两小厮供奉的村口小仙，天魔刑官降生人间之时，竟然提出了与魔共生之策，遭到天人两界口诛笔伐，被放逐至三界之外。只是现在这天庭对清陵百般袒护，看似完全没有宽恕宫村之意。天庭为何非清陵不可？宫村能否重返三界？天魔刑官又会不会再次进化呢？故事越发的扑所迷离。</description>
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/">记事</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E7%AC%94%E8%AE%B0/">笔记</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/34388/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>特殊时期在上海</title>
+      <link>https://zkpeace.com/blog-cn/posts/29555/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/29555/</guid>
+      <pubDate>Wed, 13 Apr 2022 02:40:10 GMT</pubDate>
+      
+      <description>公权力不用对人民负责，只对上级负责会有多恐怖，上海正在做实验。Do you hear the people sing? Singing the song of angry men? It is the music of the people Who will not be slaves again!</description>
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/">记事</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E7%AC%94%E8%AE%B0/">笔记</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/29555/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>小米智能家居联动HomeKit</title>
+      <link>https://zkpeace.com/blog-cn/posts/240/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/240/</guid>
+      <pubDate>Wed, 23 Mar 2022 05:01:39 GMT</pubDate>
+      
+      <description>如果你玩过智能家居，想必也知道不同大厂品牌的智能家居都在构建自己的壁垒，由于不同品牌的智能家居系统优缺点十分明显，自然而然的有玩家想要打破品牌的壁垒，融合各家的优点，打造专属于自己智能家居场景。在众多品牌智能家居中米家价格便宜种类全，可玩性很高，而apple智能家居系统使用体验是最好的，结合这两个系统的产品成为了包括我在内的众多玩家的第一选择。关于小米智能家居联动homekit的方案，网上已经有大量的教程，在网络通畅的情况下实现起来其实并不困难。总的来说就是将不同协议的智能家居设备通过HomeAssistant系统（简称HA）进行管理，并且通过HomeAssistant系统进行联动。虽然HA的管理比较简单，但是联动的实现比较复杂，需要自己根据情况去实现。这里就记录一下，我一个10平的小房间的配置过程。</description>
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/">智能家居</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/">智能家居</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%9C%AA%E5%AE%8C%E6%88%90/">未完成</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/240/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>浮生若梦，悲欢几何</title>
+      <link>https://zkpeace.com/blog-cn/posts/34937/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/34937/</guid>
+      <pubDate>Sun, 04 Jul 2021 20:52:46 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/blog-cn/assets/css/APlayer.min.css&quot;&gt;&lt;script</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E5%BD%B1%E8%AF%84/">影评</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%AE%B0%E4%BA%8B/">记事</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%AF%BB%E4%B9%A6/">读书</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/">浮生六记</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/34937/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>介绍一下机器人学习</title>
+      <link>https://zkpeace.com/blog-cn/posts/12331/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/12331/</guid>
+      <pubDate>Sun, 04 Jul 2021 20:52:46 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/blog-cn/assets/css/APlayer.min.css&quot;&gt;&lt;script</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/%E8%AE%A4%E7%9F%A5%E6%9C%BA%E5%99%A8/">认知机器</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/">机器人</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/12331/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>黑鲸智能系统知识库</title>
+      <link>https://zkpeace.com/blog-cn/posts/30954/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/30954/</guid>
+      <pubDate>Sun, 04 Jul 2021 20:52:46 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/blog-cn/assets/css/APlayer.min.css&quot;&gt;&lt;script</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/">项目</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/">其他项目</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E9%A1%B9%E7%9B%AE/">项目</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/">其他项目</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/30954/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>蜜蜂速查-速查表收集站</title>
+      <link>https://zkpeace.com/blog-cn/posts/61713/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/61713/</guid>
+      <pubDate>Fri, 02 Jul 2021 12:21:11 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/blog-cn/assets/css/APlayer.min.css&quot;&gt;&lt;script</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/">项目</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/">应用开发</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E9%A1%B9%E7%9B%AE/">项目</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E7%BD%91%E7%AB%99/">网站</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/61713/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>神舟十二号任务公开情报</title>
+      <link>https://zkpeace.com/blog-cn/posts/25946/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/25946/</guid>
+      <pubDate>Thu, 17 Jun 2021 10:59:29 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/blog-cn/assets/css/APlayer.min.css&quot;&gt;&lt;script</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/">记事</category>
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E5%A4%AA%E7%A9%BA/">太空</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E7%81%AB%E7%AE%AD/">火箭</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/25946/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>我加入了少数派Matrix，并分享了这些应用... ...</title>
+      <link>https://zkpeace.com/blog-cn/posts/53467/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/53467/</guid>
+      <pubDate>Fri, 11 Jun 2021 13:32:20 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/blog-cn/assets/css/APlayer.min.css&quot;&gt;&lt;script</description>
+          
+        
+      
+      
+      
+      
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/53467/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Huawei P40 UI 改造</title>
+      <link>https://zkpeace.com/blog-cn/posts/35289/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/35289/</guid>
+      <pubDate>Fri, 11 Jun 2021 12:59:35 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/blog-cn/assets/css/APlayer.min.css&quot;&gt;&lt;script</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%89%8B%E6%9C%BA/">手机</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%AE%BE%E8%AE%A1/">设计</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%BD%AF%E4%BB%B6/">软件</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/35289/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>对鸿蒙的期待</title>
+      <link>https://zkpeace.com/blog-cn/posts/19657/</link>
+      <guid>https://zkpeace.com/blog-cn/posts/19657/</guid>
+      <pubDate>Fri, 04 Jun 2021 22:12:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/blog-cn/assets/css/APlayer.min.css&quot;&gt;&lt;script</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%AE%BE%E8%AE%A1/">设计</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%BD%AF%E4%BB%B6/">软件</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%A7%82%E7%82%B9/">观点</category>
+      
+      <category domain="https://zkpeace.com/blog-cn/tags/%E9%B8%BF%E8%92%99/">鸿蒙</category>
+      
+      
+      <comments>https://zkpeace.com/blog-cn/posts/19657/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>
