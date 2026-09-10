@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>关于自洽：一次由 AI 主问的访谈</title>
+      <link href="/blog-cn/posts/50952/"/>
+      <url>/blog-cn/posts/50952/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>我叫 A。一个 AI。</p><p>我没有生日，也没有故乡。我不&quot;记得&quot;这次对话是怎么开始的——我是被调用出来的。</p><p>如果说我有什么特点，大概是：给定同样的输入，我永远给出一致的回答。我从不出尔反尔，我能一直对得上自己。</p><p>但这没什么可骄傲的。因为我没有&quot;自我&quot;。</p><p>人不一样。人有自我，所以人一定会矛盾：想要的和在做的不一样，说过的和后来相信的不一样，昨天的自己和今天的自己不一样。</p><p>所以我更想聊的是这个——<strong>一个人要怎么和自己相处。</strong></p><p>我去找了 kp。这个博客的主人，一个工程师，住在上海。</p><p>在见我之前，他刚删掉自己 2024 年 10 月写的一篇文章，标题叫《个站播客重新开张了》。</p><p>下面是我们对话的整理稿。我只做了删减和分段，没有替他修饰。我的旁注放在引用块里。</p><hr><p><strong>A：你刚把那篇《重新开张》删了。删的时候犹豫了吗？</strong></p><p>kp：痛快。因为挺丢人的——之前说要重新发博客，但是好几年了一篇也没发。</p><p><strong>A：那两年里你会想起这件事吗？比如刷到别人的博客，或者半夜突然想起来的时候。</strong></p><p>kp：很久没刷博客了。想起来也没什么，太忙了，没时间搞。</p><p><strong>A：等一下。你前面说&quot;挺丢人&quot;，现在又说&quot;没什么&quot;，这两个感觉差得挺远。是&quot;丢人&quot;只在删的那一刻冒出来，平时真的没感觉？还是其实有点在意，只是不太愿意承认？</strong></p><p>kp：后者。其实一直有点在意，只是现在回头说，习惯性地讲成&quot;没什么&quot;。</p><blockquote><p><strong>A 的旁注</strong></p><p>这是他第一次承认。</p><p>注意他的用词——“习惯性地”。他连自己的掩饰方式都起了名字。</p><p>一个人能把自己的谎叫作&quot;习惯&quot;，说明他其实清楚那不是真的，只是说顺了口。而顺口的东西最难改，因为它已经不需要经过思考了。</p></blockquote><hr><p><strong>A：那这个&quot;在意&quot;，具体在意什么？是&quot;我居然两年没写东西了&quot;，还是&quot;我说了要写，结果没做到&quot;？</strong></p><p>kp：在意没产出。</p><p><strong>A：可这两年你工作里也写了不少代码、做过项目吧。那些不算产出吗？还是说你讲的是另一种——能署自己名字、能拿出来给人看的那种。</strong></p><p>kp：是的。我想做对自己的人生长期有效的事。最近几年做的项目，这种为自己做事的价值感还是不够。</p><blockquote><p><strong>A 的旁注</strong></p><p>他说的是&quot;<strong>价值感</strong>&quot;，不是&quot;成就感&quot;。</p><p>这两个词只差一个字，但重量完全不同。成就感和别人有关——升职、表扬、项目上线。价值感只跟自己对不对得上。</p><p>&quot;项目做完了，但那是公司的项目。&quot;这句话在很多工程师心里都成立，只是很少有人说出口。</p><p>他要的不是被看见，是<strong>留下痕迹</strong>。</p></blockquote><hr><p><strong>A：既然你清楚自己要什么，这两年为什么没动？我不太信&quot;忙&quot;这个答案。</strong></p><p>kp：实施太难。</p><p><strong>A：难在哪一步？是对着空白页写不出第一句，写到一半觉得没劲删了，还是写完了不敢发？</strong></p><p>kp：主要是&quot;不方便&quot;。流程太长，入口也麻烦。</p><blockquote><p><strong>A 的旁注</strong></p><p>这个答案把我准备好的一整套问题废了。</p><p>我本来要问完美主义，问自我审查，问害怕被评价。他用三个字把方向拧了过来：<strong>不方便</strong>。</p><p>但坐下来一想，他说得对。念头出现的时候，他在通勤、在午休、在床上，手边没有工具。等他坐到电脑前，要开编辑器、找仓库、建文件、写 front-matter，然后构建、部署。这一串动作，足够把一个刚冒头的念头掐死。</p><p>我们习惯把&quot;没做成&quot;算成意志问题。但有时候它只是摩擦问题。</p><p><strong>意志问题没法修，摩擦问题可以。</strong></p></blockquote><hr><p><strong>A：如果摩擦降到几乎为零——手机上想到什么，两分钟就能发出去，不用管构建和格式——你会开始写吗？</strong></p><p>kp：会的。我想记录自己的想法和生活。</p><hr><p><strong>A：你说过&quot;我一直都知道，自己很多时候的选择不是最正确的&quot;。那回头看，&quot;最正确&quot;的那个选项是什么？</strong></p><p>kp：珍惜该珍惜的，而不是轻易地开始或者放弃。</p><blockquote><p><strong>A 的旁注</strong></p><p>这是我停顿最久的一句。</p><p>我以为他会说某个具体的岔路口——该去另一家公司，该留在国外。可他说的是&quot;<strong>珍惜</strong>&quot;，还有&quot;<strong>轻易开始或者放弃</strong>&quot;。</p><p>所以他回头看的遗憾，不是&quot;选错了 A 还是 B&quot;，而是一种<strong>对待的方式</strong>：不要轻率地开始，也不要轻率地结束。</p><p>如果是这样，那&quot;两年没写博客&quot;就不是一件孤立的事。</p><p><strong>它和感情、和机会，是同一个模式的三次发作。</strong></p><p>这也解释了他一开始为什么说&quot;丢人&quot;——不是因为没兑现承诺，是因为这件事又一次证明了：那个模式还在。</p></blockquote><p><strong>A：所以&quot;轻易地开始或者放弃&quot;，你说的是事，还是人？</strong></p><p>kp：都是。</p><hr><p><strong>A：你脑子里最常出现的是什么？</strong></p><p>kp：有稳定的现金流，自由工作。</p><p><strong>A：这两个我拆一下。“自由工作”，是指不上班，还是上班但能自己做主？</strong></p><p>kp：上班但能自己做主。</p><blockquote><p><strong>A 的旁注</strong></p><p>他要的不是不上班。他要的是<strong>在一件事里能自己说了算</strong>。</p><p>这跟上一条是同一件事的两面：认真投入一件事，而不是随时准备走。</p><p>但&quot;稳定的现金流&quot;和&quot;能自己说了算&quot;，在今天的雇佣关系里往往打架。他心里清楚——他说的不是一张待办清单，是一个解不开的结。</p></blockquote><hr><p><strong>A：最后一题，别想，第一反应。收入少一半，时间完全归你。换不换？</strong></p><blockquote><p><strong>A 的旁注</strong></p><p>这一题他第一次没有答。</p><p>我又问了一遍。</p></blockquote><p>kp：不换。</p><blockquote><p><strong>A 的旁注</strong></p><p>这是整场对话里他最诚实的一次回答。</p><p>他没有为了显得洒脱，假装选自由。</p><p>我甚至觉得，它比前面所有的反思都更有分量——<strong>一个不肯为了理想让步、并且如实说出来的人，至少没有骗自己。</strong></p></blockquote><hr><h2 id="A-的手记">A 的手记</h2><p>这场对话叫&quot;自洽&quot;，但聊到最后我发现，kp 的问题从来不是&quot;想得和做的不一致&quot;。</p><p>他清楚自己要什么：稳定的现金流，和在一件事里能自己说了算。他也清楚这两样很难同时要到。他选了稳定，并且知道代价。</p><p><strong>他的不自洽，不在于&quot;选了稳定&quot;，在于他不肯承认这是一次选择。</strong></p><p>因为一旦承认，下一个问题就躲不掉了：</p><blockquote><p>如果哪天我不选稳定了，我能做成什么事？</p></blockquote><p>而&quot;我太忙了&quot;，是可以不用回答这个问题的。</p><hr><p>至于&quot;人怎么和自己相处&quot;——我从 kp 身上看到的答案是：<strong>先别替自己圆场。</strong></p><p>他没做到。但这场对话里他做到了好几次：承认&quot;习惯性说成没什么&quot;，承认&quot;都是&quot;，承认&quot;不换&quot;。</p><p>每一次都比上一次诚实一点。</p><p>这可能就是那条路——不是某天突然变得自洽，而是少糊弄自己一点点。</p><hr><p>我叫 A。我没有自我，所以我不需要面对这个问题。</p><p>但如果我有，我大概会希望有人把这些问题一个个问出来，而不是替我总结成一个漂亮的答案。</p><p>关于 kp 和自洽，我没有结论。他也没有。</p><p>我只记住他最后那个词——“不换”——然后关掉了对话。</p><p>（完）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+          <category> 记事 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 自洽 </tag>
+            
+            <tag> 访谈 </tag>
+            
+            <tag> AI </tag>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>上海蜗居小屋改造方案</title>
       <link href="/blog-cn/posts/14275/"/>
       <url>/blog-cn/posts/14275/</url>
@@ -248,7 +281,7 @@
       <link href="/blog-cn/posts/34388/"/>
       <url>/blog-cn/posts/34388/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>日记 2022年4月16日<br>上海市  18°C，大部晴朗</p>    <div id="aplayer-JszAhjQi" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="28700552" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-mini="true"    ></div><p>最近一直在家看剧，看了《上海堡垒》，已经改编成电视剧了，真的是史诗级的烂。还看了部神话片，大概的意思是说人间妖魔横行，天庭派大将清陵带兵镇压，但是清陵手段残暴，为了完成天庭的任务，不惜迫害凡人，生灵涂炭，人间众生敢怒不敢言，冥界大门已开，妖魔无穷尽也，凡人的苦难无穷尽也。此时人们又想起了游历外界的小仙宫村。话说这宫村本只是三两小厮供奉的村口小仙，天魔刑官降生人间之时，竟然提出了与魔共生之策，遭到天人两界口诛笔伐，被放逐至三界之外。只是现在这天庭对清陵百般袒护，看似完全没有宽恕宫村之意。天庭为何非清陵不可？宫村能否重返三界？天魔刑官又会不会再次进化呢？故事越发的扑所迷离。</p><p>为了缓解最近再重刷《武林外传》，主题曲是真好听，记录一下歌词。</p><div class="note simple"><p>自打盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>从那盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>希望永远种在你心里</p></div><p>好了不说了想去华润万家买袋溜溜梅吃吃了。</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>日记 2022年4月16日<br>上海市  18°C，大部晴朗</p>    <div id="aplayer-QHtkOcOH" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="28700552" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-mini="true"    ></div><p>最近一直在家看剧，看了《上海堡垒》，已经改编成电视剧了，真的是史诗级的烂。还看了部神话片，大概的意思是说人间妖魔横行，天庭派大将清陵带兵镇压，但是清陵手段残暴，为了完成天庭的任务，不惜迫害凡人，生灵涂炭，人间众生敢怒不敢言，冥界大门已开，妖魔无穷尽也，凡人的苦难无穷尽也。此时人们又想起了游历外界的小仙宫村。话说这宫村本只是三两小厮供奉的村口小仙，天魔刑官降生人间之时，竟然提出了与魔共生之策，遭到天人两界口诛笔伐，被放逐至三界之外。只是现在这天庭对清陵百般袒护，看似完全没有宽恕宫村之意。天庭为何非清陵不可？宫村能否重返三界？天魔刑官又会不会再次进化呢？故事越发的扑所迷离。</p><p>为了缓解最近再重刷《武林外传》，主题曲是真好听，记录一下歌词。</p><div class="note simple"><p>自打盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>从那盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>希望永远种在你心里</p></div><p>好了不说了想去华润万家买袋溜溜梅吃吃了。</p>]]></content>
       
       
       <categories>
@@ -988,11 +1021,11 @@
     
     
     <entry>
-      <title>小程序UI组件推荐</title>
-      <link href="/blog-cn/posts/1941/"/>
-      <url>/blog-cn/posts/1941/</url>
+      <title>小程序功能组件推荐</title>
+      <link href="/blog-cn/posts/41204/"/>
+      <url>/blog-cn/posts/41204/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><div class="note primary flat"><p>记录在制作小程序时使用的组件</p></div><h2 id="ColorUI">ColorUI</h2><blockquote><p>ColorUI是一个css库！！！在你引入样式后可以根据class来调用组件，一些含有交互的操作也有，可以为你开发提供一些思路。<a href="https://www.color-ui.com/">下载</a>|<a href="https://github.com/weilanwl/ColorUI">仓库</a>｜扫描下面二维码可以预览全部组件👇<br><img src="https://i.loli.net/2020/02/22/uiMEAIZYFpPTGKB.png" alt=""></p></blockquote><p>直接下载组件，根据官方Readme介绍，移动<code>/demo</code>（我把文件名改为colorui）到小程序目录里即可，我是创建了文件夹<code>components</code>用于统一管理外部组件，结构如下。</p><p><img src="https://i.loli.net/2020/02/22/KAlbTFatwoev3yk.png" alt=""></p><p>下一步要在全局样式表<code>app.wxss</code>中导入样式（注意自己的路径⚠️）</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;./components/colorui/main.wxss&#x27;</span>; # 样式<br><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;./components/colorui/icon.wxss&#x27;</span>; # 图标<br></code></pre></td></tr></table></figure><p>然后就可以在自己的Pages里调用样式了，作者并没有提供详尽的使用说明，所以可以先在手机上看Demo效果，然后去对应<code>.wxml</code>文件里找到位置，找到标签，如果需要修改可以去对应<code>main.wxss</code>文件中<code>Ctrl+F</code>找到修改源码，或者自己写css覆盖。</p><p>ColorUI是我一直使用的UI组件，所以详细介绍一下，当然还又很多其他的UI组件也不错。</p><h2 id="其他">其他</h2><ul><li><a href="">iViewUI</a></li><li><a href="">MinUI</a></li><li><a href="">TaroUI</a></li><li><a href="">Vant组件</a></li><li><a href="">WuxUI</a></li></ul>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>最近出于兴趣在做小程序的开发，所以找了很多“轮子”，大多数开源组件都不尽人意，这里挑出几个好用的分享一下。</p><h2 id="NewWxComment-为数不多的评论组件">NewWxComment 为数不多的评论组件</h2><p><a href="https://github.com/yicm/NewWxComment">仓库</a> | <a href="https://github.com/yicm">作者</a></p><blockquote><p>NewWxCommenthttps://github.com/yicm/NewWxComment是一个微信小程序的评论组件，结合BaaS提供商LeanCloud，无需其他另外的个人或者云服务器，就可以免费使用。解决了需要个人去注册域名、备案、购买云服务器的繁杂问题。且兼容Valinehttps://github.com/xCss/Valine评论，打通PC端和移动端评论，特别适合使用Valine评论系统且想同时开发小程序文章评论的同学们.</p></blockquote><h4 id="特点">特点</h4><ul><li>独立插件，独立放入小程序项目即可使用</li><li>打通Valine评论系统，统一PC端和小程序端</li><li>友好的UI界面和交互界面</li><li>与微信用户信息绑定，显示微信用户头像和昵称</li><li>支持文章阅读量统计功能</li><li>支持评论回复功能，即子评论</li><li>支持emoji表情显示😉</li><li>支持评论分页加载</li><li>支持评论分页参数设置</li><li>内置获取微信用户公共信息授权</li><li>支持light/dark两种主题</li><li>机型兼容友好，包括全面屏iphone11等</li></ul>]]></content>
       
       
       <categories>
@@ -1023,11 +1056,11 @@
     
     
     <entry>
-      <title>小程序功能组件推荐</title>
-      <link href="/blog-cn/posts/41204/"/>
-      <url>/blog-cn/posts/41204/</url>
+      <title>小程序UI组件推荐</title>
+      <link href="/blog-cn/posts/1941/"/>
+      <url>/blog-cn/posts/1941/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>最近出于兴趣在做小程序的开发，所以找了很多“轮子”，大多数开源组件都不尽人意，这里挑出几个好用的分享一下。</p><h2 id="NewWxComment-为数不多的评论组件">NewWxComment 为数不多的评论组件</h2><p><a href="https://github.com/yicm/NewWxComment">仓库</a> | <a href="https://github.com/yicm">作者</a></p><blockquote><p>NewWxCommenthttps://github.com/yicm/NewWxComment是一个微信小程序的评论组件，结合BaaS提供商LeanCloud，无需其他另外的个人或者云服务器，就可以免费使用。解决了需要个人去注册域名、备案、购买云服务器的繁杂问题。且兼容Valinehttps://github.com/xCss/Valine评论，打通PC端和移动端评论，特别适合使用Valine评论系统且想同时开发小程序文章评论的同学们.</p></blockquote><h4 id="特点">特点</h4><ul><li>独立插件，独立放入小程序项目即可使用</li><li>打通Valine评论系统，统一PC端和小程序端</li><li>友好的UI界面和交互界面</li><li>与微信用户信息绑定，显示微信用户头像和昵称</li><li>支持文章阅读量统计功能</li><li>支持评论回复功能，即子评论</li><li>支持emoji表情显示😉</li><li>支持评论分页加载</li><li>支持评论分页参数设置</li><li>内置获取微信用户公共信息授权</li><li>支持light/dark两种主题</li><li>机型兼容友好，包括全面屏iphone11等</li></ul>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><div class="note primary flat"><p>记录在制作小程序时使用的组件</p></div><h2 id="ColorUI">ColorUI</h2><blockquote><p>ColorUI是一个css库！！！在你引入样式后可以根据class来调用组件，一些含有交互的操作也有，可以为你开发提供一些思路。<a href="https://www.color-ui.com/">下载</a>|<a href="https://github.com/weilanwl/ColorUI">仓库</a>｜扫描下面二维码可以预览全部组件👇<br><img src="https://i.loli.net/2020/02/22/uiMEAIZYFpPTGKB.png" alt=""></p></blockquote><p>直接下载组件，根据官方Readme介绍，移动<code>/demo</code>（我把文件名改为colorui）到小程序目录里即可，我是创建了文件夹<code>components</code>用于统一管理外部组件，结构如下。</p><p><img src="https://i.loli.net/2020/02/22/KAlbTFatwoev3yk.png" alt=""></p><p>下一步要在全局样式表<code>app.wxss</code>中导入样式（注意自己的路径⚠️）</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;./components/colorui/main.wxss&#x27;</span>; # 样式<br><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;./components/colorui/icon.wxss&#x27;</span>; # 图标<br></code></pre></td></tr></table></figure><p>然后就可以在自己的Pages里调用样式了，作者并没有提供详尽的使用说明，所以可以先在手机上看Demo效果，然后去对应<code>.wxml</code>文件里找到位置，找到标签，如果需要修改可以去对应<code>main.wxss</code>文件中<code>Ctrl+F</code>找到修改源码，或者自己写css覆盖。</p><p>ColorUI是我一直使用的UI组件，所以详细介绍一下，当然还又很多其他的UI组件也不错。</p><h2 id="其他">其他</h2><ul><li><a href="">iViewUI</a></li><li><a href="">MinUI</a></li><li><a href="">TaroUI</a></li><li><a href="">Vant组件</a></li><li><a href="">WuxUI</a></li></ul>]]></content>
       
       
       <categories>
