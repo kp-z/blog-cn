@@ -92,8 +92,8 @@
     <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%B4%AD%E7%89%A9/"/>
     <category term="测评" scheme="https://zkpeace.com/blog-cn/tags/%E6%B5%8B%E8%AF%84/"/>
-    <category term="购物" scheme="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/"/>
     <category term="数码" scheme="https://zkpeace.com/blog-cn/tags/%E6%95%B0%E7%A0%81/"/>
+    <category term="购物" scheme="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/"/>
     <id>https://zkpeace.com/blog-cn/posts/8155/</id>
     <link href="https://zkpeace.com/blog-cn/posts/8155/"/>
     <published>2022-05-21T08:33:22.000Z</published>
@@ -108,8 +108,8 @@
     <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%B4%AD%E7%89%A9/"/>
     <category term="测评" scheme="https://zkpeace.com/blog-cn/tags/%E6%B5%8B%E8%AF%84/"/>
-    <category term="生活" scheme="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/"/>
+    <category term="生活" scheme="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/"/>
     <id>https://zkpeace.com/blog-cn/posts/40641/</id>
     <link href="https://zkpeace.com/blog-cn/posts/40641/"/>
     <published>2022-05-09T08:33:22.000Z</published>
@@ -124,8 +124,8 @@
     <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%B4%AD%E7%89%A9/"/>
     <category term="测评" scheme="https://zkpeace.com/blog-cn/tags/%E6%B5%8B%E8%AF%84/"/>
-    <category term="生活" scheme="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/"/>
+    <category term="生活" scheme="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/"/>
     <id>https://zkpeace.com/blog-cn/posts/15482/</id>
     <link href="https://zkpeace.com/blog-cn/posts/15482/"/>
     <published>2022-05-03T22:23:09.000Z</published>
@@ -216,23 +216,6 @@
     <author>
       <name>kp</name>
     </author>
-    <category term="项目" scheme="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/"/>
-    <category term="其他项目" scheme="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/"/>
-    <category term="项目" scheme="https://zkpeace.com/blog-cn/tags/%E9%A1%B9%E7%9B%AE/"/>
-    <category term="其他项目" scheme="https://zkpeace.com/blog-cn/tags/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/"/>
-    <id>https://zkpeace.com/blog-cn/posts/30954/</id>
-    <link href="https://zkpeace.com/blog-cn/posts/30954/"/>
-    <published>2021-07-04T12:52:46.000Z</published>
-    <summary>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
-    </summary>
-    <title>黑鲸智能系统知识库</title>
-    <updated>2026-09-04T14:07:20.003Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>kp</name>
-    </author>
     <category term="技术" scheme="https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/"/>
     <category term="认知机器" scheme="https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/%E8%AE%A4%E7%9F%A5%E6%9C%BA%E5%99%A8/"/>
     <category term="机器人" scheme="https://zkpeace.com/blog-cn/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
@@ -246,6 +229,23 @@
     </summary>
     <title>介绍一下机器人学习</title>
     <updated>2026-09-04T14:07:20.002Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>kp</name>
+    </author>
+    <category term="项目" scheme="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/"/>
+    <category term="其他项目" scheme="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/"/>
+    <category term="项目" scheme="https://zkpeace.com/blog-cn/tags/%E9%A1%B9%E7%9B%AE/"/>
+    <category term="其他项目" scheme="https://zkpeace.com/blog-cn/tags/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/"/>
+    <id>https://zkpeace.com/blog-cn/posts/30954/</id>
+    <link href="https://zkpeace.com/blog-cn/posts/30954/"/>
+    <published>2021-07-04T12:52:46.000Z</published>
+    <summary>
+      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
+    </summary>
+    <title>黑鲸智能系统知识库</title>
+    <updated>2026-09-04T14:07:20.003Z</updated>
   </entry>
   <entry>
     <author>
