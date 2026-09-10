@@ -10,17 +10,6 @@
     <generator>Hexo</generator>
     <atom:link href="https://zkpeace.com/blog-cn/rss2.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>个站播客重新开张了</title>
-      <link>https://zkpeace.com/blog-cn/posts/40063/</link>
-      <description>大家还好吗？久违了，本站开始续更了,  简短的说下: 首先，让我解释一下这么久没更新的原因。首先，我入职了一家自动驾驶公司，最近工作量大的想哭，下班后我只想放松,  完全不想搞别的。另外，去年博客遭到莫名其妙的攻击, 技术有限也懒得处理, 一直搁置了。不过最近特别想找个写东西,记东西的地方,  当然还是自己搭的站子最舒服, 于是又回了.回来后，我有几件事想做。首先，我要重新掌控我的个人数据，以博文为单位进行管理, 把一些生活中数据都组织起来。其次，我想记录一些琐事日常，闲言闲语，也当做其他社交网络的备份。再次，除了自动驾驶，我还想研究XR和AI两个技术方向，我觉得这两个方向有很大的潜力。最后，我想重构我的播客，打造一个个人展示平台。就这样 ...</description>
-      <author>kp</author>
-      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
-      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/">记事</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/">生活</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/%E7%AC%94%E8%AE%B0/">笔记</category>
-      <pubDate>Tue, 15 Oct 2024 12:10:15 GMT</pubDate>
-    </item>
-    <item>
       <title>上海蜗居小屋改造方案</title>
       <link>https://zkpeace.com/blog-cn/posts/14275/</link>
       <author>kp</author>
@@ -244,6 +233,20 @@
       <category domain="https://zkpeace.com/blog-cn/tags/%E8%A7%82%E7%82%B9/">观点</category>
       <category domain="https://zkpeace.com/blog-cn/tags/%E9%B8%BF%E8%92%99/">鸿蒙</category>
       <pubDate>Fri, 04 Jun 2021 14:12:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>zkpeace.com</title>
+      <link>https://zkpeace.com/blog-cn/posts/16907/</link>
+      <description>
+        <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
+      </description>
+      <author>kp</author>
+      <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/">项目</category>
+      <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/">其他项目</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E9%A1%B9%E7%9B%AE/">项目</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/hexo/">hexo</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/">其他项目</category>
+      <pubDate>Tue, 25 May 2021 19:11:45 GMT</pubDate>
     </item>
   </channel>
 </rss>
