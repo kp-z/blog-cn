@@ -198,24 +198,6 @@
     <author>
       <name>kp</name>
     </author>
-    <category term="技术" scheme="https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/"/>
-    <category term="认知机器" scheme="https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/%E8%AE%A4%E7%9F%A5%E6%9C%BA%E5%99%A8/"/>
-    <category term="机器人" scheme="https://zkpeace.com/blog-cn/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
-    <category term="机器学习" scheme="https://zkpeace.com/blog-cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    <category term="技术" scheme="https://zkpeace.com/blog-cn/tags/%E6%8A%80%E6%9C%AF/"/>
-    <id>https://zkpeace.com/blog-cn/posts/12331/</id>
-    <link href="https://zkpeace.com/blog-cn/posts/12331/"/>
-    <published>2021-07-04T12:52:46.000Z</published>
-    <summary>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
-    </summary>
-    <title>介绍一下机器人学习</title>
-    <updated>2026-09-04T14:07:20.002Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>kp</name>
-    </author>
     <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
     <category term="影评" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E5%BD%B1%E8%AF%84/"/>
     <category term="记事" scheme="https://zkpeace.com/blog-cn/tags/%E8%AE%B0%E4%BA%8B/"/>
@@ -246,6 +228,24 @@
     </summary>
     <title>黑鲸智能系统知识库</title>
     <updated>2026-09-04T14:07:20.003Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>kp</name>
+    </author>
+    <category term="技术" scheme="https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="认知机器" scheme="https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/%E8%AE%A4%E7%9F%A5%E6%9C%BA%E5%99%A8/"/>
+    <category term="机器人" scheme="https://zkpeace.com/blog-cn/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    <category term="机器学习" scheme="https://zkpeace.com/blog-cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <category term="技术" scheme="https://zkpeace.com/blog-cn/tags/%E6%8A%80%E6%9C%AF/"/>
+    <id>https://zkpeace.com/blog-cn/posts/12331/</id>
+    <link href="https://zkpeace.com/blog-cn/posts/12331/"/>
+    <published>2021-07-04T12:52:46.000Z</published>
+    <summary>
+      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
+    </summary>
+    <title>介绍一下机器人学习</title>
+    <updated>2026-09-04T14:07:20.002Z</updated>
   </entry>
   <entry>
     <author>
