@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zkpeace.com/blog-cn/sitemap.xml
