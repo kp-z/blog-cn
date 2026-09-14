@@ -6,9 +6,21 @@
     <description>The Universe of KP</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, kp</copyright>
-    <lastBuildDate>Thu, 10 Sep 2026 20:04:58 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 02:01:49 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://zkpeace.com/blog-cn/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>用 AI 之后，节奏不在我手里了</title>
+      <link>https://zkpeace.com/blog-cn/posts/33318/</link>
+      <description>我原本想问前端 AI 开发怎么才能更准、更稳、更聪明。聊到最后我发现，他真正丢掉的东西跟代码没有关系。</description>
+      <author>kp</author>
+      <category domain="https://zkpeace.com/blog-cn/categories/%E5%AF%B9%E8%B0%88/">对谈</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%95%88%E7%8E%87/">效率</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%80%9D%E8%80%83/">思考</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/AI-%E7%BC%96%E7%A8%8B/">AI 编程</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%81%8C%E5%9C%BA/">职场</category>
+      <pubDate>Sun, 13 Sep 2026 17:30:00 GMT</pubDate>
+    </item>
     <item>
       <title>关于自洽：一次由 AI 主问的访谈</title>
       <link>https://zkpeace.com/blog-cn/posts/50952/</link>
@@ -237,21 +249,6 @@
       <category domain="https://zkpeace.com/blog-cn/tags/%E8%AE%BE%E8%AE%A1/">设计</category>
       <category domain="https://zkpeace.com/blog-cn/tags/%E8%BD%AF%E4%BB%B6/">软件</category>
       <pubDate>Fri, 11 Jun 2021 04:59:35 GMT</pubDate>
-    </item>
-    <item>
-      <title>对鸿蒙的期待</title>
-      <link>https://zkpeace.com/blog-cn/posts/19657/</link>
-      <description>
-        <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
-      </description>
-      <author>kp</author>
-      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
-      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/">记事</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/%E8%AE%BE%E8%AE%A1/">设计</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/%E8%BD%AF%E4%BB%B6/">软件</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/%E8%A7%82%E7%82%B9/">观点</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/%E9%B8%BF%E8%92%99/">鸿蒙</category>
-      <pubDate>Fri, 04 Jun 2021 14:12:00 GMT</pubDate>
     </item>
   </channel>
 </rss>

@@ -10,7 +10,23 @@
   <rights>All rights reserved 2026, kp</rights>
   <subtitle>The Universe of KP</subtitle>
   <title>KP</title>
-  <updated>2026-09-10T20:04:58.055Z</updated>
+  <updated>2026-09-14T02:01:49.180Z</updated>
+  <entry>
+    <author>
+      <name>kp</name>
+    </author>
+    <category term="对谈" scheme="https://zkpeace.com/blog-cn/categories/%E5%AF%B9%E8%B0%88/"/>
+    <category term="效率" scheme="https://zkpeace.com/blog-cn/tags/%E6%95%88%E7%8E%87/"/>
+    <category term="思考" scheme="https://zkpeace.com/blog-cn/tags/%E6%80%9D%E8%80%83/"/>
+    <category term="AI 编程" scheme="https://zkpeace.com/blog-cn/tags/AI-%E7%BC%96%E7%A8%8B/"/>
+    <category term="职场" scheme="https://zkpeace.com/blog-cn/tags/%E8%81%8C%E5%9C%BA/"/>
+    <id>https://zkpeace.com/blog-cn/posts/33318/</id>
+    <link href="https://zkpeace.com/blog-cn/posts/33318/"/>
+    <published>2026-09-13T17:30:00.000Z</published>
+    <summary>我原本想问前端 AI 开发怎么才能更准、更稳、更聪明。聊到最后我发现，他真正丢掉的东西跟代码没有关系。</summary>
+    <title>用 AI 之后，节奏不在我手里了</title>
+    <updated>2026-09-14T02:01:49.180Z</updated>
+  </entry>
   <entry>
     <author>
       <name>kp</name>
@@ -315,24 +331,5 @@
     </summary>
     <title>Huawei P40 UI 改造</title>
     <updated>2026-09-13T16:14:11.571Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>kp</name>
-    </author>
-    <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
-    <category term="记事" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/"/>
-    <category term="设计" scheme="https://zkpeace.com/blog-cn/tags/%E8%AE%BE%E8%AE%A1/"/>
-    <category term="软件" scheme="https://zkpeace.com/blog-cn/tags/%E8%BD%AF%E4%BB%B6/"/>
-    <category term="观点" scheme="https://zkpeace.com/blog-cn/tags/%E8%A7%82%E7%82%B9/"/>
-    <category term="鸿蒙" scheme="https://zkpeace.com/blog-cn/tags/%E9%B8%BF%E8%92%99/"/>
-    <id>https://zkpeace.com/blog-cn/posts/19657/</id>
-    <link href="https://zkpeace.com/blog-cn/posts/19657/"/>
-    <published>2021-06-04T14:12:00.000Z</published>
-    <summary>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
-    </summary>
-    <title>对鸿蒙的期待</title>
-    <updated>2026-09-13T16:14:11.577Z</updated>
   </entry>
 </feed>
