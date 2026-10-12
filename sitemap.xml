@@ -119,15 +119,6 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/list/</loc>
-    
-    <lastmod>2026-09-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://zkpeace.com/blog-cn/profile/</loc>
     
     <lastmod>2026-09-04</lastmod>
@@ -147,6 +138,15 @@
   
   <url>
     <loc>https://zkpeace.com/blog-cn/services/</loc>
+    
+    <lastmod>2026-09-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/list/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -218,7 +218,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/gallery/sketching/</loc>
+    <loc>https://zkpeace.com/blog-cn/gallery/transcribe/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/gallery/transcribe/</loc>
+    <loc>https://zkpeace.com/blog-cn/gallery/sketching/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -263,34 +263,16 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/gallery/people/</loc>
-    
-    <lastmod>2026-09-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkpeace.com/blog-cn/gallery/digital/</loc>
-    
-    <lastmod>2026-09-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkpeace.com/blog-cn/gallery/life/</loc>
-    
-    <lastmod>2026-09-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://zkpeace.com/blog-cn/gallery/archive/</loc>
+    
+    <lastmod>2026-09-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/gallery/people/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -308,7 +290,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/posts/34877/</loc>
+    <loc>https://zkpeace.com/blog-cn/gallery/life/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -317,7 +299,16 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/posts/16907/</loc>
+    <loc>https://zkpeace.com/blog-cn/gallery/digital/</loc>
+    
+    <lastmod>2026-09-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/posts/34877/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -335,7 +326,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/douban/</loc>
+    <loc>https://zkpeace.com/blog-cn/posts/16907/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -353,7 +344,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/posts/43039/</loc>
+    <loc>https://zkpeace.com/blog-cn/douban/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -380,7 +371,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/posts/61713/</loc>
+    <loc>https://zkpeace.com/blog-cn/posts/43039/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -390,6 +381,15 @@
   
   <url>
     <loc>https://zkpeace.com/blog-cn/posts/27207/</loc>
+    
+    <lastmod>2026-09-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/posts/61713/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -452,15 +452,6 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/posts/58505/</loc>
-    
-    <lastmod>2026-09-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://zkpeace.com/blog-cn/posts/12591/</loc>
     
     <lastmod>2026-09-04</lastmod>
@@ -470,7 +461,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/posts/63260/</loc>
+    <loc>https://zkpeace.com/blog-cn/posts/58505/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -488,7 +479,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/posts/6129/</loc>
+    <loc>https://zkpeace.com/blog-cn/posts/63260/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -497,7 +488,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/posts/60986/</loc>
+    <loc>https://zkpeace.com/blog-cn/posts/6129/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -515,25 +506,16 @@
   </url>
   
   <url>
+    <loc>https://zkpeace.com/blog-cn/posts/60986/</loc>
+    
+    <lastmod>2026-09-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zkpeace.com/blog-cn/posts/51440/</loc>
-    
-    <lastmod>2026-09-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkpeace.com/blog-cn/posts/34388/</loc>
-    
-    <lastmod>2026-09-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkpeace.com/blog-cn/posts/15482/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -551,7 +533,25 @@
   </url>
   
   <url>
+    <loc>https://zkpeace.com/blog-cn/posts/34388/</loc>
+    
+    <lastmod>2026-09-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zkpeace.com/blog-cn/posts/39769/</loc>
+    
+    <lastmod>2026-09-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/posts/15482/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -587,7 +587,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/posts/31156/</loc>
+    <loc>https://zkpeace.com/blog-cn/posts/37419/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -596,7 +596,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/posts/37419/</loc>
+    <loc>https://zkpeace.com/blog-cn/posts/31156/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -623,15 +623,6 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/posts/16005/</loc>
-    
-    <lastmod>2026-09-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://zkpeace.com/blog-cn/posts/8155/</loc>
     
     <lastmod>2026-09-04</lastmod>
@@ -641,7 +632,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/posts/29555/</loc>
+    <loc>https://zkpeace.com/blog-cn/posts/16005/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -659,7 +650,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/posts/240/</loc>
+    <loc>https://zkpeace.com/blog-cn/posts/29555/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -669,6 +660,15 @@
   
   <url>
     <loc>https://zkpeace.com/blog-cn/posts/42552/</loc>
+    
+    <lastmod>2026-09-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/posts/240/</loc>
     
     <lastmod>2026-09-04</lastmod>
     
@@ -731,15 +731,6 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/categories/</loc>
-    
-    <lastmod>2026-08-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://zkpeace.com/blog-cn/archives/</loc>
     
     <lastmod>2026-08-30</lastmod>
@@ -757,6 +748,15 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://zkpeace.com/blog-cn/categories/</loc>
+    
+    <lastmod>2026-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   <url>
     <loc>https://zkpeace.com/blog-cn</loc>
@@ -765,20 +765,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>https://zkpeace.com/blog-cn/tags/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkpeace.com/blog-cn/tags/%E6%9C%AA%E5%AE%8C%E6%88%90/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://zkpeace.com/blog-cn/tags/%E5%BE%B7%E5%9B%BD/</loc>
@@ -796,6 +782,20 @@
   
   <url>
     <loc>https://zkpeace.com/blog-cn/tags/%E6%97%85%E8%A1%8C/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/tags/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/tags/%E6%9C%AA%E5%AE%8C%E6%88%90/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -830,6 +830,20 @@
   </url>
   
   <url>
+    <loc>https://zkpeace.com/blog-cn/tags/%E6%95%B0%E7%A0%81/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/tags/%E8%A3%85%E4%BF%AE/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zkpeace.com/blog-cn/tags/%E9%A1%B9%E7%9B%AE/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -858,14 +872,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/tags/%E8%A3%85%E4%BF%AE/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkpeace.com/blog-cn/tags/%E6%95%B0%E7%A0%81/</loc>
+    <loc>https://zkpeace.com/blog-cn/tags/%E5%91%A8%E6%9C%AB%E5%9F%8E%E5%B8%82/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -894,13 +901,6 @@
   
   <url>
     <loc>https://zkpeace.com/blog-cn/tags/%E7%A7%91%E5%B9%BB/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkpeace.com/blog-cn/tags/%E5%91%A8%E6%9C%AB%E5%9F%8E%E5%B8%82/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -998,6 +998,13 @@
   </url>
   
   <url>
+    <loc>https://zkpeace.com/blog-cn/tags/%E7%8C%AB/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zkpeace.com/blog-cn/tags/%E4%B9%A6%E5%BD%B1%E9%9F%B3/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -1006,13 +1013,6 @@
   
   <url>
     <loc>https://zkpeace.com/blog-cn/tags/%E5%8A%A8%E7%94%BB/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkpeace.com/blog-cn/tags/%E7%8C%AB/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1131,14 +1131,14 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/tags/%E7%BD%91%E7%AB%99/</loc>
+    <loc>https://zkpeace.com/blog-cn/tags/numpy/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/tags/numpy/</loc>
+    <loc>https://zkpeace.com/blog-cn/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1166,14 +1166,14 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
+    <loc>https://zkpeace.com/blog-cn/tags/AI-%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/tags/seaborn/</loc>
+    <loc>https://zkpeace.com/blog-cn/tags/%E8%81%8C%E5%9C%BA/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1194,21 +1194,14 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/tags/AI-%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkpeace.com/blog-cn/tags/%E8%81%8C%E5%9C%BA/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zkpeace.com/blog-cn/tags/%E7%95%AA%E8%8C%84%E5%B7%A5%E4%BD%9C%E6%B3%95/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/tags/%E7%81%AB%E7%AE%AD/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1222,7 +1215,14 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/tags/%E7%81%AB%E7%AE%AD/</loc>
+    <loc>https://zkpeace.com/blog-cn/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/tags/seaborn/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1237,6 +1237,20 @@
   
   <url>
     <loc>https://zkpeace.com/blog-cn/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1270,24 +1284,24 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://zkpeace.com/blog-cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkpeace.com/blog-cn/tags/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
     <loc>https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E6%97%85%E8%A1%8C/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1308,7 +1322,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1322,14 +1336,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E6%97%85%E8%A1%8C/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/</loc>
+    <loc>https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/C/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1343,21 +1350,7 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/C/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/%E8%AE%A4%E7%9F%A5%E6%9C%BA%E5%99%A8/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1378,6 +1371,13 @@
   </url>
   
   <url>
+    <loc>https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/%E8%AE%A4%E7%9F%A5%E6%9C%BA%E5%99%A8/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/%E5%9B%BE%E5%BD%A2%E5%AD%A6/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -1392,13 +1392,6 @@
   </url>
   
   <url>
-    <loc>https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -1407,6 +1400,13 @@
   
   <url>
     <loc>https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/python/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
