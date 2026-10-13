@@ -1,0 +1,6 @@
+@google/model-viewer 4.4.0（dist/model-viewer.min.js，自托管，禁止境外 CDN 引用）
+source: https://cdn.jsdelivr.net/npm/@google/model-viewer@4.4.0/dist/model-viewer.min.js
+sha256: 18b2e711035aa4705ee281530a55dc2338ff05eed3d70ae16d54105282a75ed5
+bytes: 1069272
+downloaded: 2026-10-13 (round-012, R-060)
+note: 模型不使用 DRACO/KTX2 压缩扩展时不会在运行期请求任何 gstatic/Google 解码器；若改用压缩 GLB，需自托管解码器。
