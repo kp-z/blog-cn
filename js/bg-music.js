@@ -1,5 +1,5 @@
 /*!
- * source/js/bg-music.js —— 全站背景音乐（站点级；用户 2026-10-17 报「网站音乐完全失效」）
+ * source/js/bg-music.js —— 全站背景音乐（站点级；用户 2026-10-16 报「网站音乐完全失效」）
  *
  * 由 scripts/background-music.js 用 after_render:html 过滤器注入到每页 </body> 之前（注：不是 hexo.extend.injector，原因见该脚本注释）：
  *   <script>window.__BG_MUSIC_CFG__ = {"src":…,"volume":…,"loop":…}<\/script>
