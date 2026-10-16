@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" width="1600" height="400" role="img" aria-label="给自己搞个Logo">
+<!-- svg-gen · geom/frames · light · hue=170 · seed=4194795343 · id=25971 -->
+<title>给自己搞个Logo</title>
+<defs><radialGradient id="g" cx="50%" cy="50%" r="72%"><stop offset="0%" stop-color="#ffffff" stop-opacity=".1"/><stop offset="100%" stop-color="#ffffff" stop-opacity="0"/></radialGradient></defs>
+<rect width="1600" height="400" fill="#deedea"/>
+<g transform="translate(798 219) rotate(-21.2)"><rect x="-312.1" y="-160.1" width="624.3" height="320.2" rx="14.0" fill="#1f6a58"/><rect x="-246.6" y="-126.5" width="493.2" height="252.9" rx="19.0" fill="#2ca59f"/><rect x="-187.3" y="-96.0" width="374.6" height="192.1" rx="24.0" fill="#46d2b0"/><rect x="-134.2" y="-68.8" width="268.4" height="137.7" rx="29.0" fill="#7de3de"/><rect x="-87.4" y="-44.8" width="174.8" height="89.6" rx="34.0" fill="#baf2e4"/></g><g transform="translate(511 340) rotate(-21.2)"><rect x="-77" y="-5" width="154" height="10" rx="5" fill="#dd2c8a"/></g>
+<rect width="1600" height="400" fill="url(#g)"/>
+</svg>

@@ -1,0 +1,1 @@
+window.console&&window.console.log&&console.log("代码写的有点乱但是不准备改架构了,使用的技术栈和第三方库请参见:"+(window.GLOBAL_CONFIG&&window.GLOBAL_CONFIG.root||"/")+"copyright/.");

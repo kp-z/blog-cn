@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" width="1600" height="400" role="img" aria-label="对鸿蒙的期待">
+<!-- svg-gen · geom/shards · light · hue=227 · seed=1537566007 · id=19657 -->
+<title>对鸿蒙的期待</title>
+<defs><radialGradient id="g" cx="50%" cy="50%" r="72%"><stop offset="0%" stop-color="#ffffff" stop-opacity=".1"/><stop offset="100%" stop-color="#ffffff" stop-opacity="0"/></radialGradient></defs>
+<rect width="1600" height="400" fill="#e1e3ea"/>
+<g transform="translate(817 196) rotate(-15.1)"><path d="M-160.0 -145.0L310.0 -145.0L160.0 145.0L-310.0 145.0Z" fill="#c4cfe8" fill-opacity="0.98"/><path d="M-107.0 -119.0L275.0 -119.0L107.0 119.0L-275.0 119.0Z" fill="#8f96d1" fill-opacity="0.95"/><path d="M-54.0 -93.0L240.0 -93.0L54.0 93.0L-240.0 93.0Z" fill="#5f7aba" fill-opacity="0.92"/><path d="M-1.0 -67.0L205.0 -67.0L1.0 67.0L-205.0 67.0Z" fill="#414990" fill-opacity="0.89"/></g><g transform="translate(506 298) rotate(-15.1)"><rect x="-78" y="-5" width="156" height="10" rx="5" fill="#dd762c"/></g>
+<rect width="1600" height="400" fill="url(#g)"/>
+</svg>

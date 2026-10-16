@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" width="1600" height="400" role="img" aria-label="在Mac上使用Hexo创建站点经验">
+<!-- svg-gen · geom/frames · light · hue=226 · seed=1791352186 · id=60986 -->
+<title>在Mac上使用Hexo创建站点经验</title>
+<defs><radialGradient id="g" cx="50%" cy="50%" r="72%"><stop offset="0%" stop-color="#ffffff" stop-opacity=".1"/><stop offset="100%" stop-color="#ffffff" stop-opacity="0"/></radialGradient></defs>
+<rect width="1600" height="400" fill="#dee2ed"/>
+<g transform="translate(836 208) rotate(-17.2)"><rect x="-289.9" y="-188.4" width="579.7" height="376.8" rx="14.0" fill="#baccf2"/><rect x="-229.0" y="-148.8" width="458.0" height="297.6" rx="19.0" fill="#7d89e3"/><rect x="-173.9" y="-113.0" width="347.8" height="226.1" rx="24.0" fill="#4673d2"/><rect x="-124.6" y="-81.0" width="249.3" height="162.0" rx="29.0" fill="#2c3ba5"/><rect x="-81.2" y="-52.7" width="162.3" height="105.5" rx="34.0" fill="#1f386a"/></g><g transform="translate(507 309) rotate(-17.2)"><rect x="-61" y="-5" width="122" height="10" rx="5" fill="#dd722c"/></g>
+<rect width="1600" height="400" fill="url(#g)"/>
+</svg>

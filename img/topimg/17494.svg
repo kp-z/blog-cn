@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" width="1600" height="400" role="img" aria-label="最近写C++的一些想法">
+<!-- svg-gen · geom/frames · light · hue=24 · seed=4126344632 · id=17494 -->
+<title>最近写C++的一些想法</title>
+<defs><radialGradient id="g" cx="50%" cy="50%" r="72%"><stop offset="0%" stop-color="#ffffff" stop-opacity=".1"/><stop offset="100%" stop-color="#ffffff" stop-opacity="0"/></radialGradient></defs>
+<rect width="1600" height="400" fill="#ece4df"/>
+<g transform="translate(751 199) rotate(-24.0)"><rect x="-330.5" y="-185.2" width="661.1" height="370.4" rx="14.0" fill="#edcebf"/><rect x="-261.1" y="-146.3" width="522.3" height="292.6" rx="19.0" fill="#dbb285"/><rect x="-198.3" y="-111.1" width="396.7" height="222.2" rx="24.0" fill="#c77852"/><rect x="-142.1" y="-79.6" width="284.3" height="159.3" rx="29.0" fill="#9b6b36"/><rect x="-92.6" y="-51.9" width="185.1" height="103.7" rx="34.0" fill="#643a26"/></g><g transform="translate(427 318) rotate(-24.0)"><rect x="-73" y="-5" width="145" height="10" rx="5" fill="#2cd6dd"/></g>
+<rect width="1600" height="400" fill="url(#g)"/>
+</svg>

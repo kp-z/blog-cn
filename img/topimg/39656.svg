@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" width="1600" height="400" role="img" aria-label="Mac软件推荐:工具类">
+<!-- svg-gen · geom/shards · dark · hue=188 · seed=2587069096 · id=39656 -->
+<title>Mac软件推荐:工具类</title>
+<defs><radialGradient id="g" cx="50%" cy="50%" r="72%"><stop offset="0%" stop-color="#ffffff" stop-opacity=".1"/><stop offset="100%" stop-color="#ffffff" stop-opacity="0"/></radialGradient></defs>
+<rect width="1600" height="400" fill="#2b464b"/>
+<g transform="translate(781 219) rotate(-15.5)"><path d="M-160.0 -145.0L310.0 -145.0L160.0 145.0L-310.0 145.0Z" fill="#30585a" fill-opacity="0.98"/><path d="M-107.0 -119.0L275.0 -119.0L107.0 119.0L-275.0 119.0Z" fill="#416976" fill-opacity="0.95"/><path d="M-54.0 -93.0L240.0 -93.0L54.0 93.0L-240.0 93.0Z" fill="#559295" fill-opacity="0.92"/><path d="M-1.0 -67.0L205.0 -67.0L1.0 67.0L-205.0 67.0Z" fill="#759fae" fill-opacity="0.89"/></g><g transform="translate(483 332) rotate(-15.5)"><rect x="-54" y="-5" width="107" height="10" rx="5" fill="#ea7b95"/></g>
+<rect width="1600" height="400" fill="url(#g)"/>
+</svg>
