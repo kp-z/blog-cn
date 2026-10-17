@@ -10,22 +10,22 @@
   <rights>All rights reserved 2026, kp</rights>
   <subtitle>The Universe of KP</subtitle>
   <title>KP</title>
-  <updated>2026-10-16T03:56:38.901Z</updated>
+  <updated>2026-10-16T04:12:54.000Z</updated>
   <entry>
     <author>
       <name>kp</name>
     </author>
     <category term="对谈" scheme="https://zkpeace.com/blog-cn/categories/%E5%AF%B9%E8%B0%88/"/>
+    <category term="效率" scheme="https://zkpeace.com/blog-cn/tags/%E6%95%88%E7%8E%87/"/>
     <category term="思考" scheme="https://zkpeace.com/blog-cn/tags/%E6%80%9D%E8%80%83/"/>
     <category term="AI 编程" scheme="https://zkpeace.com/blog-cn/tags/AI-%E7%BC%96%E7%A8%8B/"/>
-    <category term="效率" scheme="https://zkpeace.com/blog-cn/tags/%E6%95%88%E7%8E%87/"/>
     <category term="职场" scheme="https://zkpeace.com/blog-cn/tags/%E8%81%8C%E5%9C%BA/"/>
     <id>https://zkpeace.com/blog-cn/posts/33318/</id>
     <link href="https://zkpeace.com/blog-cn/posts/33318/"/>
     <published>2026-09-13T17:30:00.000Z</published>
     <summary>我原本想问前端 AI 开发怎么才能更准、更稳、更聪明。聊到最后我发现，他真正丢掉的东西跟代码没有关系。</summary>
     <title>用 AI 之后，节奏不在我手里了</title>
-    <updated>2026-10-16T03:56:38.901Z</updated>
+    <updated>2026-10-16T04:12:54.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -42,7 +42,7 @@
     <published>2026-09-11T06:00:00.000Z</published>
     <summary>我叫 A，一个 AI。这次由我提问，kp 回答。我们聊&quot;自洽&quot;——聊到他有一个模式，对事对人都是。</summary>
     <title>关于自洽：一次由 AI 主问的访谈</title>
-    <updated>2026-10-16T03:56:38.901Z</updated>
+    <updated>2026-10-16T04:12:54.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -56,7 +56,7 @@
     <link href="https://zkpeace.com/blog-cn/posts/14275/"/>
     <published>2022-12-29T13:24:54.000Z</published>
     <title>上海蜗居小屋改造方案</title>
-    <updated>2026-09-13T16:14:11.578Z</updated>
+    <updated>2026-09-13T18:25:43.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -69,7 +69,7 @@
     <link href="https://zkpeace.com/blog-cn/posts/35119/"/>
     <published>2022-12-04T02:55:36.000Z</published>
     <title>周末城市:苏州闲逛日记</title>
-    <updated>2026-09-04T14:07:19.998Z</updated>
+    <updated>2024-03-21T17:03:17.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -88,7 +88,7 @@
       <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
     </summary>
     <title>此图(Graph)分类非彼图(Image)分类</title>
-    <updated>2026-09-04T14:07:19.998Z</updated>
+    <updated>2024-03-21T17:03:17.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -101,7 +101,7 @@
     <link href="https://zkpeace.com/blog-cn/posts/17494/"/>
     <published>2022-05-28T05:08:45.000Z</published>
     <title>最近写C++的一些想法</title>
-    <updated>2026-10-15T11:29:37.956Z</updated>
+    <updated>2026-10-16T04:12:54.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -110,14 +110,14 @@
     <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%B4%AD%E7%89%A9/"/>
     <category term="测评" scheme="https://zkpeace.com/blog-cn/tags/%E6%B5%8B%E8%AF%84/"/>
-    <category term="购物" scheme="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/"/>
     <category term="数码" scheme="https://zkpeace.com/blog-cn/tags/%E6%95%B0%E7%A0%81/"/>
+    <category term="购物" scheme="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/"/>
     <id>https://zkpeace.com/blog-cn/posts/8155/</id>
     <link href="https://zkpeace.com/blog-cn/posts/8155/"/>
     <published>2022-05-21T08:33:22.000Z</published>
     <summary>买都买了,就来夸一夸骂一骂吧,不是产品经理,只考虑自己的需求. 更多测评请前往THINGS</summary>
     <title>最近半年购入的物件</title>
-    <updated>2026-10-15T08:11:42.983Z</updated>
+    <updated>2026-10-15T07:50:43.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -126,14 +126,14 @@
     <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%B4%AD%E7%89%A9/"/>
     <category term="测评" scheme="https://zkpeace.com/blog-cn/tags/%E6%B5%8B%E8%AF%84/"/>
-    <category term="生活" scheme="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/"/>
+    <category term="生活" scheme="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/"/>
     <id>https://zkpeace.com/blog-cn/posts/40641/</id>
     <link href="https://zkpeace.com/blog-cn/posts/40641/"/>
     <published>2022-05-09T08:33:22.000Z</published>
     <summary>白天经常感觉很疲惫, 导致做事情效率低下, 经常借助茶和咖啡缓解, 好奇其中道理, 做了些粗浅的调查,在此记录一下. 需要注意的是以下信息来自网络, 不保证其准确性.</summary>
     <title>关于离不开咖啡这件事</title>
-    <updated>2026-10-15T11:29:37.955Z</updated>
+    <updated>2026-10-16T04:12:54.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -142,14 +142,14 @@
     <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%B4%AD%E7%89%A9/"/>
     <category term="测评" scheme="https://zkpeace.com/blog-cn/tags/%E6%B5%8B%E8%AF%84/"/>
-    <category term="生活" scheme="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/"/>
+    <category term="生活" scheme="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/"/>
     <id>https://zkpeace.com/blog-cn/posts/15482/</id>
     <link href="https://zkpeace.com/blog-cn/posts/15482/"/>
     <published>2022-05-03T22:23:09.000Z</published>
     <summary>以前都是洗发水和沐浴露这些产品都是蒙头吓买，最近准备收集下相关信息，为以后选购做参考</summary>
     <title>洗发水沐浴露选购经验分享</title>
-    <updated>2026-10-15T11:29:37.957Z</updated>
+    <updated>2026-10-16T04:12:54.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -165,7 +165,7 @@
     <published>2022-05-01T06:44:11.000Z</published>
     <summary>基地系列（英语：The Foundation Series）是一部经典科幻小说系列，创作时间横跨美国作家艾萨克·阿西莫夫49个写作年头，一共10册（包括别人续写3册），彼此间剧情独立，却又紧密关联。“基地系列”通常也将处在同一架空宇宙的“机器人系列”和“银河帝国系列”包括进来，总计起来整个“大基地系列”作品共有14册长篇，和数不清的短篇小说，另外6册由其他作家在他死后续写。“基地系列”备受赞誉，1966年得过雨果奖“史上最佳科幻小说系列”。</summary>
     <title>这不是阿西莫夫给我看的基地</title>
-    <updated>2026-09-04T14:07:19.999Z</updated>
+    <updated>2022-12-04T04:15:54.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -180,7 +180,7 @@
     <published>2022-04-16T19:58:21.000Z</published>
     <summary>最近一直在家看剧，看了《上海堡垒》，已经改编成电视剧了，真的是史诗级的烂。还看了部神话片，大概的意思是说人间妖魔横行，天庭派大将清陵带兵镇压，但是清陵手段残暴，为了完成天庭的任务，不惜迫害凡人，生灵涂炭，人间众生敢怒不敢言，冥界大门已开，妖魔无穷尽也，凡人的苦难无穷尽也。此时人们又想起了游历外界的小仙宫村。话说这宫村本只是三两小厮供奉的村口小仙，天魔刑官降生人间之时，竟然提出了与魔共生之策，遭到天人两界口诛笔伐，被放逐至三界之外。只是现在这天庭对清陵百般袒护，看似完全没有宽恕宫村之意。天庭为何非清陵不可？宫村能否重返三界？天魔刑官又会不会再次进化呢？故事越发的扑所迷离。</summary>
     <title>最近在看“上海神话”</title>
-    <updated>2026-10-15T11:29:37.956Z</updated>
+    <updated>2026-10-16T04:12:54.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -195,7 +195,7 @@
     <published>2022-04-12T18:40:10.000Z</published>
     <summary>公权力不用对人民负责，只对上级负责会有多恐怖，上海正在做实验。Do you hear the people sing? Singing the song of angry men? It is the music of the people Who will not be slaves again!</summary>
     <title>特殊时期在上海</title>
-    <updated>2026-10-15T11:29:37.956Z</updated>
+    <updated>2026-10-16T04:12:54.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -210,7 +210,7 @@
     <published>2022-03-22T21:01:39.000Z</published>
     <summary>如果你玩过智能家居，想必也知道不同大厂品牌的智能家居都在构建自己的壁垒，由于不同品牌的智能家居系统优缺点十分明显，自然而然的有玩家想要打破品牌的壁垒，融合各家的优点，打造专属于自己智能家居场景。在众多品牌智能家居中米家价格便宜种类全，可玩性很高，而apple智能家居系统使用体验是最好的，结合这两个系统的产品成为了包括我在内的众多玩家的第一选择。关于小米智能家居联动homekit的方案，网上已经有大量的教程，在网络通畅的情况下实现起来其实并不困难。总的来说就是将不同协议的智能家居设备通过HomeAssistant系统（简称HA）进行管理，并且通过HomeAssistant系统进行联动。虽然HA的管理比较简单，但是联动的实现比较复杂，需要自己根据情况去实现。这里就记录一下，我一个10平的小房间的配置过程。</summary>
     <title>小米智能家居联动HomeKit</title>
-    <updated>2026-10-15T11:29:37.954Z</updated>
+    <updated>2026-10-16T04:12:54.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -228,7 +228,7 @@
       <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
     </summary>
     <title>浮生若梦，悲欢几何</title>
-    <updated>2026-09-13T16:14:11.579Z</updated>
+    <updated>2026-09-13T18:25:43.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -246,7 +246,7 @@
       <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
     </summary>
     <title>介绍一下机器人学习</title>
-    <updated>2026-10-15T11:29:37.964Z</updated>
+    <updated>2026-10-16T04:12:54.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -263,7 +263,7 @@
       <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
     </summary>
     <title>黑鲸智能系统知识库</title>
-    <updated>2026-10-16T14:21:47.675Z</updated>
+    <updated>2026-10-16T14:34:15.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -280,7 +280,7 @@
       <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
     </summary>
     <title>蜜蜂速查-速查表收集站</title>
-    <updated>2026-09-04T14:07:20.002Z</updated>
+    <updated>2024-10-16T02:51:46.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -297,7 +297,7 @@
       <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
     </summary>
     <title>神舟十二号任务公开情报</title>
-    <updated>2026-10-15T11:29:37.964Z</updated>
+    <updated>2026-10-16T04:12:54.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -312,7 +312,7 @@
       <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
     </summary>
     <title>我加入了少数派Matrix，并分享了这些应用... ...</title>
-    <updated>2026-09-13T16:14:11.577Z</updated>
+    <updated>2026-09-13T18:25:43.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -320,9 +320,9 @@
     </author>
     <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
     <category term="软件" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://zkpeace.com/blog-cn/tags/%E8%BD%AF%E4%BB%B6/"/>
     <category term="手机" scheme="https://zkpeace.com/blog-cn/tags/%E6%89%8B%E6%9C%BA/"/>
     <category term="设计" scheme="https://zkpeace.com/blog-cn/tags/%E8%AE%BE%E8%AE%A1/"/>
-    <category term="软件" scheme="https://zkpeace.com/blog-cn/tags/%E8%BD%AF%E4%BB%B6/"/>
     <id>https://zkpeace.com/blog-cn/posts/35289/</id>
     <link href="https://zkpeace.com/blog-cn/posts/35289/"/>
     <published>2021-06-11T04:59:35.000Z</published>
@@ -330,6 +330,6 @@
       <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
     </summary>
     <title>Huawei P40 UI 改造</title>
-    <updated>2026-09-13T16:14:11.571Z</updated>
+    <updated>2026-09-13T18:25:43.000Z</updated>
   </entry>
 </feed>
