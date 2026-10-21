@@ -12467,7 +12467,7 @@ let __tla = (async () => {
         autoplay: (this.initiated && e.autoplay) ?? false,
         loop: e.loop ?? false,
         volume: e.volume ?? 0.5,
-        preload: e.preload ?? true,
+        preload: (e.preload ?? true) && !window.__hexoBg,
         onloaderror: () => {
           console.error(`Audio > Load error > ${e.path}`, e);
         },
@@ -12476,7 +12476,7 @@ let __tla = (async () => {
         }
       }), i.positions = e.positions ?? null, i.positions !== null && !(i.positions instanceof Array) && (i.positions = [
         i.positions
-      ]), i.distanceFade = e.distanceFade ?? null, i.rate = e.rate ?? 1, i.volume = e.volume ?? 0.5, i.antiSpam = e.antiSpam ?? 0.1, i.lastPlay = -1 / 0, i.onPlaying = e.onPlaying ?? null, i.onPlay = e.onPlay ?? null, i.loaded = e.preload ?? true, i.autoplay = e.autoplay ?? false, i.playing = (this.initiated && e.autoplay) ?? false, i.id = s.items.length, i.play = (...a) => {
+      ]), i.distanceFade = e.distanceFade ?? null, i.rate = e.rate ?? 1, i.volume = e.volume ?? 0.5, i.antiSpam = e.antiSpam ?? 0.1, i.lastPlay = -1 / 0, i.onPlaying = e.onPlaying ?? null, i.onPlay = e.onPlay ?? null, i.loaded = (e.preload ?? true) && !window.__hexoBg, i.autoplay = e.autoplay ?? false, i.playing = (this.initiated && e.autoplay) ?? false, i.id = s.items.length, i.play = (...a) => {
         this.initiated && (i.loaded || (i.loaded = true, i.howl.load()), !(i.antiSpam && this.game.ticker.elapsed - i.lastPlay < i.antiSpam) && (typeof i.onPlay == "function" && i.onPlay(i, ...a), i.howl.play(), i.lastPlay = this.game.ticker.elapsed, i.playing = true, s.lastPlayedId = i.id));
       }, s.items.push(i), i;
     }

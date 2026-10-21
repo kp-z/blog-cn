@@ -1,5 +1,5 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./index-CWvHUZNq.js","./three-BPWavq8k.js","./vendor-BcHL05hW.js","./areas-BmBpabag.js","./tweakpane-C39D8eO8.js","./gsap-BcKM28WW.js","./camera-controls-ByztGhiL.js"])))=>i.map(i=>d[i]);
-import { _ as me, __tla as __tla_0 } from "./areas-BmBpabag.js";
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./index-gfTTB43-.js","./three-BPWavq8k.js","./vendor-BcHL05hW.js","./areas-DTgs6KRG.js","./tweakpane-C39D8eO8.js","./gsap-BcKM28WW.js","./camera-controls-ByztGhiL.js"])))=>i.map(i=>d[i]);
+import { _ as me, __tla as __tla_0 } from "./areas-DTgs6KRG.js";
 import { bJ as ve, bK as he, bL as X, V as we } from "./three-BPWavq8k.js";
 import "./tweakpane-C39D8eO8.js";
 import "./vendor-BcHL05hW.js";
@@ -36,7 +36,7 @@ Promise.all([
   })();
   (function() {
     var M = new URLSearchParams(location.search), I = M.get("bg") === "1", U = window.parent && window.parent !== window, t = I ? "bg" : "game";
-    window.__hexoBg = I, I && document.documentElement.classList.add("hexo-bg"), me(() => import("./index-CWvHUZNq.js"), __vite__mapDeps([0,1,2,3,4,5,6]), import.meta.url);
+    window.__hexoBg = I, I && document.documentElement.classList.add("hexo-bg"), me(() => import("./index-gfTTB43-.js"), __vite__mapDeps([0,1,2,3,4,5,6]), import.meta.url);
     var o = document.createElement("style");
     o.textContent = "html.hexo-bg .menu-trigger,html.hexo-bg .map-trigger,html.hexo-bg .touch-buttons,html.hexo-bg .notifications,html.hexo-bg .modals,html.hexo-bg .menu,html.hexo-bg .fonts-loader{display:none !important}html.hexo-bg,html.hexo-bg *{cursor:default !important}.menu-trigger{top:auto !important;bottom:78px !important;right:18px !important;width:52px !important;height:34px !important}.map-trigger{top:auto !important;bottom:132px !important;right:18px !important;width:52px !important;height:34px !important}.menu-trigger .button-inner,.map-trigger .button-inner{background:rgba(10,18,24,.42) !important;border:1px solid rgba(255,255,255,.38) !important;border-right:2px solid rgba(255,255,255,.78) !important;border-radius:9px !important;box-sizing:border-box !important;width:100% !important;height:100% !important;-webkit-backdrop-filter:blur(8px) !important;backdrop-filter:blur(8px) !important}.menu-trigger .button-inner::after,.map-trigger .button-inner::after{display:none !important}.menu-trigger .icon-container,.map-trigger .icon-container{left:0 !important;right:0 !important;top:0 !important;bottom:0 !important}html:not(.is-mode-touch) .menu-trigger:hover .button-inner,html:not(.is-mode-touch) .map-trigger:hover .button-inner{transform:none !important;background:rgba(10,18,24,.6) !important}@media (min-width:801px){.menu .inner{width:min(860px,calc(100% - 160px)) !important;height:min(520px,calc(100% - 160px)) !important}.menu .contents .content .content-inner{width:100% !important}.map{width:760px !important;height:760px !important;max-width:68vmin !important;max-height:68vmin !important}}@media only screen and (max-width:800px) and (orientation:portrait){.menu .inner{height:calc((100% - 54px) * 2 / 3) !important}}", document.head.appendChild(o);
     function p(e, r) {
