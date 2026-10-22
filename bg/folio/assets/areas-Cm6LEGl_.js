@@ -4,7 +4,7 @@ var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { en
 var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
 import { P as Qs, E as Js, C as ei } from "./tweakpane-C39D8eO8.js";
 import { n as ti, s as st, e as si, v as ii, m as is, h as nt } from "./vendor-BcHL05hW.js";
-import { S as he, V as y, R as Kt, G as at, a as ps, u as d, v as E, M as O, F as b, b as w, p as Z, c as ft, d as jt, I as De, s as _, m as ge, f as F, e as C, g as D, h as Qe, i as H, P as Xt, Q as ot, E as dt, n as ai, j as ni, T as oi, k, l as fs, o as A, W as ri, q as li, r as hi, t as ci, w as di, x as ui, y as mi, z as gi, K as pi, D as fi, A as vi, B as bi, C as Rt, H as X, J as yi, L as vs, N as Ke, O as ne, U as le, X as bs, Y as et, Z as Q, _ as as, $ as M, a0 as vt, a1 as Ae, a2 as ys, a3 as wi, a4 as Y, a5 as P, a6 as Be, a7 as Oe, a8 as qt, a9 as rt, aa as xi, ab as ke, ac as Ce, ad as Yt, ae as ws, af as We, ag as Et, ah as It, ai as _e, aj as tt, ak as Pi, al as Ze, am as Si, an as Zt, ao as W, ap as bt, aq as ee, ar as Je, as as re, at as Ne, au as lt, av as $e, aw as _t, ax as xs, ay as Ti, az as Mi, aA as j, aB as Ve, aC as de, aD as Ft, aE as mt, aF as Ps, aG as Ss, aH as te, aI as gt, aJ as ki, aK as Ci, aL as Ai, aM as Ts, aN as Ms, aO as zt, aP as yt, aQ as ks, aR as Cs, aS as wt, aT as As, aU as Lt, aV as Ot, aW as Es, aX as Is, aY as Ei, aZ as Qt, a_ as Jt, a$ as ut, b0 as At, b1 as Bs, b2 as Wt, b3 as ze, b4 as Ii, b5 as Bi, b6 as es, b7 as Ni, b8 as Ns, b9 as ns, ba as Ds, bb as Rs, bc as Di, bd as Ri, be as qe, bf as Fi, bg as Fs, bh as zi, bi as zs, bj as ts, bk as pt, bl as os, bm as it, bn as Li, bo as Bt, bp as Oi, bq as Ui, br as Ls, bs as Gi, bt as ji, bu as qi, bv as Os, bw as Vi, bx as xe, by as rs, bz as Me, bA as Hi, bB as Wi, bC as $i, bD as Ki, bE as Pt, bF as Xi, bG as Yi, bH as Zi, bI as _i } from "./three-BPWavq8k.js";
+import { S as he, V as y, R as Kt, G as at, a as ps, u as d, v as E, M as O, F as b, b as w, p as Z, c as ft, d as jt, I as De, s as _, m as ge, f as F, e as C, g as D, h as Qe, i as H, P as Xt, Q as ot, E as dt, n as ai, j as ni, T as oi, k, l as fs, o as A, W as ri, q as li, r as hi, t as ci, w as di, x as ui, y as mi, z as gi, K as pi, D as fi, A as vi, B as bi, C as Rt, H as X, J as yi, L as vs, N as Ke, O as ne, U as le, X as bs, Y as et, Z as Q, _ as as, $ as M, a0 as vt, a1 as Ae, a2 as ys, a3 as wi, a4 as Y, a5 as P, a6 as Be, a7 as Le, a8 as qt, a9 as rt, aa as xi, ab as ke, ac as Ce, ad as Yt, ae as ws, af as We, ag as Et, ah as It, ai as _e, aj as tt, ak as Pi, al as Ze, am as Si, an as Zt, ao as W, ap as bt, aq as ee, ar as Je, as as re, at as Ne, au as lt, av as $e, aw as _t, ax as xs, ay as Ti, az as Mi, aA as j, aB as Ve, aC as de, aD as Ft, aE as mt, aF as Ps, aG as Ss, aH as te, aI as gt, aJ as ki, aK as Ci, aL as Ai, aM as Ts, aN as Ms, aO as zt, aP as yt, aQ as ks, aR as Cs, aS as wt, aT as As, aU as Lt, aV as Ot, aW as Es, aX as Is, aY as Ei, aZ as Qt, a_ as Jt, a$ as ut, b0 as At, b1 as Bs, b2 as Wt, b3 as Fe, b4 as Ii, b5 as Bi, b6 as es, b7 as Ni, b8 as Ns, b9 as ns, ba as Ds, bb as Rs, bc as Di, bd as Ri, be as qe, bf as Fi, bg as Fs, bh as zi, bi as zs, bj as ts, bk as pt, bl as os, bm as it, bn as Li, bo as Bt, bp as Oi, bq as Ui, br as Ls, bs as Gi, bt as ji, bu as qi, bv as Os, bw as Vi, bx as xe, by as rs, bz as Me, bA as Hi, bB as Wi, bC as $i, bD as Ki, bE as Pt, bF as Xi, bG as Yi, bH as Zi, bI as _i } from "./three-BPWavq8k.js";
 import { g as f } from "./gsap-BcKM28WW.js";
 import { C as Us } from "./camera-controls-ByztGhiL.js";
 let T, ea;
@@ -682,7 +682,7 @@ let __tla = (async () => {
       }
     }
   }
-  const _Le = class _Le {
+  const _ze = class _ze {
     constructor(e) {
       this.element = e, this.events = new se(), this.current = {
         x: 0,
@@ -693,20 +693,20 @@ let __tla = (async () => {
       }, this.upcoming = {
         x: 0,
         y: 0
-      }, this.isDown = false, this.mode = _Le.MODE_MOUSE, this.upcomingDown = false, this.hasMoved = false, this.upcomingTouches = [], this.touches = [], this.pinch = {
+      }, this.isDown = false, this.mode = _ze.MODE_MOUSE, this.upcomingDown = false, this.hasMoved = false, this.upcomingTouches = [], this.touches = [], this.pinch = {
         ratio: 1,
         ratioDelta: 0,
         baseDistance: 0,
         distance: 0,
         distanceDelta: 0
       }, this.element.addEventListener("mousemove", (t) => {
-        t.preventDefault(), this.mode = _Le.MODE_MOUSE, this.upcoming.x = t.clientX, this.upcoming.y = t.clientY;
+        t.preventDefault(), this.mode = _ze.MODE_MOUSE, this.upcoming.x = t.clientX, this.upcoming.y = t.clientY;
       }), this.element.addEventListener("mousedown", (t) => {
-        t.preventDefault(), this.mode = _Le.MODE_MOUSE, this.upcomingDown = true, this.current.x = t.clientX, this.current.y = t.clientY, this.upcoming.x = t.clientX, this.upcoming.y = t.clientY;
+        t.preventDefault(), this.mode = _ze.MODE_MOUSE, this.upcomingDown = true, this.current.x = t.clientX, this.current.y = t.clientY, this.upcoming.x = t.clientX, this.upcoming.y = t.clientY;
       }), addEventListener("mouseup", (t) => {
         t.preventDefault(), this.upcomingDown = false;
       }), this.element.addEventListener("touchmove", (t) => {
-        this.mode = _Le.MODE_TOUCH, this.upcomingTouches = [
+        this.mode = _ze.MODE_TOUCH, this.upcomingTouches = [
           ...t.touches
         ];
         let s = 0, i = 0;
@@ -715,7 +715,7 @@ let __tla = (async () => {
       }, {
         passive: true
       }), this.element.addEventListener("touchstart", (t) => {
-        this.mode = _Le.MODE_TOUCH, this.upcomingDown = true, this.upcomingTouches = [
+        this.mode = _ze.MODE_TOUCH, this.upcomingDown = true, this.upcomingTouches = [
           ...t.touches
         ];
         let s = 0, i = 0;
@@ -747,9 +747,9 @@ let __tla = (async () => {
       ], this.hasMoved = this.delta.x !== 0 || this.delta.y !== 0, this.upcomingDown !== this.isDown && (this.isDown = this.upcomingDown, this.isDown ? this.events.trigger("down") : this.events.trigger("up")), this.hasMoved && this.events.trigger("move");
     }
   };
-  __publicField(_Le, "MODE_MOUSE", 1);
-  __publicField(_Le, "MODE_TOUCH", 2);
-  let Le = _Le;
+  __publicField(_ze, "MODE_MOUSE", 1);
+  __publicField(_ze, "MODE_TOUCH", 2);
+  let ze = _ze;
   class ua {
     constructor() {
       this.events = new se(), this.pressed = [], window.addEventListener("blur", () => {
@@ -966,13 +966,13 @@ let __tla = (async () => {
       });
     }
     setPointer() {
-      this.pointer = new Le(this.game.canvasElement), this.pointer.events.on("down", () => {
-        this.updateMode(this.pointer.mode === Le.MODE_MOUSE ? _K.MODE_MOUSEKEYBOARD : _K.MODE_TOUCH), this.start("Pointer.any", {
+      this.pointer = new ze(this.game.canvasElement), this.pointer.events.on("down", () => {
+        this.updateMode(this.pointer.mode === ze.MODE_MOUSE ? _K.MODE_MOUSEKEYBOARD : _K.MODE_TOUCH), this.start("Pointer.any", {
           x: this.pointer.current.x,
           y: this.pointer.current.y
         });
       }), this.pointer.events.on("up", () => {
-        this.updateMode(this.pointer.mode === Le.MODE_MOUSE ? _K.MODE_MOUSEKEYBOARD : _K.MODE_TOUCH), this.end("Pointer.any", {
+        this.updateMode(this.pointer.mode === ze.MODE_MOUSE ? _K.MODE_MOUSEKEYBOARD : _K.MODE_TOUCH), this.end("Pointer.any", {
           x: this.pointer.current.x,
           y: this.pointer.current.y
         });
@@ -2130,7 +2130,7 @@ let __tla = (async () => {
         }
       ]), this.game.inputs.events.on("viewMapPointer", (e) => {
         if (this.mode === _ve.MODE_DEFAULT && e.active) {
-          if (this.game.inputs.pointer.mode === Le.MODE_MOUSE || this.game.inputs.pointer.touches.length >= 2) {
+          if (this.game.inputs.pointer.mode === ze.MODE_MOUSE || this.game.inputs.pointer.touches.length >= 2) {
             this.focusPoint.isTracking = false;
             const t = new H(this.game.inputs.pointer.delta.x, this.game.inputs.pointer.delta.y);
             t.rotateAround(new H(), -this.spherical.theta);
@@ -2266,7 +2266,7 @@ let __tla = (async () => {
         wireframe: false
       });
       l.positionNode = b(() => {
-        const r = Be(Be(k().x, k().y).mul(20), 1), h = Oe;
+        const r = Be(Be(k().x, k().y).mul(20), 1), h = Le;
         return h.y.addAssign(t.b.mul(-1.5).mul(r)), h;
       })(), this.mesh = new D(e, l), this.mesh.receiveShadow = true, this.game.scene.add(this.mesh), this.game.viewport.events.on("throttleChange", () => {
         this.size = Math.round(this.game.view.optimalArea.radius * 2) + 1, this.halfSize = this.size * 0.5, this.subdivisions = this.size, e.dispose(), e = new Y(this.size, this.size, this.subdivisions, this.subdivisions), e.rotateX(-Math.PI * 0.5), e.deleteAttribute("normal"), this.mesh.geometry = e;
@@ -3124,9 +3124,9 @@ let __tla = (async () => {
       c.push(G);
       const oe = d(1);
       G.outputNode = b(() => {
-        const we = w(k().x.sub(oe), k().y), Ue = P(q, we).r;
+        const we = w(k().x.sub(oe), k().y), Oe = P(q, we).r;
         we.x.greaterThan(1).discard(), we.x.lessThan(0).discard();
-        const Ge = this.game.fog.strength.mix(this.backColor, this.game.fog.color), ht = A(Ge, this.frontColor, Ue);
+        const Ue = this.game.fog.strength.mix(this.backColor, this.game.fog.color), ht = A(Ue, this.frontColor, Oe);
         return C(E(ht), 1);
       })();
       const J = new D(this.geometries.label, G);
@@ -3138,8 +3138,8 @@ let __tla = (async () => {
       c.push(pe);
       const fe = d(0), Ee = d(0.15), Ie = d(0.175);
       pe.outputNode = b(() => {
-        const we = k(), Ue = ge(we.x.sub(0.5).abs(), we.y.sub(0.5).abs()).mul(2), Ge = fe.sub(Ue).sub(Ie).abs(), ht = _(Ge, Ee.mul(0.5));
-        Ue.greaterThan(fe).discard();
+        const we = k(), Oe = ge(we.x.sub(0.5).abs(), we.y.sub(0.5).abs()).mul(2), Ue = fe.sub(Oe).sub(Ie).abs(), ht = _(Ue, Ee.mul(0.5));
+        Oe.greaterThan(fe).discard();
         const Ut = this.game.fog.strength.mix(this.backColor, this.game.fog.color), Gt = A(Ut, this.frontColor, ht);
         return C(E(Gt), 1);
       })();
@@ -3232,28 +3232,28 @@ let __tla = (async () => {
         if (R.state === _N.STATE_CONCEALED) return;
         const we = R.state;
         R.state = _N.STATE_CONCEALED, R.intersect.active = true, Se.visible = true;
-        const Ue = we === _N.STATE_HIDDEN ? "power2.out" : "back.in(4.5)";
+        const Oe = we === _N.STATE_HIDDEN ? "power2.out" : "back.in(4.5)";
         f.to(fe, {
           value: 0.25,
-          ease: Ue,
+          ease: Oe,
           duration: 0.6,
           delay: 0.2,
           overwrite: true
         }), f.to(Ee, {
           value: 0.15,
-          ease: Ue,
+          ease: Oe,
           duration: 0.6,
           delay: 0.2,
           overwrite: true
         }), f.to(Ie, {
           value: 0.175,
-          ease: Ue,
+          ease: Oe,
           duration: 0.6,
           delay: 0.2,
           overwrite: true,
           onComplete: () => {
             J.visible = false;
-            for (const Ge of R.materials) Ge.depthTest = true, Ge.needsUpdate = true;
+            for (const Ue of R.materials) Ue.depthTest = true, Ue.needsUpdate = true;
           }
         }), this.activeItem === R && f.to(this.keyIcon.scale, {
           x: 0,
@@ -8408,8 +8408,8 @@ let __tla = (async () => {
         x.addAssign(pe);
         const fe = v.xz.mul(this.windFrequency).add(this.game.wind.direction.mul(this.game.wind.localTime)).xy, Ee = P(this.game.noises.perlin, fe).r, Ie = this.game.wind.strength.sub(Ee).mul(S).mul(this.windMultiplier).max(0);
         x.x.addAssign(this.game.wind.direction.x.mul(Ie)), x.z.addAssign(this.game.wind.direction.y.mul(Ie));
-        const Se = v.xz.sub(this.explosion.xy), we = Se.length().remapClamp(this.explosion.z.mul(0.5), this.explosion.z.mul(1), 0.2, 0), Ge = w(Se.x, Se.y).mul(we).mul(this.explosion.a);
-        x.addAssign(E(Ge.x, 0, Ge.y));
+        const Se = v.xz.sub(this.explosion.xy), we = Se.length().remapClamp(this.explosion.z.mul(0.5), this.explosion.z.mul(1), 0.2, 0), Ue = w(Se.x, Se.y).mul(we).mul(this.explosion.a);
+        x.addAssign(E(Ue.x, 0, Ue.y));
         const ht = v.y.remapClamp(0, 6, 1, 0);
         x.y = x.xz.length().min(2).mul(this.upwardMultiplier).mul(ht);
         const Ut = I.b.remapClamp(0.4, 0, this.waterDamping, this.defaultDamping), Gt = _(0.05, v.y).mul(this.defaultDamping), Zs = ge(Ut, Gt).mul(this.game.ticker.deltaScaledUniform);
@@ -8928,8 +8928,8 @@ let __tla = (async () => {
     update() {
       if (this.elevationBinding.update(), this.elevation.value > -0.9) {
         this.mesh.visible = true, !this.achievementAchieved && this.game.reveal.step === 2 && this.elevation.value > 0 && (this.achievementAchieved = true, this.game.achievements.setProgress("weatherSnow", 1)), this.glitterVariation.value += this.game.ticker.deltaScaled * this.glitterTimeMultiplier + this.game.view.delta.length() * this.glitterViewMultiplier, this.roundedPosition.value.x = Math.round(this.game.view.optimalArea.position.x / this.subdivisionSize) * this.subdivisionSize, this.roundedPosition.value.y = Math.round(this.game.view.optimalArea.position.z / this.subdivisionSize) * this.subdivisionSize, this.tracksDelta.value.set(this.roundedPosition.value.x - this.game.tracks.focusPoint.x, this.roundedPosition.value.y - this.game.tracks.focusPoint.y);
-        const e = ze.resetRendererState(this.game.rendering.renderer);
-        this.game.rendering.renderer.setPixelRatio(1), this.game.rendering.renderer.setRenderTarget(this.snowElevation.renderTarget), this.snowElevation.quadMesh.render(this.game.rendering.renderer), this.game.rendering.renderer.setRenderTarget(null), ze.restoreRendererState(this.game.rendering.renderer, e);
+        const e = Fe.resetRendererState(this.game.rendering.renderer);
+        this.game.rendering.renderer.setPixelRatio(1), this.game.rendering.renderer.setRenderTarget(this.snowElevation.renderTarget), this.snowElevation.quadMesh.render(this.game.rendering.renderer), this.game.rendering.renderer.setRenderTarget(null), Fe.restoreRendererState(this.game.rendering.renderer, e);
       } else this.mesh.visible = false;
     }
   }
@@ -9250,8 +9250,8 @@ let __tla = (async () => {
     }
     update() {
       this.camera.position.x = this.focusPoint.x, this.camera.position.z = this.focusPoint.y;
-      const e = ze.resetRendererState(this.game.rendering.renderer);
-      this.game.rendering.renderer.setPixelRatio(1), this.game.rendering.renderer.setRenderTarget(this.renderTarget), this.game.rendering.renderer.render(this.scene, this.camera), this.game.rendering.renderer.setRenderTarget(null), ze.restoreRendererState(this.game.rendering.renderer, e);
+      const e = Fe.resetRendererState(this.game.rendering.renderer);
+      this.game.rendering.renderer.setPixelRatio(1), this.game.rendering.renderer.setRenderTarget(this.renderTarget), this.game.rendering.renderer.render(this.scene, this.camera), this.game.rendering.renderer.setRenderTarget(null), Fe.restoreRendererState(this.game.rendering.renderer, e);
     }
   }
   class us {
@@ -9565,7 +9565,7 @@ let __tla = (async () => {
         depthWrite: true,
         depthTest: true
       });
-      l.positionNode = an(Oe, i, a, n.sub(0.05), this.game.ticker.elapsedScaledUniform.mul(s).mul(2)), l.outputNode = b(() => {
+      l.positionNode = an(Le, i, a, n.sub(0.05), this.game.ticker.elapsedScaledUniform.mul(s).mul(2)), l.outputNode = b(() => {
         const r = this.game.ticker.elapsedScaledUniform.mul(s).negate(), h = k().y.sub(1).pow(2).oneMinus(), c = wt(h.mul(2).add(1).mul(Fs));
         c.assign(zi(c, -1, 1, -1, 1));
         const u = this.visibility.remap(0, 1, -4, 0), g = k().add(w(r.mul(1.1), r.mul(1.1)));
@@ -9651,9 +9651,9 @@ let __tla = (async () => {
         hasWater: false
       });
       const t = d(0.25);
-      this.material.receivedShadowPositionNode = Oe.add(this.game.lighting.directionUniform.mul(t));
-      const s = this.game.wind.offsetNode(Oe.xz), i = Oe.y.clamp(0, 1).mul(1);
-      this.material.positionNode = b(({ object: a }) => (ts(a.count, this.instanceMatrix).toStack(), Oe.add(E(s.x, 0, s.y).mul(i))))(), this.game.debug.active && this.game.debug.addThreeColorBinding(this.debugPanel, e.value, "baseColor");
+      this.material.receivedShadowPositionNode = Le.add(this.game.lighting.directionUniform.mul(t));
+      const s = this.game.wind.offsetNode(Le.xz), i = Le.y.clamp(0, 1).mul(1);
+      this.material.positionNode = b(({ object: a }) => (ts(a.count, this.instanceMatrix).toStack(), Le.add(E(s.x, 0, s.y).mul(i))))(), this.game.debug.active && this.game.debug.addThreeColorBinding(this.debugPanel, e.value, "baseColor");
     }
     setInstancedMesh() {
       this.mesh = new D(this.geometry, this.material), this.mesh.castShadow = true, this.mesh.receiveShadow = true, this.mesh.count = this.transformMatrices.length, this.mesh.frustumCulled = false, this.game.scene.add(this.mesh), this.instanceMatrix = new gt(new Float32Array(this.mesh.count * 16), 16), this.instanceMatrix.setUsage(pt), this.instanceColorIndex = new gt(new Float32Array(this.colorIndices), 1), this.instanceColorIndex.setUsage(pt);
@@ -9725,7 +9725,7 @@ let __tla = (async () => {
     setMaterial() {
       this.material = {}, this.material.threshold = d(0.3), this.material.seeThroughPosition = d(w()), this.material.seeThroughEdgeMin = d(0.11), this.material.seeThroughEdgeMax = d(0.57);
       const e = b(() => {
-        const i = _e(k(), this.game.wind.offsetNode(Oe.xz).length().mul(2.2), w(0.5));
+        const i = _e(k(), this.game.wind.offsetNode(Le.xz).length().mul(2.2), w(0.5));
         return P(this.game.resources.foliageTexture, i).r;
       }), t = b(() => {
         let i = F(1);
@@ -9744,7 +9744,7 @@ let __tla = (async () => {
         colorNode: s,
         alphaNode: t,
         hasWater: false
-      }), this.material.instance.positionNode = b(({ object: i }) => (ts(i.count, this.instanceMatrix).toStack(), Oe))(), this.material.shadowOffset = d(1), this.material.instance.receivedShadowPositionNode = Oe.add(this.game.lighting.directionUniform.mul(this.material.shadowOffset)), this.material.instance.maskShadowNode = P(this.game.resources.foliageTexture).r.greaterThan(0.5);
+      }), this.material.instance.positionNode = b(({ object: i }) => (ts(i.count, this.instanceMatrix).toStack(), Le))(), this.material.shadowOffset = d(1), this.material.instance.receivedShadowPositionNode = Le.add(this.game.lighting.directionUniform.mul(this.material.shadowOffset)), this.material.instance.maskShadowNode = P(this.game.resources.foliageTexture).r.greaterThan(0.5);
     }
     setFromReferences() {
       this.transformMatrices = [];
@@ -10117,7 +10117,7 @@ let __tla = (async () => {
         const r = t.amplitudeUniform.oneMinus();
         l.positionNode = b(() => {
           ts(this.count, h).toStack();
-          const c = Oe, u = r.mul(a), g = u.add(t.amplitudeUniform), p = Li(t.progressUniform, u, g, 0, 1).toVar();
+          const c = Le, u = r.mul(a), g = u.add(t.amplitudeUniform), p = Li(t.progressUniform, u, g, 0, 1).toVar();
           p.assign(p.oneMinus().pow(3).oneMinus());
           const v = p.sub(0.5).mul(2).abs().oneMinus().mul(20).min(1);
           c.mulAssign(v);
@@ -10594,7 +10594,7 @@ let __tla = (async () => {
   }
   class wn {
     constructor() {
-      this.game = T.getInstance(), this.useDayCycles = true, this.phi = 0.63, this.theta = 0.72, this.phiAmplitude = 0.62, this.thetaAmplitude = 1.25, this.near = 1, this.spherical = new bt(this.game.view.optimalArea.radius + this.near, this.phi, this.theta), this.direction = new y().setFromSpherical(this.spherical).normalize(), this.directionUniform = d(this.direction), this.colorUniform = d(M("#ffffff")), this.intensityUniform = d(1), this.count = 1, this.mapSize = this.game.quality.level === 0 ? 2048 : 512, this.shadowAmplitude = this.game.view.optimalArea.radius, this.depth = this.game.view.optimalArea.radius * 2, this.shadowBias = -1e-3, this.shadowNormalBias = 0.1, this.shadowRadius = this.game.quality.level === 0 ? 3 : 2, this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
+      this.game = T.getInstance(), this.useDayCycles = true, this.phi = 0.63, this.theta = 0.72, this.phiAmplitude = 0.62, this.thetaAmplitude = 1.25, this.near = 1, this.spherical = new bt(this.game.view.optimalArea.radius + this.near, this.phi, this.theta), this.direction = new y().setFromSpherical(this.spherical).normalize(), this.directionUniform = d(this.direction), this.colorUniform = d(M("#ffffff")), this.intensityUniform = d(1), this.sunHorizonFactor = 1, this.count = 1, this.mapSize = this.game.quality.level === 0 ? 2048 : 512, this.shadowAmplitude = this.game.view.optimalArea.radius, this.depth = this.game.view.optimalArea.radius * 2, this.shadowBias = -1e-3, this.shadowNormalBias = 0.1, this.shadowRadius = this.game.quality.level === 0 ? 3 : 2, this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F4A1} Lighting",
         expanded: false
       })), this.setNodes(), this.setLight(), this.updateShadow(), this.setHelpers(), this.game.ticker.events.on("tick", () => {
@@ -10703,9 +10703,21 @@ let __tla = (async () => {
       this.direction.setFromSpherical(this.spherical).normalize();
     }
     update() {
-      this.useDayCycles ? (this.spherical.theta = this.theta + Math.sin(-(this.game.dayCycles.progress + 0.5625) * Math.PI * 2) * this.thetaAmplitude, this.spherical.phi = this.phi + Math.cos(-(this.game.dayCycles.progress + 0.5625) * Math.PI * 2) * 0.5 * this.phiAmplitude) : (this.spherical.theta = this.theta, this.spherical.phi = this.phi), this.direction.setFromSpherical(this.spherical).normalize();
+      if (this.useDayCycles) {
+        const t = (this.game.dayCycles.progress * 24 + 18) % 24;
+        let s, i;
+        if (t >= 6 && t < 18) {
+          const a = (t - 6) / 12;
+          s = 6 + Math.sin(Math.PI * a) * 56, i = -1.15 + a * 2.3;
+        } else {
+          const n = (t >= 18 ? t - 18 : t + 6) / 12;
+          s = 10 + Math.sin(Math.PI * n) * 28, i = -1.15 + n * 2.3;
+        }
+        this.spherical.theta = i, this.spherical.phi = Math.PI * 0.5 - s * Math.PI / 180, this.sunHorizonFactor = 0.62 + 0.38 * Math.max(0, Math.sin(s * Math.PI / 180));
+      } else this.spherical.theta = this.theta, this.spherical.phi = this.phi, this.sunHorizonFactor = 1;
+      this.direction.setFromSpherical(this.spherical).normalize();
       const e = this.game.view.optimalArea.position.clone();
-      this.light.position.setFromSpherical(this.spherical).add(e), this.light.target.position.copy(e), this.directionHelper.position.copy(this.direction).multiplyScalar(5).add(this.game.view.focusPoint.position), this.directionHelper.lookAt(this.game.view.focusPoint.position), this.colorUniform.value.copy(this.game.dayCycles.properties.lightColor.value), this.intensityUniform.value = this.game.dayCycles.properties.lightIntensity.value;
+      this.light.position.setFromSpherical(this.spherical).add(e), this.light.target.position.copy(e), this.directionHelper.position.copy(this.direction).multiplyScalar(5).add(this.game.view.focusPoint.position), this.directionHelper.lookAt(this.game.view.focusPoint.position), this.colorUniform.value.copy(this.game.dayCycles.properties.lightColor.value), this.intensityUniform.value = this.game.dayCycles.properties.lightIntensity.value * (this.sunHorizonFactor || 1);
     }
   }
   class xn {
@@ -11014,11 +11026,11 @@ let __tla = (async () => {
     }
   }
   class Xs {
-    constructor(e = "Cycles", t = 10, s = null, i = false) {
+    constructor(e = "Cycles", t = 10, s = null, i = false, a = 0) {
       this.game = T.getInstance(), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: e,
         expanded: false
-      })), this.name = e, this.duration = t, this.absoluteProgress = s !== null ? s : Date.now() / 1e3 / this.duration, this.newAbsoluteProgress = this.absoluteProgress, this.progress = this.absoluteProgress % 1, this.progressDelta = 1, this.keyframesList = [], this.properties = [], this.punctualEvents = /* @__PURE__ */ new Map(), this.intervalEvents = /* @__PURE__ */ new Map(), this.events = new se(), this.newAbsoluteProgressBinding = this.game.debug.addManualBinding(this.debugPanel, this, "newAbsoluteProgress", {
+      })), this.name = e, this.duration = t, this.shift = typeof a == "function" ? a : () => a, this.absoluteProgress = s !== null ? s : (Date.now() / 1e3 + this.shift()) / this.duration, this.newAbsoluteProgress = this.absoluteProgress, this.progress = this.absoluteProgress % 1, this.progressDelta = 1, this.keyframesList = [], this.properties = [], this.punctualEvents = /* @__PURE__ */ new Map(), this.intervalEvents = /* @__PURE__ */ new Map(), this.events = new se(), this.newAbsoluteProgressBinding = this.game.debug.addManualBinding(this.debugPanel, this, "newAbsoluteProgress", {
         view: "cameraring",
         series: 0,
         unit: {
@@ -11027,7 +11039,7 @@ let __tla = (async () => {
           value: 1,
           step: 1e-3
         }
-      }, () => s !== null ? s : (/* @__PURE__ */ new Date()).getTime() / 1e3 / this.duration, i), this.setKeyframes(), this.setOverride(), this.setIntervals(), this.game.ticker.events.on("tick", () => {
+      }, () => s !== null ? s : ((/* @__PURE__ */ new Date()).getTime() / 1e3 + this.shift()) / this.duration, i), this.setKeyframes(), this.setOverride(), this.setIntervals(), this.game.ticker.events.on("tick", () => {
         this.update();
       }, 8), this.update(true);
     }
@@ -11157,18 +11169,18 @@ let __tla = (async () => {
       });
     }
   }
-  const Fe = {
+  const Ge = {
     day: {
       revealColor: new X("#5f7dff"),
       revealIntensity: 12,
       electricField: 0,
       temperature: 5,
-      lightColor: new X("#ffd2c2"),
-      lightIntensity: 1.2,
-      shadowColor: new X("#6d3fff"),
-      fogColorA: new X("#00ffff"),
-      fogColorB: new X("#9b89ff"),
-      fogNearRatio: 0.315,
+      lightColor: new X("#fff3e2"),
+      lightIntensity: 2,
+      shadowColor: new X("#8a80b8"),
+      fogColorA: new X("#9fdcff"),
+      fogColorB: new X("#d4c8ff"),
+      fogNearRatio: 0.42,
       fogFarRatio: 1.25
     },
     dusk: {
@@ -11176,12 +11188,12 @@ let __tla = (async () => {
       revealIntensity: 5.55,
       electricField: 0.25,
       temperature: 0,
-      lightColor: new X("#ff8181"),
-      lightIntensity: 1.2,
-      shadowColor: new X("#4e009c"),
-      fogColorA: new X("#3e53ff"),
-      fogColorB: new X("#ff4ce4"),
-      fogNearRatio: 0,
+      lightColor: new X("#ff9d64"),
+      lightIntensity: 1.7,
+      shadowColor: new X("#5b2a9e"),
+      fogColorA: new X("#5a6bff"),
+      fogColorB: new X("#ff79c9"),
+      fogNearRatio: 0.05,
       fogFarRatio: 1.25
     },
     night: {
@@ -11189,9 +11201,9 @@ let __tla = (async () => {
       revealIntensity: 10,
       electricField: 1,
       temperature: -7.5,
-      lightColor: new X("#3240ff"),
-      lightIntensity: 3.8,
-      shadowColor: new X("#2f00db"),
+      lightColor: new X("#5064ff"),
+      lightIntensity: 2.6,
+      shadowColor: new X("#2a1b8f"),
       fogColorA: new X("#10266f"),
       fogColorB: new X("#490a42"),
       fogNearRatio: -0.85,
@@ -11202,31 +11214,31 @@ let __tla = (async () => {
       revealIntensity: 4.85,
       electricField: 0.25,
       temperature: 0,
-      lightColor: new X("#ffa882"),
-      lightIntensity: 1.2,
-      shadowColor: new X("#db004f"),
-      fogColorA: new X("#f885ff"),
-      fogColorB: new X("#ff7d24"),
-      fogNearRatio: 0.3,
+      lightColor: new X("#ffd0a6"),
+      lightIntensity: 1.35,
+      shadowColor: new X("#8f5f9c"),
+      fogColorA: new X("#c7a8ff"),
+      fogColorB: new X("#ffb066"),
+      fogNearRatio: 0.2,
       fogFarRatio: 1.25
     }
   };
   class Tn extends Xs {
     constructor() {
-      super("\u{1F55C} Day Cycles", 240, null, false);
+      super("\u{1F55C} Day Cycles", 1440 * 60, null, false, () => -(/* @__PURE__ */ new Date()).getTimezoneOffset() * 60 - 1080 * 60);
     }
     get presets() {
-      return Fe;
+      return Ge;
     }
     getKeyframesDescriptions() {
       if (this.game.debug.active) {
         this.debugPanel.addBinding(this, "duration", {
           min: 1,
-          max: 600,
+          max: 1440 * 60,
           step: 1
         });
-        for (const e in Fe) {
-          const t = Fe[e], s = this.debugPanel.addFolder({
+        for (const e in Ge) {
+          const t = Ge[e], s = this.debugPanel.addFolder({
             title: e,
             expanded: true
           });
@@ -11253,32 +11265,28 @@ let __tla = (async () => {
       return [
         [
           {
-            properties: Fe.day,
+            properties: Ge.dusk,
             stop: 0
           },
           {
-            properties: Fe.day,
-            stop: 0.15
+            properties: Ge.night,
+            stop: 0.05
           },
           {
-            properties: Fe.dusk,
-            stop: 0.25
+            properties: Ge.night,
+            stop: 0.42
           },
           {
-            properties: Fe.night,
-            stop: 0.35
+            properties: Ge.dawn,
+            stop: 0.5
           },
           {
-            properties: Fe.night,
-            stop: 0.6
+            properties: Ge.day,
+            stop: 0.55
           },
           {
-            properties: Fe.dawn,
-            stop: 0.8
-          },
-          {
-            properties: Fe.day,
-            stop: 0.9
+            properties: Ge.day,
+            stop: 0.95
           }
         ]
       ];
@@ -11287,13 +11295,13 @@ let __tla = (async () => {
       return [
         {
           name: "night",
-          start: 0.25,
-          end: 0.7
+          start: 0.04,
+          end: 0.48
         },
         {
           name: "deepNight",
-          start: 0.35,
-          end: 0.6
+          start: 0.2,
+          end: 0.42
         }
       ];
     }
@@ -11481,8 +11489,8 @@ let __tla = (async () => {
         wireframe: false
       });
       t.outputNode = C(kn(k(), 8), 0), this.quadMesh.material = t;
-      const s = ze.resetRendererState(this.game.rendering.renderer);
-      this.game.rendering.renderer.setPixelRatio(1), this.game.rendering.renderer.setRenderTarget(e), this.quadMesh.render(this.game.rendering.renderer), this.game.rendering.renderer.setRenderTarget(null), ze.restoreRendererState(this.game.rendering.renderer, s);
+      const s = Fe.resetRendererState(this.game.rendering.renderer);
+      this.game.rendering.renderer.setPixelRatio(1), this.game.rendering.renderer.setRenderTarget(e), this.quadMesh.render(this.game.rendering.renderer), this.game.rendering.renderer.setRenderTarget(null), Fe.restoreRendererState(this.game.rendering.renderer, s);
     }
     setPerlin() {
       const e = new ut(this.resolution, this.resolution, {
@@ -11493,8 +11501,8 @@ let __tla = (async () => {
       this.perlin = e.texture, this.perlin.wrapS = xe, this.perlin.wrapT = xe;
       const t = new O();
       t.outputNode = C(Cn(k(), 6, 6).remap(0.1, 0.9, 0, 1), Dt(k().mul(128).floor().div(128)).x, 0, 0), this.quadMesh.material = t;
-      const s = ze.resetRendererState(this.game.rendering.renderer);
-      this.game.rendering.renderer.setPixelRatio(1), this.game.rendering.renderer.setRenderTarget(e), this.quadMesh.render(this.game.rendering.renderer), this.game.rendering.renderer.setRenderTarget(null), ze.restoreRendererState(this.game.rendering.renderer, s);
+      const s = Fe.resetRendererState(this.game.rendering.renderer);
+      this.game.rendering.renderer.setPixelRatio(1), this.game.rendering.renderer.setRenderTarget(e), this.quadMesh.render(this.game.rendering.renderer), this.game.rendering.renderer.setRenderTarget(null), Fe.restoreRendererState(this.game.rendering.renderer, s);
     }
     setHash() {
       const e = new ut(this.resolution, this.resolution, {
@@ -11505,8 +11513,8 @@ let __tla = (async () => {
       this.hash = e.texture, this.hash.wrapS = xe, this.hash.wrapT = xe, this.hash.minFilter = W, this.hash.magFilter = W, this.hash.generateMipmaps = false;
       const t = new O();
       t.outputNode = C(Dt(Os).x, 0, 0, 0), this.quadMesh.material = t;
-      const s = ze.resetRendererState(this.game.rendering.renderer);
-      this.game.rendering.renderer.setPixelRatio(1), this.game.rendering.renderer.setRenderTarget(e), this.quadMesh.render(this.game.rendering.renderer), this.game.rendering.renderer.setRenderTarget(null), ze.restoreRendererState(this.game.rendering.renderer, s);
+      const s = Fe.resetRendererState(this.game.rendering.renderer);
+      this.game.rendering.renderer.setPixelRatio(1), this.game.rendering.renderer.setRenderTarget(e), this.quadMesh.render(this.game.rendering.renderer), this.game.rendering.renderer.setRenderTarget(null), Fe.restoreRendererState(this.game.rendering.renderer, s);
     }
   }
   class En {
