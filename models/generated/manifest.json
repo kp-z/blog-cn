@@ -5,7 +5,7 @@
   "models": [
     {
       "name": "hero-character",
-      "label": "摄影师探险家",
+      "label": "zkp · 早期版本",
       "file": "hero-character.glb",
       "bytes": 1025604,
       "sha256": "f4f2e9dc5bcb8ac129951127d9bd900ea04cdac43bf7415dd4ee317a2da218bb",
@@ -29,7 +29,7 @@
       "sourceImageSha256": "7e3976430886541a969fa53166a383b241c54c280521520f95f3bff0b2ba94dd",
       "preview": "previews/hero-character.png",
       "tags": [
-        "hero",
+        "zkp",
         "character",
         "photographer",
         "lowpoly",
@@ -39,7 +39,7 @@
     },
     {
       "name": "hero-v7",
-      "label": "V7 英雄角色",
+      "label": "zkp · 多视图版",
       "file": "hero-v7.glb",
       "bytes": 863088,
       "sha256": "abe6bf09930a26dd3f6f580acb4680ec1a6e5328190198c4d981b79d6a2ca28f",
@@ -63,7 +63,7 @@
       "sourceImageSha256": null,
       "preview": "previews/hero-v7.png",
       "tags": [
-        "hero",
+        "zkp",
         "character",
         "v7",
         "multiview"
@@ -72,7 +72,7 @@
     },
     {
       "name": "hero-v18",
-      "label": "V18 英雄角色",
+      "label": "zkp",
       "file": "hero-v18.glb",
       "bytes": 737092,
       "sha256": "0f5d7c716770c6808e6643e37d93daaaea412e77120649bd2606de9f065ce3aa",
@@ -96,7 +96,7 @@
       "sourceImageSha256": "e09b968123f241853211e58866909cc36d7105c5ed64aadb31c7f6014b0b9788",
       "preview": "previews/hero-v18.png",
       "tags": [
-        "hero",
+        "zkp",
         "character",
         "v18",
         "multiview"
@@ -105,7 +105,7 @@
     },
     {
       "name": "cat-oscar",
-      "label": "Oscar · 燕尾服小猫",
+      "label": "oscar · 站姿",
       "file": "cat-oscar.glb",
       "bytes": 1271452,
       "sha256": "6173ac1606c2461c8d5b682ba83be21aecef81d7a18f403fb0d2a33e6a024213",
@@ -129,7 +129,6 @@
       "sourceImageSha256": "dcfafd1566ef73f23daa5a42c0c8a28c8d64db786b0ed195aff08f441518506e",
       "preview": "previews/cat-oscar.png",
       "tags": [
-        "cat",
         "oscar",
         "pet",
         "town",
@@ -140,7 +139,7 @@
     },
     {
       "name": "cat-oscar-sleep",
-      "label": "Oscar · 睡着的燕尾服小猫",
+      "label": "oscar",
       "file": "cat-oscar-sleep.glb",
       "bytes": 1223644,
       "sha256": "a74c4f25361fd262ac148085b6a16c3151b461da202e69b7a1c67d527f4a8d84",
@@ -164,7 +163,6 @@
       "sourceImageSha256": "43a8d9d1cd9720da9e171feb21c77722b63d6af0155e4e58cbb9c969b134657e",
       "preview": "previews/cat-oscar-sleep.png",
       "tags": [
-        "cat",
         "oscar",
         "pet",
         "town",
@@ -177,7 +175,7 @@
     },
     {
       "name": "seaside-lady",
-      "label": "海边蓝衣少女",
+      "label": "zc",
       "file": "seaside-lady.glb",
       "bytes": 1384836,
       "sha256": "92806a516b1e63fcb9931a462c8bffac9a714700989004a55a13d52a879e171e",

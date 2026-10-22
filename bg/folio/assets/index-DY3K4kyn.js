@@ -1,5 +1,5 @@
 import { av as h, bM as l } from "./three-BPWavq8k.js";
-import { G as m } from "./areas-Cy-leeCm.js";
+import { G as m } from "./areas-BQGDnaiF.js";
 import "./vendor-BcHL05hW.js";
 import "./tweakpane-C39D8eO8.js";
 import "./gsap-BcKM28WW.js";

@@ -12527,7 +12527,7 @@ let __tla = (async () => {
         }));
       }, this.playlist.play = () => {
         this.playlist.current = this.playlist.songs[this.playlist.index], this.playlist.current.loaded || this.playlist.current.sound.load(), this.playlist.current.sound.play();
-      }, this.playlist.play();
+      };
     }
     setAmbiants() {
       var _a2, _b, _c;
