@@ -251,7 +251,7 @@ Promise.all([
       t.resourcesLoader.load([
         [
           "heroFolio",
-          "hero/hero-folio.glb?v=02852a604bee",
+          "hero/hero-folio.glb?v=564ab35fb30a",
           "gltf"
         ]
       ]).then(function(e) {
@@ -459,7 +459,7 @@ Promise.all([
       t.resourcesLoader.load([
         [
           "oscarSleep",
-          "cat/oscar-sleep.glb?v=d9ed59d1b5ec",
+          "cat/oscar-sleep.glb?v=fb6d9a0c6b9b",
           "gltf"
         ]
       ]).then(function(r) {
@@ -554,7 +554,7 @@ Promise.all([
       l.resourcesLoader.load([
         [
           "seasideLady",
-          "lady/seaside-lady.glb?v=fd1ff52487b3",
+          "lady/seaside-lady.glb?v=27c355ac0a59",
           "gltf"
         ]
       ]).then(function(N) {
