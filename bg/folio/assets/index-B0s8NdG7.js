@@ -16,9 +16,9 @@ Promise.all([
   (function() {
     const k = document.createElement("link").relList;
     if (k && k.supports && k.supports("modulepreload")) return;
-    for (const l of document.querySelectorAll('link[rel="modulepreload"]')) t(l);
+    for (const l of document.querySelectorAll('link[rel="modulepreload"]')) r(l);
     new MutationObserver((l) => {
-      for (const f of l) if (f.type === "childList") for (const s of f.addedNodes) s.tagName === "LINK" && s.rel === "modulepreload" && t(s);
+      for (const f of l) if (f.type === "childList") for (const s of f.addedNodes) s.tagName === "LINK" && s.rel === "modulepreload" && r(s);
     }).observe(document, {
       childList: true,
       subtree: true
@@ -27,7 +27,7 @@ Promise.all([
       const f = {};
       return l.integrity && (f.integrity = l.integrity), l.referrerPolicy && (f.referrerPolicy = l.referrerPolicy), l.crossOrigin === "use-credentials" ? f.credentials = "include" : l.crossOrigin === "anonymous" ? f.credentials = "omit" : f.credentials = "same-origin", f;
     }
-    function t(l) {
+    function r(l) {
       if (l.ep) return;
       l.ep = true;
       const f = W(l);
@@ -35,7 +35,7 @@ Promise.all([
     }
   })();
   (function() {
-    var A = new URLSearchParams(location.search), k = A.get("bg") === "1", W = window.parent && window.parent !== window, t = k ? "bg" : "game";
+    var A = new URLSearchParams(location.search), k = A.get("bg") === "1", W = window.parent && window.parent !== window, r = k ? "bg" : "game";
     window.__hexoBg = k, k && document.documentElement.classList.add("hexo-bg"), me(() => import("./index-BT3-4Og0.js"), __vite__mapDeps([0,1,2,3,4,5,6]), import.meta.url);
     var l = document.createElement("style");
     l.textContent = "html.hexo-bg .menu-trigger,html.hexo-bg .map-trigger,html.hexo-bg .touch-buttons,html.hexo-bg .notifications,html.hexo-bg .modals,html.hexo-bg .menu,html.hexo-bg .fonts-loader{display:none !important}html.hexo-bg,html.hexo-bg *{cursor:default !important}.menu-trigger{top:auto !important;bottom:78px !important;right:18px !important;width:52px !important;height:34px !important}.map-trigger{top:auto !important;bottom:132px !important;right:18px !important;width:52px !important;height:34px !important}.menu-trigger .button-inner,.map-trigger .button-inner{background:rgba(10,18,24,.42) !important;border:1px solid rgba(255,255,255,.38) !important;border-right:2px solid rgba(255,255,255,.78) !important;border-radius:9px !important;box-sizing:border-box !important;width:100% !important;height:100% !important;-webkit-backdrop-filter:blur(8px) !important;backdrop-filter:blur(8px) !important}.menu-trigger .button-inner::after,.map-trigger .button-inner::after{display:none !important}.menu-trigger .icon-container,.map-trigger .icon-container{left:0 !important;right:0 !important;top:0 !important;bottom:0 !important}html:not(.is-mode-touch) .menu-trigger:hover .button-inner,html:not(.is-mode-touch) .map-trigger:hover .button-inner{transform:none !important;background:rgba(10,18,24,.6) !important}@media (min-width:801px){.menu .inner{width:min(860px,calc(100% - 160px)) !important;height:min(520px,calc(100% - 160px)) !important}.menu .contents .content .content-inner{width:100% !important}.map{width:760px !important;height:760px !important;max-width:68vmin !important;max-height:68vmin !important}}@media only screen and (max-width:800px) and (orientation:portrait){.menu .inner{height:calc((100% - 54px) * 2 / 3) !important}}", document.head.appendChild(l);
@@ -71,7 +71,7 @@ Promise.all([
     ];
     H.forEach(function(e) {
       window.addEventListener(e, function(i) {
-        t === "bg" && (i.stopImmediatePropagation(), e !== "pointermove" && e !== "touchmove" && i.cancelable && i.preventDefault());
+        r === "bg" && (i.stopImmediatePropagation(), e !== "pointermove" && e !== "touchmove" && i.cancelable && i.preventDefault());
       }, {
         capture: true,
         passive: false
@@ -79,9 +79,9 @@ Promise.all([
     }), s(function() {
       return window.game && window.game.view && window.game.view.spherical && window.game.world && window.game.world.intro && window.game.rendering && window.game.ticker && window.game.reveal && window.game.reveal.step >= 0 && window.game.world.intro.label && window.game.world.intro.label.scale.x > 0.6;
     }, function() {
-      var e = window.game, i = false, n = 0, R = 0, g = null, h = 0.17, N = 0.66, V = 2.2;
+      var e = window.game, i = false, n = 0, R = 0, x = null, h = 0.17, C = 0.66, N = 2.2;
       function F() {
-        g = {
+        x = {
           phi: e.view.spherical.phi,
           baseRatio: e.view.zoom.baseRatio,
           smoothedRatio: e.view.zoom.smoothedRatio,
@@ -89,18 +89,18 @@ Promise.all([
         };
       }
       function P() {
-        g || F(), e.view.spherical.phi = Math.min(Math.PI * 0.49, g.phi + h);
-        var r = window.innerWidth <= 800, o = r ? 0.45 : N, S = r ? 1.5 : V;
-        e.view.zoom.baseRatio = o, e.view.zoom.smoothedRatio = o, e.view.focusPoint.position.y = g.focusY + S;
+        x || F(), e.view.spherical.phi = Math.min(Math.PI * 0.49, x.phi + h);
+        var t = window.innerWidth <= 800, o = t ? 0.45 : C, w = t ? 1.5 : N;
+        e.view.zoom.baseRatio = o, e.view.zoom.smoothedRatio = o, e.view.focusPoint.position.y = x.focusY + w;
       }
-      function C() {
-        g && (e.view.spherical.phi = g.phi, e.view.zoom.baseRatio = g.baseRatio, e.view.zoom.smoothedRatio = g.smoothedRatio, e.view.focusPoint.position.y = g.focusY, g = null);
+      function j() {
+        x && (e.view.spherical.phi = x.phi, e.view.zoom.baseRatio = x.baseRatio, e.view.zoom.smoothedRatio = x.smoothedRatio, e.view.focusPoint.position.y = x.focusY, x = null);
       }
-      function _(r) {
-        if (i !== r) {
-          i = r;
+      function L(t) {
+        if (i !== t) {
+          i = t;
           var o = e.rendering && e.rendering.renderer;
-          if (!(!o || !o.setAnimationLoop)) if (r) {
+          if (!(!o || !o.setAnimationLoop)) if (t) {
             n = performance.now();
             try {
               o.setAnimationLoop(null);
@@ -109,8 +109,8 @@ Promise.all([
           } else {
             n || (n = performance.now()), R += performance.now() - n, n = 0;
             try {
-              o.setAnimationLoop(function(S) {
-                e.ticker.update(S - R);
+              o.setAnimationLoop(function(w) {
+                e.ticker.update(w - R);
               });
             } catch {
             }
@@ -120,20 +120,20 @@ Promise.all([
       window.__folioPaused = function() {
         return i;
       }, e.ticker.events.on("tick", function() {
-        t === "bg" && (e.view.spherical.theta += e.ticker.delta * 0.06, P(), e.world.intro && (e.world.intro.label && (e.world.intro.label.visible = false), e.world.intro.soundButton && e.world.intro.soundButton.mesh && (e.world.intro.soundButton.mesh.visible = false)));
+        r === "bg" && (e.view.spherical.theta += e.ticker.delta * 0.06, P(), e.world.intro && (e.world.intro.label && (e.world.intro.label.visible = false), e.world.intro.soundButton && e.world.intro.soundButton.mesh && (e.world.intro.soundButton.mesh.visible = false)));
       }, 9);
-      function L() {
+      function M() {
         return !!(e.world && e.world.intro && e.reveal && e.reveal.step < 1);
       }
       function K() {
-        if (t === "game") return;
-        if (C(), _(false), t = "game", window.__hexoBg = false, j(), document.documentElement.classList.remove("hexo-bg"), !L()) {
+        if (r === "game") return;
+        if (j(), L(false), r = "game", window.__hexoBg = false, V(), document.documentElement.classList.remove("hexo-bg"), !M()) {
           f("town-game-entered");
           return;
         }
-        var r = 0;
+        var t = 0;
         function o() {
-          if (r++, e.reveal.step >= 1 || !L()) {
+          if (t++, e.reveal.step >= 1 || !M()) {
             f("town-game-entered");
             return;
           }
@@ -142,48 +142,52 @@ Promise.all([
           } catch {
           }
           setTimeout(function() {
-            e.reveal.step >= 1 || r >= 40 ? f("town-game-entered") : o();
+            e.reveal.step >= 1 || t >= 40 ? f("town-game-entered") : o();
           }, 400);
         }
         o();
       }
       function a() {
-        t !== "bg" && (j(), F(), t = "bg", window.__hexoBg = true, document.documentElement.classList.add("hexo-bg"), f("town-game-left"));
+        r !== "bg" && (V(), F(), r = "bg", window.__hexoBg = true, document.documentElement.classList.add("hexo-bg"), f("town-game-left"));
       }
-      window.addEventListener("message", function(r) {
-        if (!(r.source !== window.parent && r.source !== window)) {
-          var o = r.data;
-          !o || typeof o != "object" || (o.type === "town-bg-pause" ? _(true) : o.type === "town-bg-resume" ? _(false) : o.type === "town-bg-enter" ? K() : o.type === "town-bg-leave" && a());
+      window.addEventListener("message", function(t) {
+        if (!(t.source !== window.parent && t.source !== window)) {
+          var o = t.data;
+          !o || typeof o != "object" || (o.type === "town-bg-pause" ? L(true) : o.type === "town-bg-resume" ? L(false) : o.type === "town-bg-enter" ? K() : o.type === "town-bg-leave" && a());
         }
       });
-      function y() {
+      function g() {
         try {
-          var r = window.game;
-          if (!r) return false;
-          if (r.menu && (r.menu.state === 1 || r.menu.state === 2) || r.modals && (r.modals.state === 1 || r.modals.state === 2)) return true;
-          var o = r.world || {};
+          var t = window.game;
+          if (!t) return false;
+          if (t.menu && (t.menu.state === 1 || t.menu.state === 2) || t.modals && (t.modals.state === 1 || t.modals.state === 2)) return true;
+          var o = t.world || {};
           if (o.whispers && o.whispers.menu && o.whispers.menu.inputFlag && o.whispers.menu.inputFlag.isOpen || o.areas && o.areas.circuit && o.areas.circuit.menu && o.areas.circuit.menu.inputFlag && o.areas.circuit.menu.inputFlag.isOpen) return true;
+          var w = o.areas || {};
+          if (w.projects && (w.projects.state === 3 || w.projects.state === 4) || w.lab && (w.lab.state === 3 || w.lab.state === 4) || w.circuit && (w.circuit.state === 2 || w.circuit.state === 3)) return true;
         } catch {
         }
         return false;
       }
-      function x(r) {
+      function b(t) {
         try {
-          if (!r || !r.element) return;
-          r.state === 4 && r.element.dispatchEvent(new Event("transitionend"));
+          if (!t || !t.element) return;
+          t.state === 4 && t.element.dispatchEvent(new Event("transitionend"));
         } catch {
         }
       }
-      function j() {
+      function V() {
         try {
-          var r = window.game;
-          if (!r) return;
-          r.menu && ((r.menu.state === 1 || r.menu.state === 2) && r.menu.close(), x(r.menu)), r.modals && ((r.modals.state === 1 || r.modals.state === 2) && r.modals.close(), x(r.modals));
+          var t = window.game;
+          if (!t) return;
+          t.menu && ((t.menu.state === 1 || t.menu.state === 2) && t.menu.close(), b(t.menu)), t.modals && ((t.modals.state === 1 || t.modals.state === 2) && t.modals.close(), b(t.modals));
+          var o = t.world && t.world.areas || {};
+          o.projects && (o.projects.state === 3 || o.projects.state === 4) && o.projects.close(), o.lab && (o.lab.state === 3 || o.lab.state === 4) && o.lab.close();
         } catch {
         }
       }
-      window.addEventListener("keydown", function(r) {
-        r.key !== "Escape" && r.code !== "Escape" || t === "game" && (y() || (r.preventDefault(), r.stopImmediatePropagation(), f("town-game-exit")));
+      window.addEventListener("keydown", function(t) {
+        t.key !== "Escape" && t.code !== "Escape" || r === "game" && (g() || (t.preventDefault(), t.stopImmediatePropagation(), f("town-game-exit")));
       }, {
         capture: true,
         passive: false
@@ -196,9 +200,9 @@ Promise.all([
         once: true
       }), window.__townReady = true, window.__townState = function() {
         return {
-          mode: t,
+          mode: r,
           flying: false,
-          locked: t === "bg",
+          locked: r === "bg",
           player: {
             x: 0,
             y: 0,
@@ -220,25 +224,25 @@ Promise.all([
         since: 0,
         base: e.viewport.pixelRatio
       };
-      function d(r) {
-        e.viewport.pixelRatio = r, e.rendering.renderer.setPixelRatio(r), e.rendering.renderer.setSize(e.viewport.width, e.viewport.height);
+      function d(t) {
+        e.viewport.pixelRatio = t, e.rendering.renderer.setPixelRatio(t), e.rendering.renderer.setSize(e.viewport.width, e.viewport.height);
       }
-      function m(r) {
-        var o = r === 1 ? 1.5 : r === 2 ? 1.25 : c.base;
+      function m(t) {
+        var o = t === 1 ? 1.5 : t === 2 ? 1.25 : c.base;
         return Math.min(c.base, o);
       }
       function v() {
-        return t === "game" && !i && e.reveal && e.reveal.step >= 2;
+        return r === "game" && !i && e.reveal && e.reveal.step >= 2;
       }
-      function D(r) {
-        if (v() && (c.since || (c.since = r), c.frames++), r - c.t >= 3e3) {
-          var o = c.frames * 1e3 / (r - c.t);
-          c.frames = 0, c.t = r, v() && c.base > 1.25 && c.since && r - c.since >= 8e3 && (o < 40 ? (c.low++, c.good = 0) : o > 55 ? (c.good++, c.low = 0) : (c.low = 0, c.good = 0), c.low >= 2 && c.stage < 2 ? (c.stage++, d(m(c.stage)), c.low = 0) : c.good >= 4 && c.stage > 0 && (c.stage--, d(m(c.stage)), c.good = 0));
+      function D(t) {
+        if (v() && (c.since || (c.since = t), c.frames++), t - c.t >= 3e3) {
+          var o = c.frames * 1e3 / (t - c.t);
+          c.frames = 0, c.t = t, v() && c.base > 1.25 && c.since && t - c.since >= 8e3 && (o < 40 ? (c.low++, c.good = 0) : o > 55 ? (c.good++, c.low = 0) : (c.low = 0, c.good = 0), c.low >= 2 && c.stage < 2 ? (c.stage++, d(m(c.stage)), c.low = 0) : c.good >= 4 && c.stage > 0 && (c.stage--, d(m(c.stage)), c.good = 0));
         }
         window.requestAnimationFrame(D);
       }
       window.requestAnimationFrame(D), f("town-bg-ready", {
-        mode: t,
+        mode: r,
         caps: [
           "enter",
           "leave"
@@ -249,22 +253,22 @@ Promise.all([
   (function() {
     var A = 0, k = setInterval(function() {
       A++;
-      var t = window.game;
-      if (t && t.resourcesLoader && t.scene && t.respawns && t.world && t.world.intro && t.materials) {
+      var r = window.game;
+      if (r && r.resourcesLoader && r.scene && r.respawns && r.world && r.world.intro && r.materials) {
         clearInterval(k);
         try {
-          W(t);
+          W(r);
         } catch (l) {
           console.warn("[hero] init failed", l);
         }
       }
       A > 240 && clearInterval(k);
     }, 250);
-    function W(t) {
+    function W(r) {
       var l = 3.2, f = -0.03;
       try {
         var s = 1 / 0;
-        t.scene.updateMatrixWorld(true), t.scene.traverse(function(e) {
+        r.scene.updateMatrixWorld(true), r.scene.traverse(function(e) {
           if (e.isMesh && e.geometry && e.name && e.name.toLowerCase().indexOf("wheel") === 0) {
             e.geometry.computeBoundingBox();
             var i = e.geometry.boundingBox;
@@ -277,8 +281,8 @@ Promise.all([
       } catch (e) {
         console.warn("[hero] wheel floor", e);
       }
-      var H = t.respawns.getDefault().position;
-      t.resourcesLoader.load([
+      var H = r.respawns.getDefault().position;
+      r.resourcesLoader.load([
         [
           "heroFolio",
           "hero/hero-folio.glb?v=564ab35fb30a",
@@ -292,8 +296,8 @@ Promise.all([
             return;
           }
           if (a.isMesh && (a.castShadow = true, a.receiveShadow = true, a.geometry && a.geometry.index)) {
-            var y = a.geometry.toNonIndexed();
-            y.computeVertexNormals(), a.geometry = y;
+            var g = a.geometry.toNonIndexed();
+            g.computeVertexNormals(), a.geometry = g;
           }
         });
         var R = [];
@@ -304,57 +308,57 @@ Promise.all([
           });
         });
         try {
-          t.materials.updateObject(i);
+          r.materials.updateObject(i);
         } catch (a) {
           console.warn("[hero] material", a);
         }
         R.forEach(function(a) {
           a.folio = a.mesh.material;
         });
-        function g(a) {
-          R.forEach(function(y) {
-            var x = a ? y.orig : y.folio;
-            x && (y.mesh.material = x, a && (x.color && x.color.setScalar(0.55), x.emissive && (x.emissive.setRGB(0.05, 0.03, 0.06), x.emissiveIntensity = 1), x.needsUpdate = true));
+        function x(a) {
+          R.forEach(function(g) {
+            var b = a ? g.orig : g.folio;
+            b && (g.mesh.material = b, a && (b.color && b.color.setScalar(0.55), b.emissive && (b.emissive.setRGB(0.05, 0.03, 0.06), b.emissiveIntensity = 1), b.needsUpdate = true));
           });
         }
-        var h = t.view && t.view.spherical ? t.view.spherical.theta : 0, N = Math.sin(h), V = Math.cos(h), F = Math.cos(h), P = -Math.sin(h), C = H.x + N * 2.15, _ = H.z + V * 2.15, L = Math.atan2(-V, N);
-        i.scale.setScalar(0.01), i.position.set(C, f - 0.5 * l, _), i.rotation.y = L, window.__heroFolio = i;
+        var h = r.view && r.view.spherical ? r.view.spherical.theta : 0, C = Math.sin(h), N = Math.cos(h), F = Math.cos(h), P = -Math.sin(h), j = H.x + C * 2.15, L = H.z + N * 2.15, M = Math.atan2(-N, C);
+        i.scale.setScalar(0.01), i.position.set(j, f - 0.5 * l, L), i.rotation.y = M, window.__heroFolio = i;
         var K = setInterval(function() {
           var a = false;
           try {
-            a = t.world.intro.label && t.world.intro.label.scale.x > 0.6;
+            a = r.world.intro.label && r.world.intro.label.scale.x > 0.6;
           } catch {
           }
           if (!a) return;
-          clearInterval(K), t.scene.add(i);
-          var y = 0, x = setInterval(function() {
-            y += 1;
-            var p = Math.min(1, y / 12);
-            i.scale.setScalar(l * (0.2 + 0.8 * p)), p >= 1 && clearInterval(x);
-          }, 33), j = {
+          clearInterval(K), r.scene.add(i);
+          var g = 0, b = setInterval(function() {
+            g += 1;
+            var p = Math.min(1, g / 12);
+            i.scale.setScalar(l * (0.2 + 0.8 * p)), p >= 1 && clearInterval(b);
+          }, 33), V = {
             x: i.position.clone().set(1, 0, 0),
             y: i.position.clone().set(0, 1, 0),
             z: i.position.clone().set(0, 0, 1)
           }, c = i.position.clone();
-          function d(p, z, B) {
-            m(p, j[z], B);
+          function d(p, I, B) {
+            m(p, V[I], B);
           }
-          function m(p, z, B) {
+          function m(p, I, B) {
             if (p) {
-              var O = p.quaternion.clone().setFromAxisAngle(z, B * Math.PI / 180), M = p.parent.quaternion.clone();
-              p.parent.getWorldQuaternion(M);
-              var q = M.clone().invert().multiply(O).multiply(M).multiply(p.userData.rest);
+              var O = p.quaternion.clone().setFromAxisAngle(I, B * Math.PI / 180), z = p.parent.quaternion.clone();
+              p.parent.getWorldQuaternion(z);
+              var q = z.clone().invert().multiply(O).multiply(z).multiply(p.userData.rest);
               p.quaternion.copy(q);
             }
           }
-          var v = null, D = null, r = false, o = 0, S = 0;
+          var v = null, D = null, t = false, o = 0, w = 0;
           try {
-            var Q = t.physics.getPhysical({
+            var Y = r.physics.getPhysical({
               type: "kinematicPositionBased",
               position: {
-                x: C,
+                x: j,
                 y: f + 0.5 * l,
-                z: _
+                z: L
               },
               colliders: [
                 {
@@ -372,13 +376,13 @@ Promise.all([
               linearDamping: 0.2,
               angularDamping: 0.3
             });
-            v = Q.body, D = Q.colliders[0], D.setSensor(true);
+            v = Y.body, D = Y.colliders[0], D.setSensor(true);
           } catch (p) {
             console.warn("[hero] physics", p);
           }
-          function w() {
-            if (r = false, g(false), i.rotation.set(0, L, 0), i.position.set(C, f - 0.5 * l, _), i.scale.setScalar(l), E = 0, S = performance.now() + 1800, !!v) try {
-              D.setSensor(true), v.setBodyType(t.RAPIER.RigidBodyType.KinematicPositionBased, true), v.setLinvel({
+          function y() {
+            if (t = false, x(false), i.rotation.set(0, M, 0), i.position.set(j, f - 0.5 * l, L), i.scale.setScalar(l), E = 0, w = performance.now() + 1800, !!v) try {
+              D.setSensor(true), v.setBodyType(r.RAPIER.RigidBodyType.KinematicPositionBased, true), v.setLinvel({
                 x: 0,
                 y: 0,
                 z: 0
@@ -387,25 +391,25 @@ Promise.all([
                 y: 0,
                 z: 0
               }, true), v.setTranslation({
-                x: C,
+                x: j,
                 y: f + 0.5 * l,
-                z: _
+                z: L
               }, true);
             } catch (p) {
               console.warn("[hero] reset", p);
             }
           }
-          window.__heroLaunch = Y, window.__heroReset = w;
-          function Y(p, z, B) {
-            r = true, g(true), o = performance.now();
-            var O = Math.sqrt(p * p + z * z) || 1;
-            p /= O, z /= O;
-            var M = Math.min(15, Math.max(6, B * 1.5));
+          window.__heroLaunch = Q, window.__heroReset = y;
+          function Q(p, I, B) {
+            t = true, x(true), o = performance.now();
+            var O = Math.sqrt(p * p + I * I) || 1;
+            p /= O, I /= O;
+            var z = Math.min(15, Math.max(6, B * 1.5));
             try {
-              D.setSensor(false), v.setBodyType(t.RAPIER.RigidBodyType.Dynamic, true), v.wakeUp(), v.setLinearDamping(0.5), v.setAngularDamping(0.9), v.setLinvel({
-                x: p * M,
-                y: Math.min(4.5, M * 0.32),
-                z: z * M
+              D.setSensor(false), v.setBodyType(r.RAPIER.RigidBodyType.Dynamic, true), v.wakeUp(), v.setLinearDamping(0.5), v.setAngularDamping(0.9), v.setLinvel({
+                x: p * z,
+                y: Math.min(4.5, z * 0.32),
+                z: I * z
               }, true), v.setAngvel({
                 x: (Math.random() - 0.5) * 10,
                 y: (Math.random() - 0.5) * 10,
@@ -414,26 +418,26 @@ Promise.all([
             } catch (ie) {
               console.warn("[hero] launch", ie);
             }
-            var q = i.rotation.y, G = Math.sin(q), T = Math.cos(q), I = i.position.clone().set(G, 0, T);
-            m(n.legA, I, 24), m(n.legB, I, -16), m(n.kneeA, I, -26), m(n.kneeB, I, 20), m(n.armA, I, -60), m(n.armB, I, 60);
+            var q = i.rotation.y, G = Math.sin(q), T = Math.cos(q), S = i.position.clone().set(G, 0, T);
+            m(n.legA, S, 24), m(n.legB, S, -16), m(n.kneeA, S, -26), m(n.kneeB, S, 20), m(n.armA, S, -60), m(n.armB, S, 60);
           }
-          var u = performance.now(), b = u, E = 0, U = 0;
-          t.ticker.events.on("tick", function() {
-            var p = performance.now(), z = Math.min(0.05, (p - b) / 1e3);
-            b = p;
+          var u = performance.now(), _ = u, E = 0, U = 0;
+          r.ticker.events.on("tick", function() {
+            var p = performance.now(), I = Math.min(0.05, (p - _) / 1e3);
+            _ = p;
             var B = (p - u) / 1e3;
-            if (r && v) {
-              var O = v.translation(), M = v.rotation(), q = i.position.clone().set(0, -l, 0).applyQuaternion(M);
-              i.position.set(O.x + q.x, O.y + q.y, O.z + q.z), i.quaternion.set(M.x, M.y, M.z, M.w), (O.y < -5 || p - o > 5e3) && w();
+            if (t && v) {
+              var O = v.translation(), z = v.rotation(), q = i.position.clone().set(0, -l, 0).applyQuaternion(z);
+              i.position.set(O.x + q.x, O.y + q.y, O.z + q.z), i.quaternion.set(z.x, z.y, z.z, z.w), (O.y < -5 || p - o > 5e3) && y();
               return;
             }
-            var q = Math.sin(B * 0.5) * 0.75, G = Math.cos(B * 0.5) * 0.75 * 0.5, T = Math.abs(G), I = Math.min(1, T / 0.25);
-            E += (0.7 + T * 4) * z, i.position.x = C + F * q, i.position.z = _ + P * q;
-            for (var ie = Math.atan2(-(P * (G >= 0 ? 1 : -1)), F * (G >= 0 ? 1 : -1)), ee = ie - L; ee > Math.PI; ) ee -= Math.PI * 2;
+            var q = Math.sin(B * 0.5) * 0.75, G = Math.cos(B * 0.5) * 0.75 * 0.5, T = Math.abs(G), S = Math.min(1, T / 0.25);
+            E += (0.7 + T * 4) * I, i.position.x = j + F * q, i.position.z = L + P * q;
+            for (var ie = Math.atan2(-(P * (G >= 0 ? 1 : -1)), F * (G >= 0 ? 1 : -1)), ee = ie - M; ee > Math.PI; ) ee -= Math.PI * 2;
             for (; ee < -Math.PI; ) ee += Math.PI * 2;
-            L += ee * (0.08 + (1 - I) * 0.05), i.rotation.y = L;
-            var J = Math.sin(E), ce = Math.cos(L), ue = -Math.sin(L), pe = Math.sin(L), de = Math.cos(L), Z = c.clone().set(pe, 0, de), se = c.clone().set(ce, 0, ue);
-            if (m(n.legA, Z, 26 * J * I), m(n.legB, Z, -26 * J * I), m(n.kneeA, Z, -32 * Math.max(0, -J) * I), m(n.kneeB, Z, 32 * Math.max(0, J) * I), m(n.armA, Z, -18 * J * I), m(n.armB, Z, 18 * J * I), d(n.spine1, "y", 4 * J * I), m(n.spine0, se, 2 * Math.cos(E) * I), d(n.head, "y", -2.5 * J * I), m(n.head, se, -1 * Math.cos(E) * I), U++, U % 4 === 0) {
+            M += ee * (0.08 + (1 - S) * 0.05), i.rotation.y = M;
+            var J = Math.sin(E), ce = Math.cos(M), ue = -Math.sin(M), pe = Math.sin(M), de = Math.cos(M), Z = c.clone().set(pe, 0, de), se = c.clone().set(ce, 0, ue);
+            if (m(n.legA, Z, 26 * J * S), m(n.legB, Z, -26 * J * S), m(n.kneeA, Z, -32 * Math.max(0, -J) * S), m(n.kneeB, Z, 32 * Math.max(0, J) * S), m(n.armA, Z, -18 * J * S), m(n.armB, Z, 18 * J * S), d(n.spine1, "y", 4 * J * S), m(n.spine0, se, 2 * Math.cos(E) * S), d(n.head, "y", -2.5 * J * S), m(n.head, se, -1 * Math.cos(E) * S), U++, U % 4 === 0) {
               i.updateMatrixWorld(true);
               var re = 1 / 0;
               i.traverse(function($) {
@@ -457,10 +461,10 @@ Promise.all([
                 });
               } catch {
               }
-              var te = t.physicalVehicle;
-              if (te && te.position && p > S) {
+              var te = r.physicalVehicle;
+              if (te && te.position && p > w) {
                 var ne = i.position.x - te.position.x, ae = i.position.z - te.position.z, fe = Math.sqrt(ne * ne + ae * ae), le = te.xzSpeed || 0;
-                le > 1.2 && fe < 2.3 && Y(ne, ae, le);
+                le > 1.2 && fe < 2.3 && Q(ne, ae, le);
               }
             }
           }, 9), console.log("[hero] folio hero loaded");
@@ -473,20 +477,20 @@ Promise.all([
   (function() {
     var A = 0, k = setInterval(function() {
       A++;
-      var t = window.game;
-      if (t && t.resourcesLoader && t.scene && t.world && t.world.intro && t.world.benches && t.materials && t.ticker) {
+      var r = window.game;
+      if (r && r.resourcesLoader && r.scene && r.world && r.world.intro && r.world.benches && r.materials && r.ticker) {
         clearInterval(k);
         try {
-          W(t);
+          W(r);
         } catch (l) {
           console.warn("[oscar] init failed", l);
         }
       }
       A > 240 && clearInterval(k);
     }, 250);
-    function W(t) {
+    function W(r) {
       var l = 0.8, f = 0.276, s = -0.11, H = 0.6, e = -0.02;
-      t.resourcesLoader.load([
+      r.resourcesLoader.load([
         [
           "oscarSleep",
           "cat/oscar-sleep.glb?v=fb6d9a0c6b9b",
@@ -494,25 +498,25 @@ Promise.all([
         ]
       ]).then(function(i) {
         var n = i.oscarSleep.scene;
-        n.traverse(function(w) {
-          if (w.isMesh && (w.castShadow = true, w.receiveShadow = true, w.geometry && w.geometry.index)) {
-            var Y = w.geometry.toNonIndexed();
-            Y.computeVertexNormals(), w.geometry = Y;
+        n.traverse(function(y) {
+          if (y.isMesh && (y.castShadow = true, y.receiveShadow = true, y.geometry && y.geometry.index)) {
+            var Q = y.geometry.toNonIndexed();
+            Q.computeVertexNormals(), y.geometry = Q;
           }
         });
         try {
-          t.materials.updateObject(n);
-        } catch (w) {
-          console.warn("[oscar] material", w);
+          r.materials.updateObject(n);
+        } catch (y) {
+          console.warn("[oscar] material", y);
         }
-        n.traverse(function(w) {
-          !w.isMesh || !w.material || !w.material.emissive || (w.material.emissive.setHex(1708554), w.material.needsUpdate = true);
+        n.traverse(function(y) {
+          !y.isMesh || !y.material || !y.material.emissive || (y.material.emissive.setHex(1708554), y.material.needsUpdate = true);
         });
-        for (var R = t.world.intro.center, g = t.world.benches.objects, h = null, N = 1 / 0, V = 0; V < g.length; V++) {
-          var F = g[V];
+        for (var R = r.world.intro.center, x = r.world.benches.objects, h = null, C = 1 / 0, N = 0; N < x.length; N++) {
+          var F = x[N];
           if (!(!F || !F.visual || !F.visual.object3D)) {
-            var P = F.visual.object3D, C = P.position.x - R.x, _ = P.position.z - R.z, L = C * C + _ * _;
-            L < N && (N = L, h = P);
+            var P = F.visual.object3D, j = P.position.x - R.x, L = P.position.z - R.z, M = j * j + L * L;
+            M < C && (C = M, h = P);
           }
         }
         if (!h) {
@@ -520,45 +524,45 @@ Promise.all([
           return;
         }
         h.updateMatrixWorld(true);
-        var K = h.scale ? h.scale.x : 1, a = h.scale ? h.scale.y : 1, y = h.scale ? h.scale.z : 1, x = h.position.y + s * a, j = h.position.clone().set(H * K, 0, e * y);
-        j.applyQuaternion(h.quaternion);
-        var c = h.position.x + j.x, d = h.position.z + j.z;
-        n.scale.setScalar(l), n.position.set(c, x + f * l, d), n.quaternion.copy(h.quaternion);
+        var K = h.scale ? h.scale.x : 1, a = h.scale ? h.scale.y : 1, g = h.scale ? h.scale.z : 1, b = h.position.y + s * a, V = h.position.clone().set(H * K, 0, e * g);
+        V.applyQuaternion(h.quaternion);
+        var c = h.position.x + V.x, d = h.position.z + V.z;
+        n.scale.setScalar(l), n.position.set(c, b + f * l, d), n.quaternion.copy(h.quaternion);
         var m = null, v = i.oscarSleep.animations && i.oscarSleep.animations[0] || null;
         if (v) {
           m = new ve(n);
           var D = m.clipAction(v);
           D.setLoop(he, 1 / 0), D.play();
         } else console.warn("[oscar] no animation clip, fallback to procedural breathing");
-        var r = new X(16757350, 16, 3.6, 2);
-        r.position.set(c - 0.55, x + 1.25, d + 0.95), t.scene.add(r);
+        var t = new X(16757350, 16, 3.6, 2);
+        t.position.set(c - 0.55, b + 1.25, d + 0.95), r.scene.add(t);
         var o = new X(9399295, 10, 3.2, 2);
-        o.position.set(c + 0.95, x + 1, d - 0.95), t.scene.add(o);
-        var S = new X(16764826, 4, 2, 2);
-        S.position.set(c + 0.15, x + 0.5, d + 1.15), t.scene.add(S), window.__oscarLights = {
-          key: r,
+        o.position.set(c + 0.95, b + 1, d - 0.95), r.scene.add(o);
+        var w = new X(16764826, 4, 2, 2);
+        w.position.set(c + 0.15, b + 0.5, d + 1.15), r.scene.add(w), window.__oscarLights = {
+          key: t,
           rim: o,
-          fill: S
+          fill: w
         };
-        var Q = setInterval(function() {
-          var w = false;
+        var Y = setInterval(function() {
+          var y = false;
           try {
-            w = t.world.intro.label && t.world.intro.label.scale.x > 0.6;
+            y = r.world.intro.label && r.world.intro.label.scale.x > 0.6;
           } catch {
           }
-          if (w) {
-            clearInterval(Q), t.scene.add(n), window.__oscarFolio = n;
-            var Y = n.position.y, u = {
+          if (y) {
+            clearInterval(Y), r.scene.add(n), window.__oscarFolio = n;
+            var Q = n.position.y, u = {
               mixer: m,
               action: D || null,
               ticks: 0,
               delta: 0
             };
-            window.__oscarDebug = u, t.ticker.events.on("tick", function() {
-              if (u.ticks++, u.delta = t.ticker.delta, m) m.update(t.ticker.delta);
+            window.__oscarDebug = u, r.ticker.events.on("tick", function() {
+              if (u.ticks++, u.delta = r.ticker.delta, m) m.update(r.ticker.delta);
               else {
-                var b = t.ticker.elapsed || 0, E = 1 + 0.013 * Math.sin(b / 4 * Math.PI * 2);
-                n.scale.setScalar(l * E), n.position.y = Y + 4e-3 * E;
+                var _ = r.ticker.elapsed || 0, E = 1 + 0.013 * Math.sin(_ / 4 * Math.PI * 2);
+                n.scale.setScalar(l * E), n.position.y = Q + 4e-3 * E;
               }
             }, 12);
           }
@@ -567,8 +571,8 @@ Promise.all([
     }
   })();
   (function() {
-    var A = 1.6, k = -0.11, W = 0.3, t = 0, l = setInterval(function() {
-      t++;
+    var A = 1.6, k = -0.11, W = 0.3, r = 0, l = setInterval(function() {
+      r++;
       var s = window.game;
       if (s && s.resourcesLoader && s.scene && s.world && s.world.intro && s.world.benches && s.materials && s.ticker && s.respawns && s.physics) {
         clearInterval(l);
@@ -578,7 +582,7 @@ Promise.all([
           console.warn("[lady] init failed", H);
         }
       }
-      t > 240 && clearInterval(l);
+      r > 240 && clearInterval(l);
     }, 250);
     function f(s) {
       s.resourcesLoader.load([
@@ -591,8 +595,8 @@ Promise.all([
         var e = H.seasideLady.scene;
         e.traverse(function(u) {
           if (u.isMesh && (u.castShadow = true, u.receiveShadow = true, u.geometry && u.geometry.index)) {
-            var b = u.geometry.toNonIndexed();
-            b.computeVertexNormals(), u.geometry = b;
+            var _ = u.geometry.toNonIndexed();
+            _.computeVertexNormals(), u.geometry = _;
           }
         });
         try {
@@ -603,18 +607,18 @@ Promise.all([
         e.traverse(function(u) {
           !u.isMesh || !u.material || !u.material.emissive || (u.material.emissive.setHex(1840400), u.material.emissiveIntensity = 1, u.material.needsUpdate = true);
         });
-        for (var i = s.respawns.getDefault().position, n = [], R = s.world.benches.objects, g = 0; g < R.length; g++) {
-          var h = R[g];
+        for (var i = s.respawns.getDefault().position, n = [], R = s.world.benches.objects, x = 0; x < R.length; x++) {
+          var h = R[x];
           if (!(!h || !h.visual || !h.visual.object3D)) {
-            var N = h.visual.object3D, V = N.position.x - i.x, F = N.position.z - i.z;
+            var C = h.visual.object3D, N = C.position.x - i.x, F = C.position.z - i.z;
             n.push({
-              obj: N,
-              d: V * V + F * F
+              obj: C,
+              d: N * N + F * F
             });
           }
         }
-        n.sort(function(u, b) {
-          return u.d - b.d;
+        n.sort(function(u, _) {
+          return u.d - _.d;
         });
         var P = n.length > 1 ? n[1].obj : n[0].obj;
         if (!P) {
@@ -622,20 +626,20 @@ Promise.all([
           return;
         }
         P.updateMatrixWorld(true);
-        var C = P.scale, _ = P.quaternion, L = P.position, K = L.y + k * C.y, a = new we(0, 0, W * C.z).applyQuaternion(_);
-        e.scale.setScalar(A), e.position.set(L.x + a.x, K + 0.5 * A + 5e-3, L.z + a.z), e.quaternion.copy(_);
-        var y = {
+        var j = P.scale, L = P.quaternion, M = P.position, K = M.y + k * j.y, a = new we(0, 0, W * j.z).applyQuaternion(L);
+        e.scale.setScalar(A), e.position.set(M.x + a.x, K + 0.5 * A + 5e-3, M.z + a.z), e.quaternion.copy(L);
+        var g = {
           position: e.position.clone(),
           quaternion: e.quaternion.clone()
-        }, x = new X(16761994, 46, 7, 2);
-        x.position.set(e.position.x + 1.4, K + 2.4, e.position.z + 1.8), s.scene.add(x);
-        var j = new X(9399295, 26, 6, 2);
-        j.position.set(e.position.x - 1.8, K + 2.1, e.position.z - 1.4), s.scene.add(j);
+        }, b = new X(16761994, 46, 7, 2);
+        b.position.set(e.position.x + 1.4, K + 2.4, e.position.z + 1.8), s.scene.add(b);
+        var V = new X(9399295, 26, 6, 2);
+        V.position.set(e.position.x - 1.8, K + 2.1, e.position.z - 1.4), s.scene.add(V);
         var c = new X(16767408, 12, 4, 2);
         c.position.set(e.position.x + 0.1, K + 1.5, e.position.z + 2.4), s.scene.add(c);
-        var d = null, m = null, v = false, D = 0, r = 0, o = 2.4;
+        var d = null, m = null, v = false, D = 0, t = 0, o = 2.4;
         try {
-          var S = s.physics.getPhysical({
+          var w = s.physics.getPhysical({
             type: "kinematicPositionBased",
             position: {
               x: e.position.x,
@@ -658,21 +662,21 @@ Promise.all([
             linearDamping: 0.25,
             angularDamping: 0.4
           });
-          d = S.body, m = S.colliders[0], m.setSensor(true);
+          d = w.body, m = w.colliders[0], m.setSensor(true);
           try {
             d.setRotation({
-              x: _.x,
-              y: _.y,
-              z: _.z,
-              w: _.w
+              x: L.x,
+              y: L.y,
+              z: L.z,
+              w: L.w
             }, true);
           } catch {
           }
         } catch (u) {
           console.warn("[lady] physics", u);
         }
-        function Q() {
-          if (v = false, e.position.copy(y.position), e.quaternion.copy(y.quaternion), e.scale.setScalar(A), r = performance.now() + 1600, !!d) try {
+        function Y() {
+          if (v = false, e.position.copy(g.position), e.quaternion.copy(g.quaternion), e.scale.setScalar(A), t = performance.now() + 1600, !!d) try {
             m.setSensor(true), d.setBodyType(s.RAPIER.RigidBodyType.KinematicPositionBased, true), d.setLinvel({
               x: 0,
               y: 0,
@@ -682,29 +686,29 @@ Promise.all([
               y: 0,
               z: 0
             }, true), d.setTranslation({
-              x: y.position.x,
-              y: y.position.y,
-              z: y.position.z
+              x: g.position.x,
+              y: g.position.y,
+              z: g.position.z
             }, true), d.setRotation({
-              x: y.quaternion.x,
-              y: y.quaternion.y,
-              z: y.quaternion.z,
-              w: y.quaternion.w
+              x: g.quaternion.x,
+              y: g.quaternion.y,
+              z: g.quaternion.z,
+              w: g.quaternion.w
             }, true);
           } catch (u) {
             console.warn("[lady] reset", u);
           }
         }
-        function w(u, b, E) {
+        function y(u, _, E) {
           if (!v) {
             v = true, D = performance.now();
-            var U = Math.sqrt(u * u + b * b) || 1;
-            u /= U, b /= U;
+            var U = Math.sqrt(u * u + _ * _) || 1;
+            u /= U, _ /= U;
             var p = Math.min(16, Math.max(6, E * 1.6));
             if (e.scale.setScalar(A), !d) {
-              var z = e, B = z.position.x, O = z.position.z, M = z.position.y, q = performance.now(), G = setInterval(function() {
+              var I = e, B = I.position.x, O = I.position.z, z = I.position.y, q = performance.now(), G = setInterval(function() {
                 var T = (performance.now() - q) / 1e3;
-                z.position.set(B + u * p * T, M + 3.2 * T - 9.8 * T * T * 0.5, O + b * p * T), z.rotation.x += T * 3, T > 2.4 && (clearInterval(G), Q());
+                I.position.set(B + u * p * T, z + 3.2 * T - 9.8 * T * T * 0.5, O + _ * p * T), I.rotation.x += T * 3, T > 2.4 && (clearInterval(G), Y());
               }, 16);
               return;
             }
@@ -712,7 +716,7 @@ Promise.all([
               m.setSensor(false), d.setBodyType(s.RAPIER.RigidBodyType.Dynamic, true), d.wakeUp(), d.setLinearDamping(0.35), d.setAngularDamping(0.6), d.setLinvel({
                 x: u * p,
                 y: Math.min(5, 2 + p * 0.28),
-                z: b * p
+                z: _ * p
               }, true), d.setAngvel({
                 x: (Math.random() - 0.5) * 9,
                 y: (Math.random() - 0.5) * 9,
@@ -723,22 +727,22 @@ Promise.all([
             }
           }
         }
-        window.__ladyLaunch = w, window.__ladyReset = Q;
-        var Y = setInterval(function() {
+        window.__ladyLaunch = y, window.__ladyReset = Y;
+        var Q = setInterval(function() {
           var u = false;
           try {
             u = s.world.intro.label && s.world.intro.label.scale.x > 0.6;
           } catch {
           }
-          u && (clearInterval(Y), s.scene.add(e), window.__ladyFolio = e, window.__ladyBench = P, s.ticker.events.on("tick", function() {
-            var b = performance.now();
+          u && (clearInterval(Q), s.scene.add(e), window.__ladyFolio = e, window.__ladyBench = P, s.ticker.events.on("tick", function() {
+            var _ = performance.now();
             if (d && v) {
               var E = d.translation(), U = d.rotation();
-              e.position.set(E.x, E.y, E.z), e.quaternion.set(U.x, U.y, U.z, U.w), (E.y < -5 || b - D > 6e3) && Q();
+              e.position.set(E.x, E.y, E.z), e.quaternion.set(U.x, U.y, U.z, U.w), (E.y < -5 || _ - D > 6e3) && Y();
               return;
             }
-            var p = s.ticker.elapsed || 0, z = 1 + 35e-4 * Math.sin(p / 5 * Math.PI * 2);
-            if (e.scale.setScalar(A * z), d) {
+            var p = s.ticker.elapsed || 0, I = 1 + 35e-4 * Math.sin(p / 5 * Math.PI * 2);
+            if (e.scale.setScalar(A * I), d) {
               try {
                 d.setNextKinematicTranslation({
                   x: e.position.x,
@@ -753,9 +757,9 @@ Promise.all([
               } catch {
               }
               var B = s.physicalVehicle;
-              if (B && B.position && b > r) {
-                var O = e.position.x - B.position.x, M = e.position.z - B.position.z, q = Math.sqrt(O * O + M * M), G = B.xzSpeed || 0;
-                G > 1 && q < o && w(O, M, G);
+              if (B && B.position && _ > t) {
+                var O = e.position.x - B.position.x, z = e.position.z - B.position.z, q = Math.sqrt(O * O + z * z), G = B.xzSpeed || 0;
+                G > 1 && q < o && y(O, z, G);
               }
             }
           }, 9));
