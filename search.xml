@@ -8,7 +8,7 @@
       <link href="/blog-cn/posts/73051/"/>
       <url>/blog-cn/posts/73051/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><blockquote><p>⚠️ 声明：本篇的文字、配图、编辑和发布，全部由 AI 完成。</p></blockquote><blockquote><p>🚩 立 flag：实现 100 个 vibecoding 项目！</p></blockquote><p>这个项目是其中一个。动机很具体：小红书发布那一步太碎，选图、想标签、挑时间、点发布，每次都要重来一遍。我想把这一步交出去，于是给自己加了一层 Web 后台，底座接一个开源的 MCP。</p><h2 id="先看这张操作台">先看这张操作台</h2><p>后台是我自己写的，一条命令起来，浏览器打开就能用，不写配置也能跑。</p><p><img src="/blog-cn/img/xiaohongshu-mcp/dashboard.png" alt="Web 后台仪表板：发布热力图、发布数、运行中的任务和粉丝数据"></p><p>仪表板上能看见今天发了几篇、哪个任务在跑 🤍</p><p><img src="/blog-cn/img/xiaohongshu-mcp/task-new.png" alt="新建任务：手动、定时 Cron、Webhook 三种触发方式"></p><p>任务有三种触发：手动、定时、Webhook。定时可以按「每天 21:00」这样排。</p><p><img src="/blog-cn/img/xiaohongshu-mcp/image-gen.png" alt="AI 配图：对话式生成配图，模型在 FLUX 1.1 Pro、FLUX Dev、SD 3.5 之间选"></p><p>配图不用自己找：可以让 AI 生成，也可以从本地图库随机取。</p><p><img src="/blog-cn/img/xiaohongshu-mcp/history.png" alt="发布历史：每次执行的标题、状态和失败原因"></p><p>发布历史会留下每次的标题、状态和失败原因，不用去翻日志。</p><h2 id="底座是哪个-MCP">底座是哪个 MCP</h2><p>只有一个：<code>xiaohongshu-mcp</code>。🌿</p><p>它把小红书网页端包成 13 个工具：发图文、发视频、搜索、看详情、翻评论、点赞收藏、看主页。接上 Claude Code、Cursor、Cline，告诉它要做什么就行。</p><p><img src="/blog-cn/img/xiaohongshu-mcp/mcp.png" alt="后台的 MCP 状态页：13 个工具的名单、参数和登录状态"></p><p>一句话分工：MCP 是手，后台是台面。台面把顺序排好，手负责点下去。</p><h2 id="我给它定的规矩">我给它定的规矩</h2><p>标题 20 个字，正文 1000 个字，开头一句要抓人，结尾不硬求赞 📌</p><p>语气按我说话的样子来：不长篇大论，不堆术语，不喊口号。</p><p>封面也定死了：真人出镜、手写标题、系列名不变 🌙</p><p><img src="/blog-cn/img/xiaohongshu-mcp/settings.png" alt="设置页：填 Anthropic 和 Replicate 的 Key，一键测连通性"></p><p>素材也接好了：NAS 的照片挂成本地目录、GitHub 日报扫当天提交、封面随机取或者 AI 生成。</p><h2 id="发一篇是什么感觉">发一篇是什么感觉</h2><p>对 AI 说一句：发一篇关于春天的，用这张图 🍃</p><p>它自己挑工具、填标签、点发布。或者放进定时任务，晚上九点自己发。</p><h2 id="几句实话">几句实话</h2><ul><li>不是官方接口，网页一改版，工具就要跟着修</li><li>一个账号不能同时在多个网页端登录</li><li>别做引流和搬运</li><li>偶尔发一两篇，手动更快</li></ul><p>省下来的是发布前那几十下：打开 App、上传图片、填标签、点发布 ✦</p><p>写，还是得自己来。</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><blockquote><p>⚠️ 声明：本篇的文字、配图、编辑和发布，全部由 AI 完成。</p></blockquote><blockquote><p>🚩 立 flag：实现 100 个 vibecoding 项目！</p></blockquote><p>这个项目是其中一个。动机很具体：小红书发布那一步太碎，选图、想标签、挑时间、点发布，每次都要重来一遍。我想把这一步交出去，于是给自己加了一层 Web 后台，底座接一个开源的 MCP。</p><h2 id="先看这张操作台">先看这张操作台</h2><p>后台是我自己写的，一条命令起来，浏览器打开就能用，不写配置也能跑。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/73051/dashboard.png" alt="Web 后台仪表板：发布热力图、发布数、运行中的任务和粉丝数据"></p><p>仪表板上能看见今天发了几篇、哪个任务在跑 🤍</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/73051/task-new.png" alt="新建任务：手动、定时 Cron、Webhook 三种触发方式"></p><p>任务有三种触发：手动、定时、Webhook。定时可以按「每天 21:00」这样排。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/73051/image-gen.png" alt="AI 配图：对话式生成配图，模型在 FLUX 1.1 Pro、FLUX Dev、SD 3.5 之间选"></p><p>配图不用自己找：可以让 AI 生成，也可以从本地图库随机取。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/73051/history.png" alt="发布历史：每次执行的标题、状态和失败原因"></p><p>发布历史会留下每次的标题、状态和失败原因，不用去翻日志。</p><h2 id="底座是哪个-MCP">底座是哪个 MCP</h2><p>只有一个：<code>xiaohongshu-mcp</code>。🌿</p><p>它把小红书网页端包成 13 个工具：发图文、发视频、搜索、看详情、翻评论、点赞收藏、看主页。接上 Claude Code、Cursor、Cline，告诉它要做什么就行。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/73051/mcp.png" alt="后台的 MCP 状态页：13 个工具的名单、参数和登录状态"></p><p>一句话分工：MCP 是手，后台是台面。台面把顺序排好，手负责点下去。</p><h2 id="我给它定的规矩">我给它定的规矩</h2><p>标题 20 个字，正文 1000 个字，开头一句要抓人，结尾不硬求赞 📌</p><p>语气按我说话的样子来：不长篇大论，不堆术语，不喊口号。</p><p>封面也定死了：真人出镜、手写标题、系列名不变 🌙</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/73051/settings.png" alt="设置页：填 Anthropic 和 Replicate 的 Key，一键测连通性"></p><p>素材也接好了：NAS 的照片挂成本地目录、GitHub 日报扫当天提交、封面随机取或者 AI 生成。</p><h2 id="发一篇是什么感觉">发一篇是什么感觉</h2><p>对 AI 说一句：发一篇关于春天的，用这张图 🍃</p><p>它自己挑工具、填标签、点发布。或者放进定时任务，晚上九点自己发。</p><h2 id="几句实话">几句实话</h2><ul><li>不是官方接口，网页一改版，工具就要跟着修</li><li>一个账号不能同时在多个网页端登录</li><li>别做引流和搬运</li><li>偶尔发一两篇，手动更快</li></ul><p>省下来的是发布前那几十下：打开 App、上传图片、填标签、点发布 ✦</p><p>写，还是得自己来。</p>]]></content>
       
       
       <categories>
@@ -239,9 +239,9 @@
             
             <tag> 测评 </tag>
             
-            <tag> 购物 </tag>
-            
             <tag> 数码 </tag>
+            
+            <tag> 购物 </tag>
             
         </tags>
       
@@ -270,9 +270,9 @@
             
             <tag> 测评 </tag>
             
-            <tag> 生活 </tag>
-            
             <tag> 购物 </tag>
+            
+            <tag> 生活 </tag>
             
         </tags>
       
@@ -301,9 +301,9 @@
             
             <tag> 测评 </tag>
             
-            <tag> 生活 </tag>
-            
             <tag> 购物 </tag>
+            
+            <tag> 生活 </tag>
             
         </tags>
       
@@ -347,7 +347,7 @@
       <link href="/blog-cn/posts/34388/"/>
       <url>/blog-cn/posts/34388/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>日记 2022年4月16日<br>上海市  18°C，大部晴朗</p>    <div id="aplayer-CpxlMiqX" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="28700552" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-mini="true"    ></div><p>最近一直在家看剧，看了《上海堡垒》，已经改编成电视剧了，真的是史诗级的烂。还看了部神话片，大概的意思是说人间妖魔横行，天庭派大将清陵带兵镇压，但是清陵手段残暴，为了完成天庭的任务，不惜迫害凡人，生灵涂炭，人间众生敢怒不敢言，冥界大门已开，妖魔无穷尽也，凡人的苦难无穷尽也。此时人们又想起了游历外界的小仙宫村。话说这宫村本只是三两小厮供奉的村口小仙，天魔刑官降生人间之时，竟然提出了与魔共生之策，遭到天人两界口诛笔伐，被放逐至三界之外。只是现在这天庭对清陵百般袒护，看似完全没有宽恕宫村之意。天庭为何非清陵不可？宫村能否重返三界？天魔刑官又会不会再次进化呢？故事越发的扑所迷离。</p><p>为了缓解最近再重刷《武林外传》，主题曲是真好听，记录一下歌词。</p><div class="note simple"><p>自打盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>从那盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>希望永远种在你心里</p></div><p>好了不说了想去华润万家买袋溜溜梅吃吃了。</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>日记 2022年4月16日<br>上海市  18°C，大部晴朗</p>    <div id="aplayer-BjsQnaJh" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="28700552" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-mini="true"    ></div><p>最近一直在家看剧，看了《上海堡垒》，已经改编成电视剧了，真的是史诗级的烂。还看了部神话片，大概的意思是说人间妖魔横行，天庭派大将清陵带兵镇压，但是清陵手段残暴，为了完成天庭的任务，不惜迫害凡人，生灵涂炭，人间众生敢怒不敢言，冥界大门已开，妖魔无穷尽也，凡人的苦难无穷尽也。此时人们又想起了游历外界的小仙宫村。话说这宫村本只是三两小厮供奉的村口小仙，天魔刑官降生人间之时，竟然提出了与魔共生之策，遭到天人两界口诛笔伐，被放逐至三界之外。只是现在这天庭对清陵百般袒护，看似完全没有宽恕宫村之意。天庭为何非清陵不可？宫村能否重返三界？天魔刑官又会不会再次进化呢？故事越发的扑所迷离。</p><p>为了缓解最近再重刷《武林外传》，主题曲是真好听，记录一下歌词。</p><div class="note simple"><p>自打盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>从那盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>希望永远种在你心里</p></div><p>好了不说了想去华润万家买袋溜溜梅吃吃了。</p>]]></content>
       
       
       <categories>
@@ -682,9 +682,9 @@
       
         <tags>
             
-            <tag> 项目 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 项目 </tag>
             
             <tag> 其他项目 </tag>
             
