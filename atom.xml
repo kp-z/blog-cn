@@ -10,7 +10,7 @@
   <rights>All rights reserved 2026, kp</rights>
   <subtitle>The Universe of KP</subtitle>
   <title>KP</title>
-  <updated>2026-10-23T02:36:09.000Z</updated>
+  <updated>2026-10-23T03:13:40.000Z</updated>
   <entry>
     <author>
       <name>kp</name>
@@ -26,7 +26,7 @@
     <published>2026-10-23T02:35:00.000Z</published>
     <summary>自己加了一层 Web 后台，底座是一个开源 MCP，把小红书的书写格式、风格和封面都定了下来</summary>
     <title>100 个 VibeCoding 项目之 AI 接管小红书</title>
-    <updated>2026-10-23T02:36:09.000Z</updated>
+    <updated>2026-10-23T03:13:40.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -127,8 +127,8 @@
     <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%B4%AD%E7%89%A9/"/>
     <category term="测评" scheme="https://zkpeace.com/blog-cn/tags/%E6%B5%8B%E8%AF%84/"/>
-    <category term="购物" scheme="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/"/>
     <category term="数码" scheme="https://zkpeace.com/blog-cn/tags/%E6%95%B0%E7%A0%81/"/>
+    <category term="购物" scheme="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/"/>
     <id>https://zkpeace.com/blog-cn/posts/8155/</id>
     <link href="https://zkpeace.com/blog-cn/posts/8155/"/>
     <published>2022-05-21T08:33:22.000Z</published>
@@ -143,8 +143,8 @@
     <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%B4%AD%E7%89%A9/"/>
     <category term="测评" scheme="https://zkpeace.com/blog-cn/tags/%E6%B5%8B%E8%AF%84/"/>
-    <category term="生活" scheme="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/"/>
+    <category term="生活" scheme="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/"/>
     <id>https://zkpeace.com/blog-cn/posts/40641/</id>
     <link href="https://zkpeace.com/blog-cn/posts/40641/"/>
     <published>2022-05-09T08:33:22.000Z</published>
@@ -159,8 +159,8 @@
     <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%B4%AD%E7%89%A9/"/>
     <category term="测评" scheme="https://zkpeace.com/blog-cn/tags/%E6%B5%8B%E8%AF%84/"/>
-    <category term="生活" scheme="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/"/>
     <category term="购物" scheme="https://zkpeace.com/blog-cn/tags/%E8%B4%AD%E7%89%A9/"/>
+    <category term="生活" scheme="https://zkpeace.com/blog-cn/tags/%E7%94%9F%E6%B4%BB/"/>
     <id>https://zkpeace.com/blog-cn/posts/15482/</id>
     <link href="https://zkpeace.com/blog-cn/posts/15482/"/>
     <published>2022-05-03T22:23:09.000Z</published>
