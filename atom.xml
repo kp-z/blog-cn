@@ -10,7 +10,24 @@
   <rights>All rights reserved 2026, kp</rights>
   <subtitle>The Universe of KP</subtitle>
   <title>KP</title>
-  <updated>2026-10-18T10:15:06.000Z</updated>
+  <updated>2026-10-23T02:36:09.000Z</updated>
+  <entry>
+    <author>
+      <name>kp</name>
+    </author>
+    <category term="项目" scheme="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/"/>
+    <category term="VibeCoding" scheme="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/VibeCoding/"/>
+    <category term="小红书" scheme="https://zkpeace.com/blog-cn/tags/%E5%B0%8F%E7%BA%A2%E4%B9%A6/"/>
+    <category term="MCP" scheme="https://zkpeace.com/blog-cn/tags/MCP/"/>
+    <category term="AI" scheme="https://zkpeace.com/blog-cn/tags/AI/"/>
+    <category term="vibecoding" scheme="https://zkpeace.com/blog-cn/tags/vibecoding/"/>
+    <id>https://zkpeace.com/blog-cn/posts/73051/</id>
+    <link href="https://zkpeace.com/blog-cn/posts/73051/"/>
+    <published>2026-10-23T02:35:00.000Z</published>
+    <summary>自己加了一层 Web 后台，底座是一个开源 MCP，把小红书的书写格式、风格和封面都定了下来</summary>
+    <title>100 个 VibeCoding 项目之 AI 接管小红书</title>
+    <updated>2026-10-23T02:36:09.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>kp</name>
@@ -33,9 +50,9 @@
     </author>
     <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
     <category term="记事" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/"/>
+    <category term="AI" scheme="https://zkpeace.com/blog-cn/tags/AI/"/>
     <category term="自洽" scheme="https://zkpeace.com/blog-cn/tags/%E8%87%AA%E6%B4%BD/"/>
     <category term="访谈" scheme="https://zkpeace.com/blog-cn/tags/%E8%AE%BF%E8%B0%88/"/>
-    <category term="AI" scheme="https://zkpeace.com/blog-cn/tags/AI/"/>
     <category term="思考" scheme="https://zkpeace.com/blog-cn/tags/%E6%80%9D%E8%80%83/"/>
     <id>https://zkpeace.com/blog-cn/posts/50952/</id>
     <link href="https://zkpeace.com/blog-cn/posts/50952/"/>
@@ -312,24 +329,6 @@
       <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
     </summary>
     <title>我加入了少数派Matrix，并分享了这些应用... ...</title>
-    <updated>2026-09-13T18:25:43.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>kp</name>
-    </author>
-    <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
-    <category term="软件" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%BD%AF%E4%BB%B6/"/>
-    <category term="手机" scheme="https://zkpeace.com/blog-cn/tags/%E6%89%8B%E6%9C%BA/"/>
-    <category term="设计" scheme="https://zkpeace.com/blog-cn/tags/%E8%AE%BE%E8%AE%A1/"/>
-    <category term="软件" scheme="https://zkpeace.com/blog-cn/tags/%E8%BD%AF%E4%BB%B6/"/>
-    <id>https://zkpeace.com/blog-cn/posts/35289/</id>
-    <link href="https://zkpeace.com/blog-cn/posts/35289/"/>
-    <published>2021-06-11T04:59:35.000Z</published>
-    <summary>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
-    </summary>
-    <title>Huawei P40 UI 改造</title>
     <updated>2026-09-13T18:25:43.000Z</updated>
   </entry>
 </feed>
