@@ -4,18 +4,18 @@ var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { en
 var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
 import { P as Qs, E as Js, C as ei } from "./tweakpane-C39D8eO8.js";
 import { n as ti, s as st, e as si, v as ii, m as is, h as nt } from "./vendor-BcHL05hW.js";
-import { S as he, V as y, R as Kt, G as at, a as ps, u as d, v as E, M as O, F as b, b as w, p as Z, c as ft, d as jt, I as De, s as _, m as ge, f as F, e as C, g as D, h as Qe, i as H, P as Xt, Q as ot, E as dt, n as ai, j as ni, T as oi, k, l as fs, o as A, W as ri, q as li, r as hi, t as ci, w as di, x as ui, y as mi, z as gi, K as pi, D as fi, A as vi, B as bi, C as Rt, H as X, J as yi, L as vs, N as Ke, O as ne, U as le, X as bs, Y as et, Z as Q, _ as as, $ as M, a0 as vt, a1 as Ae, a2 as ys, a3 as wi, a4 as Y, a5 as P, a6 as Be, a7 as Le, a8 as qt, a9 as rt, aa as xi, ab as ke, ac as Ce, ad as Yt, ae as ws, af as We, ag as Et, ah as It, ai as _e, aj as tt, ak as Pi, al as Ze, am as Si, an as Zt, ao as W, ap as bt, aq as ee, ar as Je, as as re, at as Ne, au as lt, av as $e, aw as _t, ax as xs, ay as Ti, az as Mi, aA as j, aB as Ve, aC as de, aD as Ft, aE as mt, aF as Ps, aG as Ss, aH as te, aI as gt, aJ as ki, aK as Ci, aL as Ai, aM as Ts, aN as Ms, aO as zt, aP as yt, aQ as ks, aR as Cs, aS as wt, aT as As, aU as Lt, aV as Ot, aW as Es, aX as Is, aY as Ei, aZ as Qt, a_ as Jt, a$ as ut, b0 as At, b1 as Bs, b2 as Wt, b3 as Fe, b4 as Ii, b5 as Bi, b6 as es, b7 as Ni, b8 as Ns, b9 as ns, ba as Ds, bb as Rs, bc as Di, bd as Ri, be as qe, bf as Fi, bg as Fs, bh as zi, bi as zs, bj as ts, bk as pt, bl as os, bm as it, bn as Li, bo as Bt, bp as Oi, bq as Ui, br as Ls, bs as Gi, bt as ji, bu as qi, bv as Os, bw as Vi, bx as xe, by as rs, bz as Me, bA as Hi, bB as Wi, bC as $i, bD as Ki, bE as Pt, bF as Xi, bG as Yi, bH as Zi, bI as _i } from "./three-BPWavq8k.js";
+import { S as he, V as y, R as Kt, G as at, a as ps, u as d, v as E, M as O, F as b, b as w, p as Z, c as ft, d as jt, I as De, s as _, m as ge, f as F, e as C, g as D, h as Qe, i as H, P as Xt, Q as ot, E as dt, n as ai, j as ni, T as oi, k, l as fs, o as A, W as ri, q as li, r as hi, t as ci, w as di, x as ui, y as mi, z as gi, K as pi, D as fi, A as vi, B as bi, C as Rt, H as X, J as yi, L as vs, N as Ke, O as ne, U as le, X as bs, Y as et, Z as Q, _ as as, $ as M, a0 as vt, a1 as Ae, a2 as ys, a3 as wi, a4 as Y, a5 as P, a6 as Be, a7 as Le, a8 as qt, a9 as rt, aa as xi, ab as ke, ac as Ce, ad as Yt, ae as ws, af as We, ag as Et, ah as It, ai as _e, aj as tt, ak as Pi, al as Ze, am as Si, an as Zt, ao as W, ap as bt, aq as te, ar as Je, as as re, at as Ne, au as lt, av as $e, aw as _t, ax as xs, ay as Ti, az as Mi, aA as U, aB as Ve, aC as de, aD as Ft, aE as mt, aF as Ps, aG as Ss, aH as ee, aI as ki, aJ as Ci, aK as gt, aL as Ai, aM as Ei, aN as Ii, aO as Ts, aP as Ms, aQ as zt, aR as yt, aS as ks, aT as Cs, aU as wt, aV as As, aW as Lt, aX as Ot, aY as Es, aZ as Is, a_ as Bi, a$ as Qt, b0 as Jt, b1 as ut, b2 as At, b3 as Bs, b4 as Wt, b5 as Fe, b6 as Ni, b7 as Di, b8 as es, b9 as Ri, ba as Ns, bb as ns, bc as Ds, bd as Rs, be as Fi, bf as zi, bg as qe, bh as Li, bi as Fs, bj as Oi, bk as zs, bl as ts, bm as pt, bn as os, bo as it, bp as Ui, bq as Bt, br as Gi, bs as ji, bt as Ls, bu as qi, bv as Vi, bw as Hi, bx as Os, by as Wi, bz as xe, bA as rs, bB as Me, bC as $i, bD as Ki, bE as Xi, bF as Yi, bG as Pt, bH as Zi, bI as _i, bJ as Qi, bK as Ji } from "./three-CWGG3eku.js";
 import { g as f } from "./gsap-BcKM28WW.js";
 import { C as Us } from "./camera-controls-ByztGhiL.js";
-let T, ea;
+let T, sa;
 let __tla = (async () => {
-  let Qi, Ji, ls;
-  Qi = "modulepreload";
-  Ji = function(m, e) {
+  let ea, ta, ls;
+  ea = "modulepreload";
+  ta = function(m, e) {
     return new URL(m, e).href;
   };
   ls = {};
-  ea = function(e, t, s) {
+  sa = function(e, t, s) {
     let i = Promise.resolve();
     if (t && t.length > 0) {
       let r = function(h) {
@@ -29,7 +29,7 @@ let __tla = (async () => {
       };
       const n = document.getElementsByTagName("link"), o = document.querySelector("meta[property=csp-nonce]"), l = (o == null ? void 0 : o.nonce) || (o == null ? void 0 : o.getAttribute("nonce"));
       i = r(t.map((h) => {
-        if (h = Ji(h, s), h in ls) return;
+        if (h = ta(h, s), h in ls) return;
         ls[h] = true;
         const c = h.endsWith(".css"), u = c ? '[rel="stylesheet"]' : "";
         if (s) for (let p = n.length - 1; p >= 0; p--) {
@@ -38,7 +38,7 @@ let __tla = (async () => {
         }
         else if (document.querySelector(`link[href="${h}"]${u}`)) return;
         const g = document.createElement("link");
-        if (g.rel = c ? "stylesheet" : Qi, c || (g.as = "script"), g.crossOrigin = "", g.href = h, l && g.setAttribute("nonce", l), document.head.appendChild(g), c) return new Promise((p, v) => {
+        if (g.rel = c ? "stylesheet" : ea, c || (g.as = "script"), g.crossOrigin = "", g.href = h, l && g.setAttribute("nonce", l), document.head.appendChild(g), c) return new Promise((p, v) => {
           g.addEventListener("load", p), g.addEventListener("error", () => v(new Error(`Unable to preload CSS for ${h}`)));
         });
       }));
@@ -54,7 +54,7 @@ let __tla = (async () => {
       return e().catch(a);
     });
   };
-  class ta {
+  class ia {
     constructor() {
       this.active = location.hash.match(/debug/i), this.active && (this.panel = new Qs(), this.panel.registerPlugin(Js), this.panel.registerPlugin(ei), addEventListener("keydown", (e) => {
         e.code === "KeyH" && (this.panel.hidden = !this.panel.hidden);
@@ -140,14 +140,14 @@ let __tla = (async () => {
     const s = He((m - e) / (t - e), 0, 1);
     return s * s * (3 - 2 * s);
   }
-  function sa(m, e) {
+  function aa(m, e) {
     return (m % e + e) % e;
   }
-  function ia(m, e, t) {
+  function na(m, e, t) {
     let s = (e - m + t) % t;
     return s > t / 2 && (s -= t), s;
   }
-  function aa(m, e, t, s, i, a, n) {
+  function oa(m, e, t, s, i, a, n) {
     const o = t - m, l = s - e, r = m - i, h = e - a, c = o * o + l * l, u = 2 * (r * o + h * l), g = r * r + h * h - n * n, p = u * u - 4 * c * g;
     if (p < 0) return [];
     const v = [], x = Math.sqrt(p), S = (-u - x) / (2 * c), I = (-u + x) / (2 * c);
@@ -159,20 +159,20 @@ let __tla = (async () => {
       y: e + I * l
     }), v;
   }
-  const na = 2 * Math.PI;
-  var oa = function(m, e) {
+  const ra = 2 * Math.PI;
+  var la = function(m, e) {
     return (m % e + e) % e;
-  }, ra = function(m) {
-    return oa(m + Math.PI, na) - Math.PI;
+  }, ha = function(m) {
+    return la(m + Math.PI, ra) - Math.PI;
   };
   function Nt(m, e) {
-    return ra(e - m);
+    return ha(e - m);
   }
   function js(m, e) {
     const t = m.x - e.x, s = m.y - e.y;
     return Math.sqrt(t * t + s * s);
   }
-  function la(m, e, t, s) {
+  function ca(m, e, t, s) {
     const i = e.x - m.x, a = e.y - m.y, n = t.x - m.x, o = t.y - m.y, l = (n * i + o * a) / (i * i + a * a);
     let r = null;
     return l < 0 ? r = m : l > 1 ? r = e : r = {
@@ -180,7 +180,7 @@ let __tla = (async () => {
       y: m.y + l * a
     }, js(r, t) <= s;
   }
-  function ha(m, e) {
+  function da(m, e) {
     let t = false;
     for (let s = 0, i = e.length - 1; s < e.length; i = s++) {
       const a = e[s].x, n = e[s].y, o = e[i].x, l = e[i].y;
@@ -188,15 +188,15 @@ let __tla = (async () => {
     }
     return t;
   }
-  function ca(m, e, t) {
+  function ua(m, e, t) {
     for (const s of t) if (js(s, m) <= e) return true;
     for (let s = 0; s < t.length; s++) {
       const i = t[s], a = t[(s + 1) % t.length];
-      if (la(i, a, m, e)) return true;
+      if (ca(i, a, m, e)) return true;
     }
-    return !!ha(m, t);
+    return !!da(m, t);
   }
-  class da {
+  class ma {
     constructor() {
       this.events = new se(), this.setMappings(), this.setType(), this.setButtons(), this.setJoysticks();
     }
@@ -750,7 +750,7 @@ let __tla = (async () => {
   __publicField(_ze, "MODE_MOUSE", 1);
   __publicField(_ze, "MODE_TOUCH", 2);
   let ze = _ze;
-  class ua {
+  class ga {
     constructor() {
       this.events = new se(), this.pressed = [], window.addEventListener("blur", () => {
         for (const e of this.pressed) this.events.trigger("up", [
@@ -773,7 +773,7 @@ let __tla = (async () => {
       });
     }
   }
-  class ma {
+  class pa {
     constructor() {
       this.events = new se(), this.active = false, this.element = document.querySelector(".js-touch-buttons"), this.overlay = this.element.querySelector(".js-overlay"), this.list = /* @__PURE__ */ new Set(), this.setItems();
     }
@@ -817,7 +817,7 @@ let __tla = (async () => {
       this.active && (this.active = false, this.element.classList.remove("is-active"));
     }
   }
-  class ga {
+  class fa {
     constructor() {
       this.events = new se(), addEventListener("wheel", (e) => {
         const t = ti(e);
@@ -829,7 +829,7 @@ let __tla = (async () => {
       });
     }
   }
-  class pa {
+  class va {
     constructor() {
       this.game = T.getInstance(), this.events = new se(), this.position = new y(), this.raycaster = new Kt(), this.active = false, this.animated = false, this.angle = 0, this.progress = 0, this.smallestAngle = 0, this.targetAngle = 0, this.forward = true, this.inRadiusLow = false, this.setMeshes();
     }
@@ -853,10 +853,10 @@ let __tla = (async () => {
         De(i.greaterThan(this.uniforms.progressStartAngle).and(i.lessThan(this.uniforms.progressEndAngle)), () => {
           I.assign(1);
         }), S.assign(S.mul(I));
-        const B = _(v, this.outlineThickness / 4).mul(n), U = ge(p, B), q = ge(g, S).toVar();
-        U.lessThan(1e-5).discard();
-        const G = U.mul(0.35).add(q.mul(0.75));
-        return C(E(q).mul(this.uniforms.colorMultiplier), G);
+        const B = _(v, this.outlineThickness / 4).mul(n), G = ge(p, B), q = ge(g, S).toVar();
+        G.lessThan(1e-5).discard();
+        const j = G.mul(0.35).add(q.mul(0.75));
+        return C(E(q).mul(this.uniforms.colorMultiplier), j);
       })(), this.mesh = new D(e, t), this.group.add(this.mesh);
     }
     setCoordinates(e, t, s, i) {
@@ -900,7 +900,7 @@ let __tla = (async () => {
       } else this.group.visible = false;
     }
   }
-  class fa extends Set {
+  class ba extends Set {
     constructor(e, ...t) {
       super(...t), this.callback = e;
     }
@@ -930,7 +930,7 @@ let __tla = (async () => {
   }
   const _K = class _K {
     constructor(e = [], t = []) {
-      this.game = T.getInstance(), this.events = new se(), this.actions = /* @__PURE__ */ new Map(), this.filters = new fa((s) => {
+      this.game = T.getInstance(), this.events = new se(), this.actions = /* @__PURE__ */ new Map(), this.filters = new ba((s) => {
         if (s.type === "add") document.documentElement.classList.add(`input-filter-${s.value}`);
         else if (s.type === "delete") document.documentElement.classList.remove(`input-filter-${s.value}`);
         else if (s.type === "clear") for (const i of s.previousValues) document.documentElement.classList.remove(`input-filter-${i}`);
@@ -941,14 +941,14 @@ let __tla = (async () => {
       }, 0), document.documentElement.classList.add("is-mode-mouse-keyboard");
     }
     setKeyboard() {
-      this.keyboard = new ua(), this.keyboard.events.on("down", (e, t) => {
+      this.keyboard = new ga(), this.keyboard.events.on("down", (e, t) => {
         this.updateMode(_K.MODE_MOUSEKEYBOARD), this.start(`Keyboard.${e}`), this.start(`Keyboard.${t}`);
       }), this.keyboard.events.on("up", (e, t) => {
         this.updateMode(_K.MODE_MOUSEKEYBOARD), this.end(`Keyboard.${e}`), this.end(`Keyboard.${t}`);
       });
     }
     setGamepad() {
-      this.gamepad = new da(), this.gamepad.events.on("down", (e) => {
+      this.gamepad = new ma(), this.gamepad.events.on("down", (e) => {
         this.updateMode(_K.MODE_GAMEPAD), this.start(`Gamepad.${e.name}`, e.value);
       }), this.gamepad.events.on("up", (e) => {
         this.updateMode(_K.MODE_GAMEPAD), this.end(`Gamepad.${e.name}`);
@@ -984,15 +984,15 @@ let __tla = (async () => {
       });
     }
     setWheel() {
-      this.wheel = new ga(), this.wheel.events.on("roll", (e) => {
+      this.wheel = new fa(), this.wheel.events.on("roll", (e) => {
         this.updateMode(_K.MODE_MOUSEKEYBOARD), this.start("Wheel.roll", e, false);
       });
     }
     setInteractiveButtons() {
-      this.interactiveButtons = new ma();
+      this.interactiveButtons = new pa();
     }
     setNipple() {
-      this.nipple = new pa(), this.addActions([
+      this.nipple = new va(), this.addActions([
         {
           name: "nipplePointer",
           categories: [
@@ -1084,7 +1084,7 @@ let __tla = (async () => {
   __publicField(_K, "MODE_GAMEPAD", 2);
   __publicField(_K, "MODE_TOUCH", 3);
   let K = _K;
-  class va {
+  class ya {
     constructor() {
       this.game = T.getInstance(), this.world = new this.game.RAPIER.World({
         x: 0,
@@ -1164,7 +1164,7 @@ let __tla = (async () => {
       });
     }
   }
-  class ba extends oi {
+  class wa extends oi {
     static get type() {
       return "CheapDOFNode";
     }
@@ -1181,8 +1181,8 @@ let __tla = (async () => {
       })();
     }
   }
-  const ya = (m) => ai(new ba(ni(m)));
-  class wa {
+  const xa = (m) => ai(new wa(ni(m)));
+  class Pa {
     constructor() {
       this.game = T.getInstance(), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F4F8} Rendering",
@@ -1209,7 +1209,7 @@ let __tla = (async () => {
     setPostprocessing() {
       this.postProcessing = new hi(this.renderer);
       const e = ci(this.game.scene, this.game.view.camera), t = e.getTextureNode("output");
-      this.bloomPass = di(t), this.bloomPass._nMips = this.game.quality.level === 0 ? 5 : 2, this.bloomPass.threshold.value = 1, this.bloomPass.strength.value = 0.25, this.bloomPass.smoothWidth.value = 1, this.cheapDOFPass = ya(ui(e));
+      this.bloomPass = di(t), this.bloomPass._nMips = this.game.quality.level === 0 ? 5 : 2, this.bloomPass.threshold.value = 1, this.bloomPass.strength.value = 0.25, this.bloomPass.smoothWidth.value = 1, this.cheapDOFPass = xa(ui(e));
       const s = (i) => {
         i === 0 ? this.postProcessing.outputNode = this.cheapDOFPass.add(this.bloomPass) : i === 1 && (this.postProcessing.outputNode = t.add(this.bloomPass)), this.postProcessing.needsUpdate = true;
       };
@@ -1293,7 +1293,7 @@ let __tla = (async () => {
       this.postProcessing.render(), this.stats && this.stats.update(), ((_a2 = this.game.monitoring) == null ? void 0 : _a2.stats) && (this.game.rendering.renderer.resolveTimestampsAsync(mi.RENDER), this.game.monitoring.stats.update());
     }
   }
-  class xa {
+  class Sa {
     constructor() {
       this.game = T.getInstance(), this.loaders = /* @__PURE__ */ new Map(), this.cache = /* @__PURE__ */ new Map();
     }
@@ -1325,7 +1325,7 @@ let __tla = (async () => {
       });
     }
   }
-  class Pa {
+  class Ta {
     constructor() {
       this.game = T.getInstance(), this.elapsed = 0, this.delta = 1 / 60, this.maxDelta = 1 / 30, this.scale = 2, this.deltaScaled = this.delta * this.scale, this.elapsedScaled = 0, this.waits = [], this.lastDeltas = [], this.elapsedUniform = d(this.elapsed), this.deltaUniform = d(this.delta), this.elapsedScaledUniform = d(this.elapsedScaled), this.deltaScaledUniform = d(this.deltaScaled), this.events = new se();
     }
@@ -1347,7 +1347,7 @@ let __tla = (async () => {
       ]);
     }
   }
-  class Sa {
+  class Ma {
     constructor() {
       this.game = T.getInstance(), this.defaultScale = 2, this._scale = this.defaultScale, this.game.ticker.scale = this.scale, f.globalTimeline.timeScale(this.scale), this.setBulletTime(), this.game.ticker.events.on("tick", () => {
         this.update();
@@ -2189,7 +2189,7 @@ let __tla = (async () => {
   __publicField(_ve, "MODE_DEFAULT", 1);
   __publicField(_ve, "MODE_FREE", 2);
   let ve = _ve;
-  class Ta {
+  class ka {
     constructor(e) {
       this.domElement = e, this.events = new se(), this.measure(), this.setResize();
     }
@@ -2241,7 +2241,7 @@ let __tla = (async () => {
     return A(s.rgb, n, a);
   })(t));
   let V = _V;
-  class Ma {
+  class Ca {
     constructor() {
       this.game = T.getInstance(), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u23E5 Floor",
@@ -2346,7 +2346,7 @@ let __tla = (async () => {
       } else this.bedRock.enabled && (this.bedRock.enabled = false, this.bedRock.physical.body.setEnabled(false));
     }
   }
-  const ka = b(([m]) => {
+  const Aa = b(([m]) => {
     const e = E(1, 0, 0), t = E(0, 1, 0), s = E(0, 0, 1), i = m.dot(e).abs(), a = m.dot(t).abs(), n = m.dot(s).abs(), o = e;
     return De(n.greaterThan(i), () => {
       o.assign(s);
@@ -2357,10 +2357,10 @@ let __tla = (async () => {
     const t = m.yz, s = m.xz, i = m.xy;
     let a = t;
     return a = A(a, s, e.y), a = A(a, i, e.z), a;
-  }), Ca = b(([m, e, t, s, i]) => {
+  }), Ea = b(([m, e, t, s, i]) => {
     const a = m.div(e).add(s), n = _(a.fract().sub(0.5).abs(), i.oneMinus().mul(0.5)), o = A(n.x, 1, n.y).oneMinus(), l = _(a.sub(0.5).fract().sub(0.5).abs().mul(2), t).mul(o);
     return A(l.x, 1, l.y);
-  }), Aa = b(([m, e, t, s, i, a]) => {
+  }), Ia = b(([m, e, t, s, i, a]) => {
     const n = t, o = m.div(e).add(s), l = o.fwidth().mul(a), r = qt(n, l, 1), h = l.mul(1.5), c = _(o.fract().sub(0.5).abs(), i.oneMinus().mul(0.5)), u = A(c.x, 1, c.y).oneMinus(), g = o.fract().mul(2).sub(1).abs().oneMinus();
     let p = rt(r.add(h), r.sub(h), g);
     return p = p.mul(qt(n.div(r), 0, 1)), p = A(p, n, qt(l.mul(2).sub(1), 0, 1)).mul(u), A(p.x, 1, p.y);
@@ -2370,17 +2370,17 @@ let __tla = (async () => {
       this.color = d(M(e)), this.scale = d(t), this.thickness = d(s), this.cross = d(i), this.offset = d(a);
     }
   }
-  class Ea extends xi {
+  class Ba extends xi {
     constructor(e) {
       super(), this.normals = false, this.lights = false, this.isMeshGridMaterial = true, this.testNode = null, this.scaleNode = d(1), this.reference = "uv", this.antialiased = true, this.color = new X(0), this.lines = [
         new $t()
       ], this.setValues(e);
-      const t = ka(vt), s = t.fwidth().length().oneMinus().clamp(0, 1);
+      const t = Aa(vt), s = t.fwidth().length().oneMinus().clamp(0, 1);
       let i = k();
       this.reference === "worldTriplanar" ? i = hs(Q, t) : this.reference === "worldX" ? i = Q.yz : this.reference === "worldY" ? i = Q.xz : this.reference === "worldZ" ? i = Q.xy : this.reference === "localTriplanar" ? i = hs(positionLocal, t) : this.reference === "localX" ? i = positionLocal.yz : this.reference === "localY" ? i = positionLocal.xz : this.reference === "localZ" && (i = positionLocal.xy);
       let a = d(this.color);
       for (const n of this.lines) {
-        const o = this.antialiased ? Aa(i, n.scale.mul(this.scaleNode), n.thickness, n.offset, n.cross, s) : Ca(i, n.scale.mul(this.scaleNode), n.thickness, n.offset, n.cross);
+        const o = this.antialiased ? Ia(i, n.scale.mul(this.scaleNode), n.thickness, n.offset, n.cross, s) : Ea(i, n.scale.mul(this.scaleNode), n.thickness, n.offset, n.cross);
         a = A(a, n.color, o);
       }
       this.outputNode = C(a, 1);
@@ -2392,7 +2392,7 @@ let __tla = (async () => {
       this.scaleNode.value = e;
     }
   }
-  class Ia {
+  class Na {
     constructor() {
       this.game = T.getInstance(), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F310} Grid",
@@ -2403,7 +2403,7 @@ let __tla = (async () => {
       const e = [
         new $t("#8d55ff", 10, 0.02, 0.2),
         new $t("#675369", 100, 2e-3, 1)
-      ], t = new Ea({
+      ], t = new Ba({
         color: 1775903,
         scale: 1e-3,
         antialiased: true,
@@ -2462,7 +2462,7 @@ let __tla = (async () => {
       this.mesh.material.dispose(), this.mesh.geometry.dispose(), this.mesh.removeFromParent();
     }
   }
-  class Ba {
+  class Da {
     constructor() {
       this.game = T.getInstance(), this.subdivisions = 280;
       const e = this.game.view.optimalArea.radius;
@@ -2507,8 +2507,8 @@ let __tla = (async () => {
         u.x.assign(We(u.x.add(g), this.sizeUniform).sub(g)), u.y.assign(We(u.y.add(g), this.sizeUniform).sub(g));
         const p = E(u.x, 0, u.y).add(E(this.center.x, 0, this.center.y)), v = Et.mul(p);
         i.assign(v.xz);
-        const x = P(this.game.noises.perlin, i.mul(0.0321)).r.add(0.5), S = this.bladeHeight.mul(this.bladeHeightRandomness.mul(le("heightRandomness")).add(this.bladeHeightRandomness.oneMinus())).mul(x).mul(l), I = E(a.element(e.mod(3).mul(2)).mul(this.bladeWidth).mul(l), a.element(e.mod(3).mul(2).add(1)).mul(S), 0), B = p.add(I), U = ft(v.z.sub(It.z), v.x.sub(It.x)).add(-Math.PI * 0.5);
-        return B.xz.assign(_e(B.xz, U, v.xz)), s.assign(this.game.wind.offsetNode(v.xz).mul(t).mul(S).mul(2)), B.addAssign(E(s.x, 0, s.y)), B.y.addAssign(r.mul(100)), B;
+        const x = P(this.game.noises.perlin, i.mul(0.0321)).r.add(0.5), S = this.bladeHeight.mul(this.bladeHeightRandomness.mul(le("heightRandomness")).add(this.bladeHeightRandomness.oneMinus())).mul(x).mul(l), I = E(a.element(e.mod(3).mul(2)).mul(this.bladeWidth).mul(l), a.element(e.mod(3).mul(2).add(1)).mul(S), 0), B = p.add(I), G = ft(v.z.sub(It.z), v.x.sub(It.x)).add(-Math.PI * 0.5);
+        return B.xz.assign(_e(B.xz, G, v.xz)), s.assign(this.game.wind.offsetNode(v.xz).mul(t).mul(S).mul(2)), B.addAssign(E(s.x, 0, s.y)), B.y.addAssign(r.mul(100)), B;
       })(), this.game.debug.active) {
         const c = this.game.debug.panel.addFolder({
           title: "\u{1F331} Grass",
@@ -2539,7 +2539,7 @@ let __tla = (async () => {
       this.center.value.set(this.game.view.optimalArea.position.x, this.game.view.optimalArea.position.z);
     }
   }
-  class Na {
+  class Ra {
     constructor() {
       this.game = T.getInstance(), this.hasRipples = false, this.hasIce = false, this.hasSplashes = false, this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F30A} Water surface",
@@ -2576,8 +2576,8 @@ let __tla = (async () => {
         step: 1e-3
       }, () => L(this.game.weather.temperature.value, 0, -3, 1, 0));
       const i = b(([x]) => {
-        const I = x.b.add(this.game.wind.localTime.mul(0.5)).mul(e).floor(), B = P(this.game.noises.perlin, Q.xz.add(I.div(s)).mul(t)).r, U = x.b.add(this.game.wind.localTime.mul(0.5)).mul(e).mod(1).sub(x.b.remap(0, 1, -0.3, 1).oneMinus()).add(B);
-        return U.assign(this.ripplesRatio.remap(0, 1, -1, -0.4).step(U)), U;
+        const I = x.b.add(this.game.wind.localTime.mul(0.5)).mul(e).floor(), B = P(this.game.noises.perlin, Q.xz.add(I.div(s)).mul(t)).r, G = x.b.add(this.game.wind.localTime.mul(0.5)).mul(e).mod(1).sub(x.b.remap(0, 1, -0.3, 1).oneMinus()).add(B);
+        return G.assign(this.ripplesRatio.remap(0, 1, -1, -0.4).step(G)), G;
       });
       this.game.debug.active && (this.ripplesDebugPanel.addBinding(e, "value", {
         label: "ripplesSlopeFrequency",
@@ -2620,10 +2620,10 @@ let __tla = (async () => {
         step: 1e-3
       }, () => Math.pow(this.game.weather.rain.value, 2));
       const u = b(() => {
-        const x = P(this.game.noises.voronoi, Q.xz.mul(o)), S = P(this.game.noises.perlin, Q.xz.mul(o.mul(0.25))).r, I = x.r, B = tt(x.b.mul(123456)).add(S), U = this.game.wind.localTime.mul(l).add(B);
-        I.assign(I.sub(U).mod(1));
-        const q = x.g.remapClamp(h, c, 0, 1), G = r.mul(q);
-        I.assign(I.step(G).oneMinus());
+        const x = P(this.game.noises.voronoi, Q.xz.mul(o)), S = P(this.game.noises.perlin, Q.xz.mul(o.mul(0.25))).r, I = x.r, B = tt(x.b.mul(123456)).add(S), G = this.game.wind.localTime.mul(l).add(B);
+        I.assign(I.sub(G).mod(1));
+        const q = x.g.remapClamp(h, c, 0, 1), j = r.mul(q);
+        I.assign(I.step(j).oneMinus());
         const J = tt(x.b.mul(654321)).add(S).mod(1);
         return J.assign(this.splashesRatio.step(J)), I.assign(I.mul(J)), I;
       });
@@ -2799,7 +2799,7 @@ let __tla = (async () => {
     setFrustum() {
       let e = this.references.items.get("zoneFrustum");
       e && (this.frustum = {}, this.frustum.position = new H(e[0].position.x, e[0].position.z), this.frustum.radius = e[0].scale.x, this.frustum.isIn = null, this.frustum.alwaysVisible = false, this.frustum.test = () => {
-        if (this.frustum.alwaysVisible || ca(this.frustum.position, this.frustum.radius, [
+        if (this.frustum.alwaysVisible || ua(this.frustum.position, this.frustum.radius, [
           this.game.view.optimalArea.quad2[0].offseted,
           this.game.view.optimalArea.quad2[1].offseted,
           this.game.view.optimalArea.quad2[2].offseted,
@@ -2816,7 +2816,7 @@ let __tla = (async () => {
       });
     }
   }
-  class Da extends Pe {
+  class Fa extends Pe {
     constructor(e) {
       super(e), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F480} Altar",
@@ -2898,7 +2898,7 @@ let __tla = (async () => {
         const g = u * 3, p = new bt((1 - Math.pow(1 - Math.random(), 2)) * 5, Math.random() * Math.PI * 0.4, Math.random() * Math.PI * 2), v = new y().setFromSpherical(p);
         s[g + 0] = v.x, s[g + 1] = v.y, s[g + 2] = v.z, i[u] = Math.random(), a[u] = Math.random();
       }
-      const n = ee(s, "vec3").toAttribute(), o = ee(i, "float").toAttribute(), l = ee(a, "float").toAttribute(), r = new Je();
+      const n = te(s, "vec3").toAttribute(), o = te(i, "float").toAttribute(), l = te(a, "float").toAttribute(), r = new Je();
       r.outputNode = b(() => {
         const u = k().sub(0.5).length(), g = this.game.fog.strength.mix(E(0), this.game.fog.color), p = this.color.mul(this.emissive), v = A(g, p, _(u, 0.35));
         return u.greaterThan(0.5).discard(), C(v, 1);
@@ -2923,7 +2923,7 @@ let __tla = (async () => {
         const p = Math.PI * 2 * Math.random(), v = Math.random() * 5, x = Math.random() * 8;
         t[g * 3 + 0] = Math.sin(p) * x, t[g * 3 + 1] = v, t[g * 3 + 2] = Math.cos(p) * x, s[g] = 0.2 + Math.random() * 0.8;
       }
-      const i = ee(t, "vec3").toAttribute(), a = ee(s, "float").toAttribute(), n = new Je({
+      const i = te(t, "vec3").toAttribute(), a = te(s, "float").toAttribute(), n = new Je({
         transparent: true
       }), o = Ce(F(0));
       n.positionNode = b(() => {
@@ -3113,24 +3113,24 @@ let __tla = (async () => {
       S.style.position = "fixed", S.style.zIndex = 999, S.style.top = 0, S.style.left = 0;
       const I = S.getContext("2d");
       I.font = x;
-      const B = I.measureText(t), U = Math.ceil(B.width) + g + p + 2;
-      S.width = U, S.height = u, I.fillStyle = "#000000", I.fillRect(0, 0, U, u), I.font = x, I.fillStyle = "#ffffff", I.textAlign = "start", I.textBaseline = "middle", I.fillText(t, g + 1, u * 0.5 + v);
+      const B = I.measureText(t), G = Math.ceil(B.width) + g + p + 2;
+      S.width = G, S.height = u, I.fillStyle = "#000000", I.fillRect(0, 0, G, u), I.font = x, I.fillStyle = "#ffffff", I.textAlign = "start", I.textBaseline = "middle", I.fillText(t, g + 1, u * 0.5 + v);
       const q = new Ne(S);
       q.minFilter = W, q.magFilter = W, q.generateMipmaps = false, q.needsUpdate = true;
-      const G = new et({
+      const j = new et({
         transparent: true,
         depthTest: true
       });
-      c.push(G);
+      c.push(j);
       const oe = d(1);
-      G.outputNode = b(() => {
+      j.outputNode = b(() => {
         const we = w(k().x.sub(oe), k().y), Oe = P(q, we).r;
         we.x.greaterThan(1).discard(), we.x.lessThan(0).discard();
         const Ue = this.game.fog.strength.mix(this.backColor, this.game.fog.color), ht = A(Ue, this.frontColor, Oe);
         return C(E(ht), 1);
       })();
-      const J = new D(this.geometries.label, G);
-      J.renderOrder = 6, J.scale.x = 0.75 * U / u, J.scale.y = 0.75, J.position.z = -0.01, J.position.x = s === _N.ALIGN_LEFT ? 0 : -J.scale.x, J.visible = false, h.add(J);
+      const J = new D(this.geometries.label, j);
+      J.renderOrder = 6, J.scale.x = 0.75 * G / u, J.scale.y = 0.75, J.position.z = -0.01, J.position.x = s === _N.ALIGN_LEFT ? 0 : -J.scale.x, J.visible = false, h.add(J);
       const pe = new et({
         transparent: true,
         depthTest: true
@@ -3336,7 +3336,7 @@ let __tla = (async () => {
   __publicField(_N, "STATE_OPEN", 4);
   __publicField(_N, "STATE_CONCEALED", 5);
   let N = _N;
-  class Ra extends Pe {
+  class za extends Pe {
     constructor(e) {
       super(e), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F36A} Cookie Stand",
@@ -3374,7 +3374,7 @@ let __tla = (async () => {
         const p = g * 3, v = Math.PI * 2 * Math.random(), x = Math.pow(Math.random(), 1.5) * 0.4;
         i[p + 0] = Math.cos(v) * x, i[p + 1] = Math.random(), i[p + 2] = Math.sin(v) * x, a[g] = Math.random() * 1 + 0.75;
       }
-      const n = ee(i, "vec3").toAttribute(), o = ee(a, "float").toAttribute(), l = new Je();
+      const n = te(i, "vec3").toAttribute(), o = te(a, "float").toAttribute(), l = new Je();
       l.outputNode = e.outputNode;
       const r = F(0).toVar();
       l.positionNode = b(() => {
@@ -3540,7 +3540,7 @@ let __tla = (async () => {
       for (const t of this.cookies.objects) !t.physical.body.isSleeping() && t.physical.body.isEnabled() && (t.visual.object3D.needsUpdate = true);
     }
   }
-  class Fa extends Pe {
+  class La extends Pe {
     constructor(e) {
       super(e), this.localTime = d(0), this.setLetters(), this.setKiosk(), this.setControls(), this.setBonfire(), this.setAchievement();
     }
@@ -3579,10 +3579,10 @@ let __tla = (async () => {
             bevelSegments: 2
           });
           B.computeBoundingBox();
-          const U = B.boundingBox, q = h / Math.max(1e-3, U.max.y - U.min.y);
+          const G = B.boundingBox, q = h / Math.max(1e-3, G.max.y - G.min.y);
           B.scale(q, q, q), B.computeBoundingBox();
-          const G = B.boundingBox;
-          B.translate(-(G.min.x + G.max.x) / 2, -(G.min.y + G.max.y) / 2, -(G.min.z + G.max.z) / 2), B.computeBoundingBox();
+          const j = B.boundingBox;
+          B.translate(-(j.min.x + j.max.x) / 2, -(j.min.y + j.max.y) / 2, -(j.min.z + j.max.z) / 2), B.computeBoundingBox();
           const oe = B.boundingBox, J = {
             x: Math.max(0.05, (oe.max.x - oe.min.x) / 2),
             y: Math.max(0.05, (oe.max.y - oe.min.y) / 2),
@@ -3670,7 +3670,7 @@ let __tla = (async () => {
           const v = p * 3, x = Math.PI * 2 * Math.random(), S = Math.pow(Math.random(), 1.5) * 1;
           o[v + 0] = Math.cos(x) * S, o[v + 1] = Math.random(), o[v + 2] = Math.sin(x) * S, l[p] = 0.02 + Math.random() * 0.06;
         }
-        const r = ee(o, "vec3").toAttribute(), h = ee(l, "float").toAttribute(), c = new Je();
+        const r = te(o, "vec3").toAttribute(), h = te(l, "float").toAttribute(), c = new Je();
         c.outputNode = i.outputNode;
         const u = F(0).toVar();
         c.positionNode = b(() => {
@@ -4095,7 +4095,7 @@ let __tla = (async () => {
           s = {}, s.loaded = false;
           const i = /\.(jpe?g|png|webp)$/i.test(e);
           this.game.resourcesLoader.getLoader(i ? "texture" : "textureKtx").load(t, (n) => {
-            i && (n.colorSpace = he, n.flipY = false, n.needsUpdate = true), s.texture = n, s.colorSpace = he, s.flipY = false, s.magFilter = j, s.minFilter = j, s.generateMipmaps = false, s.loaded = true, this.images.loadEnded(e);
+            i && (n.colorSpace = he, n.flipY = false, n.needsUpdate = true), s.texture = n, s.colorSpace = he, s.flipY = false, s.magFilter = U, s.minFilter = U, s.generateMipmaps = false, s.loaded = true, this.images.loadEnded(e);
           }), this.images.resources.set(e, s);
         }
         return s;
@@ -4895,7 +4895,7 @@ let __tla = (async () => {
           s = {}, s.loaded = false;
           const i = /\.(jpe?g|png|webp)$/i.test(e);
           this.game.resourcesLoader.getLoader(i ? "texture" : "textureKtx").load(t, (n) => {
-            i && (n.colorSpace = he, n.flipY = false, n.needsUpdate = true), s.texture = n, s.colorSpace = he, s.flipY = false, s.magFilter = j, s.minFilter = j, s.generateMipmaps = false, s.loaded = true, this.images.loadEnded(e);
+            i && (n.colorSpace = he, n.flipY = false, n.needsUpdate = true), s.texture = n, s.colorSpace = he, s.flipY = false, s.magFilter = U, s.minFilter = U, s.generateMipmaps = false, s.loaded = true, this.images.loadEnded(e);
           }), this.images.resources.set(e, s);
         }
         return s;
@@ -5056,7 +5056,7 @@ let __tla = (async () => {
                 value: 1,
                 duration: 1,
                 overwrite: true
-              }), u.colorSpace = he, u.flipY = false, u.magFilter = j, u.minFilter = j, u.generateMipmaps = false;
+              }), u.colorSpace = he, u.flipY = false, u.magFilter = U, u.minFilter = U, u.generateMipmaps = false;
               const v = new V({
                 colorNode: p,
                 hasWater: false,
@@ -5100,7 +5100,7 @@ let __tla = (async () => {
         const e = (this.scroller.targetProgress - this.scroller.progress) * this.game.ticker.deltaScaled * this.scroller.easing;
         this.scroller.progress += e, this.scroller.offset = this.scroller.progress * this.scroller.minis.inter, this.scroller.speed = e / this.game.ticker.delta, this.scroller.chainLeft.position.y = -this.scroller.repeatAmplitude * 0.5 - this.scroller.offset % this.scroller.repeatAmplitude, this.scroller.chainRight.position.y = -this.scroller.repeatAmplitude * 0.5 + this.scroller.offset % this.scroller.repeatAmplitude, this.scroller.chainPulley.rotation.z = this.scroller.offset * 1.4, this.scroller.gearA.rotation.x = -this.scroller.offset * 1.4, this.scroller.gearB.rotation.x = -this.scroller.gearA.rotation.x * (6 / 12), this.scroller.gearC.rotation.x = -this.scroller.gearB.rotation.x * (6 / 12);
         for (const t of this.scroller.minis.items) {
-          t.group.position.y = sa(t.y - this.scroller.offset, this.scroller.minis.total) - 1;
+          t.group.position.y = aa(t.y - this.scroller.offset, this.scroller.minis.total) - 1;
           const s = L(t.group.position.y, 3.3, 3.9, 1, 0);
           t.group.scale.y = s, t.group.visible = s > 0, t.intersect.active = t.group.visible && (this.state === _$.STATE_OPEN || this.state === _$.STATE_OPENING), t.group.visible && !t.startedLoading && t.startLoading();
         }
@@ -5310,7 +5310,7 @@ let __tla = (async () => {
     }
     changeProject(e = 0, t = null, s = false) {
       let i = e;
-      i > me.length - 1 ? i = 0 : i < 0 && (i = me.length - 1), this.navigation.index !== i && (t === null && (t = ia(i, this.navigation.index, me.length) > 0 ? _$.DIRECTION_PREVIOUS : _$.DIRECTION_NEXT), this.navigation.index = i, this.navigation.current = me[this.navigation.index], this.navigation.previous = me[this.navigation.index - 1 < 0 ? me.length - 1 : this.navigation.index - 1], this.navigation.next = me[(this.navigation.index + 1) % me.length], this.navigation.direction = t, this.title.update(t), this.url.update(t), this.images.update(), this.scroller.update(this.navigation.index), s || (this.game.audio.groups.get("click").play(), this.game.audio.groups.get("slide").play(), this.game.audio.groups.get("assemble").play()), this.state === _$.STATE_OPEN && this.game.achievements.setProgress("lab", this.navigation.current.title));
+      i > me.length - 1 ? i = 0 : i < 0 && (i = me.length - 1), this.navigation.index !== i && (t === null && (t = na(i, this.navigation.index, me.length) > 0 ? _$.DIRECTION_PREVIOUS : _$.DIRECTION_NEXT), this.navigation.index = i, this.navigation.current = me[this.navigation.index], this.navigation.previous = me[this.navigation.index - 1 < 0 ? me.length - 1 : this.navigation.index - 1], this.navigation.next = me[(this.navigation.index + 1) % me.length], this.navigation.direction = t, this.title.update(t), this.url.update(t), this.images.update(), this.scroller.update(this.navigation.index), s || (this.game.audio.groups.get("click").play(), this.game.audio.groups.get("slide").play(), this.game.audio.groups.get("assemble").play()), this.state === _$.STATE_OPEN && this.game.achievements.setProgress("lab", this.navigation.current.title));
     }
     update() {
       this.state !== _$.STATE_CLOSED && this.scroller.animate();
@@ -5323,7 +5323,88 @@ let __tla = (async () => {
   __publicField(_$, "STATE_CLOSED", 5);
   __publicField(_$, "STATE_CLOSING", 6);
   let $ = _$;
-  class za extends Pe {
+  const Oa = {
+    careerHetic: {
+      size: [
+        316,
+        60
+      ],
+      lines: [
+        "QINGDAO UNIV.",
+        "BACHELOR \xB7 2013\u20142017"
+      ]
+    },
+    careerFreelancer: {
+      size: [
+        240,
+        60
+      ],
+      lines: [
+        "HPE",
+        "TRAINEE \xB7 2017\u20142018"
+      ]
+    },
+    careerUzik: {
+      size: [
+        168,
+        60
+      ],
+      lines: [
+        "UNI BONN",
+        "M.SC \xB7 2018\u20142021"
+      ]
+    },
+    careerIRLTeacher: {
+      size: [
+        268,
+        92
+      ],
+      lines: [
+        "HUAWEI",
+        "TEST ENGINEER \xB7 INTERN",
+        "2020\u20142021"
+      ]
+    },
+    careerImmersiveGarden: {
+      size: [
+        340,
+        60
+      ],
+      lines: [
+        "WESTWELL",
+        "AUTONOMOUS DRIVING \xB7 2022\u20142024"
+      ]
+    },
+    careerOnlineTeacher: {
+      size: [
+        332,
+        92
+      ],
+      lines: [
+        "MOMENTA",
+        "AUTONOMOUS DRIVING",
+        "2024\u2014NOW"
+      ]
+    }
+  };
+  function Ua(m) {
+    const e = Oa[m];
+    if (!e) return null;
+    const [t, s] = e.size, i = document.createElement("canvas");
+    i.width = t, i.height = s;
+    const a = i.getContext("2d");
+    a.fillStyle = "#000000", a.fillRect(0, 0, t, s), a.fillStyle = "#ffffff", a.textAlign = "left", a.textBaseline = "middle";
+    const n = (l, r, h) => {
+      let c = r, u = "800 " + c + 'px "Arial Black", "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif';
+      a.font = u;
+      const g = a.measureText(l).width;
+      g > t * 0.92 && (c = Math.max(8, Math.floor(c * t * 0.92 / g)), a.font = "800 " + c + 'px "Arial Black", "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif'), a.fillText(l, t * 0.04, h);
+    };
+    e.lines.length <= 2 ? (n(e.lines[0], Math.round(s * 0.4), s * 0.33), e.lines[1] && n(e.lines[1], Math.round(s * 0.28), s * 0.74)) : (n(e.lines[0], Math.round(s * 0.3), s * 0.24), n(e.lines[1], Math.round(s * 0.23), s * 0.55), n(e.lines[2], Math.round(s * 0.22), s * 0.82));
+    const o = new ki(i);
+    return o.flipY = false, o.colorSpace = Ci, o.minFilter = U, o.magFilter = U, o.generateMipmaps = false, o.wrapS = ee, o.wrapT = ee, o.needsUpdate = true, o;
+  }
+  class Ga extends Pe {
     constructor(e) {
       super(e), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F4BC} Career",
@@ -5366,7 +5447,7 @@ let __tla = (async () => {
       };
       for (const i of e) {
         const a = {};
-        a.group = i, a.size = parseFloat(a.group.userData.size), a.hasEnd = a.group.userData.hasEnd, a.color = a.group.userData.color, a.texture = this.game.resources[`${a.group.userData.texture}Texture`], a.stone = a.group.children.find((n) => n.name.startsWith("stone")), a.stone.position.y = 0, a.origin = a.group.position.clone(), a.isIn = false, a.isUp = false, a.elevationTarget = 0, a.offsetTarget = 0, a.labelReveal = d(0);
+        a.group = i, a.size = parseFloat(a.group.userData.size), a.hasEnd = a.group.userData.hasEnd, a.color = a.group.userData.color, a.texture = Ua(a.group.userData.texture) || this.game.resources[`${a.group.userData.texture}Texture`], a.stone = a.group.children.find((n) => n.name.startsWith("stone")), a.stone.position.y = 0, a.origin = a.group.position.clone(), a.isIn = false, a.isUp = false, a.elevationTarget = 0, a.offsetTarget = 0, a.labelReveal = d(0);
         {
           a.textMesh = a.stone.children.find((l) => l.name.startsWith("careerText"));
           const n = new et({
@@ -5387,7 +5468,7 @@ let __tla = (async () => {
       this.game.debug.active && (this.game.debug.addThreeColorBinding(this.debugPanel, t.blue.value, "blue"), this.game.debug.addThreeColorBinding(this.debugPanel, t.orange.value, "orange"), this.game.debug.addThreeColorBinding(this.debugPanel, t.purple.value, "purple"), this.game.debug.addThreeColorBinding(this.debugPanel, t.green.value, "green"));
     }
     setYears() {
-      this.year = {}, this.year.group = this.references.items.get("year")[0], this.year.originZ = this.year.group.position.z, this.year.size = 17, this.year.offsetTarget = 0, this.year.start = 2008, this.year.current = this.year.start;
+      this.year = {}, this.year.group = this.references.items.get("year")[0], this.year.originZ = this.year.group.position.z, this.year.size = 17, this.year.offsetTarget = 0, this.year.start = 2013, this.year.current = this.year.start;
       const e = 255, t = new Uint8Array([
         e,
         e,
@@ -5460,7 +5541,7 @@ let __tla = (async () => {
         e,
         e
       ]);
-      this.year.digitsTexture = new Ft(t, 7, 10, mt, Ps, Ss, te, te, W, W), this.year.digitsTexture.generateMipmaps = false, this.year.digitsTexture.needsUpdate = true, this.year.digits = [];
+      this.year.digitsTexture = new Ft(t, 7, 10, mt, Ps, Ss, ee, ee, W, W), this.year.digitsTexture.generateMipmaps = false, this.year.digitsTexture.needsUpdate = true, this.year.digits = [];
       const s = this.year.group.children.filter((i) => i.name.startsWith("digit"));
       for (const i of s) {
         const a = {};
@@ -5559,7 +5640,7 @@ let __tla = (async () => {
       align: "left"
     }
   ];
-  class La extends Pe {
+  class ja extends Pe {
     constructor(e) {
       super(e), this.center = this.references.items.get("center")[0].position, this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F468}\u200D\u{1F9B2} Social",
@@ -5730,7 +5811,7 @@ let __tla = (async () => {
       for (const e of this.fans.objects) !e.physical.body.isSleeping() && e.physical.body.isEnabled() && (e.visual.object3D.needsUpdate = true);
     }
   }
-  class Oa extends Pe {
+  class qa extends Pe {
     constructor(e) {
       super(e), this.setCabin(), this.setCandleFlames(), this.setAchievement();
     }
@@ -5755,7 +5836,7 @@ let __tla = (async () => {
       }
     }
   }
-  class Ua extends Pe {
+  class Va extends Pe {
     constructor(e) {
       super(e), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F3B3} Bowling",
@@ -5875,7 +5956,7 @@ let __tla = (async () => {
     setScreen() {
       this.screen = {}, this.screen.group = this.references.items.get("screen")[0], this.screen.object = this.screen.group.userData.object, this.screen.x = this.screen.group.position.x, this.screen.max = this.screen.group.position.x, this.screen.min = this.screen.max - (28.2 - 3.81), this.screen.discsMesh = this.references.items.get("discs")[0], this.screen.crossesMesh = this.references.items.get("crosses")[0];
       const e = new Uint8Array(10);
-      this.dataTexture = new Ft(e, 10, 1, mt, Ps, Ss, te, te, W, W), this.dataTexture.needsUpdate = true;
+      this.dataTexture = new Ft(e, 10, 1, mt, Ps, Ss, ee, ee, W, W), this.dataTexture.needsUpdate = true;
       const t = b(([r]) => {
         const h = _(P(this.dataTexture, k()).r.sub(r).abs(), 0.1), c = Z.toVar();
         return c.z.subAssign(h.oneMinus().mul(0.1)), c;
@@ -5949,9 +6030,9 @@ let __tla = (async () => {
         const g = w(k().x, k().y.oneMinus()), p = P(this.game.resources.jukeboxMusicNotes, g).r;
         return C(a.mul(n), p);
       })(), l = b(() => {
-        const g = ki(s).toVar();
+        const g = Ai(s).toVar();
         return g.z.addAssign(i.oneMinus().pow(3).oneMinus()), g.y.addAssign(i), g;
-      })(), r = b(() => de(this.game.ticker.elapsedScaledUniform.mul(4).add(re.toFloat())).add(1).mul(0.5).pow(2).oneMinus())(), h = b(() => i.sub(0.5).abs().mul(2).oneMinus().mul(3).min(1))(), c = new Ci({
+      })(), r = b(() => de(this.game.ticker.elapsedScaledUniform.mul(4).add(re.toFloat())).add(1).mul(0.5).pow(2).oneMinus())(), h = b(() => i.sub(0.5).abs().mul(2).oneMinus().mul(3).min(1))(), c = new Ei({
         outputNode: o,
         positionNode: l,
         rotationNode: r,
@@ -5959,7 +6040,7 @@ let __tla = (async () => {
         size: 1.5,
         sizeAttenuation: true,
         alphaToCoverage: true
-      }), u = new Ai(c);
+      }), u = new Ii(c);
       if (u.count = 8, u.position.y = 1, u.position.z = 0.5, this.references.items.get("jukebox")[0].add(u), this.game.interactivePoints.create(this.references.items.get("jukeboxInteractivePoint")[0].position, "Change song", N.ALIGN_LEFT, N.STATE_CONCEALED, () => {
         this.game.audio.mute.active && this.game.audio.mute.deactivate(), this.game.audio.playlist.next();
       }, () => {
@@ -6021,7 +6102,7 @@ let __tla = (async () => {
       e && this.restartInteractivePoint.state === N.STATE_HIDDEN && this.restartInteractivePoint.show();
     }
   }
-  const Ga = [
+  const Ha = [
     [
       "Andorra",
       "Andorra",
@@ -7339,7 +7420,7 @@ let __tla = (async () => {
       t !== "" && (this.country = this.countries.get(t) ?? null, this.country && (this.currentElement.src = this.country.imageUrl, this.buttonElement.classList.add("has-flag")));
     }
     setCountries() {
-      for (const e of Ga) {
+      for (const e of Ha) {
         const t = `ui/flags/${e[2]}.webp`, s = document.createElement("div");
         s.classList.add("choice"), s.innerHTML = `
                 <img class="js-flag flag" src="${t}" loading="lazy">
@@ -7395,7 +7476,7 @@ let __tla = (async () => {
       super(e), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F6DE} Circuit",
         expanded: false
-      })), this.state = _ie.STATE_PENDING, this.setSounds(), this.setStartPosition(), this.setStartingLights(), this.setTimer(), this.setCheckpoints(), this.setResetObjects(), this.setObstacles(), this.setRoad(), this.setRails(), this.setInteractivePoint(), this.setStartAnimation(), this.setRespawn(), this.setBounds(), this.setAirDancers(), this.setBanners(), this.setMenu(), this.setEndModal(), this.setLeaderboard(), this.setResetTime(), this.setPodium(), this.setData(), this.setAchievement(), this.game.materials.getFromName("circuitBrand").map.minFilter = j, this.game.materials.getFromName("circuitBrand").map.magFilter = j;
+      })), this.state = _ie.STATE_PENDING, this.setSounds(), this.setStartPosition(), this.setStartingLights(), this.setTimer(), this.setCheckpoints(), this.setResetObjects(), this.setObstacles(), this.setRoad(), this.setRails(), this.setInteractivePoint(), this.setStartAnimation(), this.setRespawn(), this.setBounds(), this.setAirDancers(), this.setBanners(), this.setMenu(), this.setEndModal(), this.setLeaderboard(), this.setResetTime(), this.setPodium(), this.setData(), this.setAchievement(), this.game.materials.getFromName("circuitBrand").map.minFilter = U, this.game.materials.getFromName("circuitBrand").map.magFilter = U;
     }
     setSounds() {
       this.sounds = {}, this.sounds.countdown1 = this.game.audio.register({
@@ -7451,7 +7532,7 @@ let __tla = (async () => {
         const s = t.getContext("2d");
         s.font = e, t.width = this.timer.digits.height * this.timer.digits.ratio, t.height = this.timer.digits.height, s.fillStyle = "#000000", s.fillRect(0, 0, t.width, t.height), s.font = e, s.fillStyle = "#ffffff", s.textAlign = "center", s.textBaseline = "middle", s.fillText("00:00:000", this.timer.digits.width * 0.5, this.timer.digits.height * 0.5), this.timer.digits.context = s;
         const i = new Ne(t);
-        i.minFilter = j, i.magFilter = j, i.generateMipmaps = false, this.timer.digits.texture = i;
+        i.minFilter = U, i.magFilter = U, i.generateMipmaps = false, this.timer.digits.texture = i;
         const a = new Y(this.timer.digits.ratio, 1), n = new O({
           alphaMap: this.timer.digits.texture,
           alphaTest: 0.5
@@ -7661,7 +7742,7 @@ let __tla = (async () => {
       const i = s.getContext("2d");
       i.font = t, s.width = e, s.height = e;
       const a = new Ne(s);
-      a.minFilter = j, a.magFilter = j, a.colorSpace = he, a.generateMipmaps = false;
+      a.minFilter = U, a.magFilter = U, a.colorSpace = he, a.generateMipmaps = false;
       const n = new V({
         colorNode: M("#463F35"),
         hasWater: false
@@ -7698,8 +7779,8 @@ let __tla = (async () => {
             let I = 1;
             for (const B of p) {
               i.textAlign = r[0].align, i.fillText(I, r[0].x, (I + 0.5) * h);
-              const U = c.get(B[1]);
-              U && i.drawImage(U, r[1].x, (I + 0.4) * h - g / 2, u, g), i.textAlign = r[2].align, i.fillText(B[0], r[2].x, (I + 0.5) * h), i.textAlign = r[2].align, i.fillText(St(B[2] / 1e3), r[3].x, (I + 0.5) * h), I++;
+              const G = c.get(B[1]);
+              G && i.drawImage(G, r[1].x, (I + 0.4) * h - g / 2, u, g), i.textAlign = r[2].align, i.fillText(B[0], r[2].x, (I + 0.5) * h), i.textAlign = r[2].align, i.fillText(St(B[2] / 1e3), r[3].x, (I + 0.5) * h), I++;
             }
           }
           a.needsUpdate = true;
@@ -7710,12 +7791,12 @@ let __tla = (async () => {
         if (this.leaderboard.maxTime = 0, this.leaderboard.scores = p, p) for (const I of p) {
           const B = I[1];
           if (B) {
-            const U = this.menu.inputFlag.countries.get(B);
-            if (U && !c.has(B)) {
+            const G = this.menu.inputFlag.countries.get(B);
+            if (G && !c.has(B)) {
               const q = new Image();
               q.onload = () => {
                 S--, x();
-              }, q.src = U.imageUrl, c.set(B, q), S++;
+              }, q.src = G.imageUrl, c.set(B, q), S++;
             }
           }
           I[2] > this.leaderboard.maxTime && (this.leaderboard.maxTime = I[2]);
@@ -7730,7 +7811,7 @@ let __tla = (async () => {
       const a = i.getContext("2d");
       a.font = s, i.width = e, i.height = t;
       const n = new Ne(i);
-      n.minFilter = j, n.magFilter = j, n.generateMipmaps = false;
+      n.minFilter = U, n.magFilter = U, n.generateMipmaps = false;
       const o = new V({
         colorNode: M("#463F35"),
         hasWater: false
@@ -7876,7 +7957,7 @@ let __tla = (async () => {
     }
     update() {
       if (this.state === _ie.STATE_RUNNING) {
-        for (const t of this.checkpoints.items) aa(t.a.x, t.a.y, t.b.x, t.b.y, this.game.player.position2.x, this.game.player.position2.y, this.checkpoints.checkRadius).length && t.reach();
+        for (const t of this.checkpoints.items) oa(t.a.x, t.a.y, t.b.x, t.b.y, this.game.player.position2.x, this.game.player.position2.y, this.checkpoints.checkRadius).length && t.reach();
         for (const t of this.obstacles.items) {
           const s = t.basePosition.clone(), i = Math.sin(this.timer.elapsedTime * 1.25 + t.osciliationOffset) * 5;
           s.z += i, t.object.physical.body.setNextKinematicTranslation(s), t.object.needsUpdate = true;
@@ -7896,7 +7977,7 @@ let __tla = (async () => {
   __publicField(_ie, "STATE_RUNNING", 3);
   __publicField(_ie, "STATE_ENDING", 4);
   let ie = _ie;
-  class ja extends Ke {
+  class Wa extends Ke {
     constructor(e = 1) {
       super(), this.type = "PortalSlabsGeometry", this.parameters = {
         size: e
@@ -7909,23 +7990,23 @@ let __tla = (async () => {
       i[0] = 0, i[1] = 3, i[2] = 2, i[3] = 3, i[4] = 0, i[5] = 1, i[6] = 2, i[7] = 5, i[8] = 4, i[9] = 5, i[10] = 2, i[11] = 3, i[12] = 4, i[13] = 7, i[14] = 6, i[15] = 7, i[16] = 4, i[17] = 5, i[18] = 6, i[19] = 1, i[20] = 0, i[21] = 1, i[22] = 6, i[23] = 7, this.setAttribute("position", new ne(t, 3)), this.setAttribute("edge", new ne(s, 3)), this.setIndex(new zt(i, 1));
     }
   }
-  class qa extends Ke {
+  class $a extends Ke {
     constructor(e = 1, t = 5) {
       super(), this.type = "PortalSlabsGeometry", this.parameters = {
         size: e,
         columnsCount: t
       };
-      const s = new ja(), i = s.attributes.position.count, a = s.index.count, n = s.attributes.position.array, o = s.attributes.edge.array, l = s.index.array, r = t * t, h = new Float32Array(i * r * 3), c = new Float32Array(i * r * 2), u = new Float32Array(i * r), g = new Float32Array(i * r), p = new Float32Array(i * r), v = new Uint16Array(a * r);
+      const s = new Wa(), i = s.attributes.position.count, a = s.index.count, n = s.attributes.position.array, o = s.attributes.edge.array, l = s.index.array, r = t * t, h = new Float32Array(i * r * 3), c = new Float32Array(i * r * 2), u = new Float32Array(i * r), g = new Float32Array(i * r), p = new Float32Array(i * r), v = new Uint16Array(a * r);
       for (let x = 0; x < t; x++) for (let S = 0; S < t; S++) {
-        const I = (x - (t - 1) * 0.5) * e, B = (S - (t - 1) * 0.5) * e, U = Math.random();
+        const I = (x - (t - 1) * 0.5) * e, B = (S - (t - 1) * 0.5) * e, G = Math.random();
         let q = S + x * t;
-        for (let G = 0; G < i; G++) h[(q * i + G) * 3 + 0] = n[G * 3 + 0] * e / 2 + I, h[(q * i + G) * 3 + 1] = n[G * 3 + 1], h[(q * i + G) * 3 + 2] = n[G * 3 + 2] * e / 2 + B, c[(q * i + G) * 2 + 0] = I, c[(q * i + G) * 2 + 1] = B, u[q * i + G] = o[G], g[q * i + G] = U, p[q * i + G] = Math.hypot(I, B);
-        for (let G = 0; G < a; G++) v[q * a + G] = q * i + l[G + 0];
+        for (let j = 0; j < i; j++) h[(q * i + j) * 3 + 0] = n[j * 3 + 0] * e / 2 + I, h[(q * i + j) * 3 + 1] = n[j * 3 + 1], h[(q * i + j) * 3 + 2] = n[j * 3 + 2] * e / 2 + B, c[(q * i + j) * 2 + 0] = I, c[(q * i + j) * 2 + 1] = B, u[q * i + j] = o[j], g[q * i + j] = G, p[q * i + j] = Math.hypot(I, B);
+        for (let j = 0; j < a; j++) v[q * a + j] = q * i + l[j + 0];
       }
       this.setAttribute("position", new ne(h, 3)), this.setAttribute("center", new ne(c, 2)), this.setAttribute("edge", new ne(u, 1)), this.setAttribute("random", new ne(g, 1)), this.setAttribute("distanceToCenter", new ne(p, 1)), this.setIndex(new zt(v, 1));
     }
   }
-  class Va extends Pe {
+  class Ka extends Pe {
     constructor(e) {
       super(e), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F533} Behind the scene",
@@ -7943,7 +8024,7 @@ let __tla = (async () => {
       });
     }
     setSlabs() {
-      const e = new qa(1.5, 6), t = new yt({
+      const e = new $a(1.5, 6), t = new yt({
         wireframe: false
       }), s = Ce(F());
       this.vehicleRelativePosition = d(w()), this.bloomColor = d(M("#6053ff")), this.bloomIntensity = d(14), this.starsOffset = d(w(0)), t.positionNode = b(() => {
@@ -7992,7 +8073,7 @@ let __tla = (async () => {
     }
   }
   const Tt = new st.alea("achievements");
-  class Ha extends Pe {
+  class Xa extends Pe {
     constructor(e) {
       super(e), this.setSounds(), this.setWaterfall(), this.setPillar(), this.setInteractivePoint(), this.setAchievement();
     }
@@ -8053,15 +8134,15 @@ let __tla = (async () => {
         i.applyMatrix4(s.matrixWorld), a.applyMatrix4(s.matrixWorld);
         const n = i.distanceTo(a), o = a.clone().sub(i), l = 100, r = new Float32Array(l * 3), h = new Float32Array(l);
         for (let x = 0; x < l; x++) r[x * 3 + 0] = 0, r[x * 3 + 1] = 0, r[x * 3 + 2] = n * Math.random(), h[x] = Math.PI - Math.PI * 0.5 * Math.random();
-        const c = ee(r, "vec3").toAttribute(), u = ee(h, "float").toAttribute(), g = new V({
+        const c = te(r, "vec3").toAttribute(), u = te(h, "float").toAttribute(), g = new V({
           hasLightBounce: false,
           hasWater: false,
           hasReveal: false,
           alphaTest: 0.1
         });
         g.positionNode = b(() => {
-          const x = this.game.ticker.elapsedScaledUniform.mul(0.2).add(F(re).div(l)).fract(), S = x.oneMinus().mul(0.4), B = Z.toVar().mul(S).add(c).toVar(), U = x.oneMinus().pow2().oneMinus();
-          return B.y.addAssign(de(u).mul(U).mul(2)), B.x.addAssign(wt(u).mul(U).mul(1.5)), B;
+          const x = this.game.ticker.elapsedScaledUniform.mul(0.2).add(F(re).div(l)).fract(), S = x.oneMinus().mul(0.4), B = Z.toVar().mul(S).add(c).toVar(), G = x.oneMinus().pow2().oneMinus();
+          return B.y.addAssign(de(u).mul(G).mul(2)), B.x.addAssign(wt(u).mul(G).mul(1.5)), B;
         })(), g._alphaNode = b(() => k().sub(0.5).length().oneMinus().sub(0.5))();
         const p = new Y(1, 1);
         p.rotateY(-Math.PI * 0.5), p.rotateZ(-Math.PI * 0.25);
@@ -8077,7 +8158,7 @@ let __tla = (async () => {
           const g = Math.PI * Tt() - Math.PI * 0.25, p = Tt() * 2, v = 2 + Tt() * 0.25;
           t[u * 3 + 0] = Math.sin(g) * v, t[u * 3 + 1] = p, t[u * 3 + 2] = Math.cos(g) * v, s[u] = 0.2 + Tt() * 0.8;
         }
-        const i = ee(t, "vec3").toAttribute(), a = ee(s, "float").toAttribute(), n = new Je({}), o = Ce(F(0));
+        const i = te(t, "vec3").toAttribute(), a = te(s, "float").toAttribute(), n = new Je({}), o = Ce(F(0));
         n.positionNode = b(() => {
           o.assign(this.game.ticker.elapsedScaledUniform.mul(0.05).add(F(re).div(e)).fract());
           const u = i.toVar();
@@ -8124,7 +8205,7 @@ let __tla = (async () => {
       this.pillar.position.y = Math.sin(this.game.ticker.elapsedScaled * 0.1) * 0.25;
     }
   }
-  class Wa extends Pe {
+  class Ya extends Pe {
     constructor(e) {
       super(e), this.setInteractivePoint(), this.setTV(), this.setAchievement();
     }
@@ -8178,29 +8259,29 @@ let __tla = (async () => {
       });
     }
   }
-  class $a {
+  class Za {
     constructor() {
       this.game = T.getInstance();
       const e = [
         [
           "achievements",
-          Ha
+          Xa
         ],
         [
           "altar",
-          Da
+          Fa
         ],
         [
           "behindTheScene",
-          Va
+          Ka
         ],
         [
           "bowling",
-          Ua
+          Va
         ],
         [
           "career",
-          za
+          Ga
         ],
         [
           "circuit",
@@ -8208,7 +8289,7 @@ let __tla = (async () => {
         ],
         [
           "cookie",
-          Ra
+          za
         ],
         [
           "lab",
@@ -8216,7 +8297,7 @@ let __tla = (async () => {
         ],
         [
           "landing",
-          Fa
+          La
         ],
         [
           "projects",
@@ -8224,15 +8305,15 @@ let __tla = (async () => {
         ],
         [
           "social",
-          La
+          ja
         ],
         [
           "toilet",
-          Oa
+          qa
         ],
         [
           "timeMachine",
-          Wa
+          Ya
         ]
       ], t = [
         ...this.game.resources.areasModel.scene.children
@@ -8255,7 +8336,7 @@ let __tla = (async () => {
       this.setAttribute("position", new ne(s, 3)), this.setAttribute("direction", new ne(i, 3)), this.setAttribute("ratio", new ne(a, 1)), this.setIndex(new zt(n, 1));
     }
   }
-  class Ka extends Ws {
+  class _a extends Ws {
     constructor(e = 10, t = 4, s = 1, i = 30) {
       const a = e / 2, n = e / (t - 1), o = [];
       for (let h = 0; h < t; h++) o.push(new y(0, h % 2 - 0.5 * s, -a + h * n));
@@ -8271,7 +8352,7 @@ let __tla = (async () => {
   class Mt {
     constructor(e = 0.1, t = E(0, 1, -1)) {
       this.game = T.getInstance(), this.available = true;
-      const s = new Ka(), i = new V({
+      const s = new _a(), i = new V({
         colorNode: M(16777215),
         normalNode: E(0, 1, 0),
         hasCoreShadows: false,
@@ -8289,7 +8370,7 @@ let __tla = (async () => {
       })(), this.mesh = new D(s, i), this.mesh.renderOrder = 1, this.mesh.position.y = 2, this.game.scene.add(this.mesh);
     }
   }
-  class Xa {
+  class Qa {
     constructor() {
       this.game = T.getInstance(), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u2307 Wind lines",
@@ -8352,7 +8433,7 @@ let __tla = (async () => {
       });
     }
   }
-  class Ya {
+  class Ja {
     constructor() {
       this.game = T.getInstance();
       const e = Math.round(ss(this.game.yearCycles.properties.leaves.value, 0.25, 1, 7, 11));
@@ -8369,14 +8450,14 @@ let __tla = (async () => {
       e[0] += 0.15, e[3] += 0.15, e[6] -= 0.15, e[9] -= 0.15, this.geometry.rotateX(-Math.PI * 0.5);
     }
     setMaterial() {
-      this.focusPoint = d(w()), this.vehicleVelocity = d(E()), this.vehiclePosition = d(E()), this.scale = d(0.25), this.rotationFrequency = d(3), this.rotationElevationMultiplier = d(1), this.pushSidewaysMultiplier = d(20), this.pushMultiplier = d(100), this.windFrequency = d(5e-3), this.windMultiplier = d(0.5), this.upwardMultiplier = d(1), this.defaultDamping = d(1.5), this.waterDamping = d(0.75), this.gravity = d(9.807), this.explosion = d(C(0)), this.tornado = d(C(0)), this.positionBuffer = ee(this.count, "vec3"), this.velocityBuffer = ee(this.count, "vec3");
+      this.focusPoint = d(w()), this.vehicleVelocity = d(E()), this.vehiclePosition = d(E()), this.scale = d(0.25), this.rotationFrequency = d(3), this.rotationElevationMultiplier = d(1), this.pushSidewaysMultiplier = d(20), this.pushMultiplier = d(100), this.windFrequency = d(5e-3), this.windMultiplier = d(0.5), this.upwardMultiplier = d(1), this.defaultDamping = d(1.5), this.waterDamping = d(0.75), this.gravity = d(9.807), this.explosion = d(C(0)), this.tornado = d(C(0)), this.positionBuffer = te(this.count, "vec3"), this.velocityBuffer = te(this.count, "vec3");
       const e = new Float32Array(this.count);
       for (let v = 0; v < this.count; v++) e[v] = Math.random() * Math.PI * 2;
-      const t = ee(e, "float").toAttribute(), s = new Float32Array(this.count);
+      const t = te(e, "float").toAttribute(), s = new Float32Array(this.count);
       for (let v = 0; v < this.count; v++) s[v] = Math.random() * 0.5 + 0.5;
-      const i = ee(s, "float").toAttribute(), a = new Float32Array(this.count);
+      const i = te(s, "float").toAttribute(), a = new Float32Array(this.count);
       for (let v = 0; v < this.count; v++) a[v] = Math.random() * 0.1 + 0.1;
-      const n = ee(a, "float"), o = d(M(9785658)), l = d(M(16083514)), r = b(() => {
+      const n = te(a, "float"), o = d(M(9785658)), l = d(M(16083514)), r = b(() => {
         const v = tt(re.add(99));
         return E(A(o, l, v));
       })(), h = new Float32Array(this.count * 3);
@@ -8384,7 +8465,7 @@ let __tla = (async () => {
         const x = new y(0, 1, 0);
         x.applyAxisAngle(new y(1, 0, 0), (Math.random() - 0.5) * 2), x.applyAxisAngle(new y(0, 0, 1), (Math.random() - 0.5) * 2), x.toArray(h, v * 3);
       }
-      const c = ee(h, "vec3").toAttribute();
+      const c = te(h, "vec3").toAttribute();
       this.material = new V({
         side: Ae,
         colorNode: r,
@@ -8392,9 +8473,9 @@ let __tla = (async () => {
         hasWater: false,
         transparent: true
       }), this.material.positionNode = b(() => {
-        Ei.assign(Qt.mul(C(c, 0)));
-        const v = this.positionBuffer.toAttribute(), x = Z.mul(i).mul(this.scale), S = ge(v.y.mul(this.rotationElevationMultiplier), 0), I = de(v.x.mul(this.rotationFrequency)).mul(S), B = de(v.z.mul(this.rotationFrequency)).mul(S), U = t;
-        return x.xy.assign(_e(x.xy, I, w(0))), x.yz.assign(_e(x.yz, B, w(0))), x.xz.assign(_e(x.xz, U, w(0))), x.add(v);
+        Bi.assign(Qt.mul(C(c, 0)));
+        const v = this.positionBuffer.toAttribute(), x = Z.mul(i).mul(this.scale), S = ge(v.y.mul(this.rotationElevationMultiplier), 0), I = de(v.x.mul(this.rotationFrequency)).mul(S), B = de(v.z.mul(this.rotationFrequency)).mul(S), G = t;
+        return x.xy.assign(_e(x.xy, I, w(0))), x.yz.assign(_e(x.yz, B, w(0))), x.xz.assign(_e(x.xz, G, w(0))), x.add(v);
       })(), this.size = F(this.game.view.optimalArea.radius * 2);
       const g = b(() => {
         const v = this.positionBuffer.element(re);
@@ -8404,7 +8485,7 @@ let __tla = (async () => {
       })().compute(this.count);
       this.game.rendering.renderer.computeAsync(g);
       const p = b(() => {
-        const v = this.positionBuffer.element(re), x = this.velocityBuffer.element(re), S = n.element(re), I = this.game.terrain.terrainNode(v.xz), B = v.sub(this.vehiclePosition), U = E(B.x, 0, B.z).normalize().mul(this.pushSidewaysMultiplier), q = E(this.vehicleVelocity.x, 0, this.vehicleVelocity.z).mul(this.pushMultiplier), oe = B.length().remapClamp(0.5, 2, 1, 0), J = this.vehicleVelocity.length(), pe = q.add(U).mul(J).mul(oe);
+        const v = this.positionBuffer.element(re), x = this.velocityBuffer.element(re), S = n.element(re), I = this.game.terrain.terrainNode(v.xz), B = v.sub(this.vehiclePosition), G = E(B.x, 0, B.z).normalize().mul(this.pushSidewaysMultiplier), q = E(this.vehicleVelocity.x, 0, this.vehicleVelocity.z).mul(this.pushMultiplier), oe = B.length().remapClamp(0.5, 2, 1, 0), J = this.vehicleVelocity.length(), pe = q.add(G).mul(J).mul(oe);
         x.addAssign(pe);
         const fe = v.xz.mul(this.windFrequency).add(this.game.wind.direction.mul(this.game.wind.localTime)).xy, Ee = P(this.game.noises.perlin, fe).r, Ie = this.game.wind.strength.sub(Ee).mul(S).mul(this.windMultiplier).max(0);
         x.x.addAssign(this.game.wind.direction.x.mul(Ie)), x.z.addAssign(this.game.wind.direction.y.mul(Ie));
@@ -8492,7 +8573,7 @@ let __tla = (async () => {
     }
   }
   const Re = st.alea("lightning");
-  class Za {
+  class en {
     constructor() {
       this.game = T.getInstance(), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u26A1\uFE0F Lightnings",
@@ -8564,7 +8645,7 @@ let __tla = (async () => {
         const l = o * 3, r = Math.PI * 2 * Re(), h = Re() * 3;
         i[l + 0] = Math.sin(r) * h, i[l + 1] = -Re(), i[l + 2] = Math.cos(r) * h, a[o] = Re() * 0.75 + 0.25;
       }
-      this.anticipationParticles.positionAttribute = ee(i, "vec3").toAttribute(), this.anticipationParticles.scaleAttribute = ee(a, "float").toAttribute(), this.anticipationParticles.geometry = new Y(1, 1);
+      this.anticipationParticles.positionAttribute = te(i, "vec3").toAttribute(), this.anticipationParticles.scaleAttribute = te(a, "float").toAttribute(), this.anticipationParticles.geometry = new Y(1, 1);
       const n = Ce(E());
       if (this.anticipationParticles.positionNode = b(([o]) => {
         const l = this.game.ticker.elapsedScaledUniform.sub(o);
@@ -8616,7 +8697,7 @@ let __tla = (async () => {
       if (this.arc.vertexNode = b(([l]) => {
         const r = le("ratio"), h = _(r, 0.01), c = this.game.ticker.elapsedScaledUniform.sub(l), u = Be(c.div(this.arc.duration), 1), g = Z.toVar();
         g.xz.mulAssign(u.oneMinus().pow(n).oneMinus().mul(h.oneMinus()).mul(o).add(1));
-        const p = Et.mul(C(g, 1)), v = p.xyz.sub(It).normalize(), x = Z.add(le("direction")), I = Et.mul(C(x, 1)).xyz.sub(p.xyz).normalize(), B = Jt(I, v).normalize(), U = r.mul(10).min(1), q = u.oneMinus(), G = Lt(a, U, q), oe = Ot(Yt.toFloat().mul(3).sub(2).div(3).mod(2)).sub(0.5), J = B.mul(oe.mul(G));
+        const p = Et.mul(C(g, 1)), v = p.xyz.sub(It).normalize(), x = Z.add(le("direction")), I = Et.mul(C(x, 1)).xyz.sub(p.xyz).normalize(), B = Jt(I, v).normalize(), G = r.mul(10).min(1), q = u.oneMinus(), j = Lt(a, G, q), oe = Ot(Yt.toFloat().mul(3).sub(2).div(3).mod(2)).sub(0.5), J = B.mul(oe.mul(j));
         p.addAssign(C(J, 0));
         const pe = Es.mul(p);
         return Is.mul(pe);
@@ -8660,7 +8741,7 @@ let __tla = (async () => {
         const o = n * 3, l = new bt(Re(), Re() * 0.5 * Math.PI, Re() * Math.PI * 2), r = new y().setFromSpherical(l);
         e[o + 0] = r.x, e[o + 1] = r.y, e[o + 2] = r.z, t[n] = Re() * 0.75 + 0.25;
       }
-      this.explosionParticles.positionAttribute = ee(e, "vec3").toAttribute(), this.explosionParticles.scaleAttribute = ee(t, "float").toAttribute(), this.explosionParticles.geometry = new Y();
+      this.explosionParticles.positionAttribute = te(e, "vec3").toAttribute(), this.explosionParticles.scaleAttribute = te(t, "float").toAttribute(), this.explosionParticles.geometry = new Y();
       const s = d(0.1), i = d(3), a = d(8);
       if (this.explosionParticles.positionNode = b(([n]) => {
         const o = this.game.ticker.elapsedScaledUniform.sub(n), l = Be(o.div(F(this.explosionParticles.duration).mul(0.75)), 1), r = this.explosionParticles.positionAttribute.toVar();
@@ -8733,7 +8814,7 @@ let __tla = (async () => {
       }
     }
   }
-  class _a {
+  class tn {
     constructor() {
       var _a2;
       this.game = T.getInstance(), this.achievementAchieved = (_a2 = this.game.achievements.groups.get("weatherSnow")) == null ? void 0 : _a2.items[0].achieved, this.size = this.game.view.optimalArea.radius * 2, this.halfSize = this.size * 0.5, this.subdivisions = 256, this.subdivisionSize = this.size / this.subdivisions, this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
@@ -8774,10 +8855,10 @@ let __tla = (async () => {
         depthBuffer: false,
         type: At,
         format: mt,
-        minFilter: j,
-        magFilter: j,
-        wrapS: te,
-        wrapT: te
+        minFilter: U,
+        magFilter: U,
+        wrapS: ee,
+        wrapT: ee
       }), this.snowElevation.texture = this.snowElevation.renderTarget.texture, this.snowElevation.quadMesh = new Bs(e);
     }
     setGeometry() {
@@ -8826,12 +8907,12 @@ let __tla = (async () => {
         }), l.xz.assign(_e(l.xz, x, r.xz));
         const S = l, I = S.add(E(this.normalNeighbourShift, 0, 0)), B = S.add(E(0, 0, this.normalNeighbourShift.negate()));
         S.y.assign(n(S.xz)), I.y.assign(n(I.xz)), B.y.assign(n(B.xz));
-        const U = this.game.terrain.terrainNode(S.xz);
-        this.game.terrain.colorNode(U);
+        const G = this.game.terrain.terrainNode(S.xz);
+        this.game.terrain.colorNode(G);
         const q = Jt(S.sub(I), S.sub(B)).normalize();
         s.assign(Qt.mul(C(q, 0)));
-        const G = U.b.remapClamp(this.waterDropEdgeLow, this.waterDropEdgeHigh, 0, this.waterDropAmplitude.negate());
-        return S.y.addAssign(G), e.assign(S.y.sub(U.b.mul(-2))), t.assign(S.xz), S;
+        const j = G.b.remapClamp(this.waterDropEdgeLow, this.waterDropEdgeHigh, 0, this.waterDropAmplitude.negate());
+        return S.y.addAssign(j), e.assign(S.y.sub(G.b.mul(-2))), t.assign(S.xz), S;
       })();
       const o = this.material.outputNode;
       this.glitterViewMultiplier = 4e-4, this.glitterTimeMultiplier = 4e-4, this.glitterVariation = d(0), this.glitterScarcity = d(1e3), this.glitterIntensity = d(2), this.glitterPerlinFrequency = d(0.05), this.glitterHashFrequency = d(0.2), this.material.outputNode = b(() => {
@@ -8933,7 +9014,7 @@ let __tla = (async () => {
       } else this.mesh.visible = false;
     }
   }
-  class Qa {
+  class sn {
     constructor() {
       this.game = T.getInstance(), this.visible = false, this.text = "", this.position = new y(), this.pending = null, this.resolution = 64, this.height = this.resolution, this.width = this.resolution * 16, this.textWidth = 0, this.textPaddingHorizontal = 10, this.textOffsetVertical = 2, this.font = `700 ${this.height}px "Amatic SC"`, this.group = new at(), this.group.rotation.reorder("YXZ"), this.group.rotation.x = -Math.PI * 0.25, this.group.rotation.y = Math.PI * 0.25, this.group.visible = false, this.game.scene.add(this.group), this.setCanvas(), this.setMessage(), this.setImage();
     }
@@ -9025,7 +9106,7 @@ let __tla = (async () => {
       e ? (this.imageTexture.image.src = this.imageTexture.image.src = e, this.image.visible = true) : this.image.visible = false;
     }
   }
-  class Ja {
+  class an {
     constructor() {
       this.game = T.getInstance(), this.count = parseInt("30"), this.setSounds(), this.setFlames(), this.setData(), this.setBubble(), this.setMenu(), this.setInputs(), this.game.ticker.events.on("tick", () => {
         this.update();
@@ -9048,8 +9129,8 @@ let __tla = (async () => {
       });
     }
     setFlames() {
-      this.revealArray = new Float32Array(this.count), this.revealBuffer = new Ii(this.revealArray, 1), this.revealBufferNeedsUpdate = true;
-      const e = Bi(this.revealBuffer, "float", this.count).toAttribute(), t = new Y(1.5, 1.5 * 2, 1, 16);
+      this.revealArray = new Float32Array(this.count), this.revealBuffer = new Ni(this.revealArray, 1), this.revealBufferNeedsUpdate = true;
+      const e = Di(this.revealBuffer, "float", this.count).toAttribute(), t = new Y(1.5, 1.5 * 2, 1, 16);
       t.rotateY(Math.PI * 0.25);
       const s = new O({
         transparent: true,
@@ -9127,7 +9208,7 @@ let __tla = (async () => {
       }), this.game.server.initData) for (const e of this.game.server.initData.whispers) this.data.insert(e);
     }
     setBubble() {
-      this.bubble = {}, this.bubble.instance = new Qa(), this.bubble.closest = null, this.bubble.minDistance = 3;
+      this.bubble = {}, this.bubble.instance = new sn(), this.bubble.closest = null, this.bubble.minDistance = 3;
     }
     setMenu() {
       this.menu = {}, this.menu.instance = this.game.menu.items.get("whispers"), this.menu.container = this.menu.instance.contentElement, this.menu.inputGroup = this.menu.container.querySelector(".js-input-group"), this.menu.input = this.menu.inputGroup.querySelector(".js-input"), this.menu.previewMessage = this.menu.instance.previewElement.querySelector(".js-preview-message"), this.menu.previewMessageText = this.menu.previewMessage.querySelector(".js-text"), this.menu.previewMessageFlag = this.menu.previewMessage.querySelector(".js-flag");
@@ -9217,13 +9298,13 @@ let __tla = (async () => {
       this.revealBufferNeedsUpdate && (this.revealBuffer.needsUpdate = true, this.revealBufferNeedsUpdate = false), t && this.sounds.flicker.positions[0].copy(t.position);
     }
   }
-  class en {
+  class nn {
     constructor() {
-      this.game = T.getInstance(), this.resolution = 512, this.size = 40, this.halfSize = this.size / 2, this.tracks = [], this.focusPoint = new H(), this.camera = new Ni(-this.halfSize, this.halfSize, this.halfSize, -this.halfSize, 0.1, 10), this.camera.position.y = 5, this.camera.rotation.x = -Math.PI * 0.5, this.scene = new Ns(), this.scene.add(this.camera), this.renderTarget = new ut(this.resolution, this.resolution, {
-        minFilter: j,
-        magFilter: j,
-        wrapS: te,
-        wrapT: te
+      this.game = T.getInstance(), this.resolution = 512, this.size = 40, this.halfSize = this.size / 2, this.tracks = [], this.focusPoint = new H(), this.camera = new Ri(-this.halfSize, this.halfSize, this.halfSize, -this.halfSize, 0.1, 10), this.camera.position.y = 5, this.camera.rotation.x = -Math.PI * 0.5, this.scene = new Ns(), this.scene.add(this.camera), this.renderTarget = new ut(this.resolution, this.resolution, {
+        minFilter: U,
+        magFilter: U,
+        wrapS: ee,
+        wrapT: ee
       }), this.game.ticker.events.on("tick", () => {
         this.update();
       }, 9);
@@ -9272,13 +9353,13 @@ let __tla = (async () => {
         wireframe: false,
         depthTest: false,
         transparent: true,
-        blending: Di
+        blending: Fi
       });
       const e = Ce(C());
       this.trail.material.positionNode = b(() => {
         const t = F(1).div(this.subdivisions), s = k().x.sub(t.mul(0.5)), i = w(s, 0.5), a = w(s.sub(t), 0.5);
         e.assign(P(this.dataTexture, i));
-        const n = P(this.dataTexture, a), o = ft(e.z.sub(n.z), e.x.sub(n.x)), l = Ri(Z.y).mul(-1), r = w(wt(o.add(l.mul(Math.PI * 0.5))), de(o.add(l.mul(Math.PI * 0.5)))).mul(this.thickness);
+        const n = P(this.dataTexture, a), o = ft(e.z.sub(n.z), e.x.sub(n.x)), l = zi(Z.y).mul(-1), r = w(wt(o.add(l.mul(Math.PI * 0.5))), de(o.add(l.mul(Math.PI * 0.5)))).mul(this.thickness);
         return E(e.x.add(r.x), e.y, e.z.add(r.y));
       })(), this.trail.material.outputNode = b(() => {
         const t = k().x.smoothstep(0.5, 1).oneMinus(), s = k().x.smoothstep(0, 0.05), i = e.a, a = Lt(Ze.x.remapClamp(0, 0.2, 0, 1), Ze.x.remapClamp(0.8, 1, 1, 0), Ze.y.remapClamp(0, 0.2, 0, 1), Ze.y.remapClamp(0.8, 1, 1, 0)), n = k().y.sub(0.5).abs().mul(2).oneMinus(), o = t.mul(s).mul(i).mul(n).mul(a);
@@ -9302,13 +9383,13 @@ let __tla = (async () => {
       s[0] = e.x, s[1] = e.y, s[2] = e.z, s[3] = t ? 1 : 0, this.dataTexture.needsUpdate = true;
     }
   }
-  const tn = b(([m, e]) => {
+  const on = b(([m, e]) => {
     const t = qe(m, e), s = Jt(m, e), i = s.length();
     s.assign(s.normalize());
     const a = t, n = i, o = a.oneMinus();
-    return Fi(o.mul(s.x).mul(s.x).add(a), o.mul(s.x).mul(s.y).sub(n.mul(s.z)), o.mul(s.x).mul(s.z).add(n.mul(s.y)), o.mul(s.x).mul(s.y).add(n.mul(s.z)), o.mul(s.y).mul(s.y).add(a), o.mul(s.y).mul(s.z).sub(n.mul(s.x)), o.mul(s.x).mul(s.z).sub(n.mul(s.y)), o.mul(s.y).mul(s.z).add(n.mul(s.x)), o.mul(s.z).mul(s.z).add(a));
+    return Li(o.mul(s.x).mul(s.x).add(a), o.mul(s.x).mul(s.y).sub(n.mul(s.z)), o.mul(s.x).mul(s.z).add(n.mul(s.y)), o.mul(s.x).mul(s.y).add(n.mul(s.z)), o.mul(s.y).mul(s.y).add(a), o.mul(s.y).mul(s.z).sub(n.mul(s.x)), o.mul(s.x).mul(s.z).sub(n.mul(s.y)), o.mul(s.y).mul(s.z).add(n.mul(s.x)), o.mul(s.z).mul(s.z).add(a));
   });
-  class sn {
+  class rn {
     constructor() {
       this.game = T.getInstance(), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F308} Trails",
@@ -9343,7 +9424,7 @@ let __tla = (async () => {
       }), s = E().toVarying(), i = F(0).toVarying(), a = F(0).toVarying();
       return t.positionNode = b(() => {
         i.assign(Z.z.oneMinus());
-        const n = P(e.dataTexture, w(i, 0.5)), o = n.xyz, r = P(e.dataTexture, w(i.add(this.texel), 0.5)).xyz.sub(o).normalize(), h = tn(r, E(0, 0, -1)), c = E(Z.x, Z.y, 0), u = h.mul(c);
+        const n = P(e.dataTexture, w(i, 0.5)), o = n.xyz, r = P(e.dataTexture, w(i.add(this.texel), 0.5)).xyz.sub(o).normalize(), h = on(r, E(0, 0, -1)), c = E(Z.x, Z.y, 0), u = h.mul(c);
         return s.assign(Qt.mul(C(h.mul(le("normal")), 0))), a.assign(n.w), o.add(u);
       })(), t.outputNode = b(() => {
         const n = s.dot(E(0, 0, 1)).abs().oneMinus(), o = w(0.5, i.oneMinus().sub(n.oneMinus().mul(this.fresnelOffset))), l = P(this.game.materials.gradientTexture, o).rgb.mul(this.emissiveMultiplier);
@@ -9505,7 +9586,7 @@ let __tla = (async () => {
       this.parts.antenna && (this.antenna = {}, this.antenna.target = new y(0, 2, 0), this.antenna.target = new y(0, 2, 0), this.antenna.object = this.parts.antenna, this.antenna.head = this.game.resources.vehicle.scene.getObjectByName("antennaHead"), this.antenna.headAxle = this.antenna.head.children[0], this.antenna.headReference = this.antenna.object.getObjectByName("antennaHeadReference"), this.game.materials.updateObject(this.antenna.head), this.game.scene.add(this.antenna.head));
     }
     setBoostTrails() {
-      this.boostTrails = {}, this.boostTrails.instance = new sn(), this.boostTrails.leftReference = new $e(), this.boostTrails.leftReference.position.set(-1.28, 0.1, -0.55), this.parts.chassis.add(this.boostTrails.leftReference), this.boostTrails.left = this.boostTrails.instance.create(), this.boostTrails.leftReference.getWorldPosition(this.boostTrails.left.position), this.boostTrails.rightReference = new $e(), this.boostTrails.rightReference.position.set(-1.28, 0.1, 0.55), this.parts.chassis.add(this.boostTrails.rightReference), this.boostTrails.right = this.boostTrails.instance.create(), this.boostTrails.rightReference.getWorldPosition(this.boostTrails.right.position);
+      this.boostTrails = {}, this.boostTrails.instance = new rn(), this.boostTrails.leftReference = new $e(), this.boostTrails.leftReference.position.set(-1.28, 0.1, -0.55), this.parts.chassis.add(this.boostTrails.leftReference), this.boostTrails.left = this.boostTrails.instance.create(), this.boostTrails.leftReference.getWorldPosition(this.boostTrails.left.position), this.boostTrails.rightReference = new $e(), this.boostTrails.rightReference.position.set(-1.28, 0.1, 0.55), this.parts.chassis.add(this.boostTrails.rightReference), this.boostTrails.right = this.boostTrails.instance.create(), this.boostTrails.rightReference.getWorldPosition(this.boostTrails.right.position);
     }
     setBoostAnimation() {
       if (this.boostAnimation = {}, this.boostAnimation.mix = 0, this.boostAnimation.speed = 1.2, this.boostAnimation.mixUniform = d(0), this.parts.energy) {
@@ -9544,11 +9625,11 @@ let __tla = (async () => {
       i.setFromMatrixPosition(this.parts.chassis.matrixWorld), i.project(this.game.view.camera), this.screenPosition.x = i.x * 0.5 + 0.5, this.screenPosition.y = i.y * -0.5 + 0.5;
     }
   }
-  const kt = b(([m, e]) => w(m.x.add(m.y.mul(e.x)), m.y.add(m.x.mul(e.y)))), an = b(([m, e, t, s, i]) => {
+  const kt = b(([m, e]) => w(m.x.add(m.y.mul(e.x)), m.y.add(m.x.mul(e.y)))), ln = b(([m, e, t, s, i]) => {
     const a = ft(m.z, m.x), n = m.y, o = e.mul(m.y.sub(t)).pow(2).add(s);
     return o.addAssign(de(n.sub(i).mul(20).add(a.mul(2))).mul(0.05)), E(wt(a).mul(o), n, de(a).mul(o));
   });
-  class nn {
+  class hn {
     constructor() {
       this.game = T.getInstance(), this.game.debug.active && (this.debugPanel = this.game.tornado.debugPanel), this.setMesh(), this.game.ticker.events.on("tick", () => {
         this.update();
@@ -9565,9 +9646,9 @@ let __tla = (async () => {
         depthWrite: true,
         depthTest: true
       });
-      l.positionNode = an(Le, i, a, n.sub(0.05), this.game.ticker.elapsedScaledUniform.mul(s).mul(2)), l.outputNode = b(() => {
+      l.positionNode = ln(Le, i, a, n.sub(0.05), this.game.ticker.elapsedScaledUniform.mul(s).mul(2)), l.outputNode = b(() => {
         const r = this.game.ticker.elapsedScaledUniform.mul(s).negate(), h = k().y.sub(1).pow(2).oneMinus(), c = wt(h.mul(2).add(1).mul(Fs));
-        c.assign(zi(c, -1, 1, -1, 1));
+        c.assign(Oi(c, -1, 1, -1, 1));
         const u = this.visibility.remap(0, 1, -4, 0), g = k().add(w(r.mul(1.1), r.mul(1.1)));
         g.assign(kt(g, w(-1, 0)).mul(w(4, 0.5)));
         const p = P(this.game.noises.perlin, g, 1).r.remap(0.45, 0.7), v = k().add(w(r.mul(0.7), r.mul(0.7)));
@@ -9576,9 +9657,9 @@ let __tla = (async () => {
         S.assign(rt(0, 0.4, S));
         const I = e.mul(t), B = k().add(w(r.mul(0.88), r.mul(0.88))).add(w(0.5));
         B.assign(kt(B, w(-1, 0)).mul(w(3, 0.4)));
-        const U = P(this.game.noises.perlin, B, 1).r.remap(0.45, 0.7), q = k().add(w(r.mul(0.66), r.mul(0.66))).add(w(0.5));
+        const G = P(this.game.noises.perlin, B, 1).r.remap(0.45, 0.7), q = k().add(w(r.mul(0.66), r.mul(0.66))).add(w(0.5));
         q.assign(kt(q, w(-1, 0)).mul(w(8, 2)));
-        const G = P(this.game.noises.perlin, q, 1).r.remap(0.45, 0.7), oe = U.mul(G).add(c).add(u), J = _(0.2, oe), pe = this.game.fog.strength.mix(E(0), this.game.fog.color), fe = ge(S, J);
+        const j = P(this.game.noises.perlin, q, 1).r.remap(0.45, 0.7), oe = G.mul(j).add(c).add(u), J = _(0.2, oe), pe = this.game.fog.strength.mix(E(0), this.game.fog.color), fe = ge(S, J);
         fe.lessThan(1e-3).discard();
         const Ee = A(I, pe, J);
         return C(E(Ee), fe);
@@ -9609,7 +9690,7 @@ let __tla = (async () => {
     }
   }
   const Xe = new st.alea("flowers");
-  class on {
+  class cn {
     constructor() {
       this.game = T.getInstance(), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F338} Flowers",
@@ -9661,7 +9742,7 @@ let __tla = (async () => {
       for (const t of this.transformMatrices) t.toArray(this.instanceMatrix.array, e * 16), e++;
     }
   }
-  class rn {
+  class dn {
     constructor() {
       this.game = T.getInstance();
       const [e, t] = ue.getBaseAndReferencesFromInstances(this.game.resources.bricksModel.scene.children);
@@ -9833,7 +9914,7 @@ let __tla = (async () => {
       });
     }
   }
-  class ln {
+  class un {
     constructor() {
       if (this.game = T.getInstance(), this.colorANode = d(M("#b4b536")), this.colorBNode = d(M("#d8cf3b")), this.foliage = new Ks(this.game.resources.bushesReferences.scene.children, this.colorANode, this.colorBNode), this.game.debug.active) {
         const e = this.game.debug.panel.addFolder({
@@ -9849,7 +9930,7 @@ let __tla = (async () => {
       }
     }
   }
-  class hn {
+  class mn {
     constructor() {
       this.game = T.getInstance(), this.geometry = new Rt(0.5, 12, 6), this.emissiveColorA = d(M("red")), this.emissiveColorB = d(M("orange")), this.emissiveStrength = d(8), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F525} Fireballs",
@@ -9909,7 +9990,7 @@ let __tla = (async () => {
       });
     }
   }
-  class cn {
+  class gn {
     constructor() {
       this.game = T.getInstance();
       const [e, t] = ue.getBaseAndReferencesFromInstances(this.game.resources.explosiveCratesModel.scene.children);
@@ -9994,7 +10075,7 @@ let __tla = (async () => {
       });
     }
   }
-  class dn {
+  class pn {
     constructor() {
       var _a2;
       this.game = T.getInstance(), this.count = Math.pow(2, 11), this.speed = 0.25, this.achievementAchieved = (_a2 = this.game.achievements.groups.get("weatherRain")) == null ? void 0 : _a2.items[0].achieved, this.setGeometry(), this.setMaterial(), this.setMesh(), this.game.ticker.events.on("tick", () => {
@@ -10084,7 +10165,7 @@ let __tla = (async () => {
       this.visibleRatioBinding.update(), this.lengthRatioBinding.update(), this.speedRatioBinding.update(), this.inclineRatioBinding.update(), this.mesh.visible = this.visibleRatio.value > 1e-5, this.mesh.visible && (this.center.value.set(this.game.view.optimalArea.position.x, this.game.view.optimalArea.position.z), this.localTime.value += this.game.ticker.deltaScaled * this.speed, !this.achievementAchieved && this.game.reveal.step === 2 && this.visibleRatio.value > 0.04 && this.length.value > 0.2 && (this.achievementAchieved = true, this.game.achievements.setProgress("weatherRain", 1)));
     }
   }
-  class un {
+  class fn {
     constructor() {
       this.game = T.getInstance(), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F389} Confetti",
@@ -10105,7 +10186,7 @@ let __tla = (async () => {
         t.available = true;
         const s = new Float32Array(this.count), i = new Float32Array(this.count);
         for (let c = 0; c < this.count; c++) s[c] = Math.random(), i[c] = Math.random() * Math.PI * 2;
-        const a = ee(s, "float").toAttribute(), n = ee(i, "float").toAttribute(), o = b(() => this.colorsUniform.element(re.mod(3)))(), l = new V({
+        const a = te(s, "float").toAttribute(), n = te(i, "float").toAttribute(), o = b(() => this.colorsUniform.element(re.mod(3)))(), l = new V({
           colorNode: o,
           hasCoreShadows: true,
           hasDropShadows: false,
@@ -10117,12 +10198,12 @@ let __tla = (async () => {
         const r = t.amplitudeUniform.oneMinus();
         l.positionNode = b(() => {
           ts(this.count, h).toStack();
-          const c = Le, u = r.mul(a), g = u.add(t.amplitudeUniform), p = Li(t.progressUniform, u, g, 0, 1).toVar();
+          const c = Le, u = r.mul(a), g = u.add(t.amplitudeUniform), p = Ui(t.progressUniform, u, g, 0, 1).toVar();
           p.assign(p.oneMinus().pow(3).oneMinus());
           const v = p.sub(0.5).mul(2).abs().oneMinus().mul(20).min(1);
           c.mulAssign(v);
-          const x = de(n), S = wt(n), I = a.mul(99).fract(), B = x.mul(p).mul(I).mul(t.radiusUniform), U = S.mul(p).mul(I).mul(t.radiusUniform), q = p.mul(2).oneMinus().pow(2).oneMinus().mul(I).mul(t.elevationUniform);
-          return E(c.x.add(B), c.y.add(q), c.z.add(U));
+          const x = de(n), S = wt(n), I = a.mul(99).fract(), B = x.mul(p).mul(I).mul(t.radiusUniform), G = S.mul(p).mul(I).mul(t.radiusUniform), q = p.mul(2).oneMinus().pow(2).oneMinus().mul(I).mul(t.elevationUniform);
+          return E(c.x.add(B), c.y.add(q), c.z.add(G));
         })(), t.mesh = new lt(this.geometry, l, this.count), t.mesh.visible = false, t.mesh.castShadow = true;
         const h = new gt(new Float32Array(this.count * 16), 16);
         h.setUsage(pt);
@@ -10153,7 +10234,7 @@ let __tla = (async () => {
       return a && a.pop(i, t, s), a;
     }
   }
-  class mn {
+  class vn {
     constructor() {
       this.game = T.getInstance();
       const e = this.game.respawns.getDefault();
@@ -10292,7 +10373,7 @@ let __tla = (async () => {
       }), this.game.ticker.events.off("tick", this.update), this.game.inputs.gamepad.events.off("typeChange", this.text.updateTexture), this.game.inputs.events.off("modeChange", this.text.updateTexture);
     }
   }
-  class gn {
+  class bn {
     constructor() {
       this.game = T.getInstance(), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F3EE} Pole lights",
@@ -10332,7 +10413,7 @@ let __tla = (async () => {
         const g = i * 3, p = Math.random() * Math.PI * 2;
         s[g + 0] = c.position.x + Math.cos(p), s[g + 1] = c.position.y + 1, s[g + 2] = c.position.z + Math.sin(p), i++;
       }
-      const a = ee(s, "vec3").toAttribute(), n = new Je();
+      const a = te(s, "vec3").toAttribute(), n = new Je();
       n.outputNode = this.game.materials.getFromName("emissiveOrangeRadialGradient").outputNode;
       const o = this.game.ticker.elapsedScaledUniform.add(tt(re).mul(999)), l = E(de(o.mul(0.4)).mul(0.5), de(o).mul(0.2), de(o.mul(0.3)).mul(0.5));
       n.positionNode = a.add(l), n.scaleNode = this.firefliesScale;
@@ -10354,7 +10435,7 @@ let __tla = (async () => {
       this.game.dayCycles.events.on("night", e), e(this.game.dayCycles.intervalEvents.get("night").inInterval);
     }
   }
-  class pn {
+  class yn {
     constructor() {
       this.game = T.getInstance();
       const [e, t] = ue.getBaseAndReferencesFromInstances(this.game.resources.lanternsModel.scene.children);
@@ -10395,7 +10476,7 @@ let __tla = (async () => {
       }, 10);
     }
   }
-  class fn {
+  class wn {
     constructor() {
       this.game = T.getInstance();
       const [e, t] = ue.getBaseAndReferencesFromInstances(this.game.resources.fencesModel.scene.children);
@@ -10426,7 +10507,7 @@ let __tla = (async () => {
       }, 10);
     }
   }
-  class vn {
+  class xn {
     constructor() {
       this.game = T.getInstance();
       const [e, t] = ue.getBaseAndReferencesFromInstances(this.game.resources.benchesModel.scene.children);
@@ -10455,7 +10536,7 @@ let __tla = (async () => {
       }, 10);
     }
   }
-  class bn {
+  class Pn {
     constructor() {
       this.game = T.getInstance(), this.references = new qs();
       const e = [
@@ -10521,12 +10602,12 @@ let __tla = (async () => {
       this.road.glitterVariation.value += this.game.ticker.deltaScaled * 4e-3 + this.game.view.delta.length() * 4e-3;
     }
   }
-  class yn {
+  class Sn {
     constructor() {
       this.game = T.getInstance(), this.step(0);
     }
     step(e) {
-      e === 0 ? (this.grid = new Ia(), this.intro = new mn()) : e === 1 ? (this.visualVehicle = new $s(this.game.resources.vehicle.scene), this.floor = new Ma(), this.waterSurface = new Na(), this.grass = new Ba(), this.windLines = new Xa(), this.confetti = new un(), this.leaves = new Ya(), this.rain = new dn(), this.lightnings = new Za(), this.fireballs = new hn(), this.snow = new _a(), this.visualTornado = new nn(), this.bushes = new ln(), this.birchTrees = new Ht("Birch Tree", this.game.resources.birchTreesVisualModel.scene, this.game.resources.birchTreesReferencesModel.scene.children, "#ff4f2b", "#ff903f"), this.oakTrees = new Ht("Oak Tree", this.game.resources.oakTreesVisualModel.scene, this.game.resources.oakTreesReferencesModel.scene.children, "#b4b536", "#d8cf3b"), this.cherryTrees = new Ht("Cherry Tree", this.game.resources.cherryTreesVisualModel.scene, this.game.resources.cherryTreesReferencesModel.scene.children, "#ff6d6d", "#ff9990"), this.flowers = new on(), this.bricks = new rn(), this.fences = new fn(), this.benches = new vn(), this.explosiveCrates = new cn(), this.poleLights = new gn(), this.lanterns = new pn(), this.scenery = new bn(), this.areas = new $a()) : e === 2 && (this.whispers = new Ja());
+      e === 0 ? (this.grid = new Na(), this.intro = new vn()) : e === 1 ? (this.visualVehicle = new $s(this.game.resources.vehicle.scene), this.floor = new Ca(), this.waterSurface = new Ra(), this.grass = new Da(), this.windLines = new Qa(), this.confetti = new fn(), this.leaves = new Ja(), this.rain = new pn(), this.lightnings = new en(), this.fireballs = new mn(), this.snow = new tn(), this.visualTornado = new hn(), this.bushes = new un(), this.birchTrees = new Ht("Birch Tree", this.game.resources.birchTreesVisualModel.scene, this.game.resources.birchTreesReferencesModel.scene.children, "#ff4f2b", "#ff903f"), this.oakTrees = new Ht("Oak Tree", this.game.resources.oakTreesVisualModel.scene, this.game.resources.oakTreesReferencesModel.scene.children, "#b4b536", "#d8cf3b"), this.cherryTrees = new Ht("Cherry Tree", this.game.resources.cherryTreesVisualModel.scene, this.game.resources.cherryTreesReferencesModel.scene.children, "#ff6d6d", "#ff9990"), this.flowers = new cn(), this.bricks = new dn(), this.fences = new wn(), this.benches = new xn(), this.explosiveCrates = new gn(), this.poleLights = new bn(), this.lanterns = new yn(), this.scenery = new Pn(), this.areas = new Za()) : e === 2 && (this.whispers = new an());
     }
     setPhysicalFloor() {
       this.game.objects.add(null, {
@@ -10567,7 +10648,7 @@ let __tla = (async () => {
       e.position.z = 3, this.game.scene.add(e);
     }
     setAxesHelper() {
-      const e = new Oi();
+      const e = new Gi();
       e.position.y = 0.1, this.game.scene.add(e);
     }
     setCollisionGroupsTest() {
@@ -10592,7 +10673,7 @@ let __tla = (async () => {
       });
     }
   }
-  class wn {
+  class Tn {
     constructor() {
       this.game = T.getInstance(), this.useDayCycles = true, this.phi = 0.63, this.theta = 0.72, this.phiAmplitude = 0.62, this.thetaAmplitude = 1.25, this.near = 1, this.spherical = new bt(this.game.view.optimalArea.radius + this.near, this.phi, this.theta), this.direction = new y().setFromSpherical(this.spherical).normalize(), this.directionUniform = d(this.direction), this.colorUniform = d(M("#ffffff")), this.intensityUniform = d(1), this.sunHorizonFactor = 1, this.count = 1, this.mapSize = this.game.quality.level === 0 ? 2048 : 512, this.shadowAmplitude = this.game.view.optimalArea.radius, this.depth = this.game.view.optimalArea.radius * 2, this.shadowBias = -1e-3, this.shadowNormalBias = 0.1, this.shadowRadius = this.game.quality.level === 0 ? 3 : 2, this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F4A1} Lighting",
@@ -10676,7 +10757,7 @@ let __tla = (async () => {
       }));
     }
     setLight() {
-      this.light = new Ui(16777215, 5), this.light.position.setFromSpherical(this.spherical), this.light.castShadow = true, this.game.scene.add(this.light), this.game.scene.add(this.light.target);
+      this.light = new ji(16777215, 5), this.light.position.setFromSpherical(this.spherical), this.light.castShadow = true, this.game.scene.add(this.light), this.game.scene.add(this.light.target);
     }
     setHelpers() {
       this.directionHelper = new D(new Ls(0.25, 1), new O({
@@ -10685,9 +10766,9 @@ let __tla = (async () => {
       const e = [
         new y(0, 0, 0),
         new y(0, 0, 5)
-      ], t = new Ke().setFromPoints(e), s = new Gi({
+      ], t = new Ke().setFromPoints(e), s = new qi({
         color: 16777215
-      }), i = new ji(t, s);
+      }), i = new Vi(t, s);
       i.userData.preventPreRender = true, this.directionHelper.add(i), this.game.scene.add(this.directionHelper), this.shadowHelper = new vs(this.light.shadow.camera), this.shadowHelper.visible = false, this.shadowHelper.userData.preventPreRender = true, this.game.scene.add(this.shadowHelper), this.game.debug.active && (this.debugPanel.addBinding(this.directionHelper, "visible", {
         label: "directionHelper"
       }), this.debugPanel.addBinding(this.shadowHelper, "visible", {
@@ -10720,7 +10801,7 @@ let __tla = (async () => {
       this.light.position.setFromSpherical(this.spherical).add(e), this.light.target.position.copy(e), this.directionHelper.position.copy(this.direction).multiplyScalar(5).add(this.game.view.focusPoint.position), this.directionHelper.lookAt(this.game.view.focusPoint.position), this.colorUniform.value.copy(this.game.dayCycles.properties.lightColor.value), this.intensityUniform.value = this.game.dayCycles.properties.lightIntensity.value * (this.sunHorizonFactor || 1);
     }
   }
-  class xn {
+  class Mn {
     constructor() {
       var _a2, _b, _c, _d, _e2, _f;
       this.game = T.getInstance(), this.list = /* @__PURE__ */ new Map(), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
@@ -10781,7 +10862,7 @@ let __tla = (async () => {
       }
     }
     setLuminance() {
-      this.luminance = {}, this.luminance.coefficients = new y(), qi.getLuminanceCoefficients(this.luminance.coefficients), this.luminance.get = (e) => e.r * this.luminance.coefficients.x + e.g * this.luminance.coefficients.y + e.b * this.luminance.coefficients.z;
+      this.luminance = {}, this.luminance.coefficients = new y(), Hi.getLuminanceCoefficients(this.luminance.coefficients), this.luminance.get = (e) => e.r * this.luminance.coefficients.x + e.g * this.luminance.coefficients.y + e.b * this.luminance.coefficients.z;
     }
     createEmissive(e = "material", t = "#ffffff", s = 3, i = null) {
       const a = d(M(t)), n = d(s), o = new O({
@@ -10876,7 +10957,7 @@ let __tla = (async () => {
       });
     }
   }
-  class Pn {
+  class kn {
     constructor() {
       this.game = T.getInstance(), this.list = /* @__PURE__ */ new Map(), this.key = 0, this.roundedViewPosition = {
         x: 0,
@@ -11005,11 +11086,11 @@ let __tla = (async () => {
       });
     }
   }
-  class Sn {
+  class Cn {
     constructor() {
       this.game = T.getInstance(), this.colorA = d(M("#ff0000")), this.colorB = d(M("#0000ff")), this.radialCenter = d(w(0, 0)), this.radialStart = d(0), this.radialEnd = d(1);
       const e = w(Os.xy).sub(this.radialCenter).length().smoothstep(this.radialStart, this.radialEnd);
-      this.color = A(this.colorA, this.colorB, e), this.game.scene.backgroundNode = this.color, this.near = d(this.game.view.optimalArea.nearDistance), this.far = d(this.game.view.optimalArea.farDistance), this.strength = Vi(this.near, this.far), this.game.ticker.events.on("tick", () => {
+      this.color = A(this.colorA, this.colorB, e), this.game.scene.backgroundNode = this.color, this.near = d(this.game.view.optimalArea.nearDistance), this.far = d(this.game.view.optimalArea.farDistance), this.strength = Wi(this.near, this.far), this.game.ticker.events.on("tick", () => {
         this.update();
       }, 10), this.game.debug.active && this.game.debug.panel.addFolder({
         title: "\u2601\uFE0F Fog",
@@ -11223,7 +11304,7 @@ let __tla = (async () => {
       fogFarRatio: 1.25
     }
   };
-  class Tn extends Xs {
+  class An extends Xs {
     constructor() {
       super("\u{1F55C} Day Cycles", 1440 * 60, null, false, () => -(/* @__PURE__ */ new Date()).getTimezoneOffset() * 60 - 1080 * 60);
     }
@@ -11306,7 +11387,7 @@ let __tla = (async () => {
       ];
     }
   }
-  class Mn {
+  class En {
     constructor() {
       this.game = T.getInstance(), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F326}\uFE0F Weather",
@@ -11384,7 +11465,7 @@ let __tla = (async () => {
         type: "vec2"
       }
     ]
-  }), kn = b(([m, e]) => {
+  }), In = b(([m, e]) => {
     const t = F(e).toVar(), s = w(m).toVar(), i = w(0).toVar();
     s.mulAssign(t);
     const a = w(Ot(s)).toVar(), n = w(it(s)).toVar(), o = F(1).toVar(), l = F(1).toVar(), r = w(0).toVar();
@@ -11400,7 +11481,7 @@ let __tla = (async () => {
         name: "x",
         condition: "<="
       }, ({ x: c }) => {
-        const u = w(c, h).toVar(), g = w(We(a.add(u), t)).toVar(), p = w(Dt(g)).toVar(), v = w(u.add(p.sub(n))).toVar(), x = F(Hi(v)).toVar();
+        const u = w(c, h).toVar(), g = w(We(a.add(u), t)).toVar(), p = w(Dt(g)).toVar(), v = w(u.add(p.sub(n))).toVar(), x = F($i(v)).toVar();
         De(x.lessThan(o), () => {
           l.assign(o), o.assign(x), r.assign(a.add(u));
         }).ElseIf(x.lessThan(l), () => {
@@ -11449,10 +11530,10 @@ let __tla = (async () => {
         type: "vec2"
       }
     ]
-  }), Cn = b(([m, e, t]) => {
+  }), Bn = b(([m, e, t]) => {
     const s = w(t).toVar(), i = F(e).toVar(), a = w(m).toVar();
     a.assign(a.mul(F(i)));
-    const n = w(Ot(a)).toVar(), o = w(Wi(a)).toVar(), l = w(it(a)).toVar();
+    const n = w(Ot(a)).toVar(), o = w(Ki(a)).toVar(), l = w(it(a)).toVar();
     n.assign(ms(n, s)), o.assign(ms(o, s));
     const r = w(rt(0, 1, l)).toVar(), h = w(Ct(w(n.x, n.y))).toVar(), c = w(Ct(w(o.x, n.y))).toVar(), u = w(Ct(w(n.x, o.y))).toVar(), g = w(Ct(w(o.x, o.y))).toVar(), p = w(it(a)).toVar();
     return A(A(qe(h, p.sub(w(Me(0), Me(0)))), qe(c, p.sub(w(Me(1), Me(0)))), r.x), A(qe(u, p.sub(w(Me(0), Me(1)))), qe(g, p.sub(w(Me(1), Me(1)))), r.x), r.y).mul(0.8).add(0.5);
@@ -11474,7 +11555,7 @@ let __tla = (async () => {
       }
     ]
   });
-  class An {
+  class Nn {
     constructor() {
       this.game = T.getInstance(), this.quadMesh = new Bs(), this.resolution = 128, this.setVoronoi(), this.setPerlin(), this.setHash();
     }
@@ -11488,7 +11569,7 @@ let __tla = (async () => {
         color: "red",
         wireframe: false
       });
-      t.outputNode = C(kn(k(), 8), 0), this.quadMesh.material = t;
+      t.outputNode = C(In(k(), 8), 0), this.quadMesh.material = t;
       const s = Fe.resetRendererState(this.game.rendering.renderer);
       this.game.rendering.renderer.setPixelRatio(1), this.game.rendering.renderer.setRenderTarget(e), this.quadMesh.render(this.game.rendering.renderer), this.game.rendering.renderer.setRenderTarget(null), Fe.restoreRendererState(this.game.rendering.renderer, s);
     }
@@ -11500,7 +11581,7 @@ let __tla = (async () => {
       });
       this.perlin = e.texture, this.perlin.wrapS = xe, this.perlin.wrapT = xe;
       const t = new O();
-      t.outputNode = C(Cn(k(), 6, 6).remap(0.1, 0.9, 0, 1), Dt(k().mul(128).floor().div(128)).x, 0, 0), this.quadMesh.material = t;
+      t.outputNode = C(Bn(k(), 6, 6).remap(0.1, 0.9, 0, 1), Dt(k().mul(128).floor().div(128)).x, 0, 0), this.quadMesh.material = t;
       const s = Fe.resetRendererState(this.game.rendering.renderer);
       this.game.rendering.renderer.setPixelRatio(1), this.game.rendering.renderer.setRenderTarget(e), this.quadMesh.render(this.game.rendering.renderer), this.game.rendering.renderer.setRenderTarget(null), Fe.restoreRendererState(this.game.rendering.renderer, s);
     }
@@ -11517,7 +11598,7 @@ let __tla = (async () => {
       this.game.rendering.renderer.setPixelRatio(1), this.game.rendering.renderer.setRenderTarget(e), this.quadMesh.render(this.game.rendering.renderer), this.game.rendering.renderer.setRenderTarget(null), Fe.restoreRendererState(this.game.rendering.renderer, s);
     }
   }
-  class En {
+  class Dn {
     constructor() {
       this.game = T.getInstance(), this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F4A8} Wind",
@@ -11553,7 +11634,7 @@ let __tla = (async () => {
       this.strengthBinding.update(), this.localTime.value += this.game.ticker.deltaScaled * this.timeFrequency * this.strength.value;
     }
   }
-  class In {
+  class Rn {
     constructor() {
       this.game = T.getInstance(), this.subdivision = 128, this.size = 192, this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
         title: "\u{1F3D4}\uFE0F Terrain Data",
@@ -11608,7 +11689,7 @@ let __tla = (async () => {
       this.tracksDelta.value.set(this.game.tracks.focusPoint.x, this.game.tracks.focusPoint.y);
     }
   }
-  class Bn {
+  class Fn {
     constructor() {
       this.game = new T(), this.events = new se();
     }
@@ -11638,7 +11719,7 @@ let __tla = (async () => {
       }), r;
     }
   }
-  class Nn extends Xs {
+  class zn extends Xs {
     constructor() {
       super("\u{1F55C} Year Cycles", 3600 * 24 * 365, null, false);
     }
@@ -11695,7 +11776,7 @@ let __tla = (async () => {
       ];
     }
   }
-  class Dn {
+  class Ln {
     constructor() {
       this.game = T.getInstance(), this.uuid = localStorage.getItem("uuid"), this.uuid || (this.uuid = ii(), localStorage.setItem("uuid", this.uuid)), this.connected = false, this.initData = null, this.events = new se(), document.documentElement.classList.add("is-server-offline");
     }
@@ -11830,7 +11911,7 @@ let __tla = (async () => {
   __publicField(_ce, "CLOSED", 3);
   __publicField(_ce, "CLOSING", 4);
   let ce = _ce;
-  class Rn {
+  class On {
     constructor() {
       this.game = T.getInstance(), this.events = new se(), this.steeringAmplitude = 0.5, this.engineForceAmplitude = 300, this.boostMultiplier = 2, this.topSpeed = 5, this.topSpeedBoost = 40, this.brakeAmplitude = 35, this.idleBrake = 0.06, this.reverseBrake = 0.4, this.sideward = new y(0, 0, 1), this.upward = new y(0, 1, 0), this.forward = new y(1, 0, 0), this.position = new y(0, 4, 0), this.quaternion = new ot(), this.velocity = new y(), this.direction = this.forward.clone(), this.speed = 0, this.suspensionsHeights = {
         low: 0.88,
@@ -12159,11 +12240,11 @@ let __tla = (async () => {
       this.chassis.physical.body.setEnabled(false);
     }
   }
-  class Fn {
+  class Un {
     constructor() {
-      this.game = T.getInstance(), this.active = false, this.geometry = new Ke(), this.geometry.setAttribute("position", new ne([], 3)), this.geometry.setAttribute("color", new ne([], 4)), this.material = new $i({
+      this.game = T.getInstance(), this.active = false, this.geometry = new Ke(), this.geometry.setAttribute("position", new ne([], 3)), this.geometry.setAttribute("color", new ne([], 4)), this.material = new Xi({
         vertexColors: true
-      }), this.lineSegments = new Ki(this.geometry, this.material), this.active && this.game.scene.add(this.lineSegments), this.game.ticker.events.on("tick", () => {
+      }), this.lineSegments = new Yi(this.geometry, this.material), this.active && this.game.scene.add(this.lineSegments), this.game.ticker.events.on("tick", () => {
         this.update();
       }, 4), this.game.debug.active && (this.debugPanel = this.game.physics.debugPanel.addFolder({
         title: "Wireframe",
@@ -12180,7 +12261,7 @@ let __tla = (async () => {
       this.geometry.attributes.position.array = e, this.geometry.attributes.position.count = e.length / 3, this.geometry.attributes.position.needsUpdate = true, this.geometry.attributes.color.array = t, this.geometry.attributes.color.count = t.length / 4, this.geometry.attributes.color.needsUpdate = true;
     }
   }
-  class zn {
+  class Gn {
     constructor() {
       this.game = T.getInstance(), this.items = [], this.game.ticker.events.on("tick", () => {
         this.update();
@@ -12214,7 +12295,7 @@ let __tla = (async () => {
       }
     }
   }
-  class Ln {
+  class jn {
     constructor() {
       this.game = T.getInstance(), this.setSounds();
       const e = d(M("#251f2b")), t = d(M("#1d1721"));
@@ -12315,7 +12396,7 @@ let __tla = (async () => {
       this.game.scene.add(this.mesh);
     }
   }
-  class On {
+  class qn {
     constructor() {
       var _a2;
       this.game = T.getInstance(), this.running = false, this.strength = 0, this.resolution = 100, this.position = new y(), this.achievementAchieved = (_a2 = this.game.achievements.groups.get("cataclysm")) == null ? void 0 : _a2.items[0].achieved, this.game.debug.active && (this.debugPanel = this.game.debug.panel.addFolder({
@@ -12357,7 +12438,7 @@ let __tla = (async () => {
       for (const a of this.path) t.push(a.x, a.y, a.z);
       const s = new bs();
       s.setPositions(t);
-      const i = new Xi({
+      const i = new Zi({
         color: "#00ff00",
         linewidth: 5,
         dashed: true,
@@ -12365,7 +12446,7 @@ let __tla = (async () => {
         gapSize: 0.4,
         alphaToCoverage: true
       });
-      this.previews.line = new Yi(s, i), this.previews.line.computeLineDistances(), this.previews.line.scale.set(1, 1, 1), this.previews.line.position.y += 0.5, this.game.scene.add(this.previews.line);
+      this.previews.line = new _i(s, i), this.previews.line.computeLineDistances(), this.previews.line.scale.set(1, 1, 1), this.previews.line.position.y += 0.5, this.game.scene.add(this.previews.line);
     }
     setData() {
       this.data = {}, this.game.server.events.on("message", (e) => {
@@ -12419,7 +12500,7 @@ let __tla = (async () => {
       n.y = l * 2, n.setLength(a * this.game.ticker.deltaScaled * this.strength * 30), this.game.physicalVehicle.chassis.physical.body.applyImpulse(n);
     }
   }
-  class Un {
+  class Vn {
     constructor(e = "landing") {
       this.game = T.getInstance(), this.defaultName = e, this.setItems();
     }
@@ -12451,7 +12532,7 @@ let __tla = (async () => {
       }), t;
     }
   }
-  class Gn {
+  class Hn {
     constructor() {
       this.game = T.getInstance(), this.initiated = false, this.groups = /* @__PURE__ */ new Map(), this.events = new se(), this.setMute(), this.game.ticker.events.on("tick", () => {
         this.update();
@@ -12993,7 +13074,7 @@ let __tla = (async () => {
   __publicField(_ae, "CLOSED", 3);
   __publicField(_ae, "CLOSING", 4);
   let ae = _ae;
-  class jn {
+  class Wn {
     constructor() {
       this.game = T.getInstance(), this.game.inputs.addActions([
         {
@@ -13040,7 +13121,7 @@ let __tla = (async () => {
       this.game.modals.events.on("close", e), this.game.menu.events.on("close", e);
     }
   }
-  class qn {
+  class $n {
     constructor() {
       this.game = T.getInstance(), this.currentIntersect = null, this.intersects = [], this.isAnyIntersecting = false, this.needsTest = false, this.raycaster = new Kt(), this.setPointerTesting();
     }
@@ -13097,7 +13178,7 @@ let __tla = (async () => {
       });
     }
   }
-  class Vn {
+  class Kn {
     constructor() {
       if (this.game = T.getInstance(), this.surfaceElevation = -0.3, this.depthElevation = -1.5, this.surfaceElevationUniform = d(this.surfaceElevation), this.surfaceThicknessUniform = d(0.013), this.game.debug.active) {
         const e = this.game.debug.panel.addFolder({
@@ -13118,7 +13199,7 @@ let __tla = (async () => {
       }
     }
   }
-  class Hn {
+  class Xn {
     constructor() {
       this.game = T.getInstance(), this.step = -1;
       const e = this.game.respawns.getDefault();
@@ -13234,7 +13315,7 @@ let __tla = (async () => {
       this.color.value.copy(this.game.dayCycles.properties.revealColor.value), this.intensity.value = this.game.dayCycles.properties.revealIntensity.value * this.intensityMultiplier;
     }
   }
-  class Wn {
+  class Yn {
     constructor(e = false) {
       this.game = T.getInstance();
       let t = 0;
@@ -13532,7 +13613,7 @@ let __tla = (async () => {
       1
     ]
   ];
-  class $n {
+  class Zn {
     constructor() {
       this.game = T.getInstance(), this.events = new se(), this.setStorage(), this.setMenu(), this.setSounds(), this.setGroups(), this.setItems(), this.setGlobalProgress(), this.setRewards(), this.setReset();
       const e = this.storage.get();
@@ -13775,7 +13856,7 @@ let __tla = (async () => {
   __publicField(_je, "STATE_HIDING", 2);
   __publicField(_je, "STATE_HIDDEN", 3);
   let je = _je;
-  class Kn {
+  class _n {
     constructor() {
       this.game = T.getInstance(), this.events = new se();
       const e = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
@@ -13800,7 +13881,7 @@ let __tla = (async () => {
       ]));
     }
   }
-  class Xn {
+  class Qn {
     constructor() {
       this.game = T.getInstance(), this.interval = 1 / 60, this.lastTime = 0, this.offset = 0, this.offsetRounded = 0, this.index = 0, this.length = 30, this.carPosition = 10, this.objectInterval = 18, this.game.ticker.events.on("tick", () => {
         this.update();
@@ -13844,9 +13925,9 @@ let __tla = (async () => {
       }
     }
   }
-  class Yn {
+  class Jn {
     static render() {
-      const e = T.getInstance(), t = new Zi(32), s = new _i(1, 1e5, t);
+      const e = T.getInstance(), t = new Qi(32), s = new Ji(1, 1e5, t);
       e.scene.add(s);
       const i = [];
       e.scene.traverse((a) => {
@@ -13855,7 +13936,7 @@ let __tla = (async () => {
       for (const a of i) a.visible = false;
     }
   }
-  class Zn {
+  class eo {
     constructor() {
       this.game = T.getInstance(), this.element = this.game.menu.items.get("options").contentElement, this.setSound(), this.setQuality(), this.setRespawn(), this.setReset(), this.setRenderer(), this.setServer();
     }
@@ -13903,7 +13984,7 @@ let __tla = (async () => {
       });
     }
   }
-  let _n = class {
+  let to = class {
     constructor() {
       this.game = T.getInstance(), this.initiated = false, this.modal = this.game.modals.items.get("map"), this.element = this.modal.element.querySelector(".js-map-container"), this.setTrigger(), this.setInputs(), this.modal.events.on("open", () => {
         this.initiated || this.init(), this.texture.update();
@@ -14093,9 +14174,9 @@ let __tla = (async () => {
       T.instance = this, this.init();
     }
     async init() {
-      this.domElement = document.querySelector(".game"), this.canvasElement = this.domElement.querySelector(".js-canvas"), document.documentElement.classList.add("is-started"), this.scene = new Ns(), this.debug = new ta(), this.resourcesLoader = new xa(), this.quality = new Kn(), this.server = new Dn(), this.ticker = new Pa(), this.time = new Sa(), this.dayCycles = new Tn(), this.yearCycles = new Nn(), this.inputs = new K([], [
+      this.domElement = document.querySelector(".game"), this.canvasElement = this.domElement.querySelector(".js-canvas"), document.documentElement.classList.add("is-started"), this.scene = new Ns(), this.debug = new ia(), this.resourcesLoader = new Sa(), this.quality = new _n(), this.server = new Ln(), this.ticker = new Ta(), this.time = new Ma(), this.dayCycles = new An(), this.yearCycles = new zn(), this.inputs = new K([], [
         "intro"
-      ]), this.audio = new Gn(), this.notifications = new je(), this.rayCursor = new qn(), this.viewport = new Ta(this.domElement), this.modals = new ce(), this.menu = new ae(), this.rendering = new wa(), await this.rendering.setRenderer();
+      ]), this.audio = new Hn(), this.notifications = new je(), this.rayCursor = new $n(), this.viewport = new ka(this.domElement), this.modals = new ce(), this.menu = new ae(), this.rendering = new Pa(), await this.rendering.setRenderer();
       const e = "-compressed", t = "textureKtx", s = "ktx", i = "?cb=1";
       this.resources = await this.resourcesLoader.load([
         [
@@ -14116,7 +14197,7 @@ let __tla = (async () => {
           `intro/sound.${s}${i}`,
           t,
           (r) => {
-            r.minFilter = j, r.magFilter = j, r.generateMipmaps = false, r.repeat.x = 0.5;
+            r.minFilter = U, r.magFilter = U, r.generateMipmaps = false, r.repeat.x = 0.5;
           }
         ],
         [
@@ -14127,8 +14208,8 @@ let __tla = (async () => {
             r.minFilter = W, r.magFilter = W, r.generateMipmaps = false, r.colorSpace = he;
           }
         ]
-      ]), this.options = new Zn(), this.respawns = new Un("landing"), this.view = new ve(), this.rendering.setPostprocessing(), this.rendering.start(), this.reveal = new Hn(), this.noises = new An(), this.weather = new Mn(), this.wind = new En(), this.tracks = new en(), this.lighting = new wn(), this.fog = new Sn(), this.water = new Vn(), this.materials = new xn(), this.objects = new Pn(), this.explosions = new Bn(), this.world = new yn();
-      const a = ea(() => import("./rapier-BFoi23lB.js").then(async (m) => {
+      ]), this.options = new eo(), this.respawns = new Vn("landing"), this.view = new ve(), this.rendering.setPostprocessing(), this.rendering.start(), this.reveal = new Xn(), this.noises = new Nn(), this.weather = new En(), this.wind = new Dn(), this.tracks = new nn(), this.lighting = new Tn(), this.fog = new Cn(), this.water = new Kn(), this.materials = new Mn(), this.objects = new kn(), this.explosions = new Fn(), this.world = new Sn();
+      const a = sa(() => import("./rapier-BFoi23lB.js").then(async (m) => {
         await m.__tla;
         return m;
       }), __vite__mapDeps([0,1]), import.meta.url), n = this.resourcesLoader.load([
@@ -14208,7 +14289,7 @@ let __tla = (async () => {
           `floor/slabs.${s}`,
           t,
           (r) => {
-            r.wrapS = xe, r.wrapT = xe, r.minFilter = j, r.magFilter = j, r.generateMipmaps = false;
+            r.wrapS = xe, r.wrapT = xe, r.minFilter = U, r.magFilter = U, r.generateMipmaps = false;
           }
         ],
         [
@@ -14261,7 +14342,7 @@ let __tla = (async () => {
           `whispers/whisperFlame.${s}${i}`,
           t,
           (r) => {
-            r.minFilter = j, r.magFilter = j, r.generateMipmaps = false;
+            r.minFilter = U, r.magFilter = U, r.generateMipmaps = false;
           }
         ],
         [
@@ -14269,7 +14350,7 @@ let __tla = (async () => {
           `areas/satanStar.${s}${i}`,
           t,
           (r) => {
-            r.minFilter = j, r.magFilter = j, r.generateMipmaps = false;
+            r.minFilter = U, r.magFilter = U, r.generateMipmaps = false;
           }
         ],
         [
@@ -14314,7 +14395,7 @@ let __tla = (async () => {
           `jukebox/jukeboxMusicNotes.${s}${i}`,
           t,
           (r) => {
-            r.minFilter = j, r.magFilter = j, r.generateMipmaps = false;
+            r.minFilter = U, r.magFilter = U, r.generateMipmaps = false;
           }
         ],
         [
@@ -14322,7 +14403,7 @@ let __tla = (async () => {
           `achievements/glyphs.${s}${i}`,
           t,
           (r) => {
-            r.minFilter = j, r.magFilter = j, r.generateMipmaps = false, r.wrapS = xe;
+            r.minFilter = U, r.magFilter = U, r.generateMipmaps = false, r.wrapS = xe;
           }
         ],
         [
@@ -14330,7 +14411,7 @@ let __tla = (async () => {
           `career/careerFreelancer.${s}${i}`,
           t,
           (r) => {
-            r.flipY = false, r.minFilter = j, r.magFilter = j, r.generateMipmaps = false, r.wrapS = te, r.wrapT = te;
+            r.flipY = false, r.minFilter = U, r.magFilter = U, r.generateMipmaps = false, r.wrapS = ee, r.wrapT = ee;
           }
         ],
         [
@@ -14338,7 +14419,7 @@ let __tla = (async () => {
           `career/careerHetic.${s}${i}`,
           t,
           (r) => {
-            r.flipY = false, r.minFilter = j, r.magFilter = j, r.generateMipmaps = false, r.wrapS = te, r.wrapT = te;
+            r.flipY = false, r.minFilter = U, r.magFilter = U, r.generateMipmaps = false, r.wrapS = ee, r.wrapT = ee;
           }
         ],
         [
@@ -14346,7 +14427,7 @@ let __tla = (async () => {
           `career/careerImmersiveGarden.${s}${i}`,
           t,
           (r) => {
-            r.flipY = false, r.minFilter = j, r.magFilter = j, r.generateMipmaps = false, r.wrapS = te, r.wrapT = te;
+            r.flipY = false, r.minFilter = U, r.magFilter = U, r.generateMipmaps = false, r.wrapS = ee, r.wrapT = ee;
           }
         ],
         [
@@ -14354,7 +14435,7 @@ let __tla = (async () => {
           `career/careerIRLTeacher.${s}${i}`,
           t,
           (r) => {
-            r.flipY = false, r.minFilter = j, r.magFilter = j, r.generateMipmaps = false, r.wrapS = te, r.wrapT = te;
+            r.flipY = false, r.minFilter = U, r.magFilter = U, r.generateMipmaps = false, r.wrapS = ee, r.wrapT = ee;
           }
         ],
         [
@@ -14362,7 +14443,7 @@ let __tla = (async () => {
           `career/careerOnlineTeacher.${s}${i}`,
           t,
           (r) => {
-            r.flipY = false, r.minFilter = j, r.magFilter = j, r.generateMipmaps = false, r.wrapS = te, r.wrapT = te;
+            r.flipY = false, r.minFilter = U, r.magFilter = U, r.generateMipmaps = false, r.wrapS = ee, r.wrapT = ee;
           }
         ],
         [
@@ -14370,7 +14451,7 @@ let __tla = (async () => {
           `career/careerUzik.${s}${i}`,
           t,
           (r) => {
-            r.flipY = false, r.minFilter = j, r.magFilter = j, r.generateMipmaps = false, r.wrapS = te, r.wrapT = te;
+            r.flipY = false, r.minFilter = U, r.magFilter = U, r.generateMipmaps = false, r.wrapS = ee, r.wrapT = ee;
           }
         ],
         [
@@ -14378,7 +14459,7 @@ let __tla = (async () => {
           `timeMachine/timeMachineScreenMGS.${s}${i}`,
           t,
           (r) => {
-            r.minFilter = W, r.magFilter = W, r.generateMipmaps = false, r.wrapS = te, r.wrapT = te, r.colorSpace = he;
+            r.minFilter = W, r.magFilter = W, r.generateMipmaps = false, r.wrapS = ee, r.wrapT = ee, r.colorSpace = he;
           }
         ],
         [
@@ -14386,7 +14467,7 @@ let __tla = (async () => {
           `timeMachine/timeMachineScreenFolio.${s}${i}`,
           t,
           (r) => {
-            r.minFilter = W, r.magFilter = W, r.generateMipmaps = false, r.wrapS = te, r.wrapT = te, r.colorSpace = he;
+            r.minFilter = W, r.magFilter = W, r.generateMipmaps = false, r.wrapS = ee, r.wrapT = ee, r.colorSpace = he;
           }
         ]
       ], (r, h) => {
@@ -14398,7 +14479,7 @@ let __tla = (async () => {
       this.RAPIER = l, this.resources = {
         ...o,
         ...this.resources
-      }, this.terrain = new In(), this.physics = new va(), this.wireframe = new Fn(), this.physicalVehicle = new Rn(), this.zones = new zn(), this.player = new be(), this.closingManager = new jn(), this.interactivePoints = new N(), this.konamiCode = new Wn(), this.achievements = new $n(), this.tornado = new On(), this.map = new _n(), this.title = new Xn(), this.world.step(1), this.overlay = new Ln(), this.quality.level === 0 && this.rendering.renderer.backend.isWebGPUBackend && Yn.render(), this.ticker.wait(3, () => {
+      }, this.terrain = new Rn(), this.physics = new ya(), this.wireframe = new Un(), this.physicalVehicle = new On(), this.zones = new Gn(), this.player = new be(), this.closingManager = new Wn(), this.interactivePoints = new N(), this.konamiCode = new Yn(), this.achievements = new Zn(), this.tornado = new qn(), this.map = new to(), this.title = new Qn(), this.world.step(1), this.overlay = new jn(), this.quality.level === 0 && this.rendering.renderer.backend.isWebGPUBackend && Jn.render(), this.ticker.wait(3, () => {
         this.reveal.updateStep(0);
       }), this.debug.active && this.achievements.setProgress("debug", 1);
     }
@@ -14413,6 +14494,6 @@ let __tla = (async () => {
 })();
 export {
   T as G,
-  ea as _,
+  sa as _,
   __tla
 };
