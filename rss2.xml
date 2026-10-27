@@ -6,9 +6,24 @@
     <description>The Universe of KP</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, kp</copyright>
-    <lastBuildDate>Fri, 23 Oct 2026 04:19:15 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 02:29:37 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://zkpeace.com/blog-cn/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>100 个 VibeCoding 项目之 飞书任务开成 DSH 会话</title>
+      <link>https://zkpeace.com/blog-cn/posts/52680/</link>
+      <description>把飞书任务接成可开工的 DSH 会话：同步、开工、回写整条链路，以及踩过的坑</description>
+      <author>kp</author>
+      <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/">项目</category>
+      <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/VibeCoding/">VibeCoding</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E9%A3%9E%E4%B9%A6/">飞书</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/DSH/">DSH</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%8F%92%E4%BB%B6/">插件</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/AI/">AI</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/vibecoding/">vibecoding</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/AI%E7%94%9F%E6%88%90/">AI生成</category>
+      <pubDate>Tue, 27 Oct 2026 02:30:00 GMT</pubDate>
+    </item>
     <item>
       <title>100 个 VibeCoding 项目之 AI 接管小红书</title>
       <link>https://zkpeace.com/blog-cn/posts/73051/</link>
@@ -16,11 +31,11 @@
       <author>kp</author>
       <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/">项目</category>
       <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/VibeCoding/">VibeCoding</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/%E5%B0%8F%E7%BA%A2%E4%B9%A6/">小红书</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/MCP/">MCP</category>
       <category domain="https://zkpeace.com/blog-cn/tags/AI/">AI</category>
       <category domain="https://zkpeace.com/blog-cn/tags/vibecoding/">vibecoding</category>
       <category domain="https://zkpeace.com/blog-cn/tags/AI%E7%94%9F%E6%88%90/">AI生成</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E5%B0%8F%E7%BA%A2%E4%B9%A6/">小红书</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/MCP/">MCP</category>
       <pubDate>Fri, 23 Oct 2026 02:35:00 GMT</pubDate>
     </item>
     <item>
@@ -238,17 +253,6 @@
       <category domain="https://zkpeace.com/blog-cn/tags/%E5%A4%AA%E7%A9%BA/">太空</category>
       <category domain="https://zkpeace.com/blog-cn/tags/%E7%81%AB%E7%AE%AD/">火箭</category>
       <pubDate>Thu, 17 Jun 2021 02:59:29 GMT</pubDate>
-    </item>
-    <item>
-      <title>我加入了少数派Matrix，并分享了这些应用... ...</title>
-      <link>https://zkpeace.com/blog-cn/posts/53467/</link>
-      <description>
-        <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
-      </description>
-      <author>kp</author>
-      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
-      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%BD%AF%E4%BB%B6/">软件</category>
-      <pubDate>Fri, 11 Jun 2021 05:32:20 GMT</pubDate>
     </item>
   </channel>
 </rss>

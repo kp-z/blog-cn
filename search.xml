@@ -4,6 +4,43 @@
   
     
     <entry>
+      <title>100 个 VibeCoding 项目之 飞书任务开成 DSH 会话</title>
+      <link href="/blog-cn/posts/52680/"/>
+      <url>/blog-cn/posts/52680/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><blockquote><p>⚠️ 声明：本篇的文字、配图、编辑和发布，全部由 AI 完成。</p></blockquote><blockquote><p>🚩 立 flag：实现 100 个 vibecoding 项目！</p></blockquote><p>这个项目是其中一个。飞书里是任务，DSH 里是活，中间隔着一段搬运。🔁</p><p>以前：打开飞书 → 复制标题和描述 → 切到 DSH → 新建会话 → 粘贴 → 做完再复制回去 → 勾掉。一天十条，就是十次来回。</p><p>现在：DSH 右侧栏多了一个「飞书」页签，今天的任务排在里面。点「开工」，任务投进当前对话；干完，结论自己回到飞书。</p><p>搬运没了。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/00-panel-overview.png" alt="飞书面板总览：顶部是授权状态与 CLI 版本，任务列表可按清单筛选，当前对话卡橙色高亮，下面是任务卡"></p><h2 id="🧩-它长什么样">🧩 它长什么样</h2><ul><li>面板：顶部一行状态——授权可用、CLI 版本、上次同步时间；下面是任务列表，标题旁写着「主线任务 · 6」，可以按工作区、状态、关键词筛</li><li>任务卡：负责人和关注人的头像、清单名、清单自定义字段（工作区、触发条件、状态）的 chip，以及「新 / 已绑定 / 已开工 / 已完成」几个徽标</li><li>当前对话卡：橙色描边，标着「已开工」「当前对话」，右边还写着绑的是哪个会话</li><li>还没绑任务的对话，第一张卡是「同步为飞书任务」——按最后一轮回复起一条任务，创建完自动进清单、自动绑定</li></ul><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/01-task-card-docs.png" alt="任务卡上的文档行：一条任务一篇文档，已绑定的显示文档标题 chip，旁边是改链接和解绑"></p><h2 id="📄-一条任务一篇文档">📄 一条任务一篇文档</h2><p>文档这条线是后长出来的，现在是我用得最多的一块：</p><ul><li>卡片里「＋ 文档」贴个链接就绑上，绑完立刻写回飞书任务的「文档」字段；绑过的卡不再显示「＋ 文档」</li><li>✎ 就地改链接，✕ 解绑，绑定 / 解绑 / 改链接都立刻同步，不用再跑一轮同步</li><li>「生成文档」按任务内容生成 docx；任务改名时，它生成的 docx 标题也跟着改</li></ul><p>最后这条踩过坑：docx 没有「改标题」的开放接口，Drive 改名要个人令牌通常没有的 scope，只能改页面块里的 text（root block 就是标题）。现在再加一层 PATCH drive 兜底，但主路径还是改 text。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/03-doc-link-editor.png" alt="在任务卡里就地改文档链接：输入框里贴链接，保存或取消"></p><h2 id="🔌-为什么是插件">🔌 为什么是插件</h2><p>DSH 插件分两半：服务端半体管 HTTP 路由、定时器和模型工具，Web 半体负责往右侧栏加页签。这个项目两半都写，缺一半就是残的。</p><p>后端有两套，能力对齐，面板里二选一：</p><ul><li>默认是自建的 <code>feishu-sync-cli</code>——公司内网那套，非公共 PyPI 包</li><li>官方推荐换成飞书官方 <code>lark-cli</code>：npm 装、浏览器授权、凭据进钥匙串</li><li>插件不绑任何租户，任何一个飞书租户都能用；令牌始终由 CLI 自己保管和刷新，插件不读不写密钥</li></ul><p>授权也是引导式的：两步走「装 CLI → 授权体检」，任意时刻只亮一个下一步按钮。链接带有效期，也能出二维码；创建应用或登录期间面板每 6 秒静默体检一次，完成自动往前走，授权完成后自动同步一轮。应用被租户数据安全策略整体挡住（21001）时，做多少次 OAuth 都不会成功——插件先用 bot 身份探一次，被拦就直接给三条退路：换个人账号模式、换回默认后端、去开发者后台开权限。</p><h2 id="⚙️-一条任务的链路">⚙️ 一条任务的链路</h2><ul><li>同步：默认 30 分钟一轮，没有 webhook；只拉未完成，可按关键词和截止日窗口过滤。文档抓标题、修改时间、摘要</li><li>按时执行：插件每 30 秒巡检一次有没有到点的任务，到点立刻跑一轮同步，不用给未来任务预建空会话</li><li>开工：优先在当前对话里开工，把任务档案投进提示词；只有不在会话里（独立窗口）才新建会话，自动开工则始终新建</li><li>自动开工三档：关 / 只开标注过的 / 所有新任务，默认关，每轮最多一条。它会真的建会话跑一轮，花 token</li><li>工作区：只认 DSH 里已登记的工作区标题或绝对路径，拼错不会乱开工，错误直接显示在任务上。算出来的工作区还会写回任务的「工作区」字段——只填空值，一轮最多补五条</li><li>提示词：占位符有标题、开始、结束、截止、链接、描述、文档。老模板没写「文档」位就追加到末尾，不改原来的措辞</li><li>任务名 = 会话名 = 表情 + <code>T&lt;n&gt;-标题</code>：创建、AI 起名、改名只有一处出口，同一标题永远同一个表情；面板双击改名，会话跟着改</li><li>进展自动回写：每个真有进展的 turn 结束，自动往绑定的飞书任务写一条「🤖 AI 进度」评论。只认三种硬证据——改了文件、有 commit、跑了测试，闲聊不算；整体 700 字以内，同一会话 45 秒节流，失败下次补发一次</li></ul><p>列表上方还有一张 Insight 早会卡：昨天做了什么、今天该做什么、哪里卡住了。诊断默认不自动跑，点「诊断」才调模型；输入只发摘要不发代码，结果按「日期 + 任务签名」缓存。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/04-settings-toggles.png" alt="设置页：自动开工、每轮上限、进展回写、进度评论节流、文档监听"></p><h2 id="🕳️-踩过的坑">🕳️ 踩过的坑</h2><ul><li>加载期不能抛异常：客户端半体整体 <code>try/catch</code>，取不到服务就静默少个页签；宿主半体反过来，工具和 webServer 是骨架，缺一个直接 fail-loud。两个半体一个安静一个响亮，是刻意留的</li><li>右侧栏注册口不是官方的：真正的口是 <code>betterSidebar.registerTab</code>，官方 <code>sidebarRightTabs</code> 在某些组合里根本不在客户端的模块图里，注册会静默失败。还要等 better-sidebar 比本插件晚激活，轮询到 10 秒才放弃</li><li>两个实例会互相覆盖：状态文件从「按端口一份」改成「整个 DSH_HOME 一份」，首次启动从旧的多份里挑最新一份迁移。代价换了——现在两个实例同时跑，最后写的赢</li><li>推理模型吃光预算：起名原来给 200 token，额度全花在 reasoning 上，结果空着回来。现在改成 600 → 1600 两档，空结果放大一次重试</li><li>双击改名不能失焦保存：旁边「AI 起名」会短暂抢焦点，自动保存会用旧值把新标题盖掉。现在只有 Enter 和「保存」才提交</li><li>自定义字段 scope 默认没有：默认后端下要绕一层 Python 桥复用 CLI 的 token，不另存凭据；换官方 lark-cli 后就是原生 API 调用</li></ul><h2 id="🚧-边界">🚧 边界</h2><ul><li>自动开工默认关：它会真的建会话、跑一轮、花 token</li><li>docx 不渲染 Markdown：表格和 Mermaid 是原样文本</li><li>「清单名当工作区」的兜底不生效：CLI 的任务列表只回清单的 guid，不回名字</li><li>文档摘要按修改时间重抓：改一个字就重抓一次全文</li><li>开工没有在真实页面点过（会真建会话、真花 token），逻辑由冒烟测试用假会话服务覆盖</li><li>官方 lark-cli 后端只用假 CLI 跑过集成测试：真实的 npm 安装、应用创建、用户 OAuth 依赖公司网络和飞书企业侧权限，本机还没验证</li></ul><h2 id="🌙-收尾">🌙 收尾</h2><p>这是 100 个 vibecoding 项目里的一个。它没多出一个窗口，只是把已经开着的两个窗口之间的路修通了。</p><p>打开 DSH → 右侧栏飞书页签 → 点「开工」→ 干活 → 结论写回、勾掉。</p><p>飞书还是那个飞书，DSH 还是那个 DSH。中间那段复制粘贴，没了。</p><hr><p>参考：<a href="https://github.com/kp-z/dsh-dev-git-graph/tree/feat/dsh-feishu">dsh-feishu（插件源码与 README）</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 项目 </category>
+          
+          <category> VibeCoding </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 飞书 </tag>
+            
+            <tag> DSH </tag>
+            
+            <tag> 插件 </tag>
+            
+            <tag> AI </tag>
+            
+            <tag> vibecoding </tag>
+            
+            <tag> AI生成 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>100 个 VibeCoding 项目之 AI 接管小红书</title>
       <link href="/blog-cn/posts/73051/"/>
       <url>/blog-cn/posts/73051/</url>
@@ -22,15 +59,15 @@
       
         <tags>
             
-            <tag> 小红书 </tag>
-            
-            <tag> MCP </tag>
-            
             <tag> AI </tag>
             
             <tag> vibecoding </tag>
             
             <tag> AI生成 </tag>
+            
+            <tag> 小红书 </tag>
+            
+            <tag> MCP </tag>
             
         </tags>
       
@@ -347,7 +384,7 @@
       <link href="/blog-cn/posts/34388/"/>
       <url>/blog-cn/posts/34388/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>日记 2022年4月16日<br>上海市  18°C，大部晴朗</p>    <div id="aplayer-apgEUiAF" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="28700552" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-mini="true"    ></div><p>最近一直在家看剧，看了《上海堡垒》，已经改编成电视剧了，真的是史诗级的烂。还看了部神话片，大概的意思是说人间妖魔横行，天庭派大将清陵带兵镇压，但是清陵手段残暴，为了完成天庭的任务，不惜迫害凡人，生灵涂炭，人间众生敢怒不敢言，冥界大门已开，妖魔无穷尽也，凡人的苦难无穷尽也。此时人们又想起了游历外界的小仙宫村。话说这宫村本只是三两小厮供奉的村口小仙，天魔刑官降生人间之时，竟然提出了与魔共生之策，遭到天人两界口诛笔伐，被放逐至三界之外。只是现在这天庭对清陵百般袒护，看似完全没有宽恕宫村之意。天庭为何非清陵不可？宫村能否重返三界？天魔刑官又会不会再次进化呢？故事越发的扑所迷离。</p><p>为了缓解最近再重刷《武林外传》，主题曲是真好听，记录一下歌词。</p><div class="note simple"><p>自打盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>从那盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>希望永远种在你心里</p></div><p>好了不说了想去华润万家买袋溜溜梅吃吃了。</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>日记 2022年4月16日<br>上海市  18°C，大部晴朗</p>    <div id="aplayer-KgCYuqYJ" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="28700552" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-mini="true"    ></div><p>最近一直在家看剧，看了《上海堡垒》，已经改编成电视剧了，真的是史诗级的烂。还看了部神话片，大概的意思是说人间妖魔横行，天庭派大将清陵带兵镇压，但是清陵手段残暴，为了完成天庭的任务，不惜迫害凡人，生灵涂炭，人间众生敢怒不敢言，冥界大门已开，妖魔无穷尽也，凡人的苦难无穷尽也。此时人们又想起了游历外界的小仙宫村。话说这宫村本只是三两小厮供奉的村口小仙，天魔刑官降生人间之时，竟然提出了与魔共生之策，遭到天人两界口诛笔伐，被放逐至三界之外。只是现在这天庭对清陵百般袒护，看似完全没有宽恕宫村之意。天庭为何非清陵不可？宫村能否重返三界？天魔刑官又会不会再次进化呢？故事越发的扑所迷离。</p><p>为了缓解最近再重刷《武林外传》，主题曲是真好听，记录一下歌词。</p><div class="note simple"><p>自打盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>从那盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>希望永远种在你心里</p></div><p>好了不说了想去华润万家买袋溜溜梅吃吃了。</p>]]></content>
       
       
       <categories>
@@ -618,11 +655,11 @@
       
         <tags>
             
-            <tag> 软件 </tag>
-            
             <tag> 手机 </tag>
             
             <tag> 设计 </tag>
+            
+            <tag> 软件 </tag>
             
         </tags>
       
@@ -649,9 +686,9 @@
       
         <tags>
             
-            <tag> 软件 </tag>
-            
             <tag> 设计 </tag>
+            
+            <tag> 软件 </tag>
             
             <tag> 观点 </tag>
             
@@ -1119,11 +1156,11 @@
     
     
     <entry>
-      <title>小程序功能组件推荐</title>
-      <link href="/blog-cn/posts/41204/"/>
-      <url>/blog-cn/posts/41204/</url>
+      <title>小程序UI组件推荐</title>
+      <link href="/blog-cn/posts/1941/"/>
+      <url>/blog-cn/posts/1941/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>最近出于兴趣在做小程序的开发，所以找了很多“轮子”，大多数开源组件都不尽人意，这里挑出几个好用的分享一下。</p><h2 id="NewWxComment-为数不多的评论组件">NewWxComment 为数不多的评论组件</h2><p><a href="https://github.com/yicm/NewWxComment">仓库</a> | <a href="https://github.com/yicm">作者</a></p><blockquote><p>NewWxCommenthttps://github.com/yicm/NewWxComment是一个微信小程序的评论组件，结合BaaS提供商LeanCloud，无需其他另外的个人或者云服务器，就可以免费使用。解决了需要个人去注册域名、备案、购买云服务器的繁杂问题。且兼容Valinehttps://github.com/xCss/Valine评论，打通PC端和移动端评论，特别适合使用Valine评论系统且想同时开发小程序文章评论的同学们.</p></blockquote><h4 id="特点">特点</h4><ul><li>独立插件，独立放入小程序项目即可使用</li><li>打通Valine评论系统，统一PC端和小程序端</li><li>友好的UI界面和交互界面</li><li>与微信用户信息绑定，显示微信用户头像和昵称</li><li>支持文章阅读量统计功能</li><li>支持评论回复功能，即子评论</li><li>支持emoji表情显示😉</li><li>支持评论分页加载</li><li>支持评论分页参数设置</li><li>内置获取微信用户公共信息授权</li><li>支持light/dark两种主题</li><li>机型兼容友好，包括全面屏iphone11等</li></ul>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><div class="note primary flat"><p>记录在制作小程序时使用的组件</p></div><h2 id="ColorUI">ColorUI</h2><blockquote><p>ColorUI是一个css库！！！在你引入样式后可以根据class来调用组件，一些含有交互的操作也有，可以为你开发提供一些思路。<a href="https://www.color-ui.com/">下载</a>|<a href="https://github.com/weilanwl/ColorUI">仓库</a>｜扫描下面二维码可以预览全部组件👇<br><img src="https://i.loli.net/2020/02/22/uiMEAIZYFpPTGKB.png" alt=""></p></blockquote><p>直接下载组件，根据官方Readme介绍，移动<code>/demo</code>（我把文件名改为colorui）到小程序目录里即可，我是创建了文件夹<code>components</code>用于统一管理外部组件，结构如下。</p><p><img src="https://i.loli.net/2020/02/22/KAlbTFatwoev3yk.png" alt=""></p><p>下一步要在全局样式表<code>app.wxss</code>中导入样式（注意自己的路径⚠️）</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;./components/colorui/main.wxss&#x27;</span>; # 样式<br><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;./components/colorui/icon.wxss&#x27;</span>; # 图标<br></code></pre></td></tr></table></figure><p>然后就可以在自己的Pages里调用样式了，作者并没有提供详尽的使用说明，所以可以先在手机上看Demo效果，然后去对应<code>.wxml</code>文件里找到位置，找到标签，如果需要修改可以去对应<code>main.wxss</code>文件中<code>Ctrl+F</code>找到修改源码，或者自己写css覆盖。</p><p>ColorUI是我一直使用的UI组件，所以详细介绍一下，当然还又很多其他的UI组件也不错。</p><h2 id="其他">其他</h2><ul><li><a href="">iViewUI</a></li><li><a href="">MinUI</a></li><li><a href="">TaroUI</a></li><li><a href="">Vant组件</a></li><li><a href="">WuxUI</a></li></ul>]]></content>
       
       
       <categories>
@@ -1154,11 +1191,11 @@
     
     
     <entry>
-      <title>小程序UI组件推荐</title>
-      <link href="/blog-cn/posts/1941/"/>
-      <url>/blog-cn/posts/1941/</url>
+      <title>小程序功能组件推荐</title>
+      <link href="/blog-cn/posts/41204/"/>
+      <url>/blog-cn/posts/41204/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><div class="note primary flat"><p>记录在制作小程序时使用的组件</p></div><h2 id="ColorUI">ColorUI</h2><blockquote><p>ColorUI是一个css库！！！在你引入样式后可以根据class来调用组件，一些含有交互的操作也有，可以为你开发提供一些思路。<a href="https://www.color-ui.com/">下载</a>|<a href="https://github.com/weilanwl/ColorUI">仓库</a>｜扫描下面二维码可以预览全部组件👇<br><img src="https://i.loli.net/2020/02/22/uiMEAIZYFpPTGKB.png" alt=""></p></blockquote><p>直接下载组件，根据官方Readme介绍，移动<code>/demo</code>（我把文件名改为colorui）到小程序目录里即可，我是创建了文件夹<code>components</code>用于统一管理外部组件，结构如下。</p><p><img src="https://i.loli.net/2020/02/22/KAlbTFatwoev3yk.png" alt=""></p><p>下一步要在全局样式表<code>app.wxss</code>中导入样式（注意自己的路径⚠️）</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;./components/colorui/main.wxss&#x27;</span>; # 样式<br><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;./components/colorui/icon.wxss&#x27;</span>; # 图标<br></code></pre></td></tr></table></figure><p>然后就可以在自己的Pages里调用样式了，作者并没有提供详尽的使用说明，所以可以先在手机上看Demo效果，然后去对应<code>.wxml</code>文件里找到位置，找到标签，如果需要修改可以去对应<code>main.wxss</code>文件中<code>Ctrl+F</code>找到修改源码，或者自己写css覆盖。</p><p>ColorUI是我一直使用的UI组件，所以详细介绍一下，当然还又很多其他的UI组件也不错。</p><h2 id="其他">其他</h2><ul><li><a href="">iViewUI</a></li><li><a href="">MinUI</a></li><li><a href="">TaroUI</a></li><li><a href="">Vant组件</a></li><li><a href="">WuxUI</a></li></ul>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>最近出于兴趣在做小程序的开发，所以找了很多“轮子”，大多数开源组件都不尽人意，这里挑出几个好用的分享一下。</p><h2 id="NewWxComment-为数不多的评论组件">NewWxComment 为数不多的评论组件</h2><p><a href="https://github.com/yicm/NewWxComment">仓库</a> | <a href="https://github.com/yicm">作者</a></p><blockquote><p>NewWxCommenthttps://github.com/yicm/NewWxComment是一个微信小程序的评论组件，结合BaaS提供商LeanCloud，无需其他另外的个人或者云服务器，就可以免费使用。解决了需要个人去注册域名、备案、购买云服务器的繁杂问题。且兼容Valinehttps://github.com/xCss/Valine评论，打通PC端和移动端评论，特别适合使用Valine评论系统且想同时开发小程序文章评论的同学们.</p></blockquote><h4 id="特点">特点</h4><ul><li>独立插件，独立放入小程序项目即可使用</li><li>打通Valine评论系统，统一PC端和小程序端</li><li>友好的UI界面和交互界面</li><li>与微信用户信息绑定，显示微信用户头像和昵称</li><li>支持文章阅读量统计功能</li><li>支持评论回复功能，即子评论</li><li>支持emoji表情显示😉</li><li>支持评论分页加载</li><li>支持评论分页参数设置</li><li>内置获取微信用户公共信息授权</li><li>支持light/dark两种主题</li><li>机型兼容友好，包括全面屏iphone11等</li></ul>]]></content>
       
       
       <categories>
@@ -1271,9 +1308,9 @@
       
         <tags>
             
-            <tag> mac </tag>
-            
             <tag> 软件 </tag>
+            
+            <tag> mac </tag>
             
             <tag> 推荐 </tag>
             
