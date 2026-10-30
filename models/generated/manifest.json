@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-21T11:06:24.753Z",
+  "generatedAt": "2026-10-21T10:08:38.293Z",
   "note": "生成模型统一清单（单一文件管理）。模型文件在同目录，来源图在 sources/，预览在 previews/。新增/更新请用 node tools/3d-gen/register.mjs，不要手改。",
   "models": [
     {
       "name": "hero-character",
-      "label": "zkp · 早期版本",
+      "label": "摄影师探险家",
       "file": "hero-character.glb",
       "bytes": 1025604,
       "sha256": "f4f2e9dc5bcb8ac129951127d9bd900ea04cdac43bf7415dd4ee317a2da218bb",
@@ -29,7 +29,7 @@
       "sourceImageSha256": "7e3976430886541a969fa53166a383b241c54c280521520f95f3bff0b2ba94dd",
       "preview": "previews/hero-character.png",
       "tags": [
-        "zkp",
+        "hero",
         "character",
         "photographer",
         "lowpoly",
@@ -39,7 +39,7 @@
     },
     {
       "name": "hero-v7",
-      "label": "zkp · 多视图版",
+      "label": "V7 英雄角色",
       "file": "hero-v7.glb",
       "bytes": 863088,
       "sha256": "abe6bf09930a26dd3f6f580acb4680ec1a6e5328190198c4d981b79d6a2ca28f",
@@ -63,7 +63,7 @@
       "sourceImageSha256": null,
       "preview": "previews/hero-v7.png",
       "tags": [
-        "zkp",
+        "hero",
         "character",
         "v7",
         "multiview"
@@ -72,7 +72,7 @@
     },
     {
       "name": "hero-v18",
-      "label": "zkp",
+      "label": "V18 英雄角色",
       "file": "hero-v18.glb",
       "bytes": 737092,
       "sha256": "0f5d7c716770c6808e6643e37d93daaaea412e77120649bd2606de9f065ce3aa",
@@ -96,7 +96,7 @@
       "sourceImageSha256": "e09b968123f241853211e58866909cc36d7105c5ed64aadb31c7f6014b0b9788",
       "preview": "previews/hero-v18.png",
       "tags": [
-        "zkp",
+        "hero",
         "character",
         "v18",
         "multiview"
@@ -105,7 +105,7 @@
     },
     {
       "name": "cat-oscar",
-      "label": "oscar · 站姿",
+      "label": "Oscar · 燕尾服小猫",
       "file": "cat-oscar.glb",
       "bytes": 1271452,
       "sha256": "6173ac1606c2461c8d5b682ba83be21aecef81d7a18f403fb0d2a33e6a024213",
@@ -129,6 +129,7 @@
       "sourceImageSha256": "dcfafd1566ef73f23daa5a42c0c8a28c8d64db786b0ed195aff08f441518506e",
       "preview": "previews/cat-oscar.png",
       "tags": [
+        "cat",
         "oscar",
         "pet",
         "town",
@@ -139,18 +140,18 @@
     },
     {
       "name": "cat-oscar-sleep",
-      "label": "oscar",
+      "label": "Oscar · 睡着的燕尾服小猫",
       "file": "cat-oscar-sleep.glb",
-      "bytes": 1223644,
-      "sha256": "a74c4f25361fd262ac148085b6a16c3151b461da202e69b7a1c67d527f4a8d84",
+      "bytes": 1222896,
+      "sha256": "4e79ef6731a5459acf340581e19d3d4bc510ffe7f793253c6321653ee97f6a04",
       "triangles": 18520,
       "vertices": 24634,
       "meshes": 1,
       "materials": 1,
       "images": 3,
       "textures": 3,
-      "animated": true,
-      "animations": 1,
+      "animated": false,
+      "animations": 0,
       "provider": "tripo",
       "taskId": "b4fa8264-35dd-4ac9-8441-99d3396e8486",
       "taskType": "image_to_model",
@@ -163,49 +164,15 @@
       "sourceImageSha256": "43a8d9d1cd9720da9e171feb21c77722b63d6af0155e4e58cbb9c969b134657e",
       "preview": "previews/cat-oscar-sleep.png",
       "tags": [
+        "cat",
         "oscar",
         "pet",
         "town",
         "lowpoly",
         "character",
-        "sleep",
-        "animated"
+        "sleep"
       ],
-      "notes": "Oscar 睡觉版（面包猫卧睡）+ 4 秒呼吸循环：Seedream 5.0 Pro 设计图 → Tripo P1 image-to-3D（50 credits）；Tripo quadruped 绑定套在蜷缩姿势上会崩（已试），因此呼吸动画写在根节点（scale 1→1.013 + 4mm 起伏），页面自动播放。贴图 1024↓、法线 512↓，3.72MB → 1.17MiB。"
-    },
-    {
-      "name": "seaside-lady",
-      "label": "zc",
-      "file": "seaside-lady.glb",
-      "bytes": 1384836,
-      "sha256": "92806a516b1e63fcb9931a462c8bffac9a714700989004a55a13d52a879e171e",
-      "triangles": 8045,
-      "vertices": 24135,
-      "meshes": 1,
-      "materials": 1,
-      "images": 1,
-      "textures": 1,
-      "animated": false,
-      "animations": 0,
-      "provider": "tripo",
-      "taskId": "4cb4ddaf-5bdb-4720-b33c-7cfd14f03f3c",
-      "taskType": "image_to_model",
-      "modelVersion": "v3.1-20260211",
-      "credits": 40,
-      "createdAt": "2026-10-21T10:41:42.017508Z",
-      "completedAt": "2026-10-21T10:45:12.000000Z",
-      "sourceImage": "sources/seaside-lady.webp",
-      "sourceImageBytes": 93082,
-      "sourceImageSha256": "832adb412343f032744dc30d58479d8e39634e63f0b163a7927aa5510976268e",
-      "preview": "previews/seaside-lady.png",
-      "tags": [
-        "character",
-        "lowpoly",
-        "seaside",
-        "statue",
-        "faceted"
-      ],
-      "notes": "用户选定的 2D 稿（Lovart GPT Image 2 转绘）→ Tripo v3.1 smart_low_poly image-to-3D（task 4cb4ddaf，face_limit 5000，40 credits）；8,045 面，法线重写为逐面平直（faceted low-poly 观感），移除 normal / metallicRoughness 贴图、基础色降为 1024² JPEG，3.5MB → 1.38MB。"
+      "notes": "Oscar 睡觉版（面包猫卧睡）：Seedream 5.0 Pro 设计图 → Tripo P1 image-to-3D（50 credits）。闭眼、四爪收起、尾巴绕前，牛仔马甲拉链拉起、后背金色 Oscar、口鼻黑点保留；贴图 1024↓、法线 512↓，3.72MB → 1.17MiB。"
     }
   ]
 }
