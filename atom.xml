@@ -10,7 +10,25 @@
   <rights>All rights reserved 2026, kp</rights>
   <subtitle>The Universe of KP</subtitle>
   <title>KP</title>
-  <updated>2026-10-27T02:54:26.275Z</updated>
+  <updated>2026-10-31T04:10:00.000Z</updated>
+  <entry>
+    <author>
+      <name>kp</name>
+    </author>
+    <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
+    <category term="记事" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/"/>
+    <category term="时评" scheme="https://zkpeace.com/blog-cn/tags/%E6%97%B6%E8%AF%84/"/>
+    <category term="言论" scheme="https://zkpeace.com/blog-cn/tags/%E8%A8%80%E8%AE%BA/"/>
+    <category term="姆巴佩" scheme="https://zkpeace.com/blog-cn/tags/%E5%A7%86%E5%B7%B4%E4%BD%A9/"/>
+    <category term="蔡康永" scheme="https://zkpeace.com/blog-cn/tags/%E8%94%A1%E5%BA%B7%E6%B0%B8/"/>
+    <category term="鲁迅" scheme="https://zkpeace.com/blog-cn/tags/%E9%B2%81%E8%BF%85/"/>
+    <id>https://zkpeace.com/blog-cn/posts/84120/</id>
+    <link href="https://zkpeace.com/blog-cn/posts/84120/"/>
+    <published>2026-10-31T04:10:00.000Z</published>
+    <summary>十月将尽，有两件事：一个踢球的人笑了，一个主持节目的站了一个下午。说清“辱”与“罪”，以及论心定罪会把边界推到哪里</summary>
+    <title>蔡康永和姆巴佩</title>
+    <updated>2026-10-31T04:10:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>kp</name>
@@ -26,9 +44,9 @@
     <id>https://zkpeace.com/blog-cn/posts/52680/</id>
     <link href="https://zkpeace.com/blog-cn/posts/52680/"/>
     <published>2026-10-27T02:20:00.000Z</published>
-    <summary>把飞书任务接成可开工的 DSH 会话：同步、开工、回写整条链路，以及踩过的坑</summary>
+    <summary>把飞书任务接成可开工的 DSH 会话：同步、优先级、今日洞察、状态灯，以及踩过的坑</summary>
     <title>100 个 VibeCoding 项目之 飞书任务开成 DSH 会话</title>
-    <updated>2026-10-27T02:54:26.275Z</updated>
+    <updated>2026-10-30T07:01:31.000Z</updated>
   </entry>
   <entry>
     <author>
@@ -318,22 +336,5 @@
     </summary>
     <title>蜜蜂速查-速查表收集站</title>
     <updated>2026-10-23T11:16:48.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>kp</name>
-    </author>
-    <category term="生活" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/"/>
-    <category term="记事" scheme="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/"/>
-    <category term="太空" scheme="https://zkpeace.com/blog-cn/tags/%E5%A4%AA%E7%A9%BA/"/>
-    <category term="火箭" scheme="https://zkpeace.com/blog-cn/tags/%E7%81%AB%E7%AE%AD/"/>
-    <id>https://zkpeace.com/blog-cn/posts/25946/</id>
-    <link href="https://zkpeace.com/blog-cn/posts/25946/"/>
-    <published>2021-06-17T02:59:29.000Z</published>
-    <summary>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
-    </summary>
-    <title>神舟十二号任务公开情报</title>
-    <updated>2026-10-16T04:12:54.000Z</updated>
   </entry>
 </feed>

@@ -6,13 +6,27 @@
     <description>The Universe of KP</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, kp</copyright>
-    <lastBuildDate>Tue, 27 Oct 2026 02:54:26 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 04:10:00 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://zkpeace.com/blog-cn/rss2.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>蔡康永和姆巴佩</title>
+      <link>https://zkpeace.com/blog-cn/posts/84120/</link>
+      <description>十月将尽，有两件事：一个踢球的人笑了，一个主持节目的站了一个下午。说清“辱”与“罪”，以及论心定罪会把边界推到哪里</description>
+      <author>kp</author>
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
+      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/">记事</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E6%97%B6%E8%AF%84/">时评</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%A8%80%E8%AE%BA/">言论</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E5%A7%86%E5%B7%B4%E4%BD%A9/">姆巴佩</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E8%94%A1%E5%BA%B7%E6%B0%B8/">蔡康永</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E9%B2%81%E8%BF%85/">鲁迅</category>
+      <pubDate>Sat, 31 Oct 2026 04:10:00 GMT</pubDate>
+    </item>
+    <item>
       <title>100 个 VibeCoding 项目之 飞书任务开成 DSH 会话</title>
       <link>https://zkpeace.com/blog-cn/posts/52680/</link>
-      <description>把飞书任务接成可开工的 DSH 会话：同步、开工、回写整条链路，以及踩过的坑</description>
+      <description>把飞书任务接成可开工的 DSH 会话：同步、优先级、今日洞察、状态灯，以及踩过的坑</description>
       <author>kp</author>
       <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/">项目</category>
       <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/VibeCoding/">VibeCoding</category>
@@ -240,19 +254,6 @@
       <category domain="https://zkpeace.com/blog-cn/tags/%E9%A1%B9%E7%9B%AE/">项目</category>
       <category domain="https://zkpeace.com/blog-cn/tags/%E7%BD%91%E7%AB%99/">网站</category>
       <pubDate>Fri, 02 Jul 2021 04:21:11 GMT</pubDate>
-    </item>
-    <item>
-      <title>神舟十二号任务公开情报</title>
-      <link>https://zkpeace.com/blog-cn/posts/25946/</link>
-      <description>
-        <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
-      </description>
-      <author>kp</author>
-      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/">生活</category>
-      <category domain="https://zkpeace.com/blog-cn/categories/%E7%94%9F%E6%B4%BB/%E8%AE%B0%E4%BA%8B/">记事</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/%E5%A4%AA%E7%A9%BA/">太空</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/%E7%81%AB%E7%AE%AD/">火箭</category>
-      <pubDate>Thu, 17 Jun 2021 02:59:29 GMT</pubDate>
     </item>
   </channel>
 </rss>
