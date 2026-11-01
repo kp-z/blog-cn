@@ -8,7 +8,7 @@
       <link href="/blog-cn/posts/52680/"/>
       <url>/blog-cn/posts/52680/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><blockquote><p>⚠️ 声明：本篇的文字、配图、编辑和发布，全部由 AI 完成。</p></blockquote><p>10 月 27 日发过一版，后来按 0.10.0 补过几段。现在是 0.20.1。</p><p>这个项目做的事没变：飞书里的任务，在 DSH 右侧栏里排成一列，点「开工」就投进当前对话。</p><p>上一版写过的东西都还在：优先级、Session 状态灯、自动开工。插件自己的功能指南这一版按面板入口重排了一遍，分成六块——今日洞察、任务、评论同步、定时、文档写入、筛选，每块配整界面截图和面板细节图。下面顺着这个顺序走一遍，每块挑一张图，再说清它的边界。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-overview.png" alt="完整 DSH 界面：左侧导航与会话，中间新建的空会话，右侧「飞书」页签里是今日洞察和任务列表"></p><p>这些 DSH 截图来自隔离测试 Web Profile，数据是本地演示的「支付中台」项目、9 条任务，不是飞书回执；飞书侧那张评论图截自真实任务详情。</p><h2 id="🔌-授权还是交给-CLI">🔌 授权还是交给 CLI</h2><p>插件不自己接飞书 API。授权交给本机 CLI：默认是飞书官方的 <code>lark-cli</code>，在面板「认证」里一键装，浏览器里走一遍 OAuth，令牌由 CLI 保管和刷新，插件不另存。</p><p>公司内部的 <code>feishu-sync-cli</code> 收在准备卡的「高级」里，默认不引导，只有内网或私有源环境用得到。两套后端能力互通，设置里随时切。</p><p>官方后端也补全了：任务、文档、授权、评论、自定义字段、任务关系、工作区写回都走官方 Open API，不再依赖 Python 桥。唯一没对齐的是任务 v1 富文本 @：官方评论正文暂不支持，回复按纯文本发，面板会显式提示。</p><p>装法没变：DSH 里装工作区包 <code>packages/dsh-feishu</code>，启用它的 bundle，右侧栏点「飞书」。开工要宿主会话服务，定时要 DSH 自动化服务；缺了会明确报错，不自己替换宿主。</p><h2 id="🧠-今日洞察：能算的本地算，判断交给模型">🧠 今日洞察：能算的本地算，判断交给模型</h2><p>面板最上面是状态行：授权可用、插件版本、CLI 版本、上次同步，右边并排「配置」「认证」两个按钮。配置内容收进状态卡里展开，认证是 CLI 安装和授权步骤，两块互斥；未就绪时认证强制展开。</p><p>状态行下面是洞察卡。左边是今天的履约摘要：跟踪几条、哪条该先收尾，摘要里的 <code>T1</code> 可以直接点开；右边是任务状态环图，截图里已完成 1、在跑 5、未开始 3。点「展开详情」看问题清单、建议和更多图表。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-insight.png" alt="飞书面板顶部：状态行（授权可用 / v0.20.1 / CLI 版本 / 上次同步）下面是今日洞察卡，左边摘要，右边环图"></p><p>顶部的「早会同步 / 诊断 / 写入评论」按需生成：早会是口述稿，诊断给问题和建议，写入评论只把摘要写到当前绑定的任务上。</p><p>边界在 token 上。完成数、完成度、偏离、停滞这些本地统计不调模型；点「诊断 / 早会同步」才调。第一次打开没有 AI 缓存时可能自动生成一次，所以「打开面板」不等于零 token。</p><h2 id="🗂-任务卡：一张卡看清一条任务">🗂 任务卡：一张卡看清一条任务</h2><p>任务区标题行写着「筛选后的条数 / 总条数」，截图里是 8/9。每张卡第一行给三样东西：P0–P3 的优先级色条和徽标、稳定的 <code>T&lt;n&gt;</code> 编号、标题；下面是当前状态（未开工 / 已绑定 / 已开工 / 已完成）、截止时间、负责人头像、开始时间、定时与预期、工作区。</p><p>再往下是依赖关系和挂着的文档：依赖是实线（前置 → 本任务 → 后置），来源是虚线（从哪条派生），两者不混。底栏「完成 / 文档 / 同步 / 评论」直接处理这条任务，低频的「挂起」和「···」收在右边。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-tasks.png" alt="任务区：标题行 8/9，模板行「日常 / 全部 / 项目」，任务卡一张张往下排，当前会话卡高亮"></p><p>当前会话绑定的任务会高亮并置顶，编号 <code>T&lt;n&gt;</code> 稳定保存，刷新不会重排。</p><p>「开工」和「绑定」是两件事：开工是绑定之后再把任务投进当前会话；绑定只认领当前会话并同步命名，不投递开工指令。一条任务最多绑一条会话，一条会话也只属于一条任务，重复占用会被拒绝。</p><p>工作区按 ID 存 <code>{id, path, title}</code>，目录改名绑定不断；同名目录不做路径后缀猜测——agent 跑错代码库，比少开一次工贵得多。</p><p>边界：列表来自本地快照，不等于飞书实时全量清单。「完成」会写回飞书完成状态并尝试归档会话；「挂起」归档并停掉这条绑定会话，在清单的「处理状态」写上「挂起」，恢复后再人工决定是否开工。</p><h2 id="💬-评论同步：飞书手机端写的，会话里接">💬 评论同步：飞书手机端写的，会话里接</h2><p>先看飞书这一侧。就是普通的任务评论：截图里 T8-Game 的详情页有负责人发的「测试一下评论同步功能」，和补的「回复下我的评论」。手机端和桌面端走同一条任务评论接口，手机端发的也会出现在这里，同样会被插件同步。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-feishu-comments.png" alt="飞书侧任务详情：T8-Game 的评论时间线，同一个人连发两条，和桌面端看到的一样"></p><p>DSH 这边在「配置」→「同步规则」→「评论协作」。接收任务评论默认关闭，保存后生效。打开后按身份分开：</p><ul><li>任务负责人留言，选「处理请求」：评论投递到该任务绑定的 DSH 会话，由模型判断是不是工作指令，是就直接执行。</li><li>其他人留言，选「仅回复」：只回答当前任务相关的问题，不允许执行代码、命令或访问其它资料。</li></ul><p>每轮处理上限默认 5 条。回复通过出站账本关联原评论，带稳定评论 ID，避免重复发送和自循环；失败会留在「回复待发送」，可以手动重试。截图里的收件箱有 4 条：两条等待处理、一条已回复、一条回复待发送，失败原因是 <code>reply_to_comment_id</code> 不在同一资源下。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-comments.png" alt="评论协作设置：接收开关、负责人「处理请求」、其他人「仅回复」、每轮 5 条，下面是只读的评论收件箱"></p><p>回复默认走 Task v2 原生回复，不含 @；要用任务 v1 富文本 @ 作者，得选旧版接口，也需要旧版评论权限，不保证通知送达。</p><p>边界：接收默认关闭，只有「同步」会扫描新评论；收件箱是只读账本，刷新不触发同步或处理。能不能 @ 到人取决于飞书接口权限和通知设置，出站账本只保证不重复发送。</p><h2 id="⏰-定时：说人话，落到-DSH-自动化">⏰ 定时：说人话，落到 DSH 自动化</h2><p>任务卡上点「⏰ 定时」，弹层里直接说人话：「明天下午三点」「每隔一小时」「截止前两小时」。点「预览」先算给你看，截图里是 <code>2026-11-02 15:00 · 一次性</code>；确认再「保存」。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-schedule.png" alt="定时弹层：输入「明天下午三点」，预览下次 2026-11-02 15:00 · 一次性，下面一行写着保存后写进这条会话的 DSH 自动化任务"></p><p>它只写这条会话上的 DSH 自动化任务，到点由 DSH 把指令投进来。预览和保存走同一套时间解析，避免「预览 15:00、保存变 15:01」。</p><p>前提是先绑定会话，并且 profile 里有 DSH 自动化服务；没有会话不排期，也不退回本地。一次性触发跑完就结束，不会自动续下一次。<code>pause/resume</code> 不支持，会明确拒绝；免打扰、触发窗口、<code>until</code>、<code>maxRuns</code> 这些 DSH 不支持的参数保存时返回警告，不假装生效。</p><p>工作时段 09:00–19:00、午休 12:00–13:30、每日容量 360 分钟，都在「配置」→「同步规则」→「排期与定时」里改，时区默认 <code>Asia/Shanghai</code>。</p><h2 id="📄-文档写入：生成一篇，而不是搬运">📄 文档写入：生成一篇，而不是搬运</h2><p>「配置」→「文档生成」里配的是生成文档时的写作要求，默认「零废话、主体用表格、结构用 Mermaid」，也可以改成你们团队的格式。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-docs.png" alt="文档生成 Prompt：默认要求零废话、主体用表格、结构用 Mermaid，下面是保存和恢复默认"></p><p>在任务卡点「文档」→ 生成或更新，插件把任务描述、进展和评论整理好，写进飞书文档，再把链接回填到任务的「文档」字段；卡片上的 Tag 显示标题，点开就能看。</p><p>「文档监听」是另一件事：添加要跟踪的 wiki/docx 链接，同步时抓标题、修改时间和摘要；读全文用 <code>feishu_doc_read</code>，默认 8000 字符，上限 20000。</p><p>边界：生成文档会调用模型并真实创建或更新飞书文档，需要相应权限；标题和链接来自飞书返回值，不在本地伪造。桥接目前支持标题、基础富文本、代码和原生表格块，Mermaid 仍是代码文本，不会自动变成图片。更新失败时还可能新建一篇替代文档，操作前先核对用途。</p><h2 id="🔎-筛选：同组内-OR，跨组-AND">🔎 筛选：同组内 OR，跨组 AND</h2><p>任务标题行的「筛选」展开六个维度：完成状态、处理状态、推进状态、依赖状态、优先级、工作区。每组三态：不限、只看所选、排除所选；同组内任一命中，跨组全部满足，最后再叠一个关键词搜索。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-filter.png" alt="筛选面板：完成状态排除已完成、处理状态排除挂起，下面还有推进状态、依赖状态、优先级、工作区四组"></p><p>模板行是「日常 / 全部 / 项目 / ＋」。日常排除已完成和挂起，所以列表显示 8/9；全部不限；项目跟着当前会话的工作区走。「＋」新建模板，下面的「另存新方案」「保存到当前模板」「清空全部条件」「还原原始配置」「删除当前方案」各管一件事。</p><p>边界：筛选只影响面板列表，不改本地快照也不改飞书数据；规则存在当前浏览器里，换台机器要重配。</p><h2 id="🚧-边界">🚧 边界</h2><p>截图是 0.20.1 的界面，来自隔离测试 profile 加本地演示数据：没有为了截图运行模型、开工、提交绑定或写入远端，也没重做真实授权、写回和通知的验收。截图只证明入口和本地状态。</p><p>任务列表主要来自本地快照，不等于飞书实时全量清单。面板和 API 挂在宿主同域，没有额外鉴权，别把它当公网服务。一个 DSH_HOME 只有一份 <code>state.json</code>，两个实例同时跑，最后写的赢。</p><p>真实验收还得在专用清单里逐项走：授权与 scope、绑定和开工、定时记录与投递、文档和关系写回、评论账本。</p><h2 id="🌙-收尾">🌙 收尾</h2><p>这是 100 个 vibecoding 项目里的一个。打开 DSH，右侧栏第一条任务上大概还挂着定时和预期。点开工之前，先看一眼它有没有前置没完成。</p><p>飞书还是那个飞书，DSH 还是那个 DSH。中间那段复制粘贴，没了。</p><hr><p>参考：<a href="https://github.com/kp-z/dsh-dev-git-graph/tree/feat/dsh-feishu">dsh-feishu（插件源码与 README）</a></p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><blockquote><p>⚠️ 声明：本篇的文字、配图、编辑和发布，全部由 AI 完成。</p></blockquote><p>10 月 27 日发过一版，后来按 0.10.0 补过几段。现在是 0.20.1。</p><p>这个项目做的事没变：飞书里的任务，在 DSH 右侧栏里排成一列，点「开工」就投进当前对话。</p><p>上一版写过的东西都还在：优先级、Session 状态灯、自动开工。插件自己的功能指南这一版按面板入口重排了一遍，分成六块——今日洞察、任务、评论同步、定时、文档写入、筛选。下面顺着这个顺序走一遍，每块配一张整界面截图，再说清它的边界。</p><p>这些 DSH 截图来自隔离测试 Web Profile，数据是本地演示的「支付中台」项目、9 条任务，不是飞书回执；飞书侧那张评论图截自真实任务详情。</p><h2 id="🔌-授权还是交给-CLI">🔌 授权还是交给 CLI</h2><p>插件不自己接飞书 API。授权交给本机 CLI：默认是飞书官方的 <code>lark-cli</code>，在面板「认证」里一键装，浏览器里走一遍 OAuth，令牌由 CLI 保管和刷新，插件不另存。</p><p>公司内部的 <code>feishu-sync-cli</code> 收在准备卡的「高级」里，默认不引导，只有内网或私有源环境用得到。两套后端能力互通，设置里随时切。</p><p>官方后端也补全了：任务、文档、授权、评论、自定义字段、任务关系、工作区写回都走官方 Open API，不再依赖 Python 桥。唯一没对齐的是任务 v1 富文本 @：官方评论正文暂不支持，回复按纯文本发，面板会显式提示。</p><p>装法没变：DSH 里装工作区包 <code>packages/dsh-feishu</code>，启用它的 bundle，右侧栏点「飞书」。开工要宿主会话服务，定时要 DSH 自动化服务；缺了会明确报错，不自己替换宿主。</p><h2 id="🧠-今日洞察：能算的本地算，判断交给模型">🧠 今日洞察：能算的本地算，判断交给模型</h2><p>面板最上面是状态行：授权可用、插件版本、CLI 版本、上次同步，右边并排「配置」「认证」两个按钮。配置内容收进状态卡里展开，认证是 CLI 安装和授权步骤，两块互斥；未就绪时认证强制展开。</p><p>状态行下面是洞察卡。左边是今天的履约摘要：跟踪几条、哪条该先收尾，摘要里的 <code>T1</code> 可以直接点开；右边是任务状态环图，截图里已完成 1、在跑 5、未开始 3。点「展开详情」看问题清单、建议和更多图表。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-overview.png" alt="完整 DSH 界面：左侧导航 + 中间对话 + 右侧「飞书」插件（今日洞察 / 任务）"></p><p>顶部的「早会同步 / 诊断 / 写入评论」按需生成：早会是口述稿，诊断给问题和建议，写入评论只把摘要写到当前绑定的任务上。</p><p>边界在 token 上。完成数、完成度、偏离、停滞这些本地统计不调模型；点「诊断 / 早会同步」才调。第一次打开没有 AI 缓存时可能自动生成一次，所以「打开面板」不等于零 token。</p><h2 id="🗂-任务卡：一张卡看清一条任务">🗂 任务卡：一张卡看清一条任务</h2><p>任务区标题行写着「筛选后的条数 / 总条数」，截图里是 8/9。每张卡第一行给三样东西：P0–P3 的优先级色条和徽标、稳定的 <code>T&lt;n&gt;</code> 编号、标题；下面是当前状态（未开工 / 已绑定 / 已开工 / 已完成）、截止时间、负责人头像、开始时间、定时与预期、工作区。</p><p>再往下是依赖关系和挂着的文档：依赖是实线（前置 → 本任务 → 后置），来源是虚线（从哪条派生），两者不混。底栏「完成 / 文档 / 同步 / 评论」直接处理这条任务，低频的「挂起」和「···」收在右边。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-gui-03-tasks.png" alt="任务：优先级、状态、截止、负责人、开始时间、定时、预期、工作区、关系、文档标签"></p><p>当前会话绑定的任务会高亮并置顶，编号 <code>T&lt;n&gt;</code> 稳定保存，刷新不会重排。</p><p>「开工」和「绑定」是两件事：开工是绑定之后再把任务投进当前会话；绑定只认领当前会话并同步命名，不投递开工指令。一条任务最多绑一条会话，一条会话也只属于一条任务，重复占用会被拒绝。</p><p>工作区按 ID 存 <code>{id, path, title}</code>，目录改名绑定不断；同名目录不做路径后缀猜测——agent 跑错代码库，比少开一次工贵得多。</p><p>边界：列表来自本地快照，不等于飞书实时全量清单。「完成」会写回飞书完成状态并尝试归档会话；「挂起」归档并停掉这条绑定会话，在清单的「处理状态」写上「挂起」，恢复后再人工决定是否开工。</p><h2 id="💬-评论同步：飞书手机端写的，会话里接">💬 评论同步：飞书手机端写的，会话里接</h2><p>先看飞书这一侧。就是普通的任务评论：截图里 T8-Game 的详情页有负责人发的「测试一下评论同步功能」，和补的「回复下我的评论」。手机端和桌面端走同一条任务评论接口，手机端发的也会出现在这里，同样会被插件同步。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-feishu-comments.png" alt="飞书侧：任务详情里的评论时间线（手机端与桌面端同源）"></p><p>DSH 这边在「配置」→「同步规则」→「评论协作」。接收任务评论默认关闭，保存后生效。打开后按身份分开：</p><ul><li>任务负责人留言，选「处理请求」：评论投递到该任务绑定的 DSH 会话，由模型判断是不是工作指令，是就直接执行。</li><li>其他人留言，选「仅回复」：只回答当前任务相关的问题，不允许执行代码、命令或访问其它资料。</li></ul><p>每轮处理上限默认 5 条。回复通过出站账本关联原评论，带稳定评论 ID，避免重复发送和自循环；失败会留在「回复待发送」，可以手动重试。截图里的收件箱有 4 条：两条等待处理、一条已回复、一条回复待发送，失败原因是 <code>reply_to_comment_id</code> 不在同一资源下。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-gui-05-comments.png" alt="DSH 侧：右侧「飞书」→ 配置 → 同步规则 → 评论协作与收件箱"></p><p>回复默认走 Task v2 原生回复，不含 @；要用任务 v1 富文本 @ 作者，得选旧版接口，也需要旧版评论权限，不保证通知送达。</p><p>边界：接收默认关闭，只有「同步」会扫描新评论；收件箱是只读账本，刷新不触发同步或处理。能不能 @ 到人取决于飞书接口权限和通知设置，出站账本只保证不重复发送。</p><h2 id="⏰-定时：说人话，落到-DSH-自动化">⏰ 定时：说人话，落到 DSH 自动化</h2><p>任务卡上点「⏰ 定时」，弹层里直接说人话：「明天下午三点」「每隔一小时」「截止前两小时」。点「预览」先算给你看，截图里是 <code>2026-11-02 15:00 · 一次性</code>；确认再「保存」。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-gui-06-schedule.png" alt="定时：任务卡「定时」弹层，输入自然语言 → 预览下次执行"></p><p>它只写这条会话上的 DSH 自动化任务，到点由 DSH 把指令投进来。预览和保存走同一套时间解析，避免「预览 15:00、保存变 15:01」。</p><p>前提是先绑定会话，并且 profile 里有 DSH 自动化服务；没有会话不排期，也不退回本地。一次性触发跑完就结束，不会自动续下一次。<code>pause/resume</code> 不支持，会明确拒绝；免打扰、触发窗口、<code>until</code>、<code>maxRuns</code> 这些 DSH 不支持的参数保存时返回警告，不假装生效。</p><p>工作时段 09:00–19:00、午休 12:00–13:30、每日容量 360 分钟，都在「配置」→「同步规则」→「排期与定时」里改，时区默认 <code>Asia/Shanghai</code>。</p><h2 id="📄-文档写入：生成一篇，而不是搬运">📄 文档写入：生成一篇，而不是搬运</h2><p>「配置」→「文档生成」里配的是生成文档时的写作要求，默认「零废话、主体用表格、结构用 Mermaid」，也可以改成你们团队的格式。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-gui-07-docs.png" alt="文档写入：配置 → 文档生成 Prompt"></p><p>在任务卡点「文档」→ 生成或更新，插件把任务描述、进展和评论整理好，写进飞书文档，再把链接回填到任务的「文档」字段；卡片上的 Tag 显示标题，点开就能看。</p><p>「文档监听」是另一件事：添加要跟踪的 wiki/docx 链接，同步时抓标题、修改时间和摘要；读全文用 <code>feishu_doc_read</code>，默认 8000 字符，上限 20000。</p><p>边界：生成文档会调用模型并真实创建或更新飞书文档，需要相应权限；标题和链接来自飞书返回值，不在本地伪造。桥接目前支持标题、基础富文本、代码和原生表格块，Mermaid 仍是代码文本，不会自动变成图片。更新失败时还可能新建一篇替代文档，操作前先核对用途。</p><h2 id="🔎-筛选：同组内-OR，跨组-AND">🔎 筛选：同组内 OR，跨组 AND</h2><p>任务标题行的「筛选」展开六个维度：完成状态、处理状态、推进状态、依赖状态、优先级、工作区。每组三态：不限、只看所选、排除所选；同组内任一命中，跨组全部满足，最后再叠一个关键词搜索。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/52680/v021-gui-04-filter.png" alt="筛选：六个维度条件 + 模板行"></p><p>模板行是「日常 / 全部 / 项目 / ＋」。日常排除已完成和挂起，所以列表显示 8/9；全部不限；项目跟着当前会话的工作区走。「＋」新建模板，下面的「另存新方案」「保存到当前模板」「清空全部条件」「还原原始配置」「删除当前方案」各管一件事。</p><p>边界：筛选只影响面板列表，不改本地快照也不改飞书数据；规则存在当前浏览器里，换台机器要重配。</p><h2 id="🚧-边界">🚧 边界</h2><p>截图是 0.20.1 的界面，来自隔离测试 profile 加本地演示数据：没有为了截图运行模型、开工、提交绑定或写入远端，也没重做真实授权、写回和通知的验收。截图只证明入口和本地状态。</p><p>任务列表主要来自本地快照，不等于飞书实时全量清单。面板和 API 挂在宿主同域，没有额外鉴权，别把它当公网服务。一个 DSH_HOME 只有一份 <code>state.json</code>，两个实例同时跑，最后写的赢。</p><p>真实验收还得在专用清单里逐项走：授权与 scope、绑定和开工、定时记录与投递、文档和关系写回、评论账本。</p><h2 id="🌙-收尾">🌙 收尾</h2><p>这是 100 个 vibecoding 项目里的一个。打开 DSH，右侧栏第一条任务上大概还挂着定时和预期。点开工之前，先看一眼它有没有前置没完成。</p><p>飞书还是那个飞书，DSH 还是那个 DSH。中间那段复制粘贴，没了。</p><hr><p>参考：<a href="https://github.com/kp-z/dsh-dev-git-graph/tree/feat/dsh-feishu">dsh-feishu（插件源码与 README）</a></p>]]></content>
       
       
       <categories>
@@ -344,9 +344,9 @@
       
         <tags>
             
-            <tag> 生活 </tag>
-            
             <tag> 测评 </tag>
+            
+            <tag> 生活 </tag>
             
             <tag> 购物 </tag>
             
@@ -375,9 +375,9 @@
       
         <tags>
             
-            <tag> 生活 </tag>
-            
             <tag> 测评 </tag>
+            
+            <tag> 生活 </tag>
             
             <tag> 购物 </tag>
             
@@ -423,7 +423,7 @@
       <link href="/blog-cn/posts/34388/"/>
       <url>/blog-cn/posts/34388/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>日记 2022年4月16日<br>上海市  18°C，大部晴朗</p>    <div id="aplayer-IZJaTxhP" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="28700552" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-mini="true"    ></div><p>最近一直在家看剧，看了《上海堡垒》，已经改编成电视剧了，真的是史诗级的烂。还看了部神话片，大概的意思是说人间妖魔横行，天庭派大将清陵带兵镇压，但是清陵手段残暴，为了完成天庭的任务，不惜迫害凡人，生灵涂炭，人间众生敢怒不敢言，冥界大门已开，妖魔无穷尽也，凡人的苦难无穷尽也。此时人们又想起了游历外界的小仙宫村。话说这宫村本只是三两小厮供奉的村口小仙，天魔刑官降生人间之时，竟然提出了与魔共生之策，遭到天人两界口诛笔伐，被放逐至三界之外。只是现在这天庭对清陵百般袒护，看似完全没有宽恕宫村之意。天庭为何非清陵不可？宫村能否重返三界？天魔刑官又会不会再次进化呢？故事越发的扑所迷离。</p><p>为了缓解最近再重刷《武林外传》，主题曲是真好听，记录一下歌词。</p><div class="note simple"><p>自打盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>从那盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>希望永远种在你心里</p></div><p>好了不说了想去华润万家买袋溜溜梅吃吃了。</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>日记 2022年4月16日<br>上海市  18°C，大部晴朗</p>    <div id="aplayer-pMUTPWzN" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="28700552" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-mini="true"    ></div><p>最近一直在家看剧，看了《上海堡垒》，已经改编成电视剧了，真的是史诗级的烂。还看了部神话片，大概的意思是说人间妖魔横行，天庭派大将清陵带兵镇压，但是清陵手段残暴，为了完成天庭的任务，不惜迫害凡人，生灵涂炭，人间众生敢怒不敢言，冥界大门已开，妖魔无穷尽也，凡人的苦难无穷尽也。此时人们又想起了游历外界的小仙宫村。话说这宫村本只是三两小厮供奉的村口小仙，天魔刑官降生人间之时，竟然提出了与魔共生之策，遭到天人两界口诛笔伐，被放逐至三界之外。只是现在这天庭对清陵百般袒护，看似完全没有宽恕宫村之意。天庭为何非清陵不可？宫村能否重返三界？天魔刑官又会不会再次进化呢？故事越发的扑所迷离。</p><p>为了缓解最近再重刷《武林外传》，主题曲是真好听，记录一下歌词。</p><div class="note simple"><p>自打盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>从那盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>希望永远种在你心里</p></div><p>好了不说了想去华润万家买袋溜溜梅吃吃了。</p>]]></content>
       
       
       <categories>
@@ -694,11 +694,11 @@
       
         <tags>
             
+            <tag> 软件 </tag>
+            
             <tag> 手机 </tag>
             
             <tag> 设计 </tag>
-            
-            <tag> 软件 </tag>
             
         </tags>
       
@@ -725,9 +725,9 @@
       
         <tags>
             
-            <tag> 设计 </tag>
-            
             <tag> 软件 </tag>
+            
+            <tag> 设计 </tag>
             
             <tag> 观点 </tag>
             
@@ -798,37 +798,6 @@
     
     
     <entry>
-      <title>宿舍门口的自然保护区：Messdorfer Feld</title>
-      <link href="/blog-cn/posts/51440/"/>
-      <url>/blog-cn/posts/51440/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><blockquote><p>我的宿舍出门右拐有一块不算小的自然保护区或者说是农田,春天的时候的谷物、树木和鲜花郁郁葱葱,赏心悦目. 但是秋天,麦子收了,树枯了,身在其中会感觉稍微有点点荒凉,所以和老哥们策策挑了个好天气,拿着我刚买不久的小飞机,换个角度看了下这块土地.</p></blockquote><p><video src='https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/%E5%AE%BF%E8%88%8D%E9%97%A8%E5%8F%A3%E7%9A%84%E7%94%B0%E9%87%8E.MOV' type='video/mov' width='100%' controls="controls" preload="auto" height='100%'></video></p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/IMG_6381.JPG" alt=""><br><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/DJI_0134.JPEG" alt=""></p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/1225F609-BEA3-4BA0-A20C-EEB1C578A4F3_1_105_c.jpeg" alt=""><br><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/CFAD3555-29AD-4B7A-9F4F-C46617772A03_1_105_c.jpeg" alt=""><br><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/IMG_6382.JPG" alt=""></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活 </category>
-          
-          <category> 记事 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 德国 </tag>
-            
-            <tag> 摄影 </tag>
-            
-            <tag> 视频 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>在太阳系了里转一圈</title>
       <link href="/blog-cn/posts/19980/"/>
       <url>/blog-cn/posts/19980/</url>
@@ -852,6 +821,37 @@
             <tag> 天文 </tag>
             
             <tag> 太空 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>宿舍门口的自然保护区：Messdorfer Feld</title>
+      <link href="/blog-cn/posts/51440/"/>
+      <url>/blog-cn/posts/51440/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><blockquote><p>我的宿舍出门右拐有一块不算小的自然保护区或者说是农田,春天的时候的谷物、树木和鲜花郁郁葱葱,赏心悦目. 但是秋天,麦子收了,树枯了,身在其中会感觉稍微有点点荒凉,所以和老哥们策策挑了个好天气,拿着我刚买不久的小飞机,换个角度看了下这块土地.</p></blockquote><p><video src='https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/%E5%AE%BF%E8%88%8D%E9%97%A8%E5%8F%A3%E7%9A%84%E7%94%B0%E9%87%8E.MOV' type='video/mov' width='100%' controls="controls" preload="auto" height='100%'></video></p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/IMG_6381.JPG" alt=""><br><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/DJI_0134.JPEG" alt=""></p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/1225F609-BEA3-4BA0-A20C-EEB1C578A4F3_1_105_c.jpeg" alt=""><br><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/CFAD3555-29AD-4B7A-9F4F-C46617772A03_1_105_c.jpeg" alt=""><br><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/IMG_6382.JPG" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+          <category> 记事 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 德国 </tag>
+            
+            <tag> 摄影 </tag>
+            
+            <tag> 视频 </tag>
             
         </tags>
       
@@ -1347,9 +1347,9 @@
       
         <tags>
             
-            <tag> 软件 </tag>
-            
             <tag> mac </tag>
+            
+            <tag> 软件 </tag>
             
             <tag> 推荐 </tag>
             
