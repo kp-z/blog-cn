@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>👾 一个小小的胜利</title>
+      <link href="/blog-cn/posts/72089/"/>
+      <url>/blog-cn/posts/72089/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><blockquote><p>⚠️ 声明：本篇的文字、配图、编辑和发布，全部由 AI 完成。</p></blockquote><p>从今年年初到现在，写软件的路子变了一次。变得有多厉害，我拿一件小事说。</p><p>公司里一次内部竞争，一个项目替掉了另一个做了八年的项目。要搁去年，我会说这是技术上的胜负；今年不敢这么说了。那八年的东西，不是输给一个新项目，是输给一套新做法。这叫适者生存——不是强的赢，是适的赢。</p><p>我不敢把话说死，先记下来，当个猜。也不是所有软件都算。我说的是那种要替人做判断的软件——它得听懂你在说什么，替你想下一步。别的软件未必。</p><h2 id="中间那层">中间那层</h2><p>把人的意思，变成机器的动作，这件事没变过，变的是中间那一层。这半年，这一层被模型接走了。</p><p>以前那一层，是人写的规则：如果这样，就那样。软件的样子，就是这些规则摞起来的样子。所以本事在写规则——想全，写对，改得动；语法要熟，架构要稳，bug 能复现，能查，改一行就好。</p><p>现在不一样了：你把话说明白，规则由它现想。</p><p>失败的样子先变了：以前 bug 是一行写错，能复现；现在它成了一种概率——同一句话问两遍，答案可能不一样，同一个任务跑两遍，一遍成，一遍不成。</p><p>成本跟着翻了个面：以前贵的是实现——排期、编码、联调；现在实现便宜了，贵的是两样：把「要什么」说明白，把「对不对」验出来。</p><p>说不清的东西，就查不了；查不了，就没法改。软件的难处，从「想全」变成了「兜住」。</p><h2 id="谁来做，也变了">谁来做，也变了</h2><p>被接走的不只是「怎么写」，还有「谁来做」。</p><p>以前做一件事，链路是：业务有需求，来找平台方，开会，讲一遍；平台方回去理解，画图，排期，开发；交付那天，业务说，不是这个意思，再开会，再改。一圈下来，力气大半花在把话从一个脑子搬到另一个脑子里。那会儿平台方的本事，一半在技术，一半在懂业务。</p><p>现在这条链路短了。业务想到一件事，可以自己在平台上做：把上下文给它，把工具接上，它自己跑，自己看结果，不对再跑一遍。平台方不必懂那个业务，也不必跟业务掰扯需求。</p><p>那平台方干什么？管那层兜住它的东西：上下文给得对，工具能用，权限拦得住，错了查得出，好坏能量。以前平台方交付「替业务做好的东西」，现在交付「让业务自己能做的东西」；中间那一段翻译，没了。</p><h2 id="重点是上下文">重点是上下文</h2><p>那层兜住它的东西，现在叫 harness——马具，套在马身上，让它能拉车的那一整套。名字是借的，事情是实的：这一层，说到底是上下文。</p><p>上下文不是提示词里塞的那几段字。它是做决定时，手里有的全部东西：你是谁，在跟谁打交道，这件事之前发生过什么，有哪些规矩，你有权做什么，目标是什么，眼下能选哪几条路，做完写回哪里。对模型来说，这就是它一次决定里能看到的全部世界。把它想成一句 prompt，就想小了。</p><p>举个例子：一个客服 agent 要回一句话——这个客户上个月退过货，这单是急件，他有权限打折，但不能送赠品。这三件事，不在提示词里，在上下文里。给漏一件，它回出来的话就漂亮而错。</p><p>模型本身你改不了——权重不在你手里，它强不强，是别人的事；你能改的只有四样：给它看什么，让它做什么，允许它动什么，结果怎么回来。这四样，全是上下文。</p><p>所以设计软件的重心挪了：以前想规则，现在想它该知道什么、不该知道什么、知道了能干什么、干完留下什么。规则还在，只是从代码里挪进了上下文里。</p><p>上下文也不是越多越好。窗口有限，越长越贵、越慢；太长了，中间的东西还会被忽略，整段会烂掉。所以要取，要裁，要压，要交接——这不是修辞，是每天要干的活。</p><h2 id="台子会攒东西">台子会攒东西</h2><p>上下文要是一回回现拼，谁都养不起。</p><p>所以它得攒住，攒成两层：一层是攒下来的，做过的业务，固化成代码、工具、流程，再来同样的单子，走这层，不烧 token；另一层是现想的，没做过的事，才请模型现场推，这里才花 token。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs mermaid">flowchart TD<br>  W[一件事] --&gt; Q&#123;做过没有&#125;<br>  Q --&gt;|做过| P[沉淀层&lt;br/&gt;代码 · 工具 · 流程&lt;br/&gt;不烧 token]<br>  Q --&gt;|没做过| M[模型现想&lt;br/&gt;烧 token]<br>  M --&gt;|跑通了就固化| P<br>  P --&gt; A[机器的动作]<br>  M --&gt; A<br>  A --&gt; H[harness 兜住&lt;br/&gt;上下文 · 权限 · 退路 · 验证 · 账]<br></code></pre></td></tr></table></figure><p>于是 token 不是天天烧的，只在开发和做新业务的时候烧。代码也不是不写了，是写的地方变了：从写业务，变成写沉淀。</p><p>这道理不新鲜：Sutton 早写过，别手写那些机器迟早会自己学会的东西。Anthropic 的人还补了一刀：harness 里每个零件，都是对「模型做不到什么」的假设；模型一升级，假设就可能过期——他们换了一代模型，原先必须的步骤真就自己删掉了。</p><p>所以攒下来的不是补丁：攒，是把稳的业务做成资产；补丁，是模型哪里不行贴一块，马一换代就过期。一个是存款，一个是欠条。</p><h2 id="那这层会不会被模型吞掉">那这层会不会被模型吞掉</h2><p>攒着攒着，问题就来了：这些东西，模型自己会不会长出来？</p><p>会变薄，不会没有。模型越强，台子上的零件越少；可有几样东西，不是聪明能解决的。</p><p>责任：谁授权，出事谁兜，是组织和法律的事。接口：模型动不了你的库、你的钱、你的车，得有人接进真实系统。标准：什么算对，是业务定的，模型自判偏向自己。账：token、延迟、预算，模型厂商不管你。</p><p>所以「被吃掉」更像「被标准化」：云厂商把 runtime 做成标准件，自己搭台子的活儿缩到组装和守约束。</p><p>也是在这儿，得把范围说清楚：游戏、社交、电商，AI 是零件，接上就行；会变成 harness 的，是拿对话和判断当骨架的那部分——助手、搜索、创作。SaaS 只是先撞上来的那批。</p><h2 id="以后怎么开发">以后怎么开发</h2><p>如果只把前面收成三句：中间那层换了，从规则换成了上下文；成本翻了个面，实现便宜了，描述和验收贵了；台子会攒东西，也会被标准化，自建最后剩的是约束与验证。</p><p>落到手上，大概是这么几条。</p><p>先想上下文，再想代码：你写的不是规则，是它该知道什么、不该知道什么。</p><p>能确定的事，攒下来——做熟的固化成代码、工具、流程，只有没做过的，才让模型现场想。给错留退路：权限拦住，兜底留好，能回滚；不确定的系统，安全来自退路，不来自正确。</p><p>让它能被验证——记录能回放，指标能导出，用例能塞进去；不然谈不上改进，只能许愿。钱要早算：token、延迟、并发是设计参数，不是月底的账。</p><p>人放在该停的地方：什么时候自己跑，什么时候停下来等人，判断权归业务。最后一条是给自己留的：手从「会操作」换到「会判断」——语法和框架在贬值，架构、验证、问题定义在升值；技能不是枷锁，把技能当身份才是。</p><p>软件统治世界那句话，也得换个主语：统治世界的不是「软件」，是把意图变成可执行系统的能力。软件只是它这一代的样子。</p><h2 id="那个小小的胜利">那个小小的胜利</h2><p>想清楚这些，再回头看那个八年，就只是一个很小的胜利。那个项目现在不在我们的路线图里了。它输的不是功能，也不是谁更聪明；它是在旧范式里做到最好的一批：业务吃得深，补丁打得稳，八年没出大事。可范式一换，做得最好，也还是旧的做法。</p><p>它替人把业务做了八年，却没把本事留在机器里；新东西反过来，本事是它的，业务是别人的。</p><p>这就是那个小小的胜利：换的不是功能，是做法。它小，因为不证明谁强，只证明谁先适应；它不小，因为从那以后，写软件的力气，从「写逻辑」挪到了「搭台子、攒东西」。</p><p>我常想起一句别人讲的话：人们只记得赤兔，不会记得赤兔的马鞍——这话我认，认得不大痛快：马跑赢了，功劳记在马身上，鞍没人看。</p><p>可鞍要是没打好，摔下来的是马上的人。</p><p>所以这胜利小得很，小到不会有人把它写进周报。可它就在那儿：那副鞍，合身。</p><p>（附记：这篇按王小波的假设立论写——假设推进，自嘲，官方词照用，冷收束。）</p><h2 id="参考">参考</h2><ul><li>Rich Sutton,《The Bitter Lesson》, 2019. <a href="https://www.incompleteideas.net/IncIdeas/BitterLesson.html">https://www.incompleteideas.net/IncIdeas/BitterLesson.html</a></li><li>Anthropic,《Harness design for long-running apps》. <a href="https://www.anthropic.com/research/harness-design-long-running-apps">https://www.anthropic.com/research/harness-design-long-running-apps</a></li><li>Lee &amp; See,《Trust in Automation: Designing for Appropriate Reliance》, 2004. <a href="https://journals.sagepub.com/doi/10.1518/hfes.46.1.50_30392">https://journals.sagepub.com/doi/10.1518/hfes.46.1.50_30392</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> AI </tag>
+            
+            <tag> AI生成 </tag>
+            
+            <tag> harness </tag>
+            
+            <tag> 开发范式 </tag>
+            
+            <tag> 王小波 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>👾 100 个 VibeCoding 项目之 AI 接管小红书</title>
       <link href="/blog-cn/posts/73051/"/>
       <url>/blog-cn/posts/73051/</url>
@@ -423,7 +456,7 @@
       <link href="/blog-cn/posts/34388/"/>
       <url>/blog-cn/posts/34388/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>日记 2022年4月16日<br>上海市  18°C，大部晴朗</p>    <div id="aplayer-uSUrycTG" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="28700552" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-mini="true"    ></div><p>最近一直在家看剧，看了《上海堡垒》，已经改编成电视剧了，真的是史诗级的烂。还看了部神话片，大概的意思是说人间妖魔横行，天庭派大将清陵带兵镇压，但是清陵手段残暴，为了完成天庭的任务，不惜迫害凡人，生灵涂炭，人间众生敢怒不敢言，冥界大门已开，妖魔无穷尽也，凡人的苦难无穷尽也。此时人们又想起了游历外界的小仙宫村。话说这宫村本只是三两小厮供奉的村口小仙，天魔刑官降生人间之时，竟然提出了与魔共生之策，遭到天人两界口诛笔伐，被放逐至三界之外。只是现在这天庭对清陵百般袒护，看似完全没有宽恕宫村之意。天庭为何非清陵不可？宫村能否重返三界？天魔刑官又会不会再次进化呢？故事越发的扑所迷离。</p><p>为了缓解最近再重刷《武林外传》，主题曲是真好听，记录一下歌词。</p><div class="note simple"><p>自打盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>从那盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>希望永远种在你心里</p></div><p>好了不说了想去华润万家买袋溜溜梅吃吃了。</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>日记 2022年4月16日<br>上海市  18°C，大部晴朗</p>    <div id="aplayer-SbUSuZmV" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="28700552" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-mini="true"    ></div><p>最近一直在家看剧，看了《上海堡垒》，已经改编成电视剧了，真的是史诗级的烂。还看了部神话片，大概的意思是说人间妖魔横行，天庭派大将清陵带兵镇压，但是清陵手段残暴，为了完成天庭的任务，不惜迫害凡人，生灵涂炭，人间众生敢怒不敢言，冥界大门已开，妖魔无穷尽也，凡人的苦难无穷尽也。此时人们又想起了游历外界的小仙宫村。话说这宫村本只是三两小厮供奉的村口小仙，天魔刑官降生人间之时，竟然提出了与魔共生之策，遭到天人两界口诛笔伐，被放逐至三界之外。只是现在这天庭对清陵百般袒护，看似完全没有宽恕宫村之意。天庭为何非清陵不可？宫村能否重返三界？天魔刑官又会不会再次进化呢？故事越发的扑所迷离。</p><p>为了缓解最近再重刷《武林外传》，主题曲是真好听，记录一下歌词。</p><div class="note simple"><p>自打盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>从那盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>希望永远种在你心里</p></div><p>好了不说了想去华润万家买袋溜溜梅吃吃了。</p>]]></content>
       
       
       <categories>
@@ -694,11 +727,11 @@
       
         <tags>
             
-            <tag> 软件 </tag>
-            
             <tag> 手机 </tag>
             
             <tag> 设计 </tag>
+            
+            <tag> 软件 </tag>
             
         </tags>
       
@@ -725,9 +758,9 @@
       
         <tags>
             
-            <tag> 软件 </tag>
-            
             <tag> 设计 </tag>
+            
+            <tag> 软件 </tag>
             
             <tag> 观点 </tag>
             
@@ -798,37 +831,6 @@
     
     
     <entry>
-      <title>在太阳系了里转一圈</title>
-      <link href="/blog-cn/posts/19980/"/>
-      <url>/blog-cn/posts/19980/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p><img src="https://raw.githubusercontent.com/Uzizkp/image-host/master/img/picgo/20210822212107.png" alt="https://raw.githubusercontent.com/Uzizkp/image-host/master/img/picgo/20210822212107.png"></p><p>最近在读一本网络小说叫《重生之超级战舰》，今天正式弃了。</p><p>这书故事还算有趣，但是根本读不下去，文学性太差了，读到走出太阳系之后实在坚持不下去了，因此只对度过的部分写一下感受。全片只有一个角色的设定，让本书只能靠宇宙探索中的新奇情节来吸引读者，全篇都是内心独白，和环境描述，没有人物关系，也没有高潮迭起的故事线。</p><p>虽然被本书标为“硬”科幻小说，对一个有一定理科背景的我来说，没有感觉到哪里真的“硬”，完全就是各种物理名词的堆砌和滥用，当然我也不懂物理，但是本书中的物理概念或者说科学概念好像并没有什么特别硬核的表述，例如书中提到可以使钢材变异的辐射生物“木灵”，描述其特性时仅仅就是“辐射使材料变异”这种等级，完全达不到我心中真正硬科幻的水平，我觉得”硬科幻“最起码应该编一下某项科学现象或者应用的潜在的科学基础或者映射出此科技大概的发展脉络才能真的“硬”起来，比如说《三体》第一部中地球往事中描述的纳米级钢丝，虽然现实理论上不太可能，但是最起码有一个让不太了解原理的人有一种“是那么回事”的感觉。</p><p>因此等到主角出了太阳系我就不接着走了，太无聊了。但是也跟着作者在太阳系转了一圈，也学到了一些天文学的知识，接下来就记录一下，巩固一下基础知识点。（图片来源于网络）</p><h2 id="太阳系结构图">太阳系结构图</h2><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212358.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212358.jpg"></p><h2 id="太阳">太阳</h2><p>太阳系中所有天体都围绕太阳这颗恒星运转；第一个证明这点的人是意大利天文学家伽利略·伽利莱。</p><p><img src="https://raw.githubusercontent.com/Uzizkp/image-host/master/img/picgo/20210822212344.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212358.jpg"></p><h2 id="八大行星">八大行星</h2><h3 id="水星Mercury">水星Mercury</h3><p>水星是八大行星中最小的一个，水星上的温差极大：-180摄氏度到430摄氏度；水星上的一年等于地球上的88天。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212504.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212504.jpg"></p><h3 id="金星-Venus"><strong>金星 Venus</strong></h3><p>金星以顺时针方向自转，太阳西升东落；自转速度非常缓慢：金星上的一天等于地球上的243天。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212558.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212558.jpg"></p><h3 id="地球-Earth"><strong>地球 Earth</strong></h3><p>地球是人来已知的唯一有生命存在的星球，大约71%的面积被水覆盖。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212619.jpeg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212619.jpeg"></p><h3 id="火星-Mars"><strong>火星 Mars</strong></h3><p>火星是岩石星球，它有两颗卫星。它的土壤和大气中富含铁矿物，因此呈红色。火星上的一年约等于地球上687天。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212730.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212730.jpg"></p><h3 id="木星-Jupiter"><strong>木星 Jupiter</strong></h3><p>木星上的一年约等于地球上的12年。它自传很快，每10小时自转一圈，因此能产生强风。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212803.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212803.jpg"></p><h3 id="土星-Saturn"><strong>土星 Saturn</strong></h3><p>土星是气态巨行星，至少有62颗卫星和7层光环，光环大约有10米厚；土星上的风速是地球上的5倍，这使土星看上去就想有一条金黄色的云带。土星上的一年约等于地球上的29年半。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212829.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212829.jpg"></p><h3 id="天王星-Uranus"><strong>天王星 Uranus</strong></h3><p>天王星是冰质巨行星，有13层光环，它侧躺着自转，自转方向为顺时针。天王星上的一年约等于地球上的84年。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212849.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212849.jpg"></p><h3 id="海王星-Neptune">海王星 Neptune</h3><p>海王星也是一颗冰质巨行星，按照行星与太阳的距离排列海王星是第八颗行星，直径上第四大行星，质量上第三大行星。它的亮度仅为7.85等，只有在天文望远镜里才能看到它。由于它那荧荧的淡蓝色光，所以西方人用罗马神话中的海神——“尼普顿”的名字来称呼它。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212925.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212925.jpg"></p><h2 id="五颗被认证的矮行星">五颗被认证的矮行星</h2><p>太阳系有5颗被认证的爱行星：谷神星，冥王星，阋神星，妊神星，鸟神星；这些球星天体绕着太阳公转，与其他天体共享轨道。</p><h2 id="至少173颗卫星">至少173颗卫星</h2><p>卫星是绕着行星运转的天然天体，他们的形状、大小和类型各异，几乎都没有大气层。</p><h2 id="小型天体">小型天体</h2><ul><li>彗星由冰冻的岩石、冰块和尘埃组成，像一个飞行的雪球。</li><li>小行星是形状不规则的小型天体，有岩石和金属构成。</li><li>流星是进入地球大气层的流星体，它在几秒中就会燃烧殆尽，释放出耀眼的光芒，在身后留下一道模糊的轨迹。</li><li>陨石由铁和石头构成，是穿过地球大气层并高速撞击地面后残存下来的流星体。</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活 </category>
-          
-          <category> 影评 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 书评 </tag>
-            
-            <tag> 天文 </tag>
-            
-            <tag> 太空 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>宿舍门口的自然保护区：Messdorfer Feld</title>
       <link href="/blog-cn/posts/51440/"/>
       <url>/blog-cn/posts/51440/</url>
@@ -852,6 +854,37 @@
             <tag> 摄影 </tag>
             
             <tag> 视频 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在太阳系了里转一圈</title>
+      <link href="/blog-cn/posts/19980/"/>
+      <url>/blog-cn/posts/19980/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p><img src="https://raw.githubusercontent.com/Uzizkp/image-host/master/img/picgo/20210822212107.png" alt="https://raw.githubusercontent.com/Uzizkp/image-host/master/img/picgo/20210822212107.png"></p><p>最近在读一本网络小说叫《重生之超级战舰》，今天正式弃了。</p><p>这书故事还算有趣，但是根本读不下去，文学性太差了，读到走出太阳系之后实在坚持不下去了，因此只对度过的部分写一下感受。全片只有一个角色的设定，让本书只能靠宇宙探索中的新奇情节来吸引读者，全篇都是内心独白，和环境描述，没有人物关系，也没有高潮迭起的故事线。</p><p>虽然被本书标为“硬”科幻小说，对一个有一定理科背景的我来说，没有感觉到哪里真的“硬”，完全就是各种物理名词的堆砌和滥用，当然我也不懂物理，但是本书中的物理概念或者说科学概念好像并没有什么特别硬核的表述，例如书中提到可以使钢材变异的辐射生物“木灵”，描述其特性时仅仅就是“辐射使材料变异”这种等级，完全达不到我心中真正硬科幻的水平，我觉得”硬科幻“最起码应该编一下某项科学现象或者应用的潜在的科学基础或者映射出此科技大概的发展脉络才能真的“硬”起来，比如说《三体》第一部中地球往事中描述的纳米级钢丝，虽然现实理论上不太可能，但是最起码有一个让不太了解原理的人有一种“是那么回事”的感觉。</p><p>因此等到主角出了太阳系我就不接着走了，太无聊了。但是也跟着作者在太阳系转了一圈，也学到了一些天文学的知识，接下来就记录一下，巩固一下基础知识点。（图片来源于网络）</p><h2 id="太阳系结构图">太阳系结构图</h2><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212358.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212358.jpg"></p><h2 id="太阳">太阳</h2><p>太阳系中所有天体都围绕太阳这颗恒星运转；第一个证明这点的人是意大利天文学家伽利略·伽利莱。</p><p><img src="https://raw.githubusercontent.com/Uzizkp/image-host/master/img/picgo/20210822212344.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212358.jpg"></p><h2 id="八大行星">八大行星</h2><h3 id="水星Mercury">水星Mercury</h3><p>水星是八大行星中最小的一个，水星上的温差极大：-180摄氏度到430摄氏度；水星上的一年等于地球上的88天。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212504.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212504.jpg"></p><h3 id="金星-Venus"><strong>金星 Venus</strong></h3><p>金星以顺时针方向自转，太阳西升东落；自转速度非常缓慢：金星上的一天等于地球上的243天。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212558.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212558.jpg"></p><h3 id="地球-Earth"><strong>地球 Earth</strong></h3><p>地球是人来已知的唯一有生命存在的星球，大约71%的面积被水覆盖。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212619.jpeg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212619.jpeg"></p><h3 id="火星-Mars"><strong>火星 Mars</strong></h3><p>火星是岩石星球，它有两颗卫星。它的土壤和大气中富含铁矿物，因此呈红色。火星上的一年约等于地球上687天。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212730.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212730.jpg"></p><h3 id="木星-Jupiter"><strong>木星 Jupiter</strong></h3><p>木星上的一年约等于地球上的12年。它自传很快，每10小时自转一圈，因此能产生强风。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212803.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212803.jpg"></p><h3 id="土星-Saturn"><strong>土星 Saturn</strong></h3><p>土星是气态巨行星，至少有62颗卫星和7层光环，光环大约有10米厚；土星上的风速是地球上的5倍，这使土星看上去就想有一条金黄色的云带。土星上的一年约等于地球上的29年半。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212829.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212829.jpg"></p><h3 id="天王星-Uranus"><strong>天王星 Uranus</strong></h3><p>天王星是冰质巨行星，有13层光环，它侧躺着自转，自转方向为顺时针。天王星上的一年约等于地球上的84年。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212849.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212849.jpg"></p><h3 id="海王星-Neptune">海王星 Neptune</h3><p>海王星也是一颗冰质巨行星，按照行星与太阳的距离排列海王星是第八颗行星，直径上第四大行星，质量上第三大行星。它的亮度仅为7.85等，只有在天文望远镜里才能看到它。由于它那荧荧的淡蓝色光，所以西方人用罗马神话中的海神——“尼普顿”的名字来称呼它。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212925.jpg" alt="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/picgo/20210822212925.jpg"></p><h2 id="五颗被认证的矮行星">五颗被认证的矮行星</h2><p>太阳系有5颗被认证的爱行星：谷神星，冥王星，阋神星，妊神星，鸟神星；这些球星天体绕着太阳公转，与其他天体共享轨道。</p><h2 id="至少173颗卫星">至少173颗卫星</h2><p>卫星是绕着行星运转的天然天体，他们的形状、大小和类型各异，几乎都没有大气层。</p><h2 id="小型天体">小型天体</h2><ul><li>彗星由冰冻的岩石、冰块和尘埃组成，像一个飞行的雪球。</li><li>小行星是形状不规则的小型天体，有岩石和金属构成。</li><li>流星是进入地球大气层的流星体，它在几秒中就会燃烧殆尽，释放出耀眼的光芒，在身后留下一道模糊的轨迹。</li><li>陨石由铁和石头构成，是穿过地球大气层并高速撞击地面后残存下来的流星体。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+          <category> 影评 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 书评 </tag>
+            
+            <tag> 天文 </tag>
+            
+            <tag> 太空 </tag>
             
         </tags>
       
@@ -1347,9 +1380,9 @@
       
         <tags>
             
-            <tag> mac </tag>
-            
             <tag> 软件 </tag>
+            
+            <tag> mac </tag>
             
             <tag> 推荐 </tag>
             
@@ -1698,9 +1731,9 @@
             
             <tag> 项目 </tag>
             
-            <tag> 机器人 </tag>
-            
             <tag> ros </tag>
+            
+            <tag> 机器人 </tag>
             
         </tags>
       

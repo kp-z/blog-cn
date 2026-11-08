@@ -10,7 +10,24 @@
   <rights>All rights reserved 2026, kp</rights>
   <subtitle>The Universe of KP</subtitle>
   <title>KP</title>
-  <updated>2026-11-02T01:16:25.119Z</updated>
+  <updated>2026-11-08T16:33:05.610Z</updated>
+  <entry>
+    <author>
+      <name>kp</name>
+    </author>
+    <category term="技术" scheme="https://zkpeace.com/blog-cn/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="AI" scheme="https://zkpeace.com/blog-cn/tags/AI/"/>
+    <category term="AI生成" scheme="https://zkpeace.com/blog-cn/tags/AI%E7%94%9F%E6%88%90/"/>
+    <category term="harness" scheme="https://zkpeace.com/blog-cn/tags/harness/"/>
+    <category term="开发范式" scheme="https://zkpeace.com/blog-cn/tags/%E5%BC%80%E5%8F%91%E8%8C%83%E5%BC%8F/"/>
+    <category term="王小波" scheme="https://zkpeace.com/blog-cn/tags/%E7%8E%8B%E5%B0%8F%E6%B3%A2/"/>
+    <id>https://zkpeace.com/blog-cn/posts/72089/</id>
+    <link href="https://zkpeace.com/blog-cn/posts/72089/"/>
+    <published>2026-11-08T17:00:00.000Z</published>
+    <summary>从年初到现在，写软件的路子变了一次。一个做了八年的项目输给一套新做法——不是强的赢，是适的赢。写软件的重心，从规则挪到了上下文。</summary>
+    <title>👾 一个小小的胜利</title>
+    <updated>2026-11-08T16:33:05.610Z</updated>
+  </entry>
   <entry>
     <author>
       <name>kp</name>
@@ -321,22 +338,5 @@
     </summary>
     <title>介绍一下机器人学习</title>
     <updated>2026-10-19T19:20:58.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>kp</name>
-    </author>
-    <category term="项目" scheme="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/"/>
-    <category term="应用开发" scheme="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/"/>
-    <category term="项目" scheme="https://zkpeace.com/blog-cn/tags/%E9%A1%B9%E7%9B%AE/"/>
-    <category term="网站" scheme="https://zkpeace.com/blog-cn/tags/%E7%BD%91%E7%AB%99/"/>
-    <id>https://zkpeace.com/blog-cn/posts/61713/</id>
-    <link href="https://zkpeace.com/blog-cn/posts/61713/"/>
-    <published>2021-07-02T04:21:11.000Z</published>
-    <summary>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
-    </summary>
-    <title>蜜蜂速查-速查表收集站</title>
-    <updated>2026-10-23T11:16:48.000Z</updated>
   </entry>
 </feed>
