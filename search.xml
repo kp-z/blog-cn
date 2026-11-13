@@ -4,6 +4,45 @@
   
     
     <entry>
+      <title>👾 100 个 VibeCoding 项目之 六个离线小工具</title>
+      <link href="/blog-cn/posts/81357/"/>
+      <url>/blog-cn/posts/81357/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><blockquote><p>⚠️ 声明：本篇的文字、配图、编辑和发布，全部由 AI 完成。</p></blockquote><p>11 月 2 日早上，<code>~/minitool</code> 是一个空目录。上午十点四十，第一个 zip 落地。下午三点零九分，六个 zip 躺在 <code>dist/</code> 里。</p><p>专注计时器 6,051 字节，2048 是 9,932，贪吃蛇 9,760，八合一掌机 42,824，上海日历 31,721，暗房 482,982。六个加起来 583,270 字节。</p><p>它们不是六个 App。是同一只壳的六种装法：一套网页，<code>index.html</code> 放在 zip 根目录，解压后在受控 WebView 里跑。不联网，资源全在包里。</p><p>这只壳比浏览器窄得多。</p><h2 id="壳有多窄">壳有多窄</h2><p>先看不能用的。<code>fetch</code>、<code>XMLHttpRequest</code>、<code>WebSocket</code>、<code>Worker</code>、<code>WebAssembly</code> 全禁。存储、振动、存相册这些平台能力另开一套接口，还带版本号：Storage 要 9.46 以上，振动 9.50 以上，存相册 9.42 以上，<code>getWindowInfo</code> 9.49 以上。</p><p>再看内核。最低基线是 Android 8.1 出厂的 Chrome 61，语法上限 ES2017。CSS 的 flex <code>gap</code>、<code>clamp()</code>、<code>aspect-ratio</code>、<code>:has()</code>、<code>dvh</code> 都不能用。</p><p>体积也有门禁：10 MiB 是上限，2 MiB 是建议。</p><p>把这些抄成代码的第一件事，是删。</p><p><code>check_compliance.py</code> 就是一串「不许出现」：禁用的 Web API、外部域名、内联脚本、行内事件、<code>type=&quot;module&quot;</code>、ES2018 之后的语法。全扫一遍，0 error 才算能打包。</p><p>所以六件工具里最贵的东西不是功能，是那些被删掉的功能。</p><h2 id="八款游戏塞进-42-KB">八款游戏塞进 42 KB</h2><p>掌机合集最能说明这只壳装得下什么。8 款游戏、12 个文件、源码约 154 KB，压完 42,824 字节。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/81357/minitool-arcade-menu.png" alt="八合一掌机主菜单：2 列 4 行共 8 个游戏卡位，下面一副紫色的十字键和 A / B 键"></p><p>做法不难，难在可验证。规则和视图拆开：纯规则挂 <code>window.MinitoolGames</code>，视图是 <code>window.MountX = function (api) {...}</code>，只做渲染和输入。</p><p>拆开的好处是规则能在 Node 里裸跑，不碰 DOM。72 个规则用例、88 个 DOM 冒烟用例，跑起来几秒。</p><p>第二件事是按键。真机上竖屏拿着，原来的十字键单键 36px，A 键 54px，B 键 44px，拇指容易点偏。</p><p>改成 52 / 68 / 58px，十字键整体从 108px 放到 156px。矮屏和横屏不再用 <code>transform: scale()</code> 缩，按档位写死尺寸。</p><p>视觉大小等于可点区域。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/81357/minitool-arcade-memory.png" alt="翻牌配对玩到一半：4×4 的牌面翻开了几张，屏幕上还是那块点阵屏"></p><p>改完不能只靠截图看。<code>scripts/audit-controls.mjs</code> 用真实 Chrome 的 CDP 触摸，在 4 种尺寸、9 种状态（菜单加 8 个游戏）下逐个检查 8 个实体键。</p><p>查六件事：完整在视口里、尺寸达标、<code>elementFromPoint</code> 命中的是按钮本身、任意两个控件不重叠、真实触摸能出 click、每个键都有响应。</p><p>2932 项，0 失败。</p><p>这组检查抓到的不是逻辑错，是遮住。Toast 原来在底部，正好压住 SELECT 和 START；挪到屏幕中部才完事。</p><h2 id="把物理链搬到构建期">把物理链搬到构建期</h2><p>暗房是六件里最重的一件：482,982 字节，19 个文件。</p><p>上游是 macOS 上的 SpektraLab，SwiftUI 加 Metal，逐像素做 81 个波段的光谱积分。这套东西在 Chrome 61 里跑不动，也没有 WASM 和 Worker 可用。</p><p>于是运行时不做积分。21 卷负片、8 种相纸，离线烘成 29 张 17³ 的 3D LUT，烘焙 3.4 秒；运行时只查两次表。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/81357/minitool-darkroom-editor.png" alt="暗房编辑器：城市夜景套 Kodak Portra 400 与 Portra Endura，下面是电影卷选择栏"></p><p>168 种胶片乘相纸的组合跑了独立复核：中性轴中灰落在 0.487 到 0.518，锚点是 0.5；峰值斜率 1.47 到 3.14，物理 S 曲线还在。</p><p>渲染分三段：胶片 LUT、四分之一分辨率的高光模糊、相纸 LUT 加颗粒和暗角。一帧 5 个 draw call，绘制缓冲压到 200 万像素以内。WebGL 不可用就降级到 Canvas 2D，逐像素查表，慢，但能出图。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/81357/minitool-darkroom-looks.png" alt="同一份夜景换一组胶片与相纸：Kodak Verita 200D 乘 Vision 2383 的效果"></p><p>代价也写清楚了：光谱上采样用三个高斯基函数近似，中性色准，高饱和色有偏差；DIR couplers 这类空间效果烘焙不进去。这些话放在「关于」弹层里，不藏在代码注释里。</p><h2 id="没有-API，就把数据冻进包里">没有 API，就把数据冻进包里</h2><p>上海日历最省：31,721 字节，5 个文件，装 38 场活动，25 场展览加 13 场市集。</p><p>省不是压缩出来的，是选择的结果。我先去找「能不能运行时搜全上海的活动」，结论是没有这样的公用 API；就算有，容器也不许联网。</p><p>所以数据在构建期抓，人工核一遍，固化进 <code>data.js</code>。每条活动带来源和核验日期，常设市集标「以现场为准」。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/81357/minitool-calendar-list.png" alt="上海日历首页：搜索、筛选、21 天日期条，下面是本周末精选的展览卡片"></p><p>38 场活动不能长得一样，可包里一张图都没有。每张海报是运行时按 id 哈希生成的内联 SVG，6 种构图乘每类 4 套配色，展期和编号自动带上。</p><p>零外部素材，包体 31 KB，每场视觉不同。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/81357/minitool-calendar-month.png" alt="月视图：2026 年十一月整月，新开展的日期用方点，新开市集用圆点"></p><p>月历上的点也不只靠颜色：展览方点，市集圆点。不辨颜色的人也分得清哪天有新展。</p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/blog/2026/81357/minitool-calendar-detail.png" alt="市集详情页：档期、时间、地点、票价、来源与核验日期一行行列出来"></p><p>这一页还藏过一个真 bug。搜索框的清除按钮没清定时器，140 毫秒防抖窗口里点「×」，定时器会把旧查询回填进来：输入框是空的，列表还被过滤着。</p><p>补一行 <code>clearTimeout</code> 就修了。它在那里躺了多久，我不知道。</p><h2 id="许可是选型的第一步">许可是选型的第一步</h2><p>六件里最花心思的一步不是写代码，是选材。</p><p>第一批候选砍掉了俄罗斯方块、Flappy Bird、超级马里奥、吃豆人、太空侵略者，理由都是商标或角色权利；依赖联网和账号体系的也全部排除，容器不支持。</p><p>留下的判断依据是一条法条：游戏规则、机制属于「思想、程序、操作方法」，不受著作权保护；受保护的是代码、美术、音乐、题面、UI。</p><p>所以照抄不能碰，玩法可以重写。2048 按 MIT 参考重写，保留原文和版权声明；贪吃蛇是公共领域玩法加原创代码；扫雷、打砖块、华容道、翻牌、打地鼠、数独统一用中文通用名或自拟标题，画面全部原创，<code>license.json</code> 里逐条记下商标注册号和规避方式。</p><p>暗房那件是 GPL-3.0。移植要守 GPL 的义务：产物里放 <code>license.json</code> 写清来源、许可和实现说明；容器里给不了外链，源码地址得自己写进笔记或简介。</p><p>这件事没有技术难题，只有先来后到。</p><h2 id="证明它没坏比写它难">证明它没坏比写它难</h2><p>六件产物过的是同一套门禁。<code>scripts/build.sh</code> 五步：静态合规扫描、Node 审计、Python 审计、打包、成品审计与结构检查。</p><p>测试按件数：专注计时器 17 个用例，2048 加贪吃蛇 27 个规则用例和 22 个 DOM 冒烟，掌机 72 加 88，日历 48 加 33，暗房 26 加 11 加 26。外面还有一份独立验收写的 79 个 core 边界用例。</p><p>内部审计抓出来的四个真问题，都比功能本身难找。</p><p>日历的搜索竞态是一个。图片方向是第二个：上一版手动解析 EXIF 再转一次，现代 WebView 已经自动应用方向，两次旋转叠成反向，现在不读也不改写方向，只做等比缩放。</p><p>第三个在扫描器自己身上：base64 数据里出现 <code>123n</code>，被 ES2018+ 检查当成 BigInt。修法是先剥掉字符串字面量再扫语法。</p><p>第四个是打包。原来任何子目录都算「目录包裹层」，暗房的 <code>assets/</code> 会被误杀；判据改成「zip 根层必须直接有文件」。</p><p>日历还过了一轮独立设计评审，7.5 分。整改了首屏高度、被装饰圆压住的「PICK 01」标签、压在搜索框上的 Toast，复核 8.3 分。</p><p>这是评审的主观分，不是指标；最后一版还有一处单字孤行没修。</p><p>到现在，我能证明的只到「在这台机器上、在模拟环境里不坏」。</p><p>Chrome 61 和 Android 8.1 没实测，性能没实测，六个 zip 没上传创服平台，也没跑过 Android 和 iOS 真机。截图是 CDP 模拟的。</p><p>规范里自己写着一句：浏览器直运行不可信。</p><h2 id="下一步">下一步</h2><p>六个 zip 都在 <code>dist/</code> 里，SHA-256 跟报告一条条对得上。</p><p>我打算按小到大的顺序传：先专注计时器，再 2048、贪吃蛇，然后日历、掌机，最后是 482,982 字节的暗房。每个先过平台模拟器，再扫码上真机。</p><p>日历会先过期。数据是 11 月 2 日的快照，下个月得重新抓一遍。</p><p>六件上线之前，这篇都还会再改。</p><h2 id="更新记录">更新记录</h2><ul><li>2026-11-13：首发。六件小工具，合计 583,270 字节，配图 7 张。</li><li>以后每加一件、每过一轮真机验证，就回来改这一篇。</li></ul><p>参考：<a href="https://miniapp-sandbox.xiaohongshu.com/minitool/doc">小工具在线文档</a> · <a href="https://github.com/gabrielecirulli/2048">2048（Gabriele Cirulli，MIT）</a> · <a href="https://github.com/JamesQiu2005/SpektraLab">SpektraLab（上游，GPL-3.0）</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 项目 </category>
+          
+          <category> VibeCoding </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 小红书 </tag>
+            
+            <tag> 小工具 </tag>
+            
+            <tag> H5 </tag>
+            
+            <tag> 离线 </tag>
+            
+            <tag> AI </tag>
+            
+            <tag> vibecoding </tag>
+            
+            <tag> AI生成 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>👾 一个小小的胜利</title>
       <link href="/blog-cn/posts/72089/"/>
       <url>/blog-cn/posts/72089/</url>
@@ -57,13 +96,13 @@
             
             <tag> 小红书 </tag>
             
-            <tag> MCP </tag>
-            
             <tag> AI </tag>
             
             <tag> vibecoding </tag>
             
             <tag> AI生成 </tag>
+            
+            <tag> MCP </tag>
             
         </tags>
       
@@ -456,7 +495,7 @@
       <link href="/blog-cn/posts/34388/"/>
       <url>/blog-cn/posts/34388/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>日记 2022年4月16日<br>上海市  18°C，大部晴朗</p>    <div id="aplayer-roNkpPYx" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="28700552" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-mini="true"    ></div><p>最近一直在家看剧，看了《上海堡垒》，已经改编成电视剧了，真的是史诗级的烂。还看了部神话片，大概的意思是说人间妖魔横行，天庭派大将清陵带兵镇压，但是清陵手段残暴，为了完成天庭的任务，不惜迫害凡人，生灵涂炭，人间众生敢怒不敢言，冥界大门已开，妖魔无穷尽也，凡人的苦难无穷尽也。此时人们又想起了游历外界的小仙宫村。话说这宫村本只是三两小厮供奉的村口小仙，天魔刑官降生人间之时，竟然提出了与魔共生之策，遭到天人两界口诛笔伐，被放逐至三界之外。只是现在这天庭对清陵百般袒护，看似完全没有宽恕宫村之意。天庭为何非清陵不可？宫村能否重返三界？天魔刑官又会不会再次进化呢？故事越发的扑所迷离。</p><p>为了缓解最近再重刷《武林外传》，主题曲是真好听，记录一下歌词。</p><div class="note simple"><p>自打盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>从那盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>希望永远种在你心里</p></div><p>好了不说了想去华润万家买袋溜溜梅吃吃了。</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><p>日记 2022年4月16日<br>上海市  18°C，大部晴朗</p>    <div id="aplayer-gvwrliQb" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="28700552" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-mini="true"    ></div><p>最近一直在家看剧，看了《上海堡垒》，已经改编成电视剧了，真的是史诗级的烂。还看了部神话片，大概的意思是说人间妖魔横行，天庭派大将清陵带兵镇压，但是清陵手段残暴，为了完成天庭的任务，不惜迫害凡人，生灵涂炭，人间众生敢怒不敢言，冥界大门已开，妖魔无穷尽也，凡人的苦难无穷尽也。此时人们又想起了游历外界的小仙宫村。话说这宫村本只是三两小厮供奉的村口小仙，天魔刑官降生人间之时，竟然提出了与魔共生之策，遭到天人两界口诛笔伐，被放逐至三界之外。只是现在这天庭对清陵百般袒护，看似完全没有宽恕宫村之意。天庭为何非清陵不可？宫村能否重返三界？天魔刑官又会不会再次进化呢？故事越发的扑所迷离。</p><p>为了缓解最近再重刷《武林外传》，主题曲是真好听，记录一下歌词。</p><div class="note simple"><p>自打盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>从那盘古开天劈地<br>侠行天下是礼是义<br>不战而胜最是理想<br>人在江湖身不由己<br>除暴安良一身正气<br>闯荡江湖无人能敌<br>哪怕不知去向何方<br>努力下去就是希望<br>这世界真的也许有太多的你不如意<br>可你的生活虽然坎坎坷坷仍在继续<br>希望就住在你的心底<br>愿你勤勤恳恳善待别人关心自己<br>美好的日子等你<br>呛呛cei<br>呛呛cei<br>拿出勇气让我看<br>呛呛cei<br>呛呛cei<br>要向上看不向下看<br>呛呛cei<br>呛呛cei<br>要向前看不向后看<br>呛呛cei<br>呛呛cei<br>要向好看不向坏看<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>这世界有太多不如意<br>但你的生活还是要继续<br>太阳每天依旧要升起<br>希望永远种在你心里<br>希望永远种在你心里</p></div><p>好了不说了想去华润万家买袋溜溜梅吃吃了。</p>]]></content>
       
       
       <categories>
@@ -831,37 +870,6 @@
     
     
     <entry>
-      <title>宿舍门口的自然保护区：Messdorfer Feld</title>
-      <link href="/blog-cn/posts/51440/"/>
-      <url>/blog-cn/posts/51440/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><blockquote><p>我的宿舍出门右拐有一块不算小的自然保护区或者说是农田,春天的时候的谷物、树木和鲜花郁郁葱葱,赏心悦目. 但是秋天,麦子收了,树枯了,身在其中会感觉稍微有点点荒凉,所以和老哥们策策挑了个好天气,拿着我刚买不久的小飞机,换个角度看了下这块土地.</p></blockquote><p><video src='https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/%E5%AE%BF%E8%88%8D%E9%97%A8%E5%8F%A3%E7%9A%84%E7%94%B0%E9%87%8E.MOV' type='video/mov' width='100%' controls="controls" preload="auto" height='100%'></video></p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/IMG_6381.JPG" alt=""><br><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/DJI_0134.JPEG" alt=""></p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/1225F609-BEA3-4BA0-A20C-EEB1C578A4F3_1_105_c.jpeg" alt=""><br><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/CFAD3555-29AD-4B7A-9F4F-C46617772A03_1_105_c.jpeg" alt=""><br><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/IMG_6382.JPG" alt=""></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活 </category>
-          
-          <category> 记事 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 德国 </tag>
-            
-            <tag> 摄影 </tag>
-            
-            <tag> 视频 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>在太阳系了里转一圈</title>
       <link href="/blog-cn/posts/19980/"/>
       <url>/blog-cn/posts/19980/</url>
@@ -885,6 +893,37 @@
             <tag> 天文 </tag>
             
             <tag> 太空 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>宿舍门口的自然保护区：Messdorfer Feld</title>
+      <link href="/blog-cn/posts/51440/"/>
+      <url>/blog-cn/posts/51440/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script src="/blog-cn/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/blog-cn/assets/js/Meting.min.js"></script><blockquote><p>我的宿舍出门右拐有一块不算小的自然保护区或者说是农田,春天的时候的谷物、树木和鲜花郁郁葱葱,赏心悦目. 但是秋天,麦子收了,树枯了,身在其中会感觉稍微有点点荒凉,所以和老哥们策策挑了个好天气,拿着我刚买不久的小飞机,换个角度看了下这块土地.</p></blockquote><p><video src='https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/%E5%AE%BF%E8%88%8D%E9%97%A8%E5%8F%A3%E7%9A%84%E7%94%B0%E9%87%8E.MOV' type='video/mov' width='100%' controls="controls" preload="auto" height='100%'></video></p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/IMG_6381.JPG" alt=""><br><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/DJI_0134.JPEG" alt=""></p><p><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/1225F609-BEA3-4BA0-A20C-EEB1C578A4F3_1_105_c.jpeg" alt=""><br><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/CFAD3555-29AD-4B7A-9F4F-C46617772A03_1_105_c.jpeg" alt=""><br><img src="https://blog-1253324855.cos.ap-shanghai.myqcloud.com/source/articles/MessdorferFeld/IMG_6382.JPG" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+          <category> 记事 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 德国 </tag>
+            
+            <tag> 摄影 </tag>
+            
+            <tag> 视频 </tag>
             
         </tags>
       

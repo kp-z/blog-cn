@@ -10,7 +10,27 @@
   <rights>All rights reserved 2026, kp</rights>
   <subtitle>The Universe of KP</subtitle>
   <title>KP</title>
-  <updated>2026-11-08T17:00:04.000Z</updated>
+  <updated>2026-11-13T02:15:00.000Z</updated>
+  <entry>
+    <author>
+      <name>kp</name>
+    </author>
+    <category term="项目" scheme="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/"/>
+    <category term="VibeCoding" scheme="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/VibeCoding/"/>
+    <category term="小红书" scheme="https://zkpeace.com/blog-cn/tags/%E5%B0%8F%E7%BA%A2%E4%B9%A6/"/>
+    <category term="小工具" scheme="https://zkpeace.com/blog-cn/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
+    <category term="H5" scheme="https://zkpeace.com/blog-cn/tags/H5/"/>
+    <category term="离线" scheme="https://zkpeace.com/blog-cn/tags/%E7%A6%BB%E7%BA%BF/"/>
+    <category term="AI" scheme="https://zkpeace.com/blog-cn/tags/AI/"/>
+    <category term="vibecoding" scheme="https://zkpeace.com/blog-cn/tags/vibecoding/"/>
+    <category term="AI生成" scheme="https://zkpeace.com/blog-cn/tags/AI%E7%94%9F%E6%88%90/"/>
+    <id>https://zkpeace.com/blog-cn/posts/81357/</id>
+    <link href="https://zkpeace.com/blog-cn/posts/81357/"/>
+    <published>2026-11-13T02:15:00.000Z</published>
+    <summary>六个离线 zip 装进小红书小工具容器：42 KB 装 8 款游戏、472 KB 装 168 种胶片、31 KB 装 38 场活动，还有一条从合规扫描到真机验证的链</summary>
+    <title>👾 100 个 VibeCoding 项目之 六个离线小工具</title>
+    <updated>2026-11-13T02:15:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>kp</name>
@@ -35,10 +55,10 @@
     <category term="项目" scheme="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/"/>
     <category term="VibeCoding" scheme="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/VibeCoding/"/>
     <category term="小红书" scheme="https://zkpeace.com/blog-cn/tags/%E5%B0%8F%E7%BA%A2%E4%B9%A6/"/>
-    <category term="MCP" scheme="https://zkpeace.com/blog-cn/tags/MCP/"/>
     <category term="AI" scheme="https://zkpeace.com/blog-cn/tags/AI/"/>
     <category term="vibecoding" scheme="https://zkpeace.com/blog-cn/tags/vibecoding/"/>
     <category term="AI生成" scheme="https://zkpeace.com/blog-cn/tags/AI%E7%94%9F%E6%88%90/"/>
+    <category term="MCP" scheme="https://zkpeace.com/blog-cn/tags/MCP/"/>
     <id>https://zkpeace.com/blog-cn/posts/73051/</id>
     <link href="https://zkpeace.com/blog-cn/posts/73051/"/>
     <published>2026-11-02T01:00:00.000Z</published>
@@ -321,22 +341,5 @@
     </summary>
     <title>介绍一下机器人学习</title>
     <updated>2026-10-19T19:20:58.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>kp</name>
-    </author>
-    <category term="项目" scheme="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/"/>
-    <category term="其他项目" scheme="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/"/>
-    <category term="项目" scheme="https://zkpeace.com/blog-cn/tags/%E9%A1%B9%E7%9B%AE/"/>
-    <category term="其他项目" scheme="https://zkpeace.com/blog-cn/tags/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/"/>
-    <id>https://zkpeace.com/blog-cn/posts/30954/</id>
-    <link href="https://zkpeace.com/blog-cn/posts/30954/"/>
-    <published>2021-07-04T12:52:46.000Z</published>
-    <summary>
-      <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
-    </summary>
-    <title>黑鲸智能系统知识库</title>
-    <updated>2026-10-23T11:16:48.000Z</updated>
   </entry>
 </feed>
