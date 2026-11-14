@@ -6,25 +6,9 @@
     <description>The Universe of KP</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, kp</copyright>
-    <lastBuildDate>Fri, 13 Nov 2026 02:20:52 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 17:00:04 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://zkpeace.com/blog-cn/rss2.xml" rel="self" type="application/rss+xml"/>
-    <item>
-      <title>👾 100 个 VibeCoding 项目之 六个离线小工具</title>
-      <link>https://zkpeace.com/blog-cn/posts/81357/</link>
-      <description>六个离线 zip 装进小红书小工具容器：42 KB 装 8 款游戏、472 KB 装 168 种胶片、31 KB 装 38 场活动，还有一条从合规扫描到真机验证的链</description>
-      <author>kp</author>
-      <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/">项目</category>
-      <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/VibeCoding/">VibeCoding</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/%E5%B0%8F%E7%BA%A2%E4%B9%A6/">小红书</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/AI/">AI</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/vibecoding/">vibecoding</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/AI%E7%94%9F%E6%88%90/">AI生成</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/">小工具</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/H5/">H5</category>
-      <category domain="https://zkpeace.com/blog-cn/tags/%E7%A6%BB%E7%BA%BF/">离线</category>
-      <pubDate>Fri, 13 Nov 2026 02:15:00 GMT</pubDate>
-    </item>
     <item>
       <title>👾 一个小小的胜利</title>
       <link>https://zkpeace.com/blog-cn/posts/72089/</link>
@@ -244,6 +228,19 @@
       <category domain="https://zkpeace.com/blog-cn/tags/%E8%AE%B0%E4%BA%8B/">记事</category>
       <category domain="https://zkpeace.com/blog-cn/tags/%E8%AF%BB%E4%B9%A6/">读书</category>
       <category domain="https://zkpeace.com/blog-cn/tags/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/">浮生六记</category>
+      <pubDate>Sun, 04 Jul 2021 12:52:46 GMT</pubDate>
+    </item>
+    <item>
+      <title>黑鲸智能系统知识库</title>
+      <link>https://zkpeace.com/blog-cn/posts/30954/</link>
+      <description>
+        <![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/blog-cn/assets/css/APlayer.min.css"><script]]>
+      </description>
+      <author>kp</author>
+      <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/">项目</category>
+      <category domain="https://zkpeace.com/blog-cn/categories/%E9%A1%B9%E7%9B%AE/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/">其他项目</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E9%A1%B9%E7%9B%AE/">项目</category>
+      <category domain="https://zkpeace.com/blog-cn/tags/%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE/">其他项目</category>
       <pubDate>Sun, 04 Jul 2021 12:52:46 GMT</pubDate>
     </item>
     <item>
